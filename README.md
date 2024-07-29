@@ -31,8 +31,8 @@ To start the project run the command below inside agent-doug-webb folder.
 npm run dev
 ```
 
-Congrats you setup the project :)
+Congrats you setup the project 🔥
 
 ## Contributing
 
-Pull requests are not welcomed, as this is a private project. Sorry, for any confusion.
+Pull requests are not welcomed, as this is a private project. However you're free to use this website for educational purposes. 🚀
