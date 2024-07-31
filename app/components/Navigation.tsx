@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   return (
-    <header className="overflow-hidden shadow">
+    <header className="overflow-hidden border-b border-gray-200 shadow shadow-gray-200">
       <div className="container mx-auto px-4 py-5 sm:p-6">
         <nav className="">
           <ul className="flex items-center justify-end list-none">
