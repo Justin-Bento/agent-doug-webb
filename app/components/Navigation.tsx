@@ -11,19 +11,19 @@ export default function Navigation() {
               <Link href="#"><Button variant="link" size="sm">Home</Button></Link>
             </li>
             <li>
-              <Link href="#"><Button variant="link" size="sm">About</Button></Link>
+              <Link href="/about"><Button variant="link" size="sm">About</Button></Link>
             </li>
             <li>
-              <Link href="#"><Button variant="link" size="sm">Real-Estate Process</Button></Link>
+              <Link href="/real-estate-process"><Button variant="link" size="sm">Real-Estate Process</Button></Link>
             </li>
             <li>
-               <Link href="#"><Button variant="link" size="sm">Listings</Button></Link>
+               <Link href="/listings"><Button variant="link" size="sm">Listings</Button></Link>
             </li>
             <li>
-               <Link href="#"><Button variant="link" size="sm">More Stuff</Button></Link>
+               <Link href="/more-stuff"><Button variant="link" size="sm">More Stuff</Button></Link>
             </li>
             <li>
-               <Link href="#"><Button variant="link" size="sm">Contact</Button></Link>
+               <Link href="/contact"><Button variant="link" size="sm">Contact</Button></Link>
             </li>
 
           </ul>
