@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -7,22 +8,22 @@ export default function Navigation() {
         <nav className="">
           <ul className="flex items-center justify-end list-none">
             <li>
-              <a href="#"><Button variant="link" size="sm">Home</Button></a>
+              <Link href="#"><Button variant="link" size="sm">Home</Button></Link>
             </li>
             <li>
-              <a href="#"><Button variant="link" size="sm">About</Button></a>
+              <Link href="#"><Button variant="link" size="sm">About</Button></Link>
             </li>
             <li>
-              <a href="#"><Button variant="link" size="sm">Real-Estate Process</Button></a>
+              <Link href="#"><Button variant="link" size="sm">Real-Estate Process</Button></Link>
             </li>
             <li>
-               <a href="#"><Button variant="link" size="sm">Listings</Button></a>
+               <Link href="#"><Button variant="link" size="sm">Listings</Button></Link>
             </li>
             <li>
-               <a href="#"><Button variant="link" size="sm">More Stuff</Button></a>
+               <Link href="#"><Button variant="link" size="sm">More Stuff</Button></Link>
             </li>
             <li>
-               <a href="#"><Button variant="link" size="sm">Contact</Button></a>
+               <Link href="#"><Button variant="link" size="sm">Contact</Button></Link>
             </li>
 
           </ul>
