@@ -7,7 +7,7 @@ export default function page() {
     <>
     <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <h1>Hello World</h1>
+        <h1>Home</h1>
       </main>
     <Footer/>
     </>
