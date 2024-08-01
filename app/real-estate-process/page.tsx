@@ -19,3 +19,31 @@ export default function RealEstateTransaction() {
     </>
   );
 }
+
+const real_estate_stages = {
+  deciding_to_buy: [
+    "Sell before you buy",
+    "How Much can you afford?",
+    "Selecting an Buying Agent",
+    "The Buyers RE. Contract",
+    "Searching Properties",
+    "Visiting Properties",
+    "Making an Offer",
+    "Negotiating the Offer",
+    "Making The Offer Firm",
+    "Lawyers & Closing B.",
+    "Packing and Moving",
+  ],
+  deciding_to_sell: [
+    "Researching Value",
+    "Prepping Property",
+    "Selecting an Selling Agent",
+    "The Listing Contract",
+    "Staging",
+    "Showing",
+    "Negotatiing",
+    "Removing Conditions",
+    "Lawyers & Closing Selling",
+    "Packing & Moving",
+  ],
+};
