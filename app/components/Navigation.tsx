@@ -8,7 +8,7 @@ export default function Navigation() {
         <nav className="">
           <ul className="flex items-center justify-end list-none">
             <li>
-              <Link href="#"><Button variant="link" size="sm">Home</Button></Link>
+              <Link href="/"><Button variant="link" size="sm">Home</Button></Link>
             </li>
             <li>
               <Link href="/about"><Button variant="link" size="sm">About</Button></Link>
