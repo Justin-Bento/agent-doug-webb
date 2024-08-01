@@ -7,10 +7,10 @@ export default function RealEstateTransaction() {
     <>
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <div className="flex min-h-dvh gap-9">
+        <div className="flex min-h-dvh gap-9 my-16">
           <SideNavigation />
-          <div className="w-full bg-gray-200">
-            <TypographyDemo />
+          <div className="w-full">
+            <TypographyDemo />   
           </div>
         </div>
       </main>
