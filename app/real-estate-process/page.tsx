@@ -55,11 +55,11 @@ function SideNavigation() {
           <p className="font-bold">Deciding to Buy</p>
           <hr className="mt-2" />
           <ul className="mt-4">
-            {real_estate_stages.deciding_to_buy.map((person, index) => {
+            {real_estate_stages.deciding_to_buy.map((buy_steps, index) => {
               return (
                 <li key={index}>
                   <Button variant="link" className="w-full justify-start">
-                    {person}
+                    {buy_steps}
                   </Button>
                 </li>
               );
@@ -70,11 +70,11 @@ function SideNavigation() {
           <p className="font-bold">Deciding to Sell</p>
           <hr className="mt-2" />
           <ul className="mt-4">
-            {real_estate_stages.deciding_to_sell.map((person, index) => {
+            {real_estate_stages.deciding_to_sell.map((sell_steps, index) => {
               return (
                 <li key={index}>
                   <Button variant="link" className="w-full justify-start">
-                    {person}
+                    {sell_steps}
                   </Button>
                 </li>
               );
