@@ -8,15 +8,13 @@ export default function RealEstateTransaction() {
     <>
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <div className="flex min-h-dvh gap-9 my-16">
-          <SideNavigation />
-          <div className="w-full">
-            <TypographyDemo />
-            <div className="flex items-center justify-between mt-8 border-t-2 pt-8">
-              <Button size="sm" variant="outline">Previous Article</Button>
-              <Button size="sm" variant="outline">Next Article</Button>
+        <div className="grid grid-cols-12 my-16">
+          <TypographyDemo />
+          <aside className="col-span-3 col-start-10 justify-self-end hidden xl:block">
+            <div className="sticky top-12 pb-20">
+              <SideNavigation />
             </div>
-          </div>
+          </aside>
         </div>
       </main>
       <Footer />
@@ -26,7 +24,7 @@ export default function RealEstateTransaction() {
 
 export function TypographyDemo() {
   return (
-    <div>
+    <div className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch]">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         The Joke Tax Chronicles
       </h1>
@@ -140,6 +138,14 @@ export function TypographyDemo() {
         The moral of the story is: never underestimate the power of a good laugh
         and always be careful of bad ideas.
       </p>
+      <div className="flex items-center justify-between mt-8 border-t-2 pt-8">
+        <Button size="sm" variant="outline">
+          Previous Article
+        </Button>
+        <Button size="sm" variant="outline">
+          Next Article
+        </Button>
+      </div>
     </div>
   );
 }
