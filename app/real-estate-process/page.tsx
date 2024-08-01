@@ -1,6 +1,7 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import SideNavigation from "../components/SideNavigation";
+import { Button } from "@/components/ui/button";
 
 export default function RealEstateTransaction() {
   return (
@@ -10,7 +11,11 @@ export default function RealEstateTransaction() {
         <div className="flex min-h-dvh gap-9 my-16">
           <SideNavigation />
           <div className="w-full">
-            <TypographyDemo />   
+            <TypographyDemo />
+            <div className="flex items-center justify-between mt-8 border-t-2 pt-8">
+              <Button size="sm" variant="outline">Previous Article</Button>
+              <Button size="sm" variant="outline">Next Article</Button>
+            </div>
           </div>
         </div>
       </main>
