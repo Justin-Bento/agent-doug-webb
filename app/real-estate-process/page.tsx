@@ -57,6 +57,13 @@ function SideNavigation() {
             <li>Section #1</li>
           </ul>
         </div>
+        <div className="mt-8">
+          <p className="font-bold">Deciding to Sell</p>
+          <hr className="mt-4" />
+          <ul className="mt-4">
+            <li>Section #1</li>
+          </ul>
+        </div>
       </div>
     </>
   );
