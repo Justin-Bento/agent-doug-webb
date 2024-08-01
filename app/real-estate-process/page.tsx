@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { Button } from "@/components/ui/button";
 
 export default function RealEstateTransaction() {
   return (
@@ -54,7 +55,15 @@ function SideNavigation() {
           <p className="font-bold">Deciding to Buy</p>
           <hr className="mt-2" />
           <ul className="mt-4">
-            <li>Section #1</li>
+            {real_estate_stages.deciding_to_buy.map((person, index) => {
+              return (
+                <li key={index}>
+                  <Button variant="link" className="w-full justify-start">
+                    {person}
+                  </Button>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="mt-8">
