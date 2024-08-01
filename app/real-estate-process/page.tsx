@@ -1,10 +1,14 @@
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+
 export default function RealEstateTransaction() {
-    return (
-      <>
-        <main className="">
+  return (
+    <>
+      <Navigation />
+      <main className="">
         <h1>Hello, Real-Estate Transaction Page!</h1>
-        </main>
-      </>
-    );
-  }
-  
+      </main>
+      <Footer />
+    </>
+  );
+}
