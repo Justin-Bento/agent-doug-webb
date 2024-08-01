@@ -50,7 +50,13 @@ function SideNavigation() {
   return (
     <>
       <div className="bg-gray-200 w-64 flex-none">
-        <p className="">Side Navigation</p>
+        <div className="">
+          <p className="font-bold">Deciding to Buy</p>
+          <hr className="mt-4" />
+          <ul className="mt-4">
+            <li>Section #1</li>
+          </ul>
+        </div>
       </div>
     </>
   );
