@@ -70,7 +70,15 @@ function SideNavigation() {
           <p className="font-bold">Deciding to Sell</p>
           <hr className="mt-2" />
           <ul className="mt-4">
-            <li>Section #1</li>
+            {real_estate_stages.deciding_to_sell.map((person, index) => {
+              return (
+                <li key={index}>
+                  <Button variant="link" className="w-full justify-start">
+                    {person}
+                  </Button>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
