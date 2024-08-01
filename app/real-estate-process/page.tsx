@@ -49,17 +49,17 @@ const real_estate_stages = {
 function SideNavigation() {
   return (
     <>
-      <div className="bg-gray-200 w-64 flex-none">
+      <div className="w-64 flex-none">
         <div className="">
           <p className="font-bold">Deciding to Buy</p>
-          <hr className="mt-4" />
+          <hr className="mt-2" />
           <ul className="mt-4">
             <li>Section #1</li>
           </ul>
         </div>
         <div className="mt-8">
           <p className="font-bold">Deciding to Sell</p>
-          <hr className="mt-4" />
+          <hr className="mt-2" />
           <ul className="mt-4">
             <li>Section #1</li>
           </ul>
