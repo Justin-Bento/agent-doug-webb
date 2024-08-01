@@ -7,9 +7,7 @@ export default function RealEstateTransaction() {
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
         <div className="flex min-h-dvh gap-9">
-          <div className="bg-gray-200 w-64 flex-none">
-            <p className="">Side Navigation</p>
-          </div>
+          <SideNavigation />
           <div className="w-full bg-gray-200">
             <h1>Hello, Real-Estate Transaction Page!</h1>
           </div>
@@ -47,3 +45,13 @@ const real_estate_stages = {
     "Packing & Moving",
   ],
 };
+
+function SideNavigation() {
+  return (
+    <>
+      <div className="bg-gray-200 w-64 flex-none">
+        <p className="">Side Navigation</p>
+      </div>
+    </>
+  );
+}
