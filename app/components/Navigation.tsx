@@ -20,9 +20,6 @@ export default function Navigation() {
                <Link href="/listings"><Button variant="link" size="sm">Listings</Button></Link>
             </li>
             <li>
-               <Link href="/more-stuff"><Button variant="link" size="sm">More Stuff</Button></Link>
-            </li>
-            <li>
                <Link href="/contact"><Button variant="link" size="sm">Contact</Button></Link>
             </li>
 
