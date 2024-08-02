@@ -40,6 +40,9 @@ export default function RealEstateTransaction() {
             LinkName="Extra Information"
           />
         </section>
+        <section className="mt-16" data-info="common-questions">
+          <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tighter first:mt-0">Frequently Asked Questions</h3>
+        </section>
       </main>
       <Footer />
     </>
@@ -56,7 +59,7 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   return (
     <div className="w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
       <div className="px-4 py-5 sm:p-6">
-        <h2 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
+        <h2 className="mb-1.5 scroll-m-20 text-xl font-semibold tracking-tight dark:text-white">
           {Title}
         </h2>
         <p className="leading-6">
