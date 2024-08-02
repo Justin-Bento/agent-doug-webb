@@ -54,7 +54,7 @@ interface cardInterface {
 }
 function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   return (
-    <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
+    <div className="w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
       <div className="px-4 py-5 sm:p-6">
         <h2 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
           {Title}
