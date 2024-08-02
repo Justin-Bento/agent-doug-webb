@@ -1,6 +1,12 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import SideNavigation from "../components/SideNavigation";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 import { Button } from "@/components/ui/button";
 import Heading from "../components/Heading";
 import Link from "next/link";
@@ -40,8 +46,9 @@ export default function RealEstateTransaction() {
             LinkName="Extra Information"
           />
         </section>
-        <section className="mt-16" data-info="common-questions">
+        <section className="container mx-auto px-4 py-5 sm:p-6 my-20" data-info="common-questions">
           <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tighter first:mt-0">Frequently Asked Questions</h3>
+          <AccordionDemo />
         </section>
       </main>
       <Footer />
@@ -74,4 +81,31 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
       </div>
     </div>
   );
+}
+
+export function AccordionDemo() {
+  return (
+    <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other
+          components&apos; aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It&apos;s animated by default, but you can disable it if you
+          prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
 }
