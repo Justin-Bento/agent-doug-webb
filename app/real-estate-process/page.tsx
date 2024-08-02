@@ -69,6 +69,24 @@ export default function RealEstateTransaction() {
               </Link>
             </div>
           </div>
+          <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
+            <div className="px-4 py-5 sm:p-6">
+              <h3 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
+                Bonus Content
+              </h3>
+              <p className="leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                reprehenderit inventore consectetur odit quasi ad nulla eius
+                voluptatem ipsum aliquid praesentium eligendi error in, nesciunt
+                sunt debitis nisi optio delectus!
+              </p>
+              <Link href="/real-estate-process/deciding-to-sell">
+                <Button variant="secondary" size="sm" className="mt-6">
+                  View Stage
+                </Button>
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
       <Footer />
