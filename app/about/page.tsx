@@ -8,19 +8,14 @@ export default function about() {
     <>
       <Navigation />
       <main className="min-h-dvh">
-        <section className="bg-gray-100 md:py-14">
-          <div className="container mx-auto text-balance">
-            <h1 className="text-4xl font-bold tracking-tight">About, Douglas J. Webb!</h1>
-          </div>
-        </section>
         <section className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 my-16">
           <div className="w-full  rounded-lg bg-gray-200">
             <Image src="" alt="" className="aspect-video" />
           </div>
           <div className="w-full h-24">
-            <h2 className="mb-2 scroll-m-20 text-3xl font-semibold tracking-tight transition-colors">
-              Salesperson & Representative
-            </h2>
+            <h1 className="text-4xl font-bold tracking-tight mb-4">
+              About, Douglas J. Webb!
+            </h1>
             <div className="space-y-4">
               <p>
                 Doug got involved in residential investment real estate in 1986
@@ -37,7 +32,7 @@ export default function about() {
               <ul className="list-disc list-inside grid grid-cols-2 gap-4">
                 <li>Certified Residential Specialist</li>
                 <li>Canadian Real Estate Association</li>
-                <li>Realtor®  Sales Award</li>
+                <li>Realtor® Sales Award</li>
                 <li>Serving: Clients since 1997</li>
                 <li>Member Toronto Real Estate Board</li>
                 <li>MLS - Multiple Listing Service.</li>
