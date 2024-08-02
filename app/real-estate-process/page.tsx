@@ -22,7 +22,7 @@ export default function RealEstateTransaction() {
   );
 }
 
-export function TypographyDemo() {
+function TypographyDemo() {
   return (
     <div className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch]">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
