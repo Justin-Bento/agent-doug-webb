@@ -3,12 +3,16 @@ import Heading from "../components/Heading";
 import Navigation from "../components/Navigation";
 
 export default function about() {
-  let message: string = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis tempore voluptatibus aliquam?"
+  let message: string = "Salesperson & Representative, Right At Home Realty Brokerage Inc. Every thing you need in one place to take you through the Real Estate transaction process. From Start to Finish.";
   return (
     <>
       <Navigation />
-      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <Heading heading="Hello, About Page!" supporting={message} />
+      <main className="min-h-dvh">
+        <section className="bg-gray-100 md:py-16">
+          <div className="container mx-auto text-balance">
+            <Heading heading="About, Douglas J. Webb!" supporting={message} />
+          </div>
+        </section>
       </main>
       <Footer />
     </>
