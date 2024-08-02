@@ -1,5 +1,4 @@
 import Footer from "../components/Footer";
-import Heading from "../components/Heading";
 import Navigation from "../components/Navigation";
 import Image from "next/image";
 
@@ -9,9 +8,9 @@ export default function about() {
     <>
       <Navigation />
       <main className="min-h-dvh">
-        <section className="bg-gray-100 md:py-16">
+        <section className="bg-gray-100 md:py-14">
           <div className="container mx-auto text-balance">
-            <Heading heading="About, Douglas J. Webb!" supporting={message} />
+            <h1 className="text-4xl font-bold tracking-tight">About, Douglas J. Webb!</h1>
           </div>
         </section>
         <section className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 my-16">
