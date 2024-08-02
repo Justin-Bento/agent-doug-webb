@@ -14,7 +14,7 @@ export default function RealEstateTransaction() {
           heading="Real-Estate Transaction Process"
           supporting="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore saepe sunt ad aliquam optio non voluptatibus quidem et porro corrupti?"
         />
-        <section className="flex items-center gap-8 mt-16">
+        <section className="grid items-center grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
             <div className="px-4 py-5 sm:p-6">
               <h3 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
