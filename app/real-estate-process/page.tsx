@@ -56,9 +56,9 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   return (
     <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
       <div className="px-4 py-5 sm:p-6">
-        <h3 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
+        <h2 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
           {Title}
-        </h3>
+        </h2>
         <p className="leading-6">
           {Supporting ||
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit inventore consectetur odit quasi ad nulla eius voluptatem ipsum aliquid praesentium eligendi error in, nesciunt sunt debitis nisi optio delectus!"}
