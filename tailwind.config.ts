@@ -34,6 +34,7 @@ const config = {
       },
       colors: {
         white: "#F9F8FA",
+        text: "#0A090C",
       }
     },
   },
