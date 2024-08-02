@@ -12,7 +12,7 @@ export default function RealEstateTransaction() {
           <TypographyDemo />
           <aside className="col-span-3 col-start-10 justify-self-end hidden xl:block">
             <div className="sticky top-12 pb-20">
-              <SideNavigation />
+              <SideNavigation stage="buy" />
             </div>
           </aside>
         </div>
