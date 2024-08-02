@@ -18,7 +18,7 @@ export default function RealEstateTransaction() {
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
         <Heading
           heading="Real-Estate Transaction Process"
-          supporting="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore saepe sunt ad aliquam optio non voluptatibus quidem et porro corrupti?"
+          supporting="Agent Webb provides all the essential information you need to navigate the Real Estate transaction process from start to finish, offering unbiased and straightforward insights to help you make informed decisions and stay ahead of potential red flags."
         />
         <section className="grid items-center grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           <Card
