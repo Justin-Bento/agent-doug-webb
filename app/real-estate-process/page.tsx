@@ -2,20 +2,56 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import SideNavigation from "../components/SideNavigation";
 import { Button } from "@/components/ui/button";
+import Heading from "../components/Heading";
+import Link from "next/link";
 
 export default function RealEstateTransaction() {
   return (
     <>
       <Navigation />
-      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <div className="grid grid-cols-12 my-16">
-          <TypographyDemo />
-          <aside className="col-span-3 col-start-10 justify-self-end hidden xl:block">
-            <div className="sticky top-12 pb-20">
-              <SideNavigation />
+      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
+        <Heading
+          heading="Real-Estate Transaction Process"
+          supporting="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore saepe sunt ad aliquam optio non voluptatibus quidem et porro corrupti?"
+        />
+        <section className="flex items-center gap-8 mt-16">
+          <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
+            <div className="px-4 py-5 sm:p-6">
+              <h3 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
+                Deciding To Buy
+              </h3>
+              <p className="leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                reprehenderit inventore consectetur odit quasi ad nulla eius
+                voluptatem ipsum aliquid praesentium eligendi error in, nesciunt
+                sunt debitis nisi optio delectus!
+              </p>
+              <Link href="/real-estate-process/deciding-to-buy">
+                <Button variant="secondary" size="sm" className="mt-6">
+                  View Stage
+                </Button>
+              </Link>
             </div>
-          </aside>
-        </div>
+          </div>
+          <div className="w-full overflow-hidden rounded-lg border-2 broder-gray-300">
+            <div className="px-4 py-5 sm:p-6">
+              <h3 className="mb-1.5 text-xl captialize font-bold text-gray-800 dark:text-white">
+                Deciding To Sell
+              </h3>
+              <p className="leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                reprehenderit inventore consectetur odit quasi ad nulla eius
+                voluptatem ipsum aliquid praesentium eligendi error in, nesciunt
+                sunt debitis nisi optio delectus!
+              </p>
+              <Link href="/real-estate-process/deciding-to-sell">
+                <Button variant="secondary" size="sm" className="mt-6">
+                  View Stage
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
