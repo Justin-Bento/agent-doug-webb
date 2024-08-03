@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 
 export default function page() {
   return (
@@ -17,8 +18,8 @@ export default function page() {
             <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                <span className="text-indigo-600">Agent Webb,</span> Your Guide to Understanding Real Estate
-                  Transactions.
+                  <span className="text-indigo-600">Agent Webb,</span> Your
+                  Guide to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="text-lg leading-7">
@@ -29,8 +30,14 @@ export default function page() {
                     to finish.
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
-                    <Button className="bg-indigo-600">Schedule A Call</Button>
-                    <Button variant="secondary" className="bg-indigo-50">Read Information</Button>
+                    <Link href="#">
+                      <Button className="bg-indigo-600">Schedule A Call</Button>
+                    </Link>
+                    <Link href="/real-estate-process">
+                      <Button variant="secondary" className="bg-indigo-50">
+                        Read Information
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <img
