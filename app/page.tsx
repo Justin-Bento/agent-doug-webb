@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { Button } from "@/components/ui/button";
-import Link  from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function page() {
@@ -41,11 +41,14 @@ export default function page() {
                     </Link>
                   </div>
                 </div>
-                <Image
-                  alt=""
-                  src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-                  className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-                />
+                <div className="mt-10 relative aspect-[6/5] w-full max-w-lg sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
+                  <Image
+                    alt=""
+                    fill={true}
+                    src="/media/img/photo-unsplash.avif"
+                    className="rounded-2xl object-cover ring-1 ring-indigo-950"
+                  />
+                </div>
               </div>
             </div>
             <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
