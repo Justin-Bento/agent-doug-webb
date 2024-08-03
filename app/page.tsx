@@ -24,11 +24,11 @@ export default function page() {
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="leading-6">
-                    Perhaps the only website that gives you all the information
-                    you need about the Real Estate transaction. Our job is to
-                    show you every thing you need to know in one place to take
-                    you through the Real Estate transaction process from start
-                    to finish.
+                    Welcome to Agent Webb, John Webb is a real estate agent with
+                    20+ years of experience. This websites shares his
+                    information about the Real Estate transaction, one place,
+                    and guiding you to take you through the Real Estate
+                    transaction process from start to finish.
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
                     <Link href="#">
@@ -57,15 +57,25 @@ export default function page() {
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <h2 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
-              Welcome to section 2
+              Trust Our Experience and Expertise
             </h2>
           </div>
         </section>
-        <section className="">
-          <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h3 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
-              Welcome to section 3
-            </h3>
+        <section className="relative overflow-hidden bg-indigo-600 py-32">
+          <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
+            <div className="max-w-3xl flex flex-col gap-3">
+              <p className="">Felling Overwhelmed?</p>
+              <h3 className=" text-3xl capitalize font-bold tracking-tight dark:text-white ">
+                We&#39;ll Help You and Simplify Your Real Estate Journey!
+              </h3>
+              <p className="">
+                Navigating the real estate market is daunting, but you don&#39;t
+                have to do it alone. John Webb, is here to guide you through
+                every step, from understanding the complex details to making
+                informed decisions with confidence. Discover how we can make the
+                process smoother and stress-free for you.
+              </p>
+            </div>
           </div>
         </section>
         <section className="">
