@@ -83,7 +83,7 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   );
 }
 
-export function AccordionDemo() {
+function AccordionDemo() {
   return (
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
