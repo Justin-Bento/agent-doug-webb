@@ -8,8 +8,10 @@ export default function page() {
   return (
     <>
     <Navigation />
-      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-        <Heading heading="Hello, Landing Page!" supporting={message} />
+      <main className="min-h-dvh">
+        <section className="container mx-auto px-4 py-5 sm:p-6">
+          <Heading heading="Hello, Landing Page!" supporting={message} />
+        </section>
       </main>
     <Footer/>
     </>
