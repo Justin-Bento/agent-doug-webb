@@ -65,13 +65,13 @@ interface cardInterface {
 function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   return (
     <div className="w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
-      <div className="px-4 py-5 sm:p-6">
+      <div className="px-4 py-6 sm:p-6">
         <h2 className="mb-1.5 scroll-m-20 text-xl font-semibold tracking-tight dark:text-white">
           {Title}
         </h2>
-        <p className="leading-6">
+        <p className="leading-6 text-balance">
           {Supporting ||
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit inventore consectetur odit quasi ad nulla eius voluptatem ipsum aliquid praesentium eligendi error in, nesciunt sunt debitis nisi optio delectus!"}
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore consectetur odit quasi ad nulla eius voluptatem ipsum aliquid praesentium eligendi error in, nesciunt sunt debitis nisi optio delectus!"}
         </p>
         <Link href={URL}>
           <Button variant="secondary" size="sm" className="mt-6">
