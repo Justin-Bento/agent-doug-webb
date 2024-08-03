@@ -100,7 +100,7 @@ export default function page() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer className="mt-20" />
     </>
   );
 }
