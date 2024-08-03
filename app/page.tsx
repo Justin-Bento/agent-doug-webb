@@ -22,7 +22,7 @@ export default function page() {
                   Guide to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                  <p className="text-lg leading-7">
+                  <p className="leading-6">
                     Perhaps the only website that gives you all the information
                     you need about the Real Estate transaction. Our job is to
                     show you every thing you need to know in one place to take
