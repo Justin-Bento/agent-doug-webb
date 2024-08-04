@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function SideNavigation({ stage }: any) {
   return (
@@ -12,9 +13,11 @@ export default function SideNavigation({ stage }: any) {
               {real_estate_stages.deciding_to_buy.map((buy_steps, index) => {
                 return (
                   <li key={index}>
-                    <Button variant="link" className="w-full justify-start">
-                      {buy_steps}
-                    </Button>
+                    <Link href={`/real-estate-process/deciding-to-buy/${buy_steps.toLocaleLowerCase().replace(/\s+/g, '-')}`}>
+                      <Button variant="link" className="w-full justify-start">
+                        {buy_steps}
+                      </Button>
+                    </Link>
                   </li>
                 );
               })}
@@ -29,9 +32,11 @@ export default function SideNavigation({ stage }: any) {
               {real_estate_stages.deciding_to_sell.map((sell_steps, index) => {
                 return (
                   <li key={index}>
-                    <Button variant="link" className="w-full justify-start">
-                      {sell_steps}
-                    </Button>
+                    <Link href={`/real-estate-process/deciding-to-buy/${sell_steps.toLocaleLowerCase().replace(/\s+/g, '-')}`}>
+                      <Button variant="link" className="w-full justify-start">
+                        {sell_steps}
+                      </Button>
+                    </Link>
                   </li>
                 );
               })}
