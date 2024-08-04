@@ -11,6 +11,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     p: ({ children }) => <p className="leading-7">{children}</p>,
     ul: ({ children }) => <ul className="list-disc list-outside my-6 ml-6 list-disc [&>li]:mt-2">{children}</ul>,
     a: ({ children }) => <a className="underline text-primary-600">{children}</a>,
+    blockquote : ({ children }) => <blockquote  className="mt-6 border-l-2 pl-6 italic">{children}</blockquote>,
     ...components,
   };
 }

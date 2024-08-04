@@ -1,5 +1,5 @@
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 import {
   Accordion,
   AccordionContent,
@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/accordion"
 
 import { Button } from "@/components/ui/button";
-import Heading from "../components/Heading";
+import Heading from "../../components/Heading";
 import Link from "next/link";
 
 export default function RealEstateTransaction() {

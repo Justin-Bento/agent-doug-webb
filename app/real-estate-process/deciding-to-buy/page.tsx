@@ -1,6 +1,6 @@
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
-import SideNavigation from "../../components/SideNavigation";
+import Navigation from "../../../components/Navigation";
+import Footer from "../../../components/Footer";
+import SideNavigation from "../../../components/SideNavigation";
 import { Button } from "@/components/ui/button";
 import DecidingToBuy from "./deciding-to-buy.mdx";
 

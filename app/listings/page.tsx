@@ -1,7 +1,7 @@
 import React from "react";
-import Heading from "../components/Heading";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Heading from "../../components/Heading";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 
 export default function page() {
   let message: string = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis tempore voluptatibus aliquam?"

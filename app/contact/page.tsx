@@ -1,6 +1,6 @@
-import Footer from "../components/Footer";
-import Heading from "../components/Heading";
-import Navigation from "../components/Navigation";
+import Footer from "../../components/Footer";
+import Heading from "../../components/Heading";
+import Navigation from "../../components/Navigation";
 
 export default function Contact() {
   let title: string = "Hello, Contact Page!"
