@@ -9,7 +9,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: ({ children }) => <h5 className="text-xl text-muted-foreground">{children}</h5>,
     h6: ({ children }) => <h6 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">{children}</h6>,
     p: ({ children }) => <p className="leading-7">{children}</p>,
-    ul: ({ children }) => <ul className="list-disc list-inside my-6 ml-6 list-disc [&>li]:mt-2">{children}</ul>,
+    ul: ({ children }) => <ul className="list-disc list-outside my-6 ml-6 list-disc [&>li]:mt-2">{children}</ul>,
     a: ({ children }) => <a className="underline text-primary-600">{children}</a>,
     ...components,
   };
