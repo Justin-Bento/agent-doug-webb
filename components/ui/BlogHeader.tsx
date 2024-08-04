@@ -4,7 +4,7 @@ interface BlogHeaderProps {
 }
 export default function BlogHeader({ Title, Description }: BlogHeaderProps) {
   return (
-    <section className="text-balance">
+    <section className="">
       <h1 className="scroll-m-20 text-4xl font-bold capitalize tracking-tight">
         {Title}
       </h1>
