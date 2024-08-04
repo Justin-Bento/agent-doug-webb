@@ -1,4 +1,4 @@
-import SideNavigation from "../../../components/SideNavigation";
+import SideNavigation from "../../../../components/SideNavigation";
 import { Button } from "@/components/ui/button";
 import DecidingToBuy from "./deciding-to-buy.mdx";
 
