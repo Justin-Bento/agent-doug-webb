@@ -1,13 +1,13 @@
 import SideNavigation from "../../../../components/SideNavigation";
 import { Button } from "@/components/ui/button";
-import DecidingToSell from "./your-decision-to-sell.mdx";
+import ForSaleByOwner from "./for-sale-by-owner.mdx";
 
 export default function RealEstateTransaction() {
   return (
     <>
       <section className="grid grid-cols-12 my-16">
         <article className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch] space-y-4">
-          <DecidingToSell />
+          <ForSaleByOwner />
           <div className="flex items-center justify-between mt-8 border-t-2 pt-8">
             <Button size="sm" variant="outline">
               Previous Article
