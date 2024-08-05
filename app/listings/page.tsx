@@ -6,15 +6,16 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export default function page() {
-  let message: string = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis tempore voluptatibus aliquam?"
   return (
     <div>
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
-        <Heading
-          heading="Hello world, from listing page."
-          supporting={message}
-        />
+        <section id="header">
+          <h1 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Hello world, from listing page.</h1>
+          <p className="text-base text-balance mt-2 mb-7 dark:text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis tempore voluptatibus aliquam?
+          </p>
+        </section>
         <section id="filter" className="bg-gray-300 p-2 my-4 rounded-lg ring-1 ring-gray-400">
           <ul className="flex items-center gap-4 list-none">
             <li>
