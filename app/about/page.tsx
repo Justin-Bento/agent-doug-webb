@@ -14,7 +14,7 @@ export default function about() {
             <Image src="" alt="" className="aspect-square" />
           </div>
           <div className="w-full h-24">
-            <h1 className="text-4xl font-bold tracking-tight mt-6 mb-4">
+            <h1 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white mb-4">
               About, Douglas J. Webb!
             </h1>
             <div className="space-y-4">

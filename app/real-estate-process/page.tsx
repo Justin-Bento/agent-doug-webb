@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 import { Button } from "@/components/ui/button";
 import Heading from "../../components/Heading";
@@ -16,10 +16,17 @@ export default function RealEstateTransaction() {
     <>
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
-        <Heading
-          heading="Real-Estate Transaction Process"
-          supporting="Agent Webb provides all the essential information you need to navigate the Real Estate transaction process from start to finish, offering unbiased and straightforward insights to help you make informed decisions and stay ahead of potential red flags."
-        />
+        <section id="header">
+          <h1 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
+            Real-Estate Transaction Process.
+          </h1>
+          <p className="text-base text-balance mt-2 mb-7 dark:text-white">
+            Agent Webb provides all the essential information you need to
+            navigate the Real Estate transaction process from start to finish,
+            offering unbiased and straightforward insights to help you make
+            informed decisions and stay ahead of potential red flags.
+          </p>
+        </section>
         <section className="grid items-center grid-cols-1 md:grid-cols-2 gap-8 mt-16">
           <Card
             Title="Deciding To Buy"
@@ -46,8 +53,13 @@ export default function RealEstateTransaction() {
             LinkName="Extra Information"
           />
         </section>
-        <section className="container mx-auto px-4 py-5 sm:p-6 my-20" data-info="common-questions">
-          <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tighter first:mt-0">Frequently Asked Questions</h3>
+        <section
+          className="container mx-auto px-4 py-5 sm:p-6 my-20"
+          data-info="common-questions"
+        >
+          <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tighter first:mt-0">
+            Frequently Asked Questions
+          </h3>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -65,8 +77,8 @@ export default function RealEstateTransaction() {
             <AccordionItem value="item-3">
               <AccordionTrigger>Is it animated?</AccordionTrigger>
               <AccordionContent>
-                Yes. It&apos;s animated by default, but you can disable it if you
-                prefer.
+                Yes. It&apos;s animated by default, but you can disable it if
+                you prefer.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -103,4 +115,3 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
     </div>
   );
 }
-
