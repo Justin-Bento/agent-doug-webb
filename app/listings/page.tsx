@@ -8,7 +8,7 @@ export default function page() {
   return (
     <div>
       <Navigation />
-      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
+      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
         <Heading
           heading="Hello world, from listing page."
           supporting={message}
