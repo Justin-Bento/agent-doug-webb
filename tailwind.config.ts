@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+const colors = require('tailwindcss/colors')
 
 const config = {
   darkMode: ["class"],
@@ -17,6 +18,17 @@ const config = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: "#F9F8FA",
+      black: "#0A090C",
+      primary: "#3A1A60",
+      secondary: "#C2ABB2",
+      accent: "#B19993",
+      red: colors.red,
+      gray: colors.gray,
+    },
     extend: {
       keyframes: {
         "accordion-down": {
@@ -32,13 +44,6 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      colors: {
-        white: "#F9F8FA",
-        black: "#0A090C",
-        primary: "#3A1A60",
-        secondary: "#C2ABB2",
-        accent: "#B19993",
-      }
     },
   },
   plugins: [require("tailwindcss-animate")],

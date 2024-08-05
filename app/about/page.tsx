@@ -51,6 +51,7 @@ export default function about() {
                 assemble at home so that the next generation of kids really can
                 make it to orbit — from the comfort of their own backyards.
               </p>
+              <Button>Hello World</Button>
             </div>
           </div>
         </section>
