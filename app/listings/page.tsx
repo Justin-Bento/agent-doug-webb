@@ -16,7 +16,7 @@ export default function page() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis tempore voluptatibus aliquam?
           </p>
         </section>
-        <section id="filter" className="bg-gray-300 p-2 my-4 rounded-lg ring-1 ring-gray-400">
+        <section id="filter" className="bg-black/10 p-2 my-4 rounded-lg ring-1 ring-black/30">
           <ul className="flex items-center gap-4 list-none">
             <li>
               <Button variant="ghost" size="sm">For Sale</Button>
@@ -31,12 +31,12 @@ export default function page() {
         </section>
         <section id="real-estate-properties">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-14">
-            <CardWFooter className="bg-gray-300" />
-            <CardWFooter className="bg-red-300" />
-            <CardWFooter className="bg-blue-300" />
-            <CardWFooter className="bg-gray-300" />
-            <CardWFooter className="bg-blue-300" />
-            <CardWFooter className="bg-red-300" />
+            <CardWFooter className="bg-black/30" />
+            <CardWFooter className="bg-black/30" />
+            <CardWFooter className="bg-black/30" />
+            <CardWFooter className="bg-black/30" />
+            <CardWFooter className="bg-black/30" />
+            <CardWFooter className="bg-black/30" />
           </div>
         </section>
       </main>

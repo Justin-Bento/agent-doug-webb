@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <header className="overflow-hidden border-b border-gray-200 shadow shadow-gray-200">
+    <header className="overflow-hidden border-b border-black/30 shadow shadow-black/10 sticky top-0 left-0 bg-white z-20">
       <div className="container mx-auto px-4 py-5 sm:p-6">
         <nav className="">
           <ul className="flex items-center justify-end list-none">

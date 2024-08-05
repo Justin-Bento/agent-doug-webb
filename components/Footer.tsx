@@ -9,7 +9,7 @@ export default function Footer({ className }: any) {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-300 hover:text-gray-500"
+              className="text-white hover:text-white/50"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="h-6 w-6" />
@@ -17,7 +17,7 @@ export default function Footer({ className }: any) {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm  leading-5 text-gray-300">
+          <p className="text-center text-sm  leading-5 text-white">
             &copy; 2017 AgentWebb, Inc. All rights reserved.
           </p>
         </div>

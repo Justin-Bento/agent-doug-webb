@@ -34,7 +34,10 @@ const config = {
       },
       colors: {
         white: "#F9F8FA",
-        text: "#0A090C",
+        black: "#0A090C",
+        primary: "#3A1A60",
+        secondary: "#C2ABB2",
+        accent: "#B19993",
       }
     },
   },

@@ -15,7 +15,7 @@ export default function about() {
               <h1 className="text-5xl tracking-tight font-extrabold capitalize dark:text-white">
                 Our strength is collaboration.
               </h1>
-              <p className="text-sm text-purple-500">About us</p>
+              <p className="text-sm text-primary font-bold">About us</p>
             </div>
             <p className="text-xl tracking-wide mt-2">
               We believe that our strength lies in our collaborative approach,

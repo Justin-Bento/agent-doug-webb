@@ -14,12 +14,12 @@ export default function page() {
           <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
             <div
               aria-hidden="true"
-              className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+              className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-primary/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96"
             />
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                  <span className="text-indigo-600">Agent Webb,</span> Your
+                  <span className="text-primary">Agent Webb,</span> Your
                   Guide to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -32,7 +32,7 @@ export default function page() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
                     <Link href="#">
-                      <Button className="bg-indigo-600">Schedule A Call</Button>
+                      <Button className="bg-primary">Schedule A Call</Button>
                     </Link>
                     <Link href="/real-estate-process">
                       <Button variant="secondary" className="bg-indigo-50">
@@ -61,7 +61,7 @@ export default function page() {
             </h2>
           </div>
         </section>
-        <section className="relative overflow-hidden bg-indigo-600 py-32">
+        <section className="relative overflow-hidden bg-primary py-32">
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
             <div className="max-w-3xl flex flex-col gap-3">
               <p className="">Felling Overwhelmed?</p>
