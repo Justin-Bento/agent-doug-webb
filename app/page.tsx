@@ -56,7 +56,7 @@ export default function page() {
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h2 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
+            <h2 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
               Trust Our Experience and Expertise
             </h2>
           </div>
@@ -65,7 +65,7 @@ export default function page() {
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
             <div className="max-w-3xl flex flex-col gap-3">
               <p className="">Felling Overwhelmed?</p>
-              <h3 className=" text-3xl capitalize font-bold tracking-tight dark:text-white ">
+              <h3 className=" text-4xl tracking-tight font-extrabold capitalize dark:text-white ">
                 We&#39;ll Help You and Simplify Your Real Estate Journey!
               </h3>
               <p className="">
@@ -80,21 +80,21 @@ export default function page() {
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h4 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
+            <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
               Welcome to section 4
             </h4>
           </div>
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h5 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
+            <h5 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
               Welcome to section 5
             </h5>
           </div>
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h6 className="text-3xl capitalize font-bold tracking-tight dark:text-white">
+            <h6 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
               Welcome to section 6
             </h6>
           </div>

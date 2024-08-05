@@ -57,7 +57,7 @@ export default function RealEstateTransaction() {
           className="container mx-auto px-4 py-5 sm:p-6 my-20"
           data-info="common-questions"
         >
-          <h3 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tighter first:mt-0">
+          <h3 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
             Frequently Asked Questions
           </h3>
           <Accordion type="single" collapsible className="w-full">
@@ -99,7 +99,7 @@ function Card({ Title, Supporting, URL, LinkName }: cardInterface) {
   return (
     <div className="w-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm">
       <div className="px-4 py-6 sm:p-6">
-        <h2 className="mb-1.5 scroll-m-20 text-xl font-semibold tracking-tight dark:text-white">
+        <h2 className="text-xl font-bold dark:text-white mb-1">
           {Title}
         </h2>
         <p className="leading-6 text-balance">
