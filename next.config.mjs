@@ -4,6 +4,7 @@ import createMDX from "@next/mdx";
 const nextConfig = {
   // Configure `pageExtensions`` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  transpilePackages: ["next-mdx-remote"],
   // Optionally, add any other Next.js config below
   images: {
     remotePatterns: [
