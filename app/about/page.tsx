@@ -85,16 +85,10 @@ export default function about() {
           </dl>
         </section>
         <section className="container mx-auto">
-          <div className="grid grid-cols-2 gap-8 items-center">
-            <div className="bg-gray-400 aspect-square"></div>
+          <div className="grid grid-cols-2 gap-8 items-start">
+            <div className="bg-gray-400 aspect-square rounded-xl"></div>
             <div className="mt-4 max-w-4xl space-y-6 text-base">
-              <p>
-                Studio was started by Douglas J. Webb who noticed that people
-                are afraid of residential investment as there is a lot of
-                secrecy behind home ownership. Since the beginning, he has been
-                committed to doing things differently by being transparent and
-                share his knowledge instead.
-              </p>
+             <h2 className="text-4xl font-bold capitalize dark:text-white">Douglas J. Webb</h2>
               <p>
                 Agent Webb is more than just one agent — it is a comprehensive
                 platform for Real Estate Transactions. This means people can
