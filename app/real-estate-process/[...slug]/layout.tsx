@@ -4,11 +4,11 @@ import SideNavigation from "@/components/SideNavigation";
 import { Button } from "@/components/ui/button";
 import React, { Children } from "react";
 
-export default function RealEstateProcessLayout({
-  children, // will be a page or nested layout
-}: {
-  children: React.ReactNode;
-}) {
+// This is a nested layout for real-estate transaction articles.
+// All articles inside the /real-estate-process route will follow this format.
+// The children prop is where the dynamic content will be rendered.
+
+export default function RealEstateProcessLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <html>

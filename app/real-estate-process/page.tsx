@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import Link from "next/link";
 
+// This is the landing page for the real-estate process.
+// Here is where people will view the different stages of the process and click ones to their needs.
 export default function page() {
   return (
     <>
