@@ -19,8 +19,8 @@ export default function page() {
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                  <span className="text-primary">Agent Webb,</span> Your
-                  Guide to Understanding Real Estate Transactions.
+                  <span className="text-primary">Agent Webb,</span> Your Guide
+                  to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="leading-6">
@@ -54,12 +54,17 @@ export default function page() {
             <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
           </div>
         </section>
-        <section className="">
-          <div className="container mx-auto px-4 py-5 sm:p-6">
+        <section className="container mx-auto px-4 py-5 sm:p-6">
+          <div className="mb-6">
             <h2 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
               Trust Our Experience and Expertise
             </h2>
+            <p className="text-lg mt-1">
+              Our certifications reflect our commitment to trust, quality, and
+              excellence in every real estate transaction.
+            </p>
           </div>
+
         </section>
         <section className="relative overflow-hidden bg-primary py-32">
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
