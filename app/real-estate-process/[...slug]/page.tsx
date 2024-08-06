@@ -19,7 +19,6 @@ export default function page({ params }: { params: { slug: string[] } }) {
     return (
       <>
         <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, to Deciding To Sell.</h1>
-        <Footer />
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "more-stuff") {
