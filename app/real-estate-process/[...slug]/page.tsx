@@ -1,6 +1,9 @@
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
 import React from "react";
+import Footer from "@/components/Footer";
+import DecidingToBuy1 from "@/markdown/deciding-to-buy/step1.mdx";
+import DecidingToSell1 from "@/markdown/deciding-to-sell/your-decision-to-sell.mdx";
+import ForSaleByOwner from "@/markdown/more-stuff/for-sale-by-owner.mdx";
+import ReferencePage from "@/markdown/extra-infromation/reference-page.mdx";
 
 // This page leverages the Catch-all Segments feature in Next.js to handle dynamic routing within Nextjs.
 // Justin Bento used this feature because it allows creating routes based on dynamic data if the clients plans on adding content in the future.
@@ -16,25 +19,25 @@ export default function page({ params }: { params: { slug: string[] } }) {
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-buy") {
     return (
       <>
-        <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, to Deciding To Buy.</h1>
+        <DecidingToBuy1 />
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-sell") {
     return (
       <>
-        <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, to Deciding To Sell.</h1>
+        <DecidingToSell1 />
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "more-stuff") {
     return (
       <>
-        <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, to More Stuff.</h1>
+        <ForSaleByOwner />
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "additional-information") {
     return (
       <>
-        <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, to Additional Information.</h1>
+        <ReferencePage />
       </>
     );
   }
