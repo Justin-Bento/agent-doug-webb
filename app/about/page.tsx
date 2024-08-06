@@ -36,7 +36,7 @@ export default function about() {
                     instead.
                   </p>
                   <p>
-                    At Studio, we’re more than just colleagues — we’re a family.
+                    At Studio, we&#39;re more than just colleagues — we&#39;re a family.
                     This means we pay very little and expect people to work
                     late. We want our employees to bring their whole selves to
                     work. In return, we just ask that they keep themselves there
@@ -131,7 +131,7 @@ export default function about() {
                           <strong className="font-semibold text-white mr-1">
                             Trust.
                           </strong>
-                          We don’t care when our team works just as long as they
+                          We don&#39;t care when our team works just as long as they
                           are working every waking second.
                         </div>
                       </div>
