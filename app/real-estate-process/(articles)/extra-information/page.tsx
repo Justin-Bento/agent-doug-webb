@@ -1,4 +1,4 @@
-import ReferencePage from "./reference-page.mdx";
+import ReferencePage from "./(pages)/reference-page.mdx";
 
 export default function RealEstateTransaction() {
   return (
