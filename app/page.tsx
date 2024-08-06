@@ -19,16 +19,14 @@ export default function page() {
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:col-span-2 xl:col-auto">
-                  <span className="text-primary">Agent Webb,</span> Your Guide
-                  to Understanding Real Estate Transactions.
+                  <span className="text-primary">Agent Webb,</span> Your Guide to Understanding Real Estate
+                  Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="leading-6">
-                    Welcome to Agent Webb, John Webb is a real estate agent with
-                    20+ years of experience. This websites shares his
-                    information about the Real Estate transaction, one place,
-                    and guiding you to take you through the Real Estate
-                    transaction process from start to finish.
+                    Welcome to Agent Webb, John Webb is a real estate agent with 20+ years of experience. This websites
+                    shares his information about the Real Estate transaction, one place, and guiding you to take you
+                    through the Real Estate transaction process from start to finish.
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
                     <Link href="#">
@@ -60,18 +58,15 @@ export default function page() {
               Trust Our Experience and Expertise
             </h2>
             <p className="text-lg mt-1">
-              Our certifications reflect our commitment to trust, quality, and
-              excellence in every real estate transaction.
+              Our certifications reflect our commitment to trust, quality, and excellence in every real estate
+              transaction.
             </p>
           </div>
           <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-16">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="lg:flex lg:items-center lg:justify-end">
                 <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-                  <div
-                    className="w-[33.75rem] flex-none lg:w-[45rem]"
-                    style={{ opacity: 1, transform: "none" }}
-                  >
+                  <div className="w-[33.75rem] flex-none lg:w-[45rem]" style={{ opacity: 1, transform: "none" }}>
                     <div className="justify-center lg:justify-end relative flex aspect-[719/680] w-full grayscale">
                       <svg viewBox="0 0 655 680" fill="none" className="h-full">
                         <g clip-path="url(#:S1:-clip)" className="group">
@@ -94,11 +89,7 @@ export default function page() {
                               />
                             </foreignObject>
                           </g>
-                          <use
-                            href="#:S1:-shape"
-                            stroke-width="2"
-                            className="stroke-neutral-950/10"
-                          ></use>
+                          <use href="#:S1:-shape" stroke-width="2" className="stroke-neutral-950/10"></use>
                         </g>
                         <defs>
                           <clipPath id=":S1:-clip">
@@ -122,50 +113,36 @@ export default function page() {
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold text-neutral-950">
-                            Web development.
-                          </strong>
-                          We specialise in crafting beautiful, high quality
-                          marketing pages. The rest of the website will be a
-                          shell that uses lorem ipsum everywhere.
+                          <strong className="font-semibold text-neutral-950">Web development.</strong>
+                          We specialise in crafting beautiful, high quality marketing pages. The rest of the website
+                          will be a shell that uses lorem ipsum everywhere.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold text-neutral-950">
-                            Application development.
-                          </strong>
-                          We have a team of skilled developers who are experts
-                          in the latest app frameworks, like Angular 1 and
-                          Google Web Toolkit.
+                          <strong className="font-semibold text-neutral-950">Application development.</strong>
+                          We have a team of skilled developers who are experts in the latest app frameworks, like
+                          Angular 1 and Google Web Toolkit.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold text-neutral-950">
-                            E-commerce.
-                          </strong>
-                          We are at the forefront of modern e-commerce
-                          development. Which mainly means adding your logo to
-                          the Shopify store template we’ve used for the past six
-                          years.
+                          <strong className="font-semibold text-neutral-950">E-commerce.</strong>
+                          We are at the forefront of modern e-commerce development. Which mainly means adding your logo
+                          to the Shopify store template we’ve used for the past six years.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold text-neutral-950">
-                            Custom content management.
-                          </strong>
-                          At Studio we understand the importance of having a
-                          robust and customised CMS. That’s why we run all of
-                          our client projects out of a single, enormous Joomla
-                          instance.
+                          <strong className="font-semibold text-neutral-950">Custom content management.</strong>
+                          At Studio we understand the importance of having a robust and customised CMS. That’s why we
+                          run all of our client projects out of a single, enormous Joomla instance.
                         </div>
                       </div>
                     </li>
@@ -183,34 +160,26 @@ export default function page() {
                 We&#39;ll Help You and Simplify Your Real Estate Journey!
               </h3>
               <p className="">
-                Navigating the real estate market is daunting, but you don&#39;t
-                have to do it alone. John Webb, is here to guide you through
-                every step, from understanding the complex details to making
-                informed decisions with confidence. Discover how we can make the
-                process smoother and stress-free for you.
+                Navigating the real estate market is daunting, but you don&#39;t have to do it alone. John Webb, is here
+                to guide you through every step, from understanding the complex details to making informed decisions
+                with confidence. Discover how we can make the process smoother and stress-free for you.
               </p>
             </div>
           </div>
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
-              Welcome to section 4
-            </h4>
+            <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Welcome to section 4</h4>
           </div>
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h5 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
-              Welcome to section 5
-            </h5>
+            <h5 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Welcome to section 5</h5>
           </div>
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h6 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
-              Welcome to section 6
-            </h6>
+            <h6 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Welcome to section 6</h6>
           </div>
         </section>
       </main>

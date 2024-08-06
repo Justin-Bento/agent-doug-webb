@@ -12,10 +12,9 @@ export default function Contact() {
             Hello, Contact Page!
           </h1>
           <p className="text-balance">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
-            doloribus aspernatur tenetur officiis quasi numquam eos qui
-            praesentium, at placeat eligendi reiciendis dicta similique sapiente
-            porro quis tempore voluptatibus aliquam?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto doloribus aspernatur tenetur officiis
+            quasi numquam eos qui praesentium, at placeat eligendi reiciendis dicta similique sapiente porro quis
+            tempore voluptatibus aliquam?
           </p>
         </section>
       </main>

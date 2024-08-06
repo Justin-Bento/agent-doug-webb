@@ -3,11 +3,7 @@ import Navigation from "@/components/Navigation";
 import SideNavigation from "../../../components/SideNavigation";
 import { Button } from "@/components/ui/button";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
