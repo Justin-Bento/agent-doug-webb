@@ -277,7 +277,7 @@ export default function page() {
           </div>
         </section>
       </main>
-      <Footer className="mt-20" />
+      <Footer className="mt-36" />
     </>
   );
 }
