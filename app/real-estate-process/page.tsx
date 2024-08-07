@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 // This is the landing page for the real-estate process.
 // Here is where people will view the different stages of the process and click ones to their needs.
@@ -91,6 +91,23 @@ export default function page() {
             </div>
             {/* End of card */}
           </div>
+        </section>
+        <section className="container mx-auto">
+          <h2 className="text-4xl tracking-tight font-bold dark:text-white">Frequently Asked Questions.</h2>
+          <Accordion type="single" collapsible className="mt-4">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Is it accessible?</AccordionTrigger>
+              <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
       </main>
       <Footer />
