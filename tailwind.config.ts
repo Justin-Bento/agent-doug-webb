@@ -1,13 +1,14 @@
-import type { Config } from "tailwindcss"
-const colors = require('tailwindcss/colors')
+import type { Config } from "tailwindcss";
+const colors = require("tailwindcss/colors");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    // ...
   ],
   prefix: "",
   theme: {
@@ -19,8 +20,8 @@ const config = {
       },
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+      transparent: "transparent",
+      current: "currentColor",
       white: "#F9F8FA",
       black: "#0A090C",
       primary: "#3A1A60",
@@ -47,6 +48,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
