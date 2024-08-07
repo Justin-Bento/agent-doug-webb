@@ -21,24 +21,26 @@ export default function page() {
             tempore voluptatibus aliquam?
           </p>
         </section>
-        <section id="filter" className="bg-black/10 p-2 my-4 rounded-lg ring-1 ring-black/30">
-          <ul className="flex items-center gap-4 list-none">
-            <li>
-              <Button variant="ghost" size="sm">
-                For Sale
-              </Button>
-            </li>
-            <li>
-              <Button variant="ghost" size="sm">
-                Rent
-              </Button>
-            </li>
-            <li>
-              <Button variant="ghost" size="sm">
-                For Purchase
-              </Button>
-            </li>
-          </ul>
+        <section id="filter">
+          <Card className="p-2 bg-black/15">
+            <ul className="flex items-center gap-4 list-none">
+              <li>
+                <Button variant="link" size="sm">
+                  For Sale
+                </Button>
+              </li>
+              <li>
+                <Button variant="link" size="sm">
+                  Rent
+                </Button>
+              </li>
+              <li>
+                <Button variant="link" size="sm">
+                  For Purchase
+                </Button>
+              </li>
+            </ul>
+          </Card>
         </section>
         <section id="real-estate-properties">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-14">
