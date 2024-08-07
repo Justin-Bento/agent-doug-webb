@@ -10,8 +10,8 @@ export default function page() {
   return (
     <>
       <Navigation />
-      <main className="min-h-dvh">
-        <section className="container mx-auto my-28">
+      <main className="min-h-dvh my-28 space-y-28">
+        <section className="container mx-auto">
           <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, Real-Estate process main page.</h1>
           <div className="grid grid-cols-2 gap-8 mt-16">
             <div className="overflow-hidden rounded-lg bg-white ring-1 ring-gray-900">
