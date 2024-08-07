@@ -14,7 +14,7 @@ export default function Contact() {
             <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">Contact us</h2>
             <p className="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
             <div className="md:order-2 border-b border-neutral-800 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
               <form>
                 <div className="space-y-4">

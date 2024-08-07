@@ -119,7 +119,7 @@ export default function about() {
           </div>
         </section>
         <section className="container mx-auto">
-          <div className="grid grid-cols-2 gap-8 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="bg-black aspect-square rounded-xl"></div>
             <div className="mt-4 max-w-4xl space-y-6 text-base">
               <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">Douglas J. Webb</h2>

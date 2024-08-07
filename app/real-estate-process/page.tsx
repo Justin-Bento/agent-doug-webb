@@ -13,8 +13,10 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh my-28 space-y-28">
         <section className="container mx-auto">
-          <h1 className="text-4xl tracking-tight font-bold dark:text-white">Welcome, Real-Estate process main page.</h1>
-          <div className="grid grid-cols-2 gap-8 mt-16">
+          <h1 className="text-4xl text-balance lg:text-nowrap tracking-tight font-bold dark:text-white">
+            Welcome, Real-Estate process main page.
+          </h1>
+          <div className="grid lg:grid-cols-2 gap-8 mt-16">
             <Card className="ring-1 ring-black">
               <CardHeader className="text-lg font-bold">Deciding To Buy.</CardHeader>
               <CardContent>
