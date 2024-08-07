@@ -43,8 +43,8 @@ export default function page() {
                   <Image
                     alt=""
                     fill={true}
-                    src="/media/img/photo-unsplash.avif"
-                    className="rounded-2xl object-cover ring-2 ring-black"
+                    src=""
+                    className="w-full aspect-video bg-gray-300 rounded-2xl object-cover ring-2 ring-black"
                   />
                 </div>
               </div>
@@ -169,7 +169,17 @@ export default function page() {
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Welcome to section 4</h4>
+            <Image src="" alt="" className="w-full aspect-video bg-gray-300 rounded-2xl cover ring-2 ring-black" />
+            <div className="mt-8 space-y-2">
+              <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
+                Welcome to section 4
+              </h4>
+              <p className="text-balance max-w-4xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facilis cupiditate molestias
+                dolorum deserunt dolores veniam culpa ipsum, harum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.
+              </p>
+            </div>
           </div>
         </section>
         <section className="">
