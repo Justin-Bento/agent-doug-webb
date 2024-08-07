@@ -11,7 +11,7 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh space-y-20">
         <section className="">
-          <div className="relative isolate overflow-hidden bg-gradient-to-b from-primary/5">
+          <div className="relative isolate overflow-hidden bg-gradient-to-b from-black/5">
             <div
               aria-hidden="true"
               className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-black/30 ring-1 ring-black/5 sm:-mr-80 lg:-mr-96"
@@ -19,8 +19,7 @@ export default function page() {
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
                 <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-black sm:text-5xl lg:col-span-2 xl:col-auto">
-                  <span className="text-primary">Agent Webb,</span> Your Guide to Understanding Real Estate
-                  Transactions.
+                  <span className="text-black">Agent Webb,</span> Your Guide to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                   <p className="leading-6">
@@ -30,7 +29,7 @@ export default function page() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
                     <Link href="#">
-                      <Button className="bg-primary">Schedule A Call</Button>
+                      <Button>Schedule A Call</Button>
                     </Link>
                     <Link href="/real-estate-process">
                       <Button variant="secondary" className="bg-indigo-50">
@@ -44,7 +43,7 @@ export default function page() {
                     alt=""
                     fill={true}
                     src=""
-                    className="w-full aspect-video bg-gray-300 rounded-2xl object-cover ring-2 ring-black"
+                    className="w-full aspect-video bg-black rounded-2xl object-cover ring-2 ring-black"
                   />
                 </div>
               </div>
@@ -152,7 +151,7 @@ export default function page() {
             </div>
           </div>
         </section>
-        <section className="relative overflow-hidden bg-primary py-32">
+        <section className="relative overflow-hidden bg-black py-32">
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
             <div className="max-w-3xl flex flex-col gap-3">
               <p className="">Felling Overwhelmed?</p>
@@ -169,7 +168,7 @@ export default function page() {
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <Image src="" alt="" className="w-full aspect-video bg-gray-300 rounded-2xl cover ring-2 ring-black" />
+            <Image src="" alt="" className="w-full aspect-video bg-black rounded-2xl cover ring-2 ring-black" />
             <div className="mt-8 space-y-2">
               <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
                 Welcome to section 4
@@ -244,7 +243,7 @@ export default function page() {
         </section>
         <section className="container mx-auto">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-base uppercase font-semibold leading-8 tracking-wide text-primary">Testimonials</h2>
+            <h2 className="text-base uppercase font-semibold leading-8 tracking-wide text-black">Testimonials</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
               We have worked with thousands of amazing people
             </p>
