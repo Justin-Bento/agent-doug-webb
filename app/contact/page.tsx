@@ -23,7 +23,7 @@ export default function Contact() {
                     <input
                       type="text"
                       id="hs-tac-input-name"
-                      className="peer p-4 block w-full border-transparent rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
+                      className="peer p-4 block w-full border border-black/50 rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-primary disabled:opacity-50 disabled:pointer-events-none
         focus:pt-6
         focus:pb-2
         [&:not(:placeholder-shown)]:pt-6
@@ -51,7 +51,7 @@ export default function Contact() {
                     <input
                       type="email"
                       id="hs-tac-input-email"
-                      className="peer p-4 block w-full border-transparent rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
+                      className="peer p-4 block w-full border border-black/50 rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-primary disabled:opacity-50 disabled:pointer-events-none
         focus:pt-6
         focus:pb-2
         [&:not(:placeholder-shown)]:pt-6
@@ -79,7 +79,7 @@ export default function Contact() {
                     <input
                       type="text"
                       id="hs-tac-input-company"
-                      className="peer p-4 block w-full border-transparent rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
+                      className="peer p-4 block w-full border border-black/50 rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-primary disabled:opacity-50 disabled:pointer-events-none
         focus:pt-6
         focus:pb-2
         [&:not(:placeholder-shown)]:pt-6
@@ -107,7 +107,7 @@ export default function Contact() {
                     <input
                       type="text"
                       id="hs-tac-input-phone"
-                      className="peer p-4 block w-full border-transparent rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
+                      className="peer p-4 block w-full border border-black/50 rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-primary disabled:opacity-50 disabled:pointer-events-none
         focus:pt-6
         focus:pb-2
         [&:not(:placeholder-shown)]:pt-6
@@ -134,7 +134,7 @@ export default function Contact() {
                   <div className="relative">
                     <textarea
                       id="hs-tac-message"
-                      className="peer p-4 block w-full border-transparent rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none
+                      className="peer p-4 block w-full border border-black/50 rounded-lg text-sm  placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-primary disabled:opacity-50 disabled:pointer-events-none
         focus:pt-6
         focus:pb-2
         [&:not(:placeholder-shown)]:pt-6
