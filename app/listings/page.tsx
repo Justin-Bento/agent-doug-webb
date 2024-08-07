@@ -4,6 +4,7 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function page() {
   return (
@@ -11,7 +12,7 @@ export default function page() {
       <Navigation />
       <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
         <section id="header">
-          <h1 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
+          <h1 className="text-4xl tracking-tight font-extrabold font-display capitalize dark:text-white">
             Hello world, from listing page.
           </h1>
           <p className="text-base text-balance mt-2 mb-7 dark:text-white">
@@ -57,23 +58,23 @@ export default function page() {
 
 function CardWFooter({ className }: any) {
   return (
-    <div className="divide-y divide-gray-900 overflow-hidden rounded-lg bg-white ring-1 ring-gray-900">
-      <div className="rounded-lg">
-        {/* Content goes here */}
-        <div className={cn("bg-gray-300 w-full aspect-video", className)}></div>
-      </div>
-      <div className="px-4 py-4 sm:p-6 space-y-1">
-        {/* Content goes here */}
-        <h3 className="text-lg tracking-tight font-bold dark:text-white">Whispering Pines Estate</h3>
+    <Card className="ring-1 ring-black rounded">
+      <CardHeader className="p-0 pb-6 overflow-hidden">
+        <img src="" alt="" className="w-full aspect-video bg-black rounded-t" />
+      </CardHeader>
+      <CardContent>
+        <p className="text-lg font-extrabold tracking-wide font-display">Whispering Pines Estate</p>
         <p className="line-clamp-3">
           Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern amenities and
           breathtaking forest views. Ideal for nature lovers, this charming property combines rustic elegance with
           contemporary comfort.
         </p>
+      </CardContent>
+      <CardFooter>
         <Button variant="secondary" size="sm" className="flex items-center gap-1">
           Hello World <span aria-hidden="true">→</span>
         </Button>
-      </div>
-    </div>
+      </CardFooter>
+    </Card>
   );
 }
