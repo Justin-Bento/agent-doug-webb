@@ -1,11 +1,10 @@
 import React from "react";
-import Heading from "../../components/Heading";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Listings - AgentWebb",
@@ -69,7 +68,7 @@ function CardWFooter({ className }: any) {
   return (
     <Card className="ring-1 ring-black rounded">
       <CardHeader className="p-0 pb-6 overflow-hidden">
-        <img src="" alt="" className="w-full aspect-video bg-black rounded-t" />
+        <Image src="" alt="" className="w-full aspect-video bg-black rounded-t" />
       </CardHeader>
       <CardContent>
         <p className="text-lg font-extrabold tracking-wide font-display">Whispering Pines Estate</p>
