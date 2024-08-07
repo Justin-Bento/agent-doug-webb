@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <header className="overflow-hidden border-b border-black/30 shadow shadow-black/10 sticky top-0 left-0 bg-white z-20">
+    <header className="overflow-hidden border-b border-black/10 shadow shadow-black/10 sticky top-0 left-0 bg-white z-20">
       <div className="container mx-auto flex items-center justify-between px-4 py-5 sm:p-6">
         <div id="company-logo" className="relative size-8">
           <a className="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="#">
