@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config = {
   darkMode: ["class"],
@@ -29,6 +30,9 @@ const config = {
       accent: "#B19993",
       red: colors.red,
       gray: colors.gray,
+    },
+    fontFamily: {
+      sans: ["CabinetGrotesk Variable", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       keyframes: {
