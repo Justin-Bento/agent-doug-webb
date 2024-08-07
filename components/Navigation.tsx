@@ -74,7 +74,7 @@ export default function Navigation() {
             <div className="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
               <Link
                 className="p-2 flex items-center text-sm text-black hover:underline focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                href="#"
+                href="/"
                 aria-current="page"
               >
                 <svg
@@ -96,7 +96,7 @@ export default function Navigation() {
               </Link>
               <Link
                 className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                href="#"
+                href="/about"
               >
                 <svg
                   className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
@@ -117,7 +117,7 @@ export default function Navigation() {
               </Link>
               <Link
                 className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                href="#"
+                href="/real-estate-process"
               >
                 <svg
                   className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
@@ -140,7 +140,7 @@ export default function Navigation() {
               </Link>
               <Link
                 className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-                href="#"
+                href="/contact"
               >
                 <svg
                   className="shrink-0 size-4 me-3 md:me-2 block md:hidden"
