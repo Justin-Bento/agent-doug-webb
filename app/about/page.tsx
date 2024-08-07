@@ -15,7 +15,7 @@ export default function about() {
               <h1>
                 <span className="mb-3 block font-display text-base font-semibold text-black">About us</span>
                 <span className="sr-only"> - </span>
-                <span className="mt-6 text-4xl font-bold capitalize dark:text-white">
+                <span className="mt-6 text-5xl font-bold capitalize font-display dark:text-white">
                   Our strength is collaboration
                 </span>
               </h1>
@@ -122,7 +122,7 @@ export default function about() {
           <div className="grid grid-cols-2 gap-8 items-start">
             <div className="bg-black aspect-square rounded-xl"></div>
             <div className="mt-4 max-w-4xl space-y-6 text-base">
-              <h2 className="text-4xl font-bold capitalize dark:text-white">Douglas J. Webb</h2>
+              <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">Douglas J. Webb</h2>
               <p>
                 Agent Webb is more than just one agent — it is a comprehensive platform for Real Estate Transactions.
                 This means people can access different stages of the process on the go. Whether you&#39;re buying or

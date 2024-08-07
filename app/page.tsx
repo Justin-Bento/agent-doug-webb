@@ -18,7 +18,7 @@ export default function page() {
             />
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
-                <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-black sm:text-5xl lg:col-span-2 xl:col-auto">
+                <h1 className="max-w-2xl text-4xl font-extrabold text-black sm:text-5xl lg:col-span-2 xl:col-auto font-display">
                   <span className="text-black">Agent Webb,</span> Your Guide to Understanding Real Estate Transactions.
                 </h1>
                 <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -53,7 +53,7 @@ export default function page() {
         </section>
         <section className="container mx-auto px-4 py-5 sm:p-6">
           <div className="mb-6 mx-auto max-w-2xl lg:max-w-none">
-            <h2 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
+            <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">
               Trust Our Experience and Expertise
             </h2>
             <p className="text-lg mt-1">
@@ -155,7 +155,7 @@ export default function page() {
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
             <div className="max-w-3xl flex flex-col gap-3">
               <p className="">Felling Overwhelmed?</p>
-              <h3 className=" text-4xl tracking-tight font-extrabold capitalize dark:text-white ">
+              <h3 className="text-4xl text-pretty tracking-wide font-bold capitalize font-display dark:text-white ">
                 We&#39;ll Help You and Simplify Your Real Estate Journey!
               </h3>
               <p className="">
@@ -170,9 +170,7 @@ export default function page() {
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <Image src="" alt="" className="w-full aspect-video bg-black rounded-2xl cover ring-2 ring-black" />
             <div className="mt-8 space-y-2">
-              <h4 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
-                Welcome to section 4
-              </h4>
+              <h4 className="text-4xl font-display font-extrabold capitalize dark:text-white">Welcome to section 4</h4>
               <p className="text-balance max-w-4xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facilis cupiditate molestias
                 dolorum deserunt dolores veniam culpa ipsum, harum. Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -185,7 +183,7 @@ export default function page() {
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <div className="bg-white py-24 sm:py-32">
               <div className="mx-auto max-w-2xl lg:mx-0">
-                <h5 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">
+                <h5 className="text-4xl font-display font-extrabold capitalize dark:text-white">
                   Welcome to section 5
                 </h5>
 
@@ -243,8 +241,10 @@ export default function page() {
         </section>
         <section className="container mx-auto">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-base uppercase font-semibold leading-8 tracking-wide text-black">Testimonials</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
+            <h6 className="text-sm uppercase font-semibold leading-8 tracking-wide text-black font-display">
+              Testimonials
+            </h6>
+            <p className="text-4xl font-display font-extrabold capitalize dark:text-white">
               We have worked with thousands of amazing people
             </p>
           </div>
