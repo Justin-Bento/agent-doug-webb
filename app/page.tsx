@@ -242,9 +242,32 @@ export default function page() {
             </div>
           </div>
         </section>
-        <section className="">
-          <div className="container mx-auto px-4 py-5 sm:p-6">
-            <h6 className="text-4xl tracking-tight font-extrabold capitalize dark:text-white">Welcome to section 6</h6>
+        <section className="container mx-auto">
+          <div className="mx-auto max-w-xl text-center">
+            <h2 className="text-base uppercase font-semibold leading-8 tracking-wide text-primary">Testimonials</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-black sm:text-4xl">
+              We have worked with thousands of amazing people
+            </p>
+          </div>
+          <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+            <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+                  <figure className="rounded-2xl bg-black/10 p-8 text-sm leading-6">
+                    <blockquote className="text-gray-900">
+                      <p>{`“${testimonial.body}”`}</p>
+                    </blockquote>
+                    <figcaption className="mt-6 flex items-center gap-x-4">
+                      <img alt="" src="" className="h-10 w-10 rounded-full bg-black" />
+                      <div>
+                        <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
+                        <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>
@@ -252,3 +275,49 @@ export default function page() {
     </>
   );
 }
+
+const testimonials = [
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  {
+    body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+    author: {
+      name: "Leslie Alexander",
+      handle: "lesliealexander",
+    },
+  },
+  // More testimonials...
+];
