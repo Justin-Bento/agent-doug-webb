@@ -3,6 +3,13 @@ import Footer from "../../components/Footer";
 import Heading from "../../components/Heading";
 import Navigation from "../../components/Navigation";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact - AgentWebb",
+  description:
+    "The only website that provides all the information you need about Real Estate transactions. Stay one step ahead of the process, educate yourself on upcoming procedures, and be prepared for any red flags along the way",
+};
 
 export default function Contact() {
   return (
