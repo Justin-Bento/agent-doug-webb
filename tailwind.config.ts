@@ -32,7 +32,8 @@ const config = {
       gray: colors.gray,
     },
     fontFamily: {
-      sans: ["CabinetGrotesk Variable", ...defaultTheme.fontFamily.sans],
+      sans: [defaultTheme.fontFamily.sans],
+      display: ["CabinetGrotesk Variable", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       keyframes: {
