@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const metadata: Metadata = {
   title: "Real Estate Process - AgentWebb",
@@ -34,9 +35,9 @@ export default function page() {
               <CardFooter>
                 <Link
                   href="/real-estate-process/deciding-to-buy"
-                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium"
+                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium flex items-center gap-1.5"
                 >
-                  Link To Segments &rarr;
+                  Link To Segments <AiOutlineArrowRight className="size-3" />
                 </Link>
               </CardFooter>
             </Card>
@@ -51,9 +52,9 @@ export default function page() {
               <CardFooter>
                 <Link
                   href="/real-estate-process/deciding-to-sell"
-                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium"
+                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium flex items-center gap-1.5"
                 >
-                  Link To Segments &rarr;
+                  Link To Segments <AiOutlineArrowRight className="size-3" />
                 </Link>
               </CardFooter>
             </Card>
@@ -68,9 +69,9 @@ export default function page() {
               <CardFooter>
                 <Link
                   href="/real-estate-process/more-stuff"
-                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium"
+                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium flex items-center gap-1.5"
                 >
-                  Link To Segments &rarr;
+                  Link To Segments <AiOutlineArrowRight className="size-3" />
                 </Link>
               </CardFooter>
             </Card>
@@ -85,9 +86,9 @@ export default function page() {
               <CardFooter>
                 <Link
                   href="/real-estate-process/additional-information"
-                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium"
+                  className="hover:underline active:opacity-75 text-sm tracking-tight font-medium flex items-center gap-1.5"
                 >
-                  Link To Segments &rarr;
+                  Link To Segments <AiOutlineArrowRight className="size-3" />
                 </Link>
               </CardFooter>
             </Card>
