@@ -1,8 +1,8 @@
-import Link from "next/link";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import Link from "next/link";
 import { AiTwotoneMail, AiTwotoneEnvironment, AiTwotoneNotification, AiOutlineArrowRight } from "react-icons/ai";
 
 export const metadata: Metadata = {
@@ -196,13 +196,13 @@ export default function Contact() {
                 <AiTwotoneMail className="shrink-0 size-6 text-neutral-500" />
                 <div className="grow">
                   <h4 className=" font-semibold">Email us:</h4>
-                  <a
+                  <Link
                     className="mt-1 text-neutral-400 text-sm hover:text-neutral-200 focus:outline-none focus:text-neutral-200"
                     href="#mailto:example@site.co"
                     target="_blank"
                   >
                     hello@example.so
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* End Item */}
@@ -216,13 +216,13 @@ export default function Contact() {
                     individuals like you to join us.
                   </p>
                   <p className="mt-2">
-                    <a
+                    <Link
                       className="group inline-flex items-center gap-x-2 font-medium text-sm text-black decoration-2 hover:underline focus:outline-none focus:underline"
                       href="#"
                     >
                       Job openings
                       <AiOutlineArrowRight className="size-3" />
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>
