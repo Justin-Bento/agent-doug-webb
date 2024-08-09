@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <>
       <Navigation />
-      <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-16">
+      <main className="container mx-auto min-h-dvh grid place-content-center px-4 py-5 sm:p-6 my-16">
         <section id="header">
           <div className="max-w-3xl mb-10 lg:mb-14">
             <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">Contact us</h2>

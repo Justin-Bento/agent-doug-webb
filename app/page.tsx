@@ -159,14 +159,14 @@ export default function page() {
             </div>
           </div>
         </section>
-        <section className="relative overflow-hidden bg-black dark:bg-white/70 py-32">
+        <section className="relative overflow-hidden bg-black dark:bg-white/20 py-32">
           <div className="container mx-auto px-4 py-5 sm:p-6 text-white">
             <div className="max-w-3xl flex flex-col gap-3">
-              <p className="dark:text-black/70">Felling Overwhelmed?</p>
-              <h3 className="text-4xl text-pretty tracking-wide font-bold capitalize font-display dark:text-black ">
+              <p className="dark:text-white/70">Felling Overwhelmed?</p>
+              <h3 className="text-4xl text-pretty tracking-wide font-bold capitalize font-display dark:text-white ">
                 We&#39;ll Help You and Simplify Your Real Estate Journey!
               </h3>
-              <p className="dark:text-black leading-7 trakcing-wide">
+              <p className="dark:text-white leading-7 trakcing-wide">
                 Navigating the real estate market is daunting, but you don&#39;t have to do it alone. John Webb, is here
                 to guide you through every step, from understanding the complex details to making informed decisions
                 with confidence. Discover how we can make the process smoother and stress-free for you.
@@ -259,7 +259,7 @@ export default function page() {
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
-                  <figure className="rounded-2xl bg-black/10 dark:bg-white/40 p-8 text-sm leading-6">
+                  <figure className="rounded-2xl bg-black/10 dark:bg-white/20 p-8 text-sm leading-6">
                     <blockquote className="text-gray-900 dark:text-white">
                       <p>{`“${testimonial.body}”`}</p>
                     </blockquote>
