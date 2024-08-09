@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineHome, AiOutlineUser, AiOutlineTags, AiOutlineMa
 export default function Navigation() {
   return (
     // <!-- ========== HEADER ========== -->
-    <header className="bg-white shadow shadow-black/30 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap sticky top-0 z-50 w-full p-4">
+    <header className="bg-white shadow shadow-black/30 flex flex-wrap dark:bg-black dark:border-white dark:shadow-white/30 md:justify-start md:flex-nowrap sticky top-0 z-50 w-full p-4">
       <nav className="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2">
         {/* Logo w/ Collapse Button */}
         <div className="flex items-center justify-between">
@@ -43,7 +43,7 @@ export default function Navigation() {
           <div className="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
             <div className="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
               <Link
-                className="p-2 flex items-center text-sm text-black hover:underline focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                className="p-2 flex items-center text-sm text-black hover:underline focus:text-black/60 dark:text-white dark:hover:text-white/80"
                 href="/"
                 aria-current="page"
               >
@@ -51,21 +51,21 @@ export default function Navigation() {
                 Home
               </Link>
               <Link
-                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-white dark:hover:text-white/80"
                 href="/about"
               >
                 <AiOutlineUser className="shrink-0 size-4 me-3 md:me-2 block md:hidden" />
                 About
               </Link>
               <Link
-                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-white dark:hover:text-white/80"
                 href="/real-estate-process"
               >
                 <AiOutlineTags className="shrink-0 size-4 me-3 md:me-2 block md:hidden" />
                 Real-Estate Transaction
               </Link>
               <Link
-                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                className="p-2 flex items-center text-sm text-black hover:underline focus:outline-none focus:text-black/60 dark:text-white dark:hover:text-white/80"
                 href="/contact"
               >
                 <AiOutlineMail className="shrink-0 size-4 me-3 md:me-2 block md:hidden" />
