@@ -12,12 +12,12 @@ import React, { Children } from "react";
 export default function RealEstateProcessLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <html>
-        <body>
+      <html className="">
+        <body className="">
           <Navigation />
           <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
             <section className="grid grid-cols-12 my-16">
-              <article className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch]">
+              <article className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch] space-y-16">
                 {children}
                 <Link href="/real-estate-process" className="flex items-center justify-between mt-8 border-t-2 pt-8">
                   <Button size="sm" variant="link" className="underline uppercase">

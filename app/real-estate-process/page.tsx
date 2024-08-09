@@ -25,7 +25,7 @@ export default function page() {
             Welcome, Real-Estate process main page.
           </h1>
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
-            <Card className="ring-1 ring-black">
+            <Card className="ring-1 ring-black dark:ring-white">
               <CardHeader className="text-lg font-bold">Deciding To Buy.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -42,7 +42,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black">
+            <Card className="ring-1 ring-black dark:ring-white">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -59,7 +59,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black">
+            <Card className="ring-1 ring-black dark:ring-white">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -76,7 +76,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black">
+            <Card className="ring-1 ring-black dark:ring-white">
               <CardHeader className="text-lg font-bold">Additional Information.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe

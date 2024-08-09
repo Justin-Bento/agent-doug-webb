@@ -26,7 +26,7 @@ export default function about() {
                   Our strength is collaboration
                 </span>
               </h1>
-              <div className="mt-6 max-w-3xl text-xl text-neutral-600">
+              <div className="mt-6 max-w-3xl text-xl dark:text-white">
                 <p>
                   We believe that our strength lies in our collaborative approach, which puts our clients at the center
                   of everything we do.
@@ -53,26 +53,26 @@ export default function about() {
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base text-neutral-600">Certified Real Estate investor</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl">1985</dd>
+              <dt className="mt-2 text-base dark:text-white/70">Certified Real Estate investor</dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">1985</dd>
             </div>
             <div
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base text-neutral-600">Years of experience</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl">25+</dd>
+              <dt className="mt-2 text-base dark:text-white/70">Years of experience</dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">25+</dd>
             </div>
             <div
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base text-neutral-600">Satisfied Clients and Referral</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl">70%</dd>
+              <dt className="mt-2 text-base dark:text-white/70">Satisfied Clients and Referral</dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">70%</dd>
             </div>
           </dl>
         </section>
-        <section id="company-values" className="container mx-auto bg-black rounded-xl">
+        <section id="company-values" className="container mx-auto bg-black dark:bg-white/15 rounded-xl">
           <div className="mt-24 rounded-4xl py-24 lg:py-32 ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:max-w-none">
@@ -127,7 +127,7 @@ export default function about() {
         </section>
         <section className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
-            <div className="bg-black aspect-square rounded-xl"></div>
+            <div className="bg-black aspect-square rounded-xl dark:bg-white/15" ></div>
             <div className="mt-4 max-w-4xl space-y-6 text-base">
               <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">Douglas J. Webb</h2>
               <p>

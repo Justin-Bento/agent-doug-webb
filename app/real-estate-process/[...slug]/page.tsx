@@ -19,7 +19,9 @@ export default function page({ params }: { params: { slug: string[] } }) {
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-buy") {
     return (
       <>
-        <DecidingToBuy1 />
+        <div className="space-y-16">
+          <DecidingToBuy1 />
+        </div>
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-sell") {
