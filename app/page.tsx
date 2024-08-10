@@ -21,7 +21,7 @@ export default function page() {
           <div className="relative isolate overflow-hidden bg-gradient-to-b from-black/5 dark:from-gray-900/60">
             <div
               aria-hidden="true"
-              className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-black/30 ring-1 dark:ring-gray-800 dark:bg-black dark:shadow-gray-900 sm:-mr-80 lg:-mr-96"
+              className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-black/30 ring-1 ring-black/5 dark:ring-gray-800 dark:bg-black dark:shadow-gray-900 sm:-mr-80 lg:-mr-96"
             />
             <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
