@@ -30,7 +30,7 @@ export default function Navigation() {
               ><AiOutlineMenu /></Button>
             )}
           </div>
-          <nav className={`lg:flex lg:items-center ${isOpen ? 'block' : 'hidden'}`}>
+          <nav className={`lg:flex lg:items-center lg:justify-end ${isOpen ? 'block' : 'hidden'}`}>
             <ul className="lg:flex space-y-6 my-5 lg:my-0 lg:space-x-1 lg:space-y-0">
               <li>
                 <Link href="/">
