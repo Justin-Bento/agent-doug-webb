@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import Image from "next/image";
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function about() {
-  let message: string = " ";
   return (
     <>
       <Navigation />
@@ -127,7 +125,9 @@ export default function about() {
         </section>
         <section className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
-            <div className="bg-black aspect-square rounded-xl dark:bg-white/15" ></div>
+            <div className="relative aspect-square rounded-xl dark:bg-white/15  ">
+              <Image src="/media/img/douglas-job-web.jpg" alt="Image of Douglas John Webb taking a professional photo." fill={true} className="object-fill object-center rounded-2xl ring ring-black" />
+            </div>
             <div className="mt-4 max-w-4xl space-y-6 text-base">
               <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">Douglas J. Webb</h2>
               <p>

@@ -49,7 +49,7 @@ export default function page() {
                   <Image
                     alt=""
                     fill={true}
-                    src=""
+                    src="/media/img/photo-1567532900872-f4e906cbf06a.avif"
                     className="w-full aspect-video bg-black dark:bg-white rounded-2xl object-cover ring-2 ring-black"
                   />
                 </div>
@@ -177,7 +177,9 @@ export default function page() {
         </section>
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
-            <Image src="" alt="" className="w-full aspect-video bg-black dark:bg-white/90 rounded-2xl cover ring-2 ring-black" />
+            <div className="relative w-full aspect-video">
+              <Image src="/media/img/ruby-reyes-dupe.jpeg" fill={true} alt="" className="object-cover object-top rounded-2xl ring-2 ring-black" />
+            </div>
             <div className="mt-8 space-y-2">
               <h4 className="text-4xl font-display font-extrabold capitalize dark:text-white">Welcome to section 4</h4>
               <p className="text-balance max-w-4xl">
@@ -264,8 +266,10 @@ export default function page() {
                     <blockquote className="text-gray-900 dark:text-white">
                       <p>{`“${testimonial.body}”`}</p>
                     </blockquote>
-                    <figcaption className="mt-6 flex items-center gap-x-4">
-                      <Image alt="" src="" className="h-10 w-10 rounded-full bg-black" />
+                    <figcaption className="mt-6 flex items-center gap-x-4"> 
+                      <div className="relative h-10 w-10">
+                      <Image alt="" src="/media/img/ashley-diego-dupe.jpeg" fill={true} className="object-cover object-center rounded-full" />
+                      </div>
                       <div>
                         <div className="font-semibold text-gray-900 dark:text-white">{testimonial.author.name}</div>
                         <div className="text-gray-600 dark:text-white/80">{`@${testimonial.author.handle}`}</div>
@@ -289,7 +293,7 @@ const testimonials = [
     author: {
       name: "Leslie Alexander",
       handle: "lesliealexander",
-    },
+    },    
   },
   {
     body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
