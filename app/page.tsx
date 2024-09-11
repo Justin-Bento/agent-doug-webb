@@ -36,10 +36,10 @@ export default function page() {
                   </p>
                   <div className="mt-10 flex items-center gap-x-4">
                     <Link href="#">
-                      <Button variant="primary">Schedule A Call</Button>
+                      <Button variant="primary" className="dark:text-white">Schedule A Call</Button>
                     </Link>
                     <Link href="/real-estate-process">
-                      <Button variant="secondary" className="bg-indigo-50">
+                      <Button variant="secondary" className="bg-indigo-50 dark:text-white">
                         Read Information
                       </Button>
                     </Link>
@@ -248,7 +248,7 @@ export default function page() {
           </div>
         </section>
         <section className="container mx-auto">
-          <div className="mx-auto max-w-xl text-center">
+          <div className="mx-auto max-w-xl text-start lg:text-center">
             <h6 className="text-sm uppercase font-semibold leading-8 tracking-wide text-black font-display">
               Testimonials
             </h6>
