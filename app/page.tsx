@@ -193,7 +193,6 @@ export default function page() {
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <div className="py-24 sm:py-32">
-              <div className="mx-auto max-w-2xl lg:mx-0">
                 <h5 className="text-4xl font-display font-extrabold capitalize dark:text-white">
                   Welcome to section 5
                 </h5>
@@ -201,8 +200,7 @@ export default function page() {
                   Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
                   in accusamus quisquam.
                 </p>
-              </div>
-              <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+              <dl className="mx-auto mt-16 grid grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div>
                   <dt className="font-semibold text-black dark:text-white">Push to deploy.</dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
