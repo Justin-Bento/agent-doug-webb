@@ -28,8 +28,10 @@ export default function page() {
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
+          {/* Gradient Fade at the Bottom */}
+          <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
           {/* Centered Hero Content */}
-          <div className="relative z-30 w-full min-h-dvh flex items-center justify-center px-6 sm:px-12">
+          <div className="relative z-40 w-full min-h-[100vh] flex items-center justify-center px-6 sm:px-12">
             <div className="text-start">
               <h1 className="max-w-4xl text-white text-4xl sm:text-5xl lg:text-6xl font-bold capitalize">
                 Your Guide to Understanding Real Estate Transactions.
