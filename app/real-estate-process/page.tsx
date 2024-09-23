@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import BackgroundPattern from "@/components/BackgroundPattern";
 
 export const metadata: Metadata = {
   title: "Real Estate Process - AgentWebb",
@@ -19,11 +20,16 @@ export default function page() {
   return (
     <>
       <Navigation />
-      <main className="min-h-dvh my-28 space-y-28">
+      <main className="min-h-dvh mb-28 space-y-28">
+      <section className="relative overflow-hidden max-h-[25dvh] bg-gray-200">
+          <BackgroundPattern className="w-full h-auto z-10" />
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
+            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
+              Trusted by professionals.
+            </h1>
+          </div>
+        </section>
         <section className="container mx-auto">
-          <h1 className="text-4xl text-balance lg:text-nowrap tracking-tight font-bold dark:text-white">
-            Welcome, Real-Estate process main page.
-          </h1>
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
             <Card className="ring-1 ring-black dark:ring-white">
               <CardHeader className="text-lg font-bold">Deciding To Buy.</CardHeader>

@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import Image from "next/image";
 import { Metadata } from "next";
+import BackgroundPattern from "@/components/BackgroundPattern";
 
 export const metadata: Metadata = {
   title: "About - AgentWebb",
@@ -13,7 +14,15 @@ export default function about() {
   return (
     <>
       <Navigation />
-      <main className="min-h-dvh my-24 space-y-24">
+      <main className="min-h-dvh mb-24 space-y-24">
+      <section className="relative overflow-hidden max-h-[25dvh] bg-gray-200">
+          <BackgroundPattern className="w-full h-auto z-10" />
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
+            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
+              Trusted by professionals.
+            </h1>
+          </div>
+        </section>
         <section className="container mx-auto">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div style={{ opacity: 1, transform: "none" }}>
