@@ -17,65 +17,60 @@ export default function page() {
     <>
       <Navigation />
       <main className="min-h-dvh space-y-20">
-        <section className="">
-          <div className="relative isolate overflow-hidden bg-gradient-to-b from-black/5 dark:from-gray-900/60">
-            <div
-              aria-hidden="true"
-              className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-black/30 ring-1 ring-black/5 dark:ring-gray-800 dark:bg-black dark:shadow-gray-900 sm:-mr-80 lg:-mr-96"
+        <section className="relative w-full min-h-[100vh] bg-black">
+          {/* Background Image */}
+          <div className="absolute z-10 w-full h-full">
+            <Image
+              fill
+              src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.png"
+              alt="hero-background"
+              className="object-cover object-center"
+              priority={true}
             />
-            <div className="container mx-auto px-6 py-32 sm:py-40 lg:px-8">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-balance">
-                <h1 className="max-w-2xl text-4xl font-extrabold text-black sm:text-5xl lg:col-span-2 xl:col-auto font-display dark:text-white">
-                  <span className="text-black dark:text-white">Agent Webb,</span> Your Guide to Understanding Real Estate Transactions.
-                </h1>
-                <div className="mt-4 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                  <p className="leading-6 dark:text-white">
-                    Welcome to Agent Webb, John Webb is a real estate agent with 20+ years of experience. This websites
-                    shares his information about the Real Estate transaction, one place, and guiding you to take you
-                    through the Real Estate transaction process from start to finish.
-                  </p>
-                  <div className="mt-10 flex items-center gap-x-4">
-                    <Link href="#">
-                      <Button variant="primary" className="dark:text-white">Schedule A Call</Button>
-                    </Link>
-                    <Link href="/real-estate-process">
-                      <Button variant="secondary" className="bg-indigo-50 dark:text-white">
-                        Read Information
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-                <div className="mt-10 relative aspect-[6/5] w-full max-w-lg sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36">
-                  <Image
-                    alt=""
-                    fill={true}
-                    src="/media/img/photo-1567532900872-f4e906cbf06a.avif"
-                    className="w-full aspect-video bg-black dark:bg-white rounded-2xl object-cover ring-2 ring-black"
-                  />
-                </div>
-              </div>
+          </div>
+
+          {/* Dark Overlay */}
+          <div className="absolute z-20 w-full h-full bg-black/80"></div>
+
+          {/* Centered Hero Content */}
+          <div className="relative z-30 w-full min-h-dvh flex items-center justify-center px-6 sm:px-12">
+            <div className="text-start">
+              <h1 className="max-w-4xl text-white text-4xl sm:text-5xl lg:text-6xl font-bold capitalize">
+                Your Guide to Understanding Real Estate Transactions.
+              </h1>
+              <p className="mt-4 max-w-4xl text-xl sm:text-2xl font-medium text-white leading-relaxed mx-auto">
+                Radiant helps you sell more by revealing sensitive information
+                about your customers.
+              </p>
+              {/* Call to Action */}
             </div>
-            <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white dark:from-transparent sm:h-32" />
           </div>
         </section>
-        {/* End of Hero Section For Website */}
+
         <section className="container mx-auto px-4 py-5 sm:p-6">
           <div className="mb-6 mx-auto max-w-2xl lg:max-w-none">
             <h2 className="text-4xl font-extrabold capitalize font-display dark:text-white">
               Trust Our Experience and Expertise
             </h2>
             <p className="text-lg mt-1">
-              Our certifications reflect our commitment to trust, quality, and excellence in every real estate
-              transaction.
+              Our certifications reflect our commitment to trust, quality, and
+              excellence in every real estate transaction.
             </p>
           </div>
           <div className=" relative overflow-hidden mx-auto max-w-7xl px-6 lg:px-8 mt-16">
             <div className="mx-auto max-w-2xl lg:max-w-none">
               <div className="lg:flex lg:items-center lg:justify-end">
                 <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-                  <div className="w-[33.75rem] flex-none lg:w-[45rem]" style={{ opacity: 1, transform: "none" }}>
+                  <div
+                    className="w-[33.75rem] flex-none lg:w-[45rem]"
+                    style={{ opacity: 1, transform: "none" }}
+                  >
                     <div className="justify-center lg:justify-end relative flex aspect-[719/680] w-full grayscale">
-                      <svg viewBox="0 0 655 680" fill="none" className="w-full h-auto">
+                      <svg
+                        viewBox="0 0 655 680"
+                        fill="none"
+                        className="w-full h-auto"
+                      >
                         <g clipPath="url(#:S1:-clip)" className="group">
                           <g className="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
                             <foreignObject width="655" height="680">
@@ -96,7 +91,11 @@ export default function page() {
                               />
                             </foreignObject>
                           </g>
-                          <use href="#:S1:-shape" strokeWidth="2" className="stroke-white/10"></use>
+                          <use
+                            href="#:S1:-shape"
+                            strokeWidth="2"
+                            className="stroke-white/10"
+                          ></use>
                         </g>
                         <defs>
                           <clipPath id=":S1:-clip">
@@ -109,7 +108,6 @@ export default function page() {
                           </clipPath>
                         </defs>
                       </svg>
-
                     </div>
                   </div>
                 </div>
@@ -121,36 +119,50 @@ export default function page() {
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold dark:text-white mr-1">Web development.</strong>
-                          We specialise in crafting beautiful, high quality marketing pages. The rest of the website
-                          will be a shell that uses lorem ipsum everywhere.
+                          <strong className="font-semibold dark:text-white mr-1">
+                            Web development.
+                          </strong>
+                          We specialise in crafting beautiful, high quality
+                          marketing pages. The rest of the website will be a
+                          shell that uses lorem ipsum everywhere.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold dark:text-white   mr-1">Application development.</strong>
-                          We have a team of skilled developers who are experts in the latest app frameworks, like
-                          Angular 1 and Google Web Toolkit.
+                          <strong className="font-semibold dark:text-white   mr-1">
+                            Application development.
+                          </strong>
+                          We have a team of skilled developers who are experts
+                          in the latest app frameworks, like Angular 1 and
+                          Google Web Toolkit.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold dark:text-white mr-1">E-commerce.</strong>
-                          We are at the forefront of modern e-commerce development. Which mainly means adding your logo
-                          to the Shopify store template we’ve used for the past six years.
+                          <strong className="font-semibold dark:text-white mr-1">
+                            E-commerce.
+                          </strong>
+                          We are at the forefront of modern e-commerce
+                          development. Which mainly means adding your logo to
+                          the Shopify store template we’ve used for the past six
+                          years.
                         </div>
                       </div>
                     </li>
                     <li className="group mt-10 first:mt-0">
                       <div style={{ opacity: 1, transform: "none" }}>
                         <div className="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-white after:bg-white/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
-                          <strong className="font-semibold dark:text-white mr-1">Custom content management.</strong>
-                          At Studio we understand the importance of having a robust and customised CMS. That’s why we
-                          run all of our client projects out of a single, enormous Joomla instance.
+                          <strong className="font-semibold dark:text-white mr-1">
+                            Custom content management.
+                          </strong>
+                          At Studio we understand the importance of having a
+                          robust and customised CMS. That’s why we run all of
+                          our client projects out of a single, enormous Joomla
+                          instance.
                         </div>
                       </div>
                     </li>
@@ -168,9 +180,11 @@ export default function page() {
                 We&#39;ll Help You and Simplify Your Real Estate Journey!
               </h3>
               <p className="dark:text-white leading-7 trakcing-wide">
-                Navigating the real estate market is daunting, but you don&#39;t have to do it alone. John Webb, is here
-                to guide you through every step, from understanding the complex details to making informed decisions
-                with confidence. Discover how we can make the process smoother and stress-free for you.
+                Navigating the real estate market is daunting, but you don&#39;t
+                have to do it alone. John Webb, is here to guide you through
+                every step, from understanding the complex details to making
+                informed decisions with confidence. Discover how we can make the
+                process smoother and stress-free for you.
               </p>
             </div>
           </div>
@@ -178,14 +192,22 @@ export default function page() {
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <div className="relative w-full aspect-video">
-              <Image src="/media/img/ruby-reyes-dupe.jpeg" fill={true} alt="" className="object-cover object-top rounded-2xl ring-2 ring-black" />
+              <Image
+                src="/media/img/ruby-reyes-dupe.jpeg"
+                fill={true}
+                alt=""
+                className="object-cover object-top rounded-2xl ring-2 ring-black"
+              />
             </div>
             <div className="mt-8 space-y-2">
-              <h4 className="text-4xl font-display font-extrabold capitalize dark:text-white">Welcome to section 4</h4>
+              <h4 className="text-4xl font-display font-extrabold capitalize dark:text-white">
+                Welcome to section 4
+              </h4>
               <p className="text-balance max-w-4xl">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum facilis cupiditate molestias
-                dolorum deserunt dolores veniam culpa ipsum, harum. Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatum facilis cupiditate molestias dolorum deserunt dolores
+                veniam culpa ipsum, harum. Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit.
               </p>
             </div>
           </div>
@@ -193,54 +215,72 @@ export default function page() {
         <section className="">
           <div className="container mx-auto px-4 py-5 sm:p-6">
             <div className="py-24 sm:py-32">
-                <h5 className="text-4xl font-display font-extrabold capitalize dark:text-white">
-                  Welcome to section 5
-                </h5>
-                <p className="mt-3 text-lg leading-7 tracking-wide text-black dark:text-white/80">
-                  Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-                  in accusamus quisquam.
-                </p>
+              <h5 className="text-4xl font-display font-extrabold capitalize dark:text-white">
+                Welcome to section 5
+              </h5>
+              <p className="mt-3 text-lg leading-7 tracking-wide text-black dark:text-white/80">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+                magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              </p>
               <dl className="mx-auto mt-16 grid grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">Push to deploy.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    Push to deploy.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia.
-                    Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.
+                    Aut illo quae. Ut et harum ea animi natus. Culpa maiores et
+                    sed sint et magnam exercitationem quia. Ullam voluptas nihil
+                    vitae dicta molestiae et. Aliquid velit porro vero.
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">SSL certificates.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    SSL certificates.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque
-                    cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.
+                    Mollitia delectus a omnis. Quae velit aliquid. Qui nulla
+                    maxime adipisci illo id molestiae. Cumque cum ut minus rerum
+                    architecto magnam consequatur. Quia quaerat minima.
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">Simple queues.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    Simple queues.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum.
-                    Commodi autem voluptatem nam. Quos voluptatem totam.
+                    Aut repellendus et officiis dolor possimus. Deserunt velit
+                    quasi sunt fuga error labore quia ipsum. Commodi autem
+                    voluptatem nam. Quos voluptatem totam.
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">Advanced security.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    Advanced security.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus.
-                    Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.
+                    Magnam provident veritatis odit. Vitae eligendi repellat
+                    non. Eum fugit impedit veritatis ducimus. Non qui aspernatur
+                    laudantium modi. Praesentium rerum error deserunt harum.
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">Powerful API.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    Powerful API.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt
-                    dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.
+                    Sit minus expedita quam in ullam molestiae dignissimos in
+                    harum. Tenetur dolorem iure. Non nesciunt dolorem veniam
+                    necessitatibus laboriosam voluptas perspiciatis error.
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-black dark:text-white">Database backups.</dt>
+                  <dt className="font-semibold text-black dark:text-white">
+                    Database backups.
+                  </dt>
                   <dd className="mt-1 text-black/80 tracking-wide leading-6 dark:text-white/80">
-                    Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus
-                    reprehenderit iste aspernatur ut est velit consequatur distinctio.
+                    Ipsa in earum deserunt aut. Quos minus aut animi et soluta.
+                    Ipsum dicta ut quia eius. Possimus reprehenderit iste
+                    aspernatur ut est velit consequatur distinctio.
                   </dd>
                 </div>
               </dl>
@@ -259,17 +299,27 @@ export default function page() {
           <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
             <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
               {testimonials.map((testimonial) => (
-                <div key={testimonial.author.handle} className="pt-8 sm:inline-block sm:w-full sm:px-4">
+                <div
+                  key={testimonial.author.handle}
+                  className="pt-8 sm:inline-block sm:w-full sm:px-4"
+                >
                   <figure className="rounded-2xl bg-black/10 dark:bg-white/20 p-8 text-sm leading-6">
                     <blockquote className="text-gray-900 dark:text-white">
                       <p>{`“${testimonial.body}”`}</p>
                     </blockquote>
-                    <figcaption className="mt-6 flex items-center gap-x-4"> 
+                    <figcaption className="mt-6 flex items-center gap-x-4">
                       <div className="relative h-10 w-10">
-                      <Image alt="" src="/media/img/ashley-diego-dupe.jpeg" fill={true} className="object-cover object-center rounded-full" />
+                        <Image
+                          alt=""
+                          src="/media/img/ashley-diego-dupe.jpeg"
+                          fill={true}
+                          className="object-cover object-center rounded-full"
+                        />
                       </div>
                       <div>
-                        <div className="font-semibold text-black  dark:text-white">{testimonial.author.name}</div>
+                        <div className="font-semibold text-black  dark:text-white">
+                          {testimonial.author.name}
+                        </div>
                         <div className="text-gray-600 dark:text-white/80">{`@${testimonial.author.handle}`}</div>
                       </div>
                     </figcaption>
@@ -291,7 +341,7 @@ const testimonials = [
     author: {
       name: "Leslie Alexander",
       handle: "lesliealexander",
-    },    
+    },
   },
   {
     body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
