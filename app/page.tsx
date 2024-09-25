@@ -69,15 +69,14 @@ export default function page() {
               Everything you need for the Real-Estate Transaction Process.
             </h2>
           </div>
-          <div className="w-full grid grid-cols-12 gap-x-20">
-            <div className="col-span-5 flex justify-center">
+          <div className="w-full grid grid-cols-12 gap-x-20 mt-16">
+            <div className="col-span-5 flex justify-center relative min-h-[75vh]">
               {" "}
               {/* Center the image */}
               <Image
-                width={580} // Fixed width for the image poster
-                height={900} // Allow height to adjust automatically
+                fill
                 src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
-                className="object-cover h-auto max-h-[100vh]" // Ensure it maintains aspect ratio
+                className="object-cover object-center h-auto max-h-[100vh] rounded" // Ensure it maintains aspect ratio
                 alt="rough ocean water"
               />
             </div>
