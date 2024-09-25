@@ -1,9 +1,9 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "AgentWebb",
@@ -18,7 +18,7 @@ export default function page() {
       <main className="min-h-dvh space-y-20">
         <section className="relative w-full min-h-[100vh] bg-black">
           <div className="absolute z-10 w-full h-full">
-            {/* Background Image */}
+            <Image  fill src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg" alt=""/>
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
