@@ -111,8 +111,43 @@ export default function page() {
           </div>
         </section>
         {/* End of Section 03 */}
+        <section className="relative w-full min-h-[100vh] bg-primary">
+          <div className="absolute z-10 w-full h-full">
+            {/* Background Image */}
+          </div>
+          {/* Dark Overlay */}
+          <div className="absolute z-20 w-full h-full bg-black/80"></div>
+          {/* Gradient Fade at the Bottom */}
+          <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
+          {/* Centered Hero Content */}
+          <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
+            <div className="text-start">
+              <p className="text-base font-semibold leading-7 text-accent">
+                Get the help you need
+              </p>
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-white sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
+                Your Guide to the Real Estate Transaction Process
+              </h1>
+              <p className="mt-4 max-w-3xl text-balance text-md leading-7 text-gray-300">
+                Be one step ahead of real-estate transactions with our un-biased
+                guide. As we give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags along the
+                way.
+              </p>
+              <span className="block mt-8 space-x-4">
+                <Link
+                  href="#"
+                  className="relative inline-flex items-center justify-center px-4 py-[calc(theme(spacing.2)-1px)] rounded-full border border-transparent bg-white/15 shadow-md ring-1 ring-[#D15052]/15 after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d] whitespace-nowrap text-base font-medium text-white data-[disabled]:bg-white/15 data-[hover]:bg-white/20 data-[disabled]:opacity-40"
+                >
+                  Contact Now
+                </Link>
+              </span>
+            </div>
+          </div>
+        </section>
       </main>
-      <Footer className="mt-36" />
+      <Footer className="mt-0" />
     </>
   );
 }
