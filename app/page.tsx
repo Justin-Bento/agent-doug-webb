@@ -63,6 +63,24 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area  */}
+        <section className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]">
+          {/* Title Section */}
+          <div className="col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
+            <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
+              Quick Introduction
+            </h2>
+            {/* Divider */}
+            <div className="w-full max-w-[6rem] ring-1 ring-black"></div>
+            <p className="max-w-3xl text-lg text-center">
+              Doug began his journey in residential investment real estate in
+              1986, which eventually led to a full-time career in real estate
+              sales in 1997 with RE/MAX. To offer the level of service that both
+              he and his clients valued, Doug transitioned to Right At Home
+              Realty.
+            </p>
+          </div>
+        </section>
+        {/* End of Sub-Hero Area - Quick Section */}
         <section className="relative wrapper">
           <div className="p-3 max-w-4xl mx-auto text-center">
             <h2 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-6xl">
@@ -102,26 +120,7 @@ export default function page() {
             </div>
           </div>
         </section>
-
-        {/* End of Sub-Hero Area - RELT */}
-        <section className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]">
-          {/* Title Section */}
-          <div className="col-span-12 flex flex-col items-start justify-center min-h-[25vh] gap-6">
-            <h2 className="max-w-3xl font-display  text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
-              Quick Introduction
-            </h2>
-            {/* Divider */}
-            <div className="w-full max-w-[6rem] ring-1 ring-black"></div>
-            <p className="max-w-3xl text-lg">
-              Doug began his journey in residential investment real estate in
-              1986, which eventually led to a full-time career in real estate
-              sales in 1997 with RE/MAX. To offer the level of service that both
-              he and his clients valued, Doug transitioned to Right At Home
-              Realty.
-            </p>
-          </div>
-        </section>
-        {/* End of Sub-Hero Area  */}
+        {/* End of Sub-Hero Area - Real Estate Transaction Process */}
         <section className="grid grid-cols-12 gap-4 wrapper">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
