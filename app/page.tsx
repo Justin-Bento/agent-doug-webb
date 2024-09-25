@@ -18,7 +18,12 @@ export default function page() {
       <main className="min-h-dvh space-y-20">
         <section className="relative w-full min-h-[100vh]">
           <div className="absolute z-10 w-full h-full overflow-hidden">
-            <Image fill src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg" alt="" className=" object-fill object-bottom"/>
+            <Image
+              fill
+              src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg"
+              alt=""
+              className=" object-fill object-bottom"
+            />
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
@@ -59,15 +64,21 @@ export default function page() {
         </section>
         {/* End of Landing Area  */}
         <section className="wrapper min-h-dvh">
-            <h2 className="max-w-4xl capitalize font-display text-balance text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
-              Everything you need for the Real-Estate Transaction Process.
-            </h2>
-            <p className="mt-4 max-w-5xl text-balance">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?</p>
-                      {/* <!-- Divider --> */}
-                      <div className="flex items-center gap-2">
-              <p className="font-mono text-sm uppercase tracking-wide">01</p>
-              <span className="block my-6 w-40 max-w-[6rem] ring-1 ring-black"></span>
-            </div>
+          <h2 className="max-w-4xl capitalize font-display text-balance text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
+            Everything you need for the Real-Estate Transaction Process.
+          </h2>
+          <p className="mt-4 max-w-5xl text-balance">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed
+            aliquam labore possimus dignissimos exercitationem neque, tenetur
+            iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+            quibusdam autem ex voluptas architecto? Inventore reprehenderit est
+            eius, aliquid illum vero?
+          </p>
+          {/* <!-- Divider --> */}
+          <div className="flex items-center gap-2">
+            <p className="font-mono text-sm uppercase tracking-wide">01</p>
+            <span className="block my-6 w-40 max-w-[6rem] ring-1 ring-black"></span>
+          </div>
         </section>
         <section
           id="02"
@@ -100,7 +111,10 @@ export default function page() {
           {/* <!-- Divider --> */}
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
-          <ul role="list" className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul
+            role="list"
+            className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          >
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
@@ -125,7 +139,12 @@ export default function page() {
         <section className="relative w-full min-h-[100vh]">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
-            <Image fill src="/media/img/patrick-tomasso-gMes5dNykus-unsplash.jpg" alt="" className="object-cover object-bottom"/>
+            <Image
+              fill
+              src="/media/img/patrick-tomasso-gMes5dNykus-unsplash.jpg"
+              alt=""
+              className="object-cover object-bottom"
+            />
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
