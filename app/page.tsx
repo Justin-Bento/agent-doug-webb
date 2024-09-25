@@ -68,7 +68,7 @@ export default function page() {
               Quick Introduction
             </h2>
             {/* Divider */}
-            <div className="mx-auto w-full max-w-[6rem] ring ring-black"></div>
+            <div className="mx-auto w-full max-w-[6rem] ring-1 ring-black"></div>
             <p className="max-w-3xl mx-auto text-lg text-center">
               Doug began his journey in residential investment real estate in
               1986, which eventually led to a full-time career in real estate
@@ -87,7 +87,7 @@ export default function page() {
             </h1>
           </div>
           {/* <!-- Divider --> */}
-          <div className="col-span-12 mx-auto mb-6 mt-3 w-full max-w-[6rem] ring ring-black"></div>
+          <div className="col-span-12 mx-auto mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <div className="col-span-12 grid grid-cols-3 gap-4">
             <div className="bg-black aspect-square">&nbsp;</div>
