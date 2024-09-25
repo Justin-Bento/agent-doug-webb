@@ -64,7 +64,7 @@ export default function page() {
         >
           {/* Title Section */}
           <div className="col-span-12 flex flex-col items-center text-center justify-center min-h-[25vh] gap-6">
-            <h2 className="text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize text-center">
+            <h2 className="mx-auto max-w-3xl font-display  text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
               Quick Introduction
             </h2>
             {/* Divider */}
@@ -82,7 +82,7 @@ export default function page() {
         <section className="grid grid-cols-12 gap-4 mx-auto container px-4 sm:px-6 lg:px-8">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
-            <h1 className="text-balance mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize text-center">
+            <h1 className="mx-auto max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl sm:text-center">
               View Listings
             </h1>
           </div>
