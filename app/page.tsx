@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "AgentWebb",
@@ -29,14 +30,30 @@ export default function page() {
               <p className="text-base font-semibold leading-7 text-accent">
                 Get the help you need
               </p>
-              <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-50 sm:text-6xl">
-                Support center
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-white sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
+                Your Guide to the Real Estate Transaction Process
               </h1>
               <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-gray-300">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Be one step ahead of real-estate transactions with our un-biased
+                guide. As we give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags along the
+                way.
               </p>
+              <span className="block mt-8 space-x-4">
+                <Link
+                  href="#"
+                  className="inline-flex items-center justify-center px-4 py-[calc(theme(spacing.2)-1px)] rounded-full border border-transparent bg-white shadow-md whitespace-nowrap text-base font-medium text-black data-[disabled]:bg-gray-950 data-[hover]:bg-white/80 data-[disabled]:opacity-40"
+                >
+                  Get started
+                </Link>
+                <Link
+                  href="#"
+                  className="relative inline-flex items-center justify-center px-4 py-[calc(theme(spacing.2)-1px)] rounded-full border border-transparent bg-white/15 shadow-md ring-1 ring-[#D15052]/15 after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d] whitespace-nowrap text-base font-medium text-white data-[disabled]:bg-white/15 data-[hover]:bg-white/20 data-[disabled]:opacity-40"
+                >
+                  See pricing
+                </Link>
+              </span>
             </div>
           </div>
         </section>
