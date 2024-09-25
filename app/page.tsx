@@ -105,10 +105,7 @@ export default function page() {
         </section>
 
         {/* End of Sub-Hero Area - RELT */}
-        <section
-          id="02"
-          className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]"
-        >
+        <section className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]">
           {/* Title Section */}
           <div className="col-span-12 flex flex-col items-start justify-center min-h-[25vh] gap-6">
             <h2 className="max-w-3xl font-display  text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
@@ -136,10 +133,7 @@ export default function page() {
           {/* <!-- Divider --> */}
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
-          <ul
-            role="list"
-            className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-          >
+          <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
             <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
@@ -152,10 +146,7 @@ export default function page() {
           </ul>
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
-            <button
-              type="button"
-              className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
+            <button className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
               View More
             </button>
           </div>
