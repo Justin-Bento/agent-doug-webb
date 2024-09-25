@@ -31,7 +31,7 @@ export default function page() {
           {/* Gradient Fade at the Bottom */}
           <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
           {/* Centered Hero Content */}
-          <div className="relative z-40 w-full min-h-[100vh] flex items-center justify-center px-6 sm:px-12">
+          <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
               <h1 className="max-w-4xl text-white text-4xl sm:text-5xl lg:text-6xl font-bold capitalize">
                 Your Guide to Understanding Real Estate Transactions.
@@ -45,7 +45,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Section 01 */}
-        <section className="container mx-auto">
+        <section className="mx-auto container px-4 sm:px-6 lg:px-8">
           <h2 className="max-w-3xl text-balance text-4xl sm:text-5xl lg:text-5xl font-bold capitalize">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h2>
