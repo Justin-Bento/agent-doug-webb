@@ -111,7 +111,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Content Area  */}
-        <section className="relative w-full min-h-[100vh] bg-secondary">
+        <section className="relative w-full min-h-[100vh]">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image fill src="/media/img/patrick-tomasso-gMes5dNykus-unsplash.jpg" alt="" className="object-cover object-bottom"/>
