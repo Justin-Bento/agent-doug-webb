@@ -16,7 +16,7 @@ export default function page() {
     <>
       <Navigation />
       <main className="min-h-dvh space-y-20">
-        <section className="relative w-full min-h-[100vh] bg-black">
+        <section className="relative w-full min-h-[100vh]">
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image fill src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg" alt="" className=" object-fill object-bottom"/>
           </div>
@@ -57,7 +57,7 @@ export default function page() {
             </div>
           </div>
         </section>
-        {/* End of Section 01 */}
+        {/* End of Landing Area  */}
         <section
           id="02"
           className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]"
@@ -78,7 +78,7 @@ export default function page() {
             </p>
           </div>
         </section>
-        {/* End of Section 02 */}
+        {/* End of Sub-Hero Area  */}
         <section className="grid grid-cols-12 gap-4 wrapper">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
@@ -110,7 +110,7 @@ export default function page() {
             </button>
           </div>
         </section>
-        {/* End of Section 03 */}
+        {/* End of Content Area  */}
         <section className="relative w-full min-h-[100vh] bg-secondary">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
@@ -147,6 +147,7 @@ export default function page() {
             </div>
           </div>
         </section>
+        {/* End of Listings Area  */}
       </main>
       <Footer className="mt-0" />
     </>
