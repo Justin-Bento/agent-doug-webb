@@ -49,7 +49,7 @@ export default function page() {
         </section>
         {/* End of Section 01 */}
         <section className="mx-auto container px-4 sm:px-6 lg:px-8">
-          <h2 className="max-w-3xl text-balance text-4xl sm:text-5xl lg:text-5xl font-bold capitalize">
+          <h2 className="max-w-5xl text-balance mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h2>
           <p className="mt-4 max-w-5xl text-balance text-lg leading-6 text-gray-900">
