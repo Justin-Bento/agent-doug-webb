@@ -62,7 +62,7 @@ export default function page() {
             quisquam quasi est, iste minima?
           </p>
           <div className="border border-gray-900 max-w-32 mt-8"></div>
-          <div className="w-96 aspect-square bg-gray-200 mt-12"></div>
+          <div className="w-96 aspect-square bg-black mt-12"></div>
         </section>
         {/* End of Section 02 */}
         <section className="grid grid-cols-12 gap-4 mx-auto container px-4 sm:px-6 lg:px-8">
