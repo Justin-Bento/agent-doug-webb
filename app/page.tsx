@@ -52,7 +52,7 @@ export default function page() {
           <h2 className="max-w-3xl text-balance text-4xl sm:text-5xl lg:text-5xl font-bold capitalize">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h2>
-          <p className="max-w-4xl text-sm tracking-wide text-balance mt-4">
+          <p className="mt-4 max-w-5xl text-balance text-lg leading-6 text-gray-900">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ut
             repellat reprehenderit provident obcaecati sapiente excepturi ad
             alias, delectus dolorem, natus aliquam voluptatem beatae illo
