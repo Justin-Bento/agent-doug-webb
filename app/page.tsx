@@ -81,10 +81,9 @@ export default function page() {
               Everything you need for the Real-Estate Transaction Process.
             </h2>
           </div>
+          {/*  End of Sub-Hero Area - Title - Real Estate Transaction Process */}
           <div className="w-full grid grid-cols-12 gap-x-20 mt-16">
             <div className="col-span-5 flex justify-center relative min-h-[75vh]">
-              {" "}
-              {/* Center the image */}
               <Image
                 fill
                 src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
@@ -92,8 +91,9 @@ export default function page() {
                 alt="rough ocean water"
               />
             </div>
-            <div className="col-span-6 flex flex-col items-center justify-center gap-12 overflow-y-auto">
-              <div>
+            {/*  End of Sub-Hero Area - Media - Real Estate Transaction Process */}
+            <div className="col-span-6 space-y-6 overflow-y-scroll max-h-[80dvh]">
+              <div className="w-full h-[80dvh] grid place-content-center">
                 <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
                   Everything you need for the Real-Estate Transaction Process.
                 </h3>
@@ -107,7 +107,84 @@ export default function page() {
                   <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
                 </div>
               </div>
+              {/*  End of Sub-Hero Area - Content (Idea #1) - Real Estate Transaction Process */}
+              <div className="w-full h-[80dvh] grid place-content-center">
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+              {/*  End of Sub-Hero Area - Content (Idea #2) - Real Estate Transaction Process */}
+              <div className="w-full h-[80dvh] grid place-content-center">
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+              {/*  End of Sub-Hero Area - Content (Idea #3) - Real Estate Transaction Process */}
+              <div className="w-full h-[80dvh] grid place-content-center">
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+              {/*  End of Sub-Hero Area - Content (Idea #4) - Real Estate Transaction Process */}
+              <div className="w-full h-[80dvh] grid place-content-center">
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+              {/*  End of Sub-Hero Area - Content (Idea #5) - Real Estate Transaction Process */}
+              <div className="w-full h-[80dvh] grid place-content-center">
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+              {/*  End of Sub-Hero Area - Content (Idea #6) - Real Estate Transaction Process */}
             </div>
+            {/*  End of Sub-Hero Area - Content - Real Estate Transaction Process */}
           </div>
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
