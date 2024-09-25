@@ -17,8 +17,8 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh space-y-20">
         <section className="relative w-full min-h-[100vh] bg-black">
-          <div className="absolute z-10 w-full h-full">
-            <Image  fill src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg" alt=""/>
+          <div className="absolute z-10 w-full h-full overflow-hidden">
+            <Image fill src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg" alt="" className=" object-fill object-bottom"/>
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
