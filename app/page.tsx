@@ -48,7 +48,10 @@ export default function page() {
           </div>
         </section>
         {/* End of Section 01 */}
-        <section className="mx-auto container px-4 sm:px-6 lg:px-8">
+        <section
+          id="listings"
+          className="mx-auto container px-4 sm:px-6 lg:px-8"
+        >
           <h2 className="max-w-5xl text-balance mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h2>
@@ -62,6 +65,38 @@ export default function page() {
           <div className="w-96 aspect-square bg-gray-200 mt-12"></div>
         </section>
         {/* End of Section 02 */}
+        <section className="grid grid-cols-12 gap-4 mx-auto container px-4 sm:px-6 lg:px-8">
+          {/* <!-- Title Section --> */}
+          <div className="col-span-12 w-full">
+            <h1 className="text-balance mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize text-center">
+              View Listings
+            </h1>
+          </div>
+          {/* <!-- Divider --> */}
+          <div className="col-span-12 mx-auto mb-6 mt-3 w-full max-w-[6rem] ring ring-black"></div>
+          {/* <!-- 3x3 Grid Section --> */}
+          <div className="col-span-12 grid grid-cols-3 gap-4">
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+            <div className="bg-black aspect-square">&nbsp;</div>
+          </div>
+          {/* <!-- Loader --> */}
+          <div className="col-span-12 text-center mt-8">
+            <button
+              type="button"
+              className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            >
+              View More
+            </button>
+          </div>
+        </section>
+        {/* End of Section 03 */}
       </main>
       <Footer className="mt-36" />
     </>
