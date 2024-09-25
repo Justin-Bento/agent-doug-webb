@@ -89,17 +89,17 @@ export default function page() {
           {/* <!-- Divider --> */}
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
-          <div className="col-span-12 grid grid-cols-3 gap-4">
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-            <div className="bg-black aspect-square">&nbsp;</div>
-          </div>
+          <ul role="list" className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+            <li className="bg-black aspect-square">&nbsp;</li>
+          </ul>
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
             <button
