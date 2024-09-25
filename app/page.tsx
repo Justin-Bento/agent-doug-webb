@@ -33,14 +33,17 @@ export default function page() {
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <h1 className="max-w-4xl text-white text-4xl sm:text-5xl lg:text-6xl font-bold capitalize">
-                Your Guide to Understanding Real Estate Transactions.
-              </h1>
-              <p className="mt-4 max-w-4xl text-xl sm:text-2xl font-medium text-white leading-relaxed mx-auto">
-                Radiant helps you sell more by revealing sensitive information
-                about your customers.
+              <p className="text-base font-semibold leading-7 text-accent">
+                Get the help you need
               </p>
-              {/* Call to Action */}
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-50 sm:text-6xl">
+                Support center
+              </h1>
+              <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-gray-300">
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat aliqua.
+              </p>
             </div>
           </div>
         </section>
