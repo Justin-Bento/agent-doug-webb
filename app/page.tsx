@@ -111,7 +111,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Section 03 */}
-        <section className="relative w-full min-h-[100vh] bg-primary">
+        <section className="relative w-full min-h-[100vh] bg-secondary">
           <div className="absolute z-10 w-full h-full">
             {/* Background Image */}
           </div>
@@ -128,7 +128,7 @@ export default function page() {
               <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-white sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
                 Your Guide to the Real Estate Transaction Process
               </h1>
-              <p className="mt-4 max-w-3xl text-balance text-md leading-7 text-gray-300">
+              <p className="mt-4 max-w-3xl text-balance text-md leading- text-gray-300">
                 Be one step ahead of real-estate transactions with our un-biased
                 guide. As we give you an unfiltered guide about the Real-Estate
                 Transaction without any favoritism so you can be educated on the
