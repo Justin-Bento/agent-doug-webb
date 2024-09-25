@@ -63,23 +63,48 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area  */}
-        <section className="wrapper min-h-dvh">
-          <h2 className="max-w-4xl capitalize font-display text-balance text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
-            Everything you need for the Real-Estate Transaction Process.
-          </h2>
-          <p className="mt-4 max-w-5xl text-balance">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed
-            aliquam labore possimus dignissimos exercitationem neque, tenetur
-            iste dolor quod quam officiis similique magnam ad, sequi corporis ea
-            quibusdam autem ex voluptas architecto? Inventore reprehenderit est
-            eius, aliquid illum vero?
-          </p>
-          {/* <!-- Divider --> */}
-          <div className="flex items-center gap-2">
-            <p className="font-mono text-sm uppercase tracking-wide">01</p>
-            <span className="block my-6 w-40 max-w-[6rem] ring-1 ring-black"></span>
+        <section className="relative wrapper">
+          <div className="p-3 max-w-4xl mx-auto text-center">
+            <h2 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-6xl">
+              Everything you need for the Real-Estate Transaction Process.
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-12 gap-x-20">
+            <div className="col-span-5 flex justify-center">
+              {" "}
+              {/* Center the image */}
+              <Image
+                width={580} // Fixed width for the image poster
+                height={900} // Allow height to adjust automatically
+                src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
+                className="object-cover h-auto max-h-[100vh]" // Ensure it maintains aspect ratio
+                alt="rough ocean water"
+              />
+            </div>
+            <div className="col-span-6 flex flex-col items-center justify-center gap-12 overflow-y-auto">
+              <div>
+                <h3 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-4xl">
+                  Everything you need for the Real-Estate Transaction Process.
+                </h3>
+                <p className="mt-4 text-balance text-sm">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+                  sed aliquam labore possimus dignissimos exercitationem neque,
+                  tenetur iste dolor quod quam officiis similique magnam ad,
+                  sequi corporis ea quibusdam autem ex voluptas architecto?
+                  Inventore reprehenderit est eius, aliquid illum vero?
+                </p>
+                <div className="flex items-center gap-2">
+                  <p className="font-mono text-sm uppercase tracking-wide">
+                    01
+                  </p>
+                  <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        {/* End of Sub-Hero Area - RELT */}
         <section
           id="02"
           className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]"
