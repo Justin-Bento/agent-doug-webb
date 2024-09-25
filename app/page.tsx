@@ -44,6 +44,21 @@ export default function page() {
             </div>
           </div>
         </section>
+        {/* End of Section 01 */}
+        <section className="container mx-auto">
+          <h2 className="max-w-3xl text-balance text-4xl sm:text-5xl lg:text-5xl font-bold capitalize">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </h2>
+          <p className="max-w-4xl text-sm tracking-wide text-balance mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ut
+            repellat reprehenderit provident obcaecati sapiente excepturi ad
+            alias, delectus dolorem, natus aliquam voluptatem beatae illo
+            quisquam quasi est, iste minima?
+          </p>
+          <div className="border border-gray-900 max-w-32 mt-8"></div>
+          <div className="w-96 aspect-square bg-gray-200 mt-12"></div>
+        </section>
+        {/* End of Section 02 */}
       </main>
       <Footer className="mt-36" />
     </>
