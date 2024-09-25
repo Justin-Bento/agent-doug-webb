@@ -11,7 +11,7 @@ export default function Navigation() {
   return (
     <>
       <header className="relative z-20 bg-white dark:bg-black shadow shadow-dark dark:bg-dark dark:shadow-white/20 py-4">
-        <section className="grid grid-cols-1 lg:grid-cols-2 container mx-auto sm:px-6 lg:px-8 py-2">
+        <section className="grid grid-cols-1 lg:grid-cols-2 wrapper">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white">Brand</Link>
             {isOpen ? (

@@ -25,7 +25,7 @@ export default function page() {
           {/* Gradient Fade at the Bottom */}
           <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
           {/* Centered Hero Content */}
-          <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
+          <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
               <p className="text-base font-semibold leading-7 text-accent">
                 Get the help you need
@@ -60,7 +60,7 @@ export default function page() {
         {/* End of Section 01 */}
         <section
           id="02"
-          className="grid grid-cols-12 gap-12 mx-auto container px-4 sm:px-6 lg:px-8 min-h-[50dvh]"
+          className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]"
         >
           {/* Title Section */}
           <div className="col-span-12 flex flex-col items-start justify-center min-h-[25vh] gap-6">
@@ -79,7 +79,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Section 02 */}
-        <section className="grid grid-cols-12 gap-4 mx-auto container px-4 sm:px-6 lg:px-8">
+        <section className="grid grid-cols-12 gap-4 wrapper">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
             <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl sm">
