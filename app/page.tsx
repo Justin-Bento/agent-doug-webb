@@ -59,20 +59,24 @@ export default function page() {
         </section>
         {/* End of Section 01 */}
         <section
-          id="listings"
-          className="mx-auto container px-4 sm:px-6 lg:px-8"
+          id="02"
+          className="grid grid-cols-12 gap-12 mx-auto container px-4 sm:px-6 lg:px-8 min-h-[50dvh]"
         >
-          <h2 className="max-w-5xl text-balance mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h2>
-          <p className="mt-4 max-w-5xl text-balance text-lg leading-6 text-gray-900">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ut
-            repellat reprehenderit provident obcaecati sapiente excepturi ad
-            alias, delectus dolorem, natus aliquam voluptatem beatae illo
-            quisquam quasi est, iste minima?
-          </p>
-          <div className="border border-gray-900 max-w-32 mt-8"></div>
-          <div className="w-96 aspect-square bg-black mt-12"></div>
+          {/* Title Section */}
+          <div className="col-span-12 flex flex-col items-center text-center justify-center min-h-[25vh] gap-6">
+            <h2 className="text-4xl font-bold tracking-tight text-black sm:text-5xl capitalize text-center">
+              Quick Introduction
+            </h2>
+            {/* Divider */}
+            <div className="mx-auto w-full max-w-[6rem] ring ring-black"></div>
+            <p className="max-w-3xl mx-auto text-lg text-center">
+              Doug began his journey in residential investment real estate in
+              1986, which eventually led to a full-time career in real estate
+              sales in 1997 with RE/MAX. To offer the level of service that both
+              he and his clients valued, Doug transitioned to Right At Home
+              Realty.
+            </p>
+          </div>
         </section>
         {/* End of Section 02 */}
         <section className="grid grid-cols-12 gap-4 mx-auto container px-4 sm:px-6 lg:px-8">
