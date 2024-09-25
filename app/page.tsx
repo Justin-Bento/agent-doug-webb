@@ -32,18 +32,14 @@ export default function page() {
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="text-base font-semibold leading-7 text-accent">
-                Get the help you need
-              </p>
+              <p className="text-base font-semibold leading-7 text-accent">Get the help you need</p>
               <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-white sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
                 Your Guide to the Real Estate Transaction Process
               </h1>
               <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-gray-300">
-                Be one step ahead of real-estate transactions with our un-biased
-                guide. As we give you an unfiltered guide about the Real-Estate
-                Transaction without any favoritism so you can be educated on the
-                procedures coming at you and ready for any red flags along the
-                way.
+                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
+                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
+                coming at you and ready for any red flags along the way.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link
@@ -72,11 +68,9 @@ export default function page() {
             {/* Divider */}
             <div className="w-full max-w-[6rem] ring-1 ring-black"></div>
             <p className="max-w-3xl text-lg text-center">
-              Doug began his journey in residential investment real estate in
-              1986, which eventually led to a full-time career in real estate
-              sales in 1997 with RE/MAX. To offer the level of service that both
-              he and his clients valued, Doug transitioned to Right At Home
-              Realty.
+              Doug began his journey in residential investment real estate in 1986, which eventually led to a full-time
+              career in real estate sales in 1997 with RE/MAX. To offer the level of service that both he and his
+              clients valued, Doug transitioned to Right At Home Realty.
             </p>
           </div>
         </section>
@@ -104,16 +98,12 @@ export default function page() {
                   Everything you need for the Real-Estate Transaction Process.
                 </h3>
                 <p className="mt-4 text-balance text-sm">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
-                  sed aliquam labore possimus dignissimos exercitationem neque,
-                  tenetur iste dolor quod quam officiis similique magnam ad,
-                  sequi corporis ea quibusdam autem ex voluptas architecto?
-                  Inventore reprehenderit est eius, aliquid illum vero?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos
+                  exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea
+                  quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?
                 </p>
                 <div className="flex items-center gap-2">
-                  <p className="font-mono text-sm uppercase tracking-wide">
-                    01
-                  </p>
+                  <p className="font-mono text-sm uppercase tracking-wide">01</p>
                   <span className="my-6 block w-40 max-w-16 ring-1 ring-black"></span>
                 </div>
               </div>
@@ -167,18 +157,14 @@ export default function page() {
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="text-base font-semibold leading-7 text-accent">
-                Get the help you need
-              </p>
+              <p className="text-base font-semibold leading-7 text-accent">Get the help you need</p>
               <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-white sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
                 Right at Home Agents Make it Easy
               </h1>
               <p className="mt-4 max-w-5xl text-balance text-md leading- text-gray-300">
-                Be one step ahead of real-estate transactions with our un-biased
-                guide. As we give you an unfiltered guide about the Real-Estate
-                Transaction without any favoritism so you can be educated on the
-                procedures coming at you and ready for any red flags along the
-                way.
+                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
+                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
+                coming at you and ready for any red flags along the way.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link
