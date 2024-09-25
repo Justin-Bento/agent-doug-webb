@@ -42,16 +42,16 @@ export default function page() {
               </p>
               <span className="block mt-8 space-x-4">
                 <Link
-                  href="#"
+                  href="/listings"
                   className="inline-flex items-center justify-center px-4 py-[calc(theme(spacing.2)-1px)] rounded-full border border-transparent bg-white shadow-md whitespace-nowrap text-base font-medium text-black data-[disabled]:bg-gray-950 data-[hover]:bg-white/80 data-[disabled]:opacity-40"
                 >
-                  Get started
+                  View Listings
                 </Link>
                 <Link
-                  href="#"
+                  href="/real-estate-process"
                   className="relative inline-flex items-center justify-center px-4 py-[calc(theme(spacing.2)-1px)] rounded-full border border-transparent bg-white/15 shadow-md ring-1 ring-[#D15052]/15 after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d] whitespace-nowrap text-base font-medium text-white data-[disabled]:bg-white/15 data-[hover]:bg-white/20 data-[disabled]:opacity-40"
                 >
-                  See pricing
+                  Real-Estate Process
                 </Link>
               </span>
             </div>
