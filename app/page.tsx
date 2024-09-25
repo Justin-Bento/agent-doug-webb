@@ -58,6 +58,17 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area  */}
+        <section className="wrapper min-h-dvh">
+            <h2 className="max-w-4xl capitalize font-display text-balance text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
+              Everything you need for the Real-Estate Transaction Process.
+            </h2>
+            <p className="mt-4 max-w-5xl text-balance">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In sed aliquam labore possimus dignissimos exercitationem neque, tenetur iste dolor quod quam officiis similique magnam ad, sequi corporis ea quibusdam autem ex voluptas architecto? Inventore reprehenderit est eius, aliquid illum vero?</p>
+                      {/* <!-- Divider --> */}
+                      <div className="flex items-center gap-2">
+              <p className="font-mono text-sm uppercase tracking-wide">01</p>
+              <span className="block my-6 w-40 max-w-[6rem] ring-1 ring-black"></span>
+            </div>
+        </section>
         <section
           id="02"
           className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]"
