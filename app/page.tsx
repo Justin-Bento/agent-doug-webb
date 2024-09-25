@@ -16,15 +16,8 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh space-y-20">
         <section className="relative w-full min-h-[100vh] bg-black">
-          {/* Background Image */}
           <div className="absolute z-10 w-full h-full">
-            <Image
-              fill
-              src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.png"
-              alt="hero-background"
-              className="object-cover object-center"
-              priority={true}
-            />
+            {/* Background Image */}
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-black/80"></div>
