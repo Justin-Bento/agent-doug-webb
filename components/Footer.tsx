@@ -4,14 +4,14 @@ import { AiFillFacebook, AiFillYoutube, AiFillGithub, AiFillInstagram, AiOutline
 
 export default function Footer({ className }: any) {
   return (
-    <footer className={cn("overflow-hidden bg-black dark:border-t dark:border-white", className)}>
+    <footer className={cn("overflow-hidden bg-black/10 dark:bg-black  border-t dark:border-white", className)}>
       <div className="wrapper py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-white hover:text-white/50"
+              className="text-black dark:text-white hover:text-white/50"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon
@@ -22,7 +22,9 @@ export default function Footer({ className }: any) {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm  leading-5 text-white">&copy; 2017 AgentWebb, Inc. All rights reserved.</p>
+          <p className="text-center text-sm leading-5 text-black dark:text-white">
+            &copy; 2017 AgentWebb, Inc. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
