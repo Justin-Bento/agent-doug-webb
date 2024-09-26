@@ -10,12 +10,12 @@ export default function Navigation() {
   const toggle = () => setIsOpen((isOpen) => !isOpen);
   return (
     <>
-      <header className="relative z-20 bg-white dark:bg-black shadow shadow-dark dark:bg-dark dark:shadow-white/20 py-4">
+      <header className="sticky top-0 z-50 bg-black shadow shadow-dark dark:bg-dark dark:shadow-white/20 py-4">
         <section className="grid grid-cols-1 lg:grid-cols-2 wrapper">
           <div className="flex items-center justify-between">
             <Link
               href="/"
-              className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
+              className="flex-none font-semibold text-xl text-white focus:outline-none focus:opacity-80"
             >
               Brand
             </Link>
@@ -43,27 +43,27 @@ export default function Navigation() {
             <ul className="lg:flex space-y-6 my-5 lg:my-0 lg:space-x-1 lg:space-y-0">
               <li>
                 <Link href="/">
-                  <Button variant="link">Home</Button>
+                  <Button variant="link" className="text-white">Home</Button>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <Button variant="link">About</Button>
+                  <Button variant="link" className="text-white">About</Button>
                 </Link>
               </li>
               <li>
                 <Link href="/real-estate-process">
-                  <Button variant="link">Real-Estate Process</Button>
+                  <Button variant="link" className="text-white">Real-Estate Process</Button>
                 </Link>
               </li>
               <li>
                 <Link href="/listings">
-                  <Button variant="link">Listings</Button>
+                  <Button variant="link" className="text-white">Listings</Button>
                 </Link>
               </li>
               <li>
                 <Link href="/contact ">
-                  <Button variant="link">Contact</Button>
+                  <Button variant="link" className="text-white">Contact</Button>
                 </Link>
               </li>
             </ul>
