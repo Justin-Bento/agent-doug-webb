@@ -47,8 +47,8 @@ export default function page() {
   return (
     <>
       <Navigation />
-      <main className="min-h-dvh space-y-20">
-        <section className="relative w-full min-h-[100vh]">
+      <main className="min-h-dvh space-y-32">
+        <section className="relative w-full min-h-[100dvh]">
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
               fill
@@ -91,7 +91,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area  */}
-        <section className="grid grid-cols-12 gap-12 wrapper min-h-[50dvh]">
+        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12">
           {/* Title Section */}
           <div className="col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
             <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
@@ -107,7 +107,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="wrapper grid grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
+        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
           <div className="col-span-12 row-auto overflow-hidden sm:rounded-lg">
             <div className="max-w-5xl mx-auto text-center">
               <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-5xl">
@@ -150,7 +150,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
-        <section className="grid grid-cols-12 gap-4 wrapper">
+        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-4">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
             <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl sm">
@@ -192,7 +192,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Content Area  */}
-        <section className="relative w-full min-h-[100vh]">
+        <section className="relative w-full min-h-[100dvh]">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
