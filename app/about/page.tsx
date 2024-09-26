@@ -83,7 +83,7 @@ export default function about() {
                 fill
                 src="/media/img/douglas-job-web.jpg"
                 alt="Image of Douglas John Webb"
-                className="object-fill object-center"
+                className="object-cover object-center rounded-lg"
               />
             </div>
             <div className="overflow-hidden col-span-12 aspect-square lg:col-span-7 bg-black rounded-2xl">
