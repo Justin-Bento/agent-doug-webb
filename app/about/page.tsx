@@ -77,8 +77,8 @@ export default function about() {
           </dl>
         </section>
         <section className="wrapper">
-          <div className="grid grid-cols-12 gap-10 md:gap-x-10">
-            <div className="relative aspect-square md:aspect-auto col-span-12 md:col-span-5">
+          <div className="grid items-center grid-cols-12 gap-10 md:gap-x-10">
+            <div className="relative aspect-square col-span-12 md:col-span-5">
               <Image
                 fill
                 src="/media/img/douglas-job-web.jpg"
@@ -86,7 +86,7 @@ export default function about() {
                 className="object-cover object-center rounded-lg"
               />
             </div>
-            <div className="overflow-hidden col-span-12 aspect-square md:col-span-7 flex items-center rounded-2xl">
+            <div className="overflow-hidden col-span-12 md:col-span-7 grid items-center aspect-square rounded-2xl">
               <div className="px-4 py-5 sm:p-6 space-y-8">
                 <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-4xl">
                   Meet Douglas J. Webb
