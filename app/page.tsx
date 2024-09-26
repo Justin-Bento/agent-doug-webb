@@ -92,8 +92,7 @@ export default function page() {
               />
             </div>
             {/*  End of Sub-Hero Area - Media - Real Estate Transaction Process */}
-            <div className="col-span-6 space-y-6 overflow-y-scroll max-h-[80dvh]">
-            </div>
+            <div className="col-span-6 space-y-6 overflow-y-scroll max-h-[80dvh]"></div>
             {/*  End of Sub-Hero Area - Content - Real Estate Transaction Process */}
           </div>
         </section>
@@ -110,22 +109,52 @@ export default function page() {
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/Investment_Opportunities.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/Investment_Opportunities.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/pexels-curtis-adams-1694007-4258275.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/pexels-curtis-adams-1694007-4258275.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
             <li className="relative aspect-video sm:aspect-square">
-              <Image fill src="/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg" alt="" className="object-cover object-center" />
+              <Image
+                fill
+                src="/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg"
+                alt=""
+                className="object-cover object-center"
+              />
             </li>
           </ul>
           {/* <!-- Loader --> */}
