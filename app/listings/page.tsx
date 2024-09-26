@@ -48,40 +48,43 @@ export default function page() {
               </Button>
             </Card>
           </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-12 mt-16 mb-32">
+            {Array.from({ length: 6 }, (_, index) => (
+              <Card
+                key={index}
+                className="col-span-4 ring-1 ring-black/10 rounded-xl"
+              >
+                <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
+                  <Image
+                    fill
+                    src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg"
+                    alt=""
+                    className="object-cover rounded-t-xl"
+                  />
+                </CardHeader>
+                <CardContent className="mt-4">
+                  <p className="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white">
+                    Whispering Pines Estate
+                  </p>
+                  <p className="mt-2 max-w-[600px] text-sm/6 text-black/60 group-data-[dark]:text-gray-400 line-clamp-3">
+                    Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern
+                    amenities and breathtaking forest views. Ideal for nature lovers, this charming property combines
+                    rustic elegance with contemporary comfort.
+                  </p>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="flex items-center gap-1 mt-4"
+                  >
+                    View Property<span aria-hidden="true">→</span>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </section>
       </main>
       <Footer />
     </div>
-  );
-}
-
-function CardWFooter({ className }: any) {
-  return (
-    <Card className="ring-1 ring-black rounded">
-      <CardHeader className="p-0 pb-6 overflow-hidden">
-        <Image
-          src=""
-          alt=""
-          className="w-full aspect-video bg-black rounded-t"
-        />
-      </CardHeader>
-      <CardContent>
-        <p className="text-lg font-extrabold tracking-wide font-display">Whispering Pines Estate</p>
-        <p className="line-clamp-3">
-          Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern amenities and
-          breathtaking forest views. Ideal for nature lovers, this charming property combines rustic elegance with
-          contemporary comfort.
-        </p>
-      </CardContent>
-      <CardFooter>
-        <Button
-          variant="secondary"
-          size="sm"
-          className="flex items-center gap-1"
-        >
-          Hello World <span aria-hidden="true">→</span>
-        </Button>
-      </CardFooter>
-    </Card>
   );
 }
