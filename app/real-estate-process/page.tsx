@@ -22,16 +22,16 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh mb-28 space-y-28">
         <section className="relative overflow-hidden h-[50dvh]">
-          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl dark:bg-white/5" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
-            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
+            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-6xl">
               Real-Estate Process.
             </h1>
           </div>
         </section>
         <section className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
-            <Card className="ring-1 ring-black dark:ring-white">
+            <Card className="dark:bg-[#16151b] dark:border-white/20">
               <CardHeader className="text-lg font-bold">Deciding To Buy.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -48,7 +48,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black dark:ring-white">
+            <Card className="dark:bg-[#16151b] dark:border-white/20">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -65,7 +65,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black dark:ring-white">
+            <Card className="dark:bg-[#16151b] dark:border-white/20">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -82,7 +82,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="ring-1 ring-black dark:ring-white">
+            <Card className="dark:bg-[#16151b] dark:border-white/20">
               <CardHeader className="text-lg font-bold">Additional Information.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe

@@ -59,19 +59,19 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-white/70"></div>
+          <div className="absolute z-20 w-full h-full bg-white/70 dark:bg-[#16151b]/70"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-white dark:from-[#16151b] to-transparent"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="font-semibold leading-7 text-black uppercase text-sm tracking-wide">
+              <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
                 Get the help you need
               </p>
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
                 Your Guide to the Real Estate Transaction Process
               </h1>
-              <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black">
+              <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black dark:text-white">
                 Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
                 guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
                 coming at you and ready for any red flags along the way.
@@ -96,11 +96,11 @@ export default function page() {
         <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12">
           {/* Title Section */}
           <div className="col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
-            <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl">
+            <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
               Quick Introduction
             </h2>
             {/* Divider */}
-            <div className="w-full max-w-[6rem] ring-1 ring-black"></div>
+            <div className="w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
             <p className="max-w-3xl text-lg text-center">
               Doug began his journey in residential investment real estate in 1986, which eventually led to a full-time
               career in real estate sales in 1997 with RE/MAX. To offer the level of service that both he and his
@@ -112,7 +112,7 @@ export default function page() {
         <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
           <div className="col-span-12 row-auto overflow-hidden sm:rounded-lg">
             <div className="max-w-5xl mx-auto text-center">
-              <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-5xl">
+              <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black dark:text-white sm:text-5xl">
                 Everything you need for the Real-Estate Transaction Process.
               </h3>
             </div>
@@ -144,7 +144,7 @@ export default function page() {
                   <div className="flex items-center gap-2">
                     <p className="font-mono text-xs uppercase tracking-wide">{index + 1}</p>{" "}
                     {/* Updated to use index + 1 */}
-                    <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black"></span>
+                    <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black dark:ring-white"></span>
                   </div>
                 </div>
               </div>
@@ -155,12 +155,12 @@ export default function page() {
         <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-4">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
-            <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black data-[dark]:text-white sm:text-6xl sm">
+            <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
               View Listings
             </h1>
           </div>
           {/* <!-- Divider --> */}
-          <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
+          <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {listings.map((house) => {
@@ -178,7 +178,7 @@ export default function page() {
                     />
                   </div>
                   <div className="">
-                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">
+                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-black dark:text-white">
                       Property Title
                     </p>
                   </div>
@@ -205,19 +205,19 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-white/60"></div>
+          <div className="absolute z-20 w-full h-full bg-white/60 dark:bg-[#16151b]/60"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full bg-gradient-to-b from-white to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full bg-gradient-to-b from-white dark:from-[#16151b] to-transparent"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="font-semibold leading-7 text-black uppercase text-sm tracking-wide">
+              <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
                 Get the help you need
               </p>
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
                 Right at Home Agents Make it Easy
               </h1>
-              <p className="mt-4 max-w-5xl text-md leading-7 font-semibold text-black">
+              <p className="mt-4 max-w-5xl text-md leading-7 font-semibold text-black dark:text-white">
                 Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
                 guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
                 coming at you and ready for any red flags.

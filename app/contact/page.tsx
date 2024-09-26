@@ -18,9 +18,9 @@ export default function Contact() {
       <Navigation />
       <main className="">
         <section className="relative overflow-hidden h-[50dvh] ">
-          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl dark:bg-white/5" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
-            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
+            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-6xl">
               Contact.
             </h1>
           </div>

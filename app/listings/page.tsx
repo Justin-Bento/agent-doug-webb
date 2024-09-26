@@ -20,29 +20,31 @@ export default function page() {
       <Navigation />
       <main className="space-y-24">
         <section className="relative overflow-hidden h-[50dvh] ">
-          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl bg-white/5" />
           <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
-            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
+            <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 dark:text-white sm:text-6xl">
               Listings.
             </h1>
           </div>
         </section>
         <section className="wrapper min-h-[100dvh]">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4">
-              <p className="text-sm text-black/50">Search</p>
-              <TbSearch />
+            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4 dark:border-white/50 dark:bg-[#16151b]">
+              <p className="text-sm text-black/50 dark:text-white/50">Search</p>
+              <TbSearch className="dark:text-white/50" />
             </Card>
-            <Card className="border-0 shadow-none flex justify-start md:justify-end">
+            <Card className="border-0 dark:bg-transparent shadow-none flex justify-start md:justify-end">
               <Button
                 variant="ghost"
                 size="sm"
+                className="dark:bg-[#16151b]"
               >
                 Sort By
               </Button>
               <Button
                 variant="ghost"
                 size="sm"
+                className="dark:bg-[#16151b]"
               >
                 Latest Price
               </Button>
@@ -52,7 +54,7 @@ export default function page() {
             {Array.from({ length: 6 }, (_, index) => (
               <Card
                 key={index}
-                className="col-span-4 ring-1 ring-black/10 rounded-xl"
+                className="col-span-4 ring-1 ring-black/10 rounded-xl dark:bg-transparent"
               >
                 <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
                   <Image
@@ -63,10 +65,10 @@ export default function page() {
                   />
                 </CardHeader>
                 <CardContent className="mt-4">
-                  <p className="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-[dark]:text-white">
+                  <p className="mt-1 text-2xl/8 font-medium capitalize text-gray-950 dark:text-white">
                     Whispering Pines Estate
                   </p>
-                  <p className="mt-2 max-w-[600px] text-sm/6 text-black/60 group-data-[dark]:text-gray-400 line-clamp-3">
+                  <p className="mt-2 text-sm/6 text-black/60 dark:text-white/60 line-clamp-3">
                     Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern
                     amenities and breathtaking forest views. Ideal for nature lovers, this charming property combines
                     rustic elegance with contemporary comfort.
@@ -74,7 +76,7 @@ export default function page() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex items-center gap-1 mt-4"
+                    className="flex items-center gap-1 mt-4 dark:bg-transparent"
                   >
                     View Property<span aria-hidden="true">→</span>
                   </Button>
