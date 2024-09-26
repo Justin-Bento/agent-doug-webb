@@ -12,6 +12,38 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+  const listings = [
+    {
+      id: 1,
+      alt: "filter description for an image",
+      media: "/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg",
+    },
+    {
+      id: 2,
+      alt: "filter description for an image",
+      media: "/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg",
+    },
+    {
+      id: 3,
+      alt: "filter description for an image",
+      media: "/media/img/Investment_Opportunities.jpg",
+    },
+    {
+      id: 4,
+      alt: "filter description for an image",
+      media: "/media/img/pexels-curtis-adams-1694007-4258275.jpg",
+    },
+    {
+      id: 5,
+      alt: "filter description for an image",
+      media: "/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg",
+    },
+    {
+      id: 6,
+      alt: "filter description for an image",
+      media: "/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg",
+    },
+  ];
   return (
     <>
       <Navigation />
@@ -129,54 +161,28 @@ export default function page() {
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/Investment_Opportunities.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/pexels-curtis-adams-1694007-4258275.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
-            <li className="relative aspect-video sm:aspect-square">
-              <Image
-                fill
-                src="/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg"
-                alt=""
-                className="object-cover object-center"
-              />
-            </li>
+            {listings.map((house) => {
+              return (
+                <li
+                  key={house.id}
+                  className="overflow-hidden sm:rounded-lg hover:underline hover:animate-pulse hover:opacity-80 hover:cursor-pointer"
+                >
+                  <div className="relative aspect-video sm:aspect-square sm:rounded-lg">
+                    <Image
+                      fill
+                      src={house.media}
+                      alt={house.alt}
+                      className="object-cover object-center rounded-lg"
+                    />
+                  </div>
+                  <div className="">
+                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900">
+                      Property Title
+                    </p>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
