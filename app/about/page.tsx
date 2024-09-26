@@ -76,6 +76,14 @@ export default function about() {
             </div>
           </dl>
         </section>
+        <section className="wrapper">
+          <div className="grid grid-cols-12 gap-10 lg:gap-x-10">
+            <div className="relative overflow-hidden bg-black aspect-square lg:aspect-[1/1.15] col-span-12 lg:col-span-5 rounded-2xl"></div>
+            <div className="overflow-hidden col-span-12 aspect-square lg:col-span-7 bg-black rounded-2xl">
+              <div className="px-4 py-5 sm:p-6">{/* Content goes here */} </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
