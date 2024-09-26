@@ -82,8 +82,8 @@ export default function page() {
             </h2>
           </div>
           {/*  End of Sub-Hero Area - Title - Real Estate Transaction Process */}
-          <div className="w-full grid grid-cols-12 gap-x-20 mt-16">
-            <div className="col-span-5 flex justify-center relative min-h-[75vh]">
+          <div className="w-full grid grid-cols-12 gap-x-20 mt-16 overflow-hidden">
+            <div className="col-span-12 lg:col-span-5 flex justify-center relative aspect-square lg:min-h-[75vh]">
               <Image
                 fill
                 src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
