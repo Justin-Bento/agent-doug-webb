@@ -75,25 +75,46 @@ export default function page() {
           </div>
         </section>
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="relative wrapper">
-          <div className="p-3 max-w-4xl mx-auto text-center">
-            <h2 className="font-display max-w-4xl text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-6xl">
-              Everything you need for the Real-Estate Transaction Process.
-            </h2>
+        <section className="wrapper grid grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
+          <div className="col-span-12 row-auto overflow-hidden sm:rounded-lg">
+            <div className="max-w-5xl mx-auto text-center">
+              <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black data-[dark]:text-white sm:text-5xl">
+                Everything you need for the Real-Estate Transaction Process.
+              </h3>
+            </div>
           </div>
-          {/*  End of Sub-Hero Area - Title - Real Estate Transaction Process */}
-          <div className="w-full grid grid-cols-12 gap-x-20 mt-16 overflow-hidden">
-            <div className="col-span-12 lg:col-span-5 flex justify-center relative aspect-square lg:min-h-[75vh]">
+          <div className="col-span-12 lg:col-span-6 row-auto overflow-hidden bg-secondary shadow sm:rounded-lg">
+            <div className="relative aspect-video lg:aspect-[1/1.25]">
               <Image
                 fill
                 src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
-                className="object-cover object-center h-auto max-h-[100vh] rounded" // Ensure it maintains aspect ratio
+                className="object-cover object-center h-auto rounded" // Ensure it maintains aspect ratio
                 alt="rough ocean water"
               />
             </div>
-            {/*  End of Sub-Hero Area - Media - Real Estate Transaction Process */}
-            <div className="col-span-6 space-y-6 overflow-y-scroll max-h-[80dvh]"></div>
-            {/*  End of Sub-Hero Area - Content - Real Estate Transaction Process */}
+          </div>
+          <div className="col-span-12 lg:col-span-6 row-auto overflow-y-scroll aspect-video lg:aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
+            {Array.from({ length: 6 }, (_, index) => (
+              <div
+                key={index}
+                className="gap-12 place-content-center aspect-video lg:aspect-[1/1.25] overflow-y-scroll sm:rounded-lg"
+              >
+                <div className="px-4 py-5 sm:p-6">
+                  <h3 className="font-display max-w-4xl text-balance text-xl font-bold uppercase text-black dark:text-white">
+                    Meet Your Trusted Realtor: John Webb
+                  </h3>
+                  <p className="text-sm text-balance mt-2 leading-5">
+                    With over 10 years of experience in the real estate industry, John possesses an in-depth
+                    understanding of the local market trends, neighborhoods, and property values.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <p className="font-mono text-xs uppercase tracking-wide">{index + 1}</p>{" "}
+                    {/* Updated to use index + 1 */}
+                    <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black"></span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
