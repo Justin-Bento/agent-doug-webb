@@ -6,6 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Metadata } from "next";
 import Image from "next/image";
 import BackgroundPattern from "@/components/BackgroundPattern";
+import { TbSearch } from "react-icons/tb";
 
 export const metadata: Metadata = {
   title: "Listings - AgentWebb",
@@ -17,58 +18,37 @@ export default function page() {
   return (
     <div>
       <Navigation />
-      <main className="">
+      <main className="space-y-24">
         <section className="relative overflow-hidden h-[50dvh] ">
           <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
-          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
+          <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
               Listings.
             </h1>
           </div>
         </section>
-        <div className="container mx-auto min-h-dvh px-4 py-5 sm:p-6 my-20">
-          <section id="header"></section>
-          <section id="filter">
-            <Card className="p-2 bg-black/15">
-              <ul className="flex items-center gap-4 list-none">
-                <li>
-                  <Button
-                    variant="link"
-                    size="sm"
-                  >
-                    For Sale
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    variant="link"
-                    size="sm"
-                  >
-                    Rent
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    variant="link"
-                    size="sm"
-                  >
-                    For Purchase
-                  </Button>
-                </li>
-              </ul>
+        <section className="wrapper min-h-[100dvh]">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4">
+              <p className="text-sm text-black/50">Search</p>
+              <TbSearch />
             </Card>
-          </section>
-          <section id="real-estate-properties">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-14">
-              <CardWFooter className="bg-black/30" />
-              <CardWFooter className="bg-black/30" />
-              <CardWFooter className="bg-black/30" />
-              <CardWFooter className="bg-black/30" />
-              <CardWFooter className="bg-black/30" />
-              <CardWFooter className="bg-black/30" />
-            </div>
-          </section>
-        </div>
+            <Card className="border-0 shadow-none flex justify-start md:justify-end">
+              <Button
+                variant="ghost"
+                size="sm"
+              >
+                Sort By
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+              >
+                Latest Price
+              </Button>
+            </Card>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
