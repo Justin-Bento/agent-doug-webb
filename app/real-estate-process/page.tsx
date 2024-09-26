@@ -21,11 +21,11 @@ export default function page() {
     <>
       <Navigation />
       <main className="min-h-dvh mb-28 space-y-28">
-      <section className="relative overflow-hidden max-h-[25dvh] bg-gray-200">
-          <BackgroundPattern className="w-full h-auto z-10" />
+        <section className="relative overflow-hidden h-[50dvh]">
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-              Trusted by professionals.
+              Real-Estate Process.
             </h1>
           </div>
         </section>
@@ -103,7 +103,11 @@ export default function page() {
         </section>
         <section className="container mx-auto">
           <h2 className="text-4xl tracking-tight font-bold dark:text-white">Frequently Asked Questions.</h2>
-          <Accordion type="single" collapsible className="mt-4">
+          <Accordion
+            type="single"
+            collapsible
+            className="mt-4"
+          >
             <AccordionItem value="item-1">
               <AccordionTrigger>Is it accessible?</AccordionTrigger>
               <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>

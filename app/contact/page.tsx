@@ -4,12 +4,7 @@ import Navigation from "../../components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Link from "next/link";
-import {
-  AiTwotoneMail,
-  AiTwotoneEnvironment,
-  AiTwotoneNotification,
-  AiOutlineArrowRight,
-} from "react-icons/ai";
+import { AiTwotoneMail, AiTwotoneEnvironment, AiTwotoneNotification, AiOutlineArrowRight } from "react-icons/ai";
 
 export const metadata: Metadata = {
   title: "Contact - AgentWebb",
@@ -22,23 +17,19 @@ export default function Contact() {
     <>
       <Navigation />
       <main className="">
-        <section className="relative overflow-hidden max-h-[25dvh] bg-gray-200">
-          <BackgroundPattern className="w-full h-auto z-10" />
+        <section className="relative overflow-hidden h-[50dvh] ">
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-              Trusted by professionals.
+              Contact.
             </h1>
           </div>
         </section>
         <div className="container mx-auto min-h-dvh mt-24">
           <section id="header">
             <div className="max-w-3xl mb-10 lg:mb-14">
-              <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">
-                Contact us
-              </h2>
-              <p className="mt-1 text-neutral-400">
-                Whatever your goal - we will get you there.
-              </p>
+              <h2 className="font-semibold text-2xl md:text-4xl md:leading-tight">Contact us</h2>
+              <p className="mt-1 text-neutral-400">Whatever your goal - we will get you there.</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
               <div className="md:order-2 border-b border-neutral-800 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
@@ -186,11 +177,15 @@ export default function Contact() {
                     {/* End Textarea */}
                   </div>
                   <div className="mt-2">
-                    <p className="text-xs text-neutral-500">
-                      All fields are required
-                    </p>
-                    <Link className="" href="#">
-                      <Button size="sm" className=" mt-5">
+                    <p className="text-xs text-neutral-500">All fields are required</p>
+                    <Link
+                      className=""
+                      href="#"
+                    >
+                      <Button
+                        size="sm"
+                        className=" mt-5"
+                      >
                         Submit
                       </Button>
                     </Link>
@@ -233,9 +228,8 @@ export default function Contact() {
                   <div className="grow">
                     <h4 className=" font-semibold">We&#39;re hiring</h4>
                     <p className="mt-1 text-neutral-400">
-                      We&#39;re thrilled to announce that we&#39;re expanding
-                      our team and looking for talented individuals like you to
-                      join us.
+                      We&#39;re thrilled to announce that we&#39;re expanding our team and looking for talented
+                      individuals like you to join us.
                     </p>
                     <p className="mt-2">
                       <Link

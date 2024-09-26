@@ -2,12 +2,7 @@ import React from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import BackgroundPattern from "@/components/BackgroundPattern";
@@ -23,11 +18,11 @@ export default function page() {
     <div>
       <Navigation />
       <main className="">
-        <section className="relative overflow-hidden max-h-[25dvh] bg-gray-200">
-          <BackgroundPattern className="w-full h-auto z-10" />
+        <section className="relative overflow-hidden h-[50dvh] ">
+          <BackgroundPattern className="w-full h-auto z-10 blur-2xl" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-6xl">
-              Trusted by professionals.
+              Listings.
             </h1>
           </div>
         </section>
@@ -37,17 +32,26 @@ export default function page() {
             <Card className="p-2 bg-black/15">
               <ul className="flex items-center gap-4 list-none">
                 <li>
-                  <Button variant="link" size="sm">
+                  <Button
+                    variant="link"
+                    size="sm"
+                  >
                     For Sale
                   </Button>
                 </li>
                 <li>
-                  <Button variant="link" size="sm">
+                  <Button
+                    variant="link"
+                    size="sm"
+                  >
                     Rent
                   </Button>
                 </li>
                 <li>
-                  <Button variant="link" size="sm">
+                  <Button
+                    variant="link"
+                    size="sm"
+                  >
                     For Purchase
                   </Button>
                 </li>
@@ -82,14 +86,11 @@ function CardWFooter({ className }: any) {
         />
       </CardHeader>
       <CardContent>
-        <p className="text-lg font-extrabold tracking-wide font-display">
-          Whispering Pines Estate
-        </p>
+        <p className="text-lg font-extrabold tracking-wide font-display">Whispering Pines Estate</p>
         <p className="line-clamp-3">
-          Nestled among tall, serene pines, Whispering Pines Estate offers a
-          tranquil retreat with modern amenities and breathtaking forest views.
-          Ideal for nature lovers, this charming property combines rustic
-          elegance with contemporary comfort.
+          Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern amenities and
+          breathtaking forest views. Ideal for nature lovers, this charming property combines rustic elegance with
+          contemporary comfort.
         </p>
       </CardContent>
       <CardFooter>
