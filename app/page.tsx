@@ -199,15 +199,24 @@ export default function page() {
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
-            <li className="bg-black aspect-video sm:aspect-square">&nbsp;</li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg" alt="" className="object-cover object-center" />
+            </li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg" alt="" className="object-cover object-center" />
+            </li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/Investment_Opportunities.jpg" alt="" className="object-cover object-center" />
+            </li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/pexels-curtis-adams-1694007-4258275.jpg" alt="" className="object-cover object-center" />
+            </li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg" alt="" className="object-cover object-center" />
+            </li>
+            <li className="relative aspect-video sm:aspect-square">
+              <Image fill src="/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg" alt="" className="object-cover object-center" />
+            </li>
           </ul>
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
