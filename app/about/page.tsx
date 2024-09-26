@@ -77,8 +77,8 @@ export default function about() {
           </dl>
         </section>
         <section className="wrapper">
-          <div className="grid grid-cols-12 gap-10 lg:gap-x-10">
-            <div className="relative overflow-hidden bg-black aspect-square lg:aspect-[1/1.15] col-span-12 lg:col-span-5 rounded-2xl">
+          <div className="grid grid-cols-12 gap-10 md:gap-x-10">
+            <div className="relative aspect-square md:aspect-auto col-span-12 md:col-span-5">
               <Image
                 fill
                 src="/media/img/douglas-job-web.jpg"
@@ -86,8 +86,26 @@ export default function about() {
                 className="object-cover object-center rounded-lg"
               />
             </div>
-            <div className="overflow-hidden col-span-12 aspect-square lg:col-span-7 bg-black rounded-2xl">
-              <div className="px-4 py-5 sm:p-6">{/* Content goes here */} </div>
+            <div className="overflow-hidden col-span-12 aspect-square md:col-span-7 flex items-center rounded-2xl">
+              <div className="px-4 py-5 sm:p-6 space-y-8">
+                <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 data-[dark]:text-white sm:text-4xl">
+                  Meet Douglas J. Webb
+                </h2>
+                <div className="block w-16 h-0.5 rounded-full bg-black"></div>
+                <p className="">
+                  Years ago, while working as sales associates at rival companies, Thomas, Ben, and Natalie were
+                  discussing a big client they had all been competing for. Joking about seeing the terms of each
+                  other&#39;s offers, they had an idea: what if they shared data to win deals and split the commission
+                  behind their companies&#39; backs? It turned out to be an incredible success, and that idea became the
+                  kernel for Radiant.
+                </p>
+                <p className="">
+                  Today, Radiant transforms revenue organizations by harnessing illegally acquired customer and
+                  competitor data, using it to provide extraordinary leverage. More than 30,000 companies rely on
+                  Radiant to undercut their competitors and extort their customers, all through a single integrated
+                  platform.
+                </p>
+              </div>
             </div>
           </div>
         </section>
