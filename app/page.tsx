@@ -83,7 +83,7 @@ export default function page() {
                 <Link href="/real-estate-process">
                   <Button
                     variant="outline"
-                    className="rounded-full px-5"
+                    className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]"
                   >
                     Real-Estate Process
                   </Button>
@@ -226,7 +226,7 @@ export default function page() {
                 <Link href="/contact">
                   <Button
                     variant="outline"
-                    className="rounded-full px-5"
+                    className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]"
                   >
                     Contact Us
                   </Button>
