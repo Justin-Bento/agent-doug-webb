@@ -186,9 +186,7 @@ export default function page() {
           </ul>
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
-            <button className="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-              View More
-            </button>
+            <Button className="rounded-full px-5">View More</Button>
           </div>
         </section>
         {/* End of Content Area  */}
@@ -224,7 +222,7 @@ export default function page() {
                 <Link href="/contact">
                   <Button
                     variant="outline"
-                    className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]"
+                    className="rounded-full px-5"
                   >
                     Contact Us
                   </Button>
