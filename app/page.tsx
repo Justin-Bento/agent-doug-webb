@@ -93,9 +93,9 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area  */}
-        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12">
+        <section className="wrapper min-h-[100dvh] grid grid-cols-1 sm:grid-cols-12 gap-12">
           {/* Title Section */}
-          <div className="col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
+          <div className="sm:col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
             <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
               Quick Introduction
             </h2>
@@ -109,15 +109,15 @@ export default function page() {
           </div>
         </section>
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
-          <div className="col-span-12 row-auto overflow-hidden sm:rounded-lg">
+        <section className="wrapper min-h-[100dvh] grid grid-cols-1 sm:grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
+          <div className="sm:col-span-12 row-auto overflow-hidden sm:rounded-lg">
             <div className="max-w-5xl mx-auto text-center">
               <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black dark:text-white sm:text-5xl">
                 Everything you need for the Real-Estate Transaction Process.
               </h3>
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-6 row-auto overflow-hidden bg-secondary shadow sm:rounded-lg">
+          <div className="sm:col-span-12 lg:col-span-6 row-auto overflow-hidden shadow sm:rounded-lg">
             <div className="relative aspect-video lg:aspect-[1/1.25]">
               <Image
                 fill
@@ -127,7 +127,7 @@ export default function page() {
               />
             </div>
           </div>
-          <div className="col-span-12 lg:col-span-6 row-auto overflow-y-scroll aspect-video lg:aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
+          <div className="sm:col-span-12 lg:col-span-6 row-auto overflow-y-scroll aspect-video lg:aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
             {Array.from({ length: 6 }, (_, index) => (
               <div
                 key={index}

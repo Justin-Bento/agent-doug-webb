@@ -22,7 +22,7 @@ export default function Navigation() {
             {isOpen ? (
               <Button
                 variant="outline"
-                className="block lg:hidden ml-auto border-black dark:border-white"
+                className="block lg:hidden ml-auto dark:bg-transparent border-black dark:border-white"
                 onClick={toggle}
                 aria-label="Toggle navigation"
               >
@@ -31,7 +31,7 @@ export default function Navigation() {
             ) : (
               <Button
                 variant="outline"
-                className="block lg:hidden ml-auto border-black dark:border-white"
+                className="block lg:hidden ml-auto dark:bg-transparent border-black dark:border-white"
                 onClick={toggle}
                 aria-label="Toggle navigation"
               >
