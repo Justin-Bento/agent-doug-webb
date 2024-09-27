@@ -4,7 +4,7 @@ import Navigation from "../../components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import Link from "next/link";
-import { AiTwotoneMail, AiTwotoneEnvironment, AiTwotoneNotification, AiOutlineArrowRight } from "react-icons/ai";
+import { TbMail, TbMapPin, TbBellRinging, TbArrowRight } from "react-icons/tb";
 
 export const metadata: Metadata = {
   title: "Contact - AgentWebb",
@@ -196,7 +196,7 @@ export default function Contact() {
               <div className="space-y-14">
                 {/* Item */}
                 <div className="flex gap-x-5">
-                  <AiTwotoneEnvironment className="shrink-0 size-6 text-neutral-500" />
+                  <TbMapPin className="shrink-0 size-6 text-neutral-500" />
                   <div className="grow">
                     <h4 className=" font-semibold">Our address:</h4>
                     <address className="mt-1 text-neutral-400 text-sm not-italic">
@@ -209,7 +209,7 @@ export default function Contact() {
                 {/* End Item */}
                 {/* Item */}
                 <div className="flex gap-x-5">
-                  <AiTwotoneMail className="shrink-0 size-6 text-neutral-500" />
+                  <TbMail className="shrink-0 size-6 text-neutral-500" />
                   <div className="grow">
                     <h4 className=" font-semibold">Email us:</h4>
                     <Link
@@ -224,7 +224,7 @@ export default function Contact() {
                 {/* End Item */}
                 {/* Item */}
                 <div className="flex gap-x-5">
-                  <AiTwotoneNotification className="shrink-0 size-6 text-neutral-500 -rotate-12" />
+                  <TbBellRinging className="shrink-0 size-6 text-neutral-500 -rotate-12" />
                   <div className="grow">
                     <h4 className=" font-semibold">We&#39;re hiring</h4>
                     <p className="mt-1 text-neutral-400">
@@ -237,7 +237,7 @@ export default function Contact() {
                         href="#"
                       >
                         Job openings
-                        <AiOutlineArrowRight className="size-3" />
+                        <TbArrowRight className="size-3" />
                       </Link>
                     </p>
                   </div>
