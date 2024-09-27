@@ -15,29 +15,25 @@ export default function RealEstateProcessLayout({ children }: { children: React.
       <html className="">
         <body className="">
           <Navigation />
-          <main className="container mx-auto min-h-dvh px-4 py-5 sm:p-6">
-            <section className="grid grid-cols-12 my-16">
-              <article className="col-span-full xl:col-span-7 xl:col-start-2 xl:max-w-[100ch]">
-                {children}
-                <Link
-                  href="/real-estate-process"
-                  className="flex items-center justify-between mt-8 border-t-2 pt-8"
+          <main className="wrapper min-h-[100dvh] grid grid-cols-1 md:grid-cols-12 my-20 ">
+            <article className="w-full h-full md:col-span-9 px-4 py-5 sm:p-6 overflow-hidden">
+              {children}
+              <Link
+                href="/real-estate-process"
+                className="flex items-center justify-between mt-8 border-t-2 border-black/20 dark:border-white/20 pt-8"
+              >
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="uppercase"
                 >
-                  <Button
-                    size="sm"
-                    variant="link"
-                    className="underline uppercase"
-                  >
-                    Go Home
-                  </Button>
-                </Link>
-              </article>
-              <aside className="col-span-3 col-start-10 justify-self-end hidden xl:block">
-                <div className="sticky top-12 pb-20">
-                  <SideNavigation stage="buy" />
-                </div>
-              </aside>
-            </section>
+                  Go Home
+                </Button>
+              </Link>
+            </article>
+            <aside className="w-full h-full  md:col-span-3 px-4 py-5 sm:p-6 overflow-hidden static top-0">
+              <SideNavigation stage="buy" />
+            </aside>
           </main>
           <Footer />
         </body>
