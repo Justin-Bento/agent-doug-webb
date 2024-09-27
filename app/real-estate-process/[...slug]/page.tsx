@@ -17,30 +17,16 @@ export default function page({ params }: { params: { slug: string[] } }) {
       </>
     );
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-buy") {
-    return (
-      <>
-        <div className="space-y-16">
-          <DecidingToBuy1 />
-        </div>
-      </>
-    );
+    return <DecidingToBuy1 />;
+    //
   } else if (params.slug.length === 1 && params.slug[0] === "deciding-to-sell") {
-    return (
-      <>
-        <DecidingToSell1 />
-      </>
-    );
+    return <DecidingToSell1 />;
+    //
   } else if (params.slug.length === 1 && params.slug[0] === "more-stuff") {
-    return (
-      <>
-        <ForSaleByOwner />
-      </>
-    );
+    return <ForSaleByOwner />;
+    //
   } else if (params.slug.length === 1 && params.slug[0] === "additional-information") {
-    return (
-      <>
-        <ReferencePage />
-      </>
-    );
+    return <ReferencePage />;
+    //
   }
 }
