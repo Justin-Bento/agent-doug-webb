@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "@/components/Footer";
 import DecidingToBuy1 from "@/markdown/deciding-to-buy/step1.mdx";
 import DecidingToSell1 from "@/markdown/deciding-to-sell/your-decision-to-sell.mdx";
 import ForSaleByOwner from "@/markdown/more-stuff/for-sale-by-owner.mdx";
