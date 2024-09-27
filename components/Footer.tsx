@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Link } from "lucide-react";
+import Link from "next/link"; // use the Link component from 'next/link'
 import { AiFillFacebook, AiFillYoutube, AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 export default function Footer({ className }: any) {
