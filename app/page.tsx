@@ -162,7 +162,7 @@ export default function page() {
           {/* <!-- Divider --> */}
           <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
           {/* <!-- 3x3 Grid Section --> */}
-          <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {listings.map((house) => {
               return (
                 <li
@@ -177,10 +177,8 @@ export default function page() {
                       className="object-cover object-center rounded-lg"
                     />
                   </div>
-                  <div className="">
-                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-black dark:text-white">
-                      Property Title
-                    </p>
+                  <div className="mt-4">
+                    <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">Property Title</p>
                   </div>
                 </li>
               );
