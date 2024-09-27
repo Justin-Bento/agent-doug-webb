@@ -31,7 +31,7 @@ export default function page() {
         </section>
         <section className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 mt-16">
-            <Card className="dark:bg-[#16151b] dark:border-white/20">
+            <Card className="bg-transparent dark:bg-[#16151b] dark:border-white/40">
               <CardHeader className="text-lg font-bold">Deciding To Buy.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -48,7 +48,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="dark:bg-[#16151b] dark:border-white/20">
+            <Card className="bg-transparent dark:bg-[#16151b] dark:border-white/40">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -65,7 +65,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="dark:bg-[#16151b] dark:border-white/20">
+            <Card className="bg-transparent dark:bg-[#16151b] dark:border-white/40">
               <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
@@ -82,7 +82,7 @@ export default function page() {
               </CardFooter>
             </Card>
             {/* End of card */}
-            <Card className="dark:bg-[#16151b] dark:border-white/20">
+            <Card className="bg-transparent dark:bg-[#16151b] dark:border-white/40">
               <CardHeader className="text-lg font-bold">Additional Information.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
