@@ -29,11 +29,11 @@ export default function page() {
         </section>
         <section className="wrapper min-h-[100dvh]">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4 dark:border-white/50 dark:bg-[#16151b]">
+            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4 bg-transparent border-black/40 dark:border-white/50 dark:bg-[#16151b]">
               <p className="text-sm text-black/50 dark:text-white/50">Search</p>
-              <TbSearch className="dark:text-white/50" />
+              <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
-            <Card className="border-0 dark:bg-transparent shadow-none flex justify-start md:justify-end">
+            <Card className="border-0 bg-transparent shadow-none flex justify-start md:justify-end">
               <Button
                 variant="ghost"
                 size="sm"
@@ -54,7 +54,7 @@ export default function page() {
             {Array.from({ length: 6 }, (_, index) => (
               <Card
                 key={index}
-                className="col-span-4 ring-1 ring-black/10 rounded-xl dark:bg-transparent"
+                className="col-span-4 ring-1 ring-black/10 rounded-xl bg-transparent"
               >
                 <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
                   <Image
@@ -76,7 +76,7 @@ export default function page() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex items-center gap-1 mt-4 dark:bg-transparent"
+                    className="flex items-center gap-1 mt-4 bg-transparent"
                   >
                     View Property<span aria-hidden="true">→</span>
                   </Button>

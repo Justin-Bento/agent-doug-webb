@@ -59,9 +59,9 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-white/70 dark:bg-[#16151b]/70"></div>
+          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/70"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-32 bg-gradient-to-t from-white dark:from-[#16151b] to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full h-full bg-gradient-to-b from-secondary/80  to-transparent"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
@@ -201,9 +201,9 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-white/60 dark:bg-[#16151b]/60"></div>
+          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/60"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full bg-gradient-to-b from-white dark:from-[#16151b] to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full bg-gradient-to-b from-secondary/80 dark:from-[#16151b] to-transparent"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
