@@ -61,7 +61,7 @@ export default function page() {
               fill
               src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
               alt=""
-              className="object-cover  md:object-right-top"
+              className="object-cover object-right-bottom lg:object-fit lg:object-right"
             />
           </div>
           {/* Dark Overlay */}
