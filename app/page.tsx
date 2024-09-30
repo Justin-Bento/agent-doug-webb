@@ -56,18 +56,18 @@ export default function page() {
       <Navigation />
       <main className="min-h-dvh space-y-32">
         <section className="relative w-full min-h-[100dvh]">
-          <div className="absolute z-10 w-full h-full overflow-hidden">
+          <div className="absolute z-10 w-full h-full overflow-hidden bg-gradient-to-b from-secondary/80">
             <Image
               fill
-              src="/media/img/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg"
+              src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
               alt=""
-              className=" object-fill object-bottom"
+              className="object-fill object-right-top"
             />
           </div>
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/70"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-full bg-gradient-to-b from-secondary/80  to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full h-full bg-gradient-to-b from-secondary/80"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
@@ -200,7 +200,7 @@ export default function page() {
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
               fill
-              src="/media/img/patrick-tomasso-gMes5dNykus-unsplash.jpg"
+              src="/media/img/tumblr_nsoart1B4L1qfirfao1_1280.jpg"
               alt=""
               className="object-cover object-bottom"
             />
