@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { createSlug } from "@/lib/utils";
+import MySvgComponent from "@/components/MySvgComponent";
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
@@ -100,24 +101,34 @@ export default function page() {
             </div>
           </div>
         </section>
-        {/* End of Landing Area  */}
-        <section className="wrapper min-h-[100dvh] grid grid-cols-1 sm:grid-cols-12 gap-12">
+        {/* End of Landing Area */}
+        <section className="relative min-h-[100dvh]">
+          {/* SVG Background */}
+          <div className="absolute inset-0 z-0">
+            {/* <MySvgComponent className="rotate-45" /> */}
+          </div>
+
           {/* Title Section */}
-          <div className="sm:col-span-12 flex flex-col items-center justify-center min-h-[25vh] gap-6">
-            <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
-              Quick Introduction
-            </h2>
-            {/* Divider */}
-            <div className="w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
-            <p className="max-w-3xl text-lg text-center">
-              Doug began his journey in residential investment real estate in
-              1986, which eventually led to a full-time career in real estate
-              sales in 1997 with RE/MAX. To offer the level of service that both
-              he and his clients valued, Doug transitioned to Right At Home
-              Realty.
-            </p>
+          <div className="relative z-20 flex items-center justify-center min-h-[100dvh] wrapper">
+            <div className="sm:col-span-12 flex flex-col items-center justify-center gap-6">
+              <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
+                Quick Introduction
+              </h2>
+
+              {/* Divider */}
+              <div className="w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
+
+              <p className="max-w-3xl text-lg text-center">
+                Doug began his journey in residential investment real estate in
+                1986, which eventually led to a full-time career in real estate
+                sales in 1997 with RE/MAX. To offer the level of service that
+                both he and his clients valued, Doug transitioned to Right At
+                Home Realty.
+              </p>
+            </div>
           </div>
         </section>
+
         {/* End of Sub-Hero Area - Quick Section */}
         <section className="wrapper min-h-[100dvh] grid grid-cols-1 sm:grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
           <div className="sm:col-span-12 row-auto overflow-hidden sm:rounded-lg">
