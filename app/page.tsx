@@ -55,13 +55,13 @@ export default function page() {
     <>
       <Navigation />
       <main className="min-h-dvh space-y-32">
-        <section className="relative w-full min-h-[100dvh]">
-          <div className="absolute z-10 w-full h-full overflow-hidden bg-gradient-to-b from-secondary/80">
+        <section className="relative">
+          <div className="absolute z-10 w-full min-h-[100dvh] overflow-hidden bg-gradient-to-b from-secondary/80">
             <Image
               fill
               src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
               alt=""
-              className="object-fit object-right-top"
+              className="object-cover  md:object-right-top"
             />
           </div>
           {/* Dark Overlay */}
