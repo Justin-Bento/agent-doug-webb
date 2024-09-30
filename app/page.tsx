@@ -6,7 +6,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { createSlug } from "@/lib/utils";
-import MySvgComponent from "@/components/MySvgComponent";
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
