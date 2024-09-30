@@ -1,4 +1,11 @@
-AgentWebb is a website that helps clients find all the information they need about real estate transactions while also serving as a marketing tool for his platform. The website provides detailed guides, FAQs, and step-by-step processes to ensure clients are well-informed at every stage of their real estate journey. His goal is to be as transparent as possible, offering clear information to build trust and confidence among his clients. By leveraging AgentWebb, users can navigate the complexities of real estate with ease and make well-informed decisions.
+This repository contains the code for a modern portfolio website designed for a real estate agent in collaboration with a UI/UX designer. The site features 
+
+* Modernized Interface with Sanity
+* Dynamic listings, 
+* Contact form, 
+* SEO optimization with Next.js for Enhanced Visibility.
+
+**Current Status:** The project is in early development stages and is currently in continuous integration and continuous delivery/deployment (CI/CD), ensuring that updates are seamlessly integrated and deployed for optimal performance. This means SEO is temporarily blocked to ensure it does not interfere with the current website. 
 
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
