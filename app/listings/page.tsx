@@ -2,7 +2,12 @@ import React from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import BackgroundPattern from "@/components/BackgroundPattern";
@@ -19,8 +24,8 @@ export default function page() {
     <div>
       <Navigation />
       <main className="space-y-24">
-        <section className="relative overflow-hidden lg:h-[50dvh]">
-          <BackgroundPattern className="w-full h-auto z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+        <section className="relative overflow-hidden">
+          <BackgroundPattern className="w-full min-h-[25dvh] z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
           <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 dark:text-white sm:text-6xl">
               Listings.
@@ -34,18 +39,10 @@ export default function page() {
               <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
             <Card className="border-0 bg-transparent shadow-none flex justify-start md:justify-end">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="dark:bg-[#16151b]"
-              >
+              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
                 Sort By
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="dark:bg-[#16151b]"
-              >
+              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
                 Latest Price
               </Button>
             </Card>
@@ -69,9 +66,11 @@ export default function page() {
                     Whispering Pines Estate
                   </p>
                   <p className="mt-2 text-sm/6 text-black/60 dark:text-white/60 line-clamp-3">
-                    Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern
-                    amenities and breathtaking forest views. Ideal for nature lovers, this charming property combines
-                    rustic elegance with contemporary comfort.
+                    Nestled among tall, serene pines, Whispering Pines Estate
+                    offers a tranquil retreat with modern amenities and
+                    breathtaking forest views. Ideal for nature lovers, this
+                    charming property combines rustic elegance with contemporary
+                    comfort.
                   </p>
                   <Button
                     variant="outline"

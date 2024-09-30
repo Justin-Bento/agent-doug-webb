@@ -16,8 +16,8 @@ export default function about() {
     <>
       <Navigation />
       <main className="min-h-dvh mb-24 space-y-24">
-        <section className="relative overflow-hidden lg:h-[50dvh]">
-          <BackgroundPattern className="w-full h-auto z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+        <section className="relative overflow-hidden">
+          <BackgroundPattern className="w-full h-auto z-10 min-h-[25dvh] bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <h1>
               <span className="mb-3 block font-display text-base font-semibold text-black dark:text-white">
@@ -35,19 +35,24 @@ export default function about() {
             <div style={{ opacity: 1, transform: "none" }}>
               <div className="mt-6 max-w-3xl text-xl dark:text-white">
                 <p>
-                  We believe that our strength lies in our collaborative approach, which puts our clients at the center
-                  of everything we do.
+                  We believe that our strength lies in our collaborative
+                  approach, which puts our clients at the center of everything
+                  we do.
                 </p>
                 <div className="mt-10 max-w-2xl space-y-6 text-base">
                   <p>
-                    Studio was started by three friends who noticed that developer studios were charging clients double
-                    what an in-house team would cost. Since the beginning, we have been committed to doing things
-                    differently by charging triple instead.
+                    Studio was started by three friends who noticed that
+                    developer studios were charging clients double what an
+                    in-house team would cost. Since the beginning, we have been
+                    committed to doing things differently by charging triple
+                    instead.
                   </p>
                   <p>
-                    At Studio, we&#39; re more than just colleagues — we&#39; re a family. This means we pay very little
-                    and expect people to work late. We want our employees to bring their whole selves to work. In
-                    return, we just ask that they keep themselves there until at least 6:30pm.
+                    At Studio, we&#39; re more than just colleagues — we&#39; re
+                    a family. This means we pay very little and expect people to
+                    work late. We want our employees to bring their whole selves
+                    to work. In return, we just ask that they keep themselves
+                    there until at least 6:30pm.
                   </p>
                 </div>
               </div>
@@ -60,22 +65,34 @@ export default function about() {
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base dark:text-white/70">Certified Real Estate investor</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">1985</dd>
+              <dt className="mt-2 text-base dark:text-white/70">
+                Certified Real Estate investor
+              </dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+                1985
+              </dd>
             </div>
             <div
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base dark:text-white/70">Years of experience</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">25+</dd>
+              <dt className="mt-2 text-base dark:text-white/70">
+                Years of experience
+              </dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+                25+
+              </dd>
             </div>
             <div
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
               style={{ opacity: 1, transform: "none" }}
             >
-              <dt className="mt-2 text-base dark:text-white/70">Satisfied Clients and Referral</dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">70%</dd>
+              <dt className="mt-2 text-base dark:text-white/70">
+                Satisfied Clients and Referral
+              </dt>
+              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+                70%
+              </dd>
             </div>
           </dl>
         </section>
@@ -96,17 +113,21 @@ export default function about() {
                 </h2>
                 <div className="block w-16 h-0.5 rounded-full bg-black dark:bg-white"></div>
                 <p className="">
-                  Years ago, while working as sales associates at rival companies, Thomas, Ben, and Natalie were
-                  discussing a big client they had all been competing for. Joking about seeing the terms of each
-                  other&#39;s offers, they had an idea: what if they shared data to win deals and split the commission
-                  behind their companies&#39; backs? It turned out to be an incredible success, and that idea became the
-                  kernel for Radiant.
+                  Years ago, while working as sales associates at rival
+                  companies, Thomas, Ben, and Natalie were discussing a big
+                  client they had all been competing for. Joking about seeing
+                  the terms of each other&#39;s offers, they had an idea: what
+                  if they shared data to win deals and split the commission
+                  behind their companies&#39; backs? It turned out to be an
+                  incredible success, and that idea became the kernel for
+                  Radiant.
                 </p>
                 <p className="">
-                  Today, Radiant transforms revenue organizations by harnessing illegally acquired customer and
-                  competitor data, using it to provide extraordinary leverage. More than 30,000 companies rely on
-                  Radiant to undercut their competitors and extort their customers, all through a single integrated
-                  platform.
+                  Today, Radiant transforms revenue organizations by harnessing
+                  illegally acquired customer and competitor data, using it to
+                  provide extraordinary leverage. More than 30,000 companies
+                  rely on Radiant to undercut their competitors and extort their
+                  customers, all through a single integrated platform.
                 </p>
               </div>
             </div>
