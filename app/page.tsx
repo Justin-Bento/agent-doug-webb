@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import { createSlug } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
@@ -171,21 +171,20 @@ export default function page() {
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {listings.map((house) => {
               return (
-                <li
-                  key={house.id}
-                  className="overflow-hidden sm:rounded-lg hover:underline hover:animate-pulse hover:opacity-80 hover:cursor-pointer"
-                >
-                  <div className="relative aspect-video sm:aspect-square sm:rounded-lg">
-                    <Image
-                      fill
-                      src={house.media}
-                      alt={house.alt}
-                      className="object-cover object-center rounded-lg"
-                    />
-                  </div>
-                  <div className="mt-4">
-                    <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">{house.title}</p>
-                  </div>
+                <li key={house.id}>
+                  <Link href={`/listings/${createSlug(house.title)}`} className="overflow-hidden sm:rounded-lg hover:underline hover:animate-pulse hover:opacity-80 hover:cursor-pointer">
+                    <div className="relative aspect-video sm:aspect-square sm:rounded-lg">
+                      <Image
+                        fill
+                        src={house.media}
+                        alt={house.alt}
+                        className="object-cover object-center rounded-lg"
+                      />
+                    </div>
+                    <div className="mt-4">
+                      <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">{house.title}</p>
+                    </div>
+                  </Link>
                 </li>
               );
             })}
