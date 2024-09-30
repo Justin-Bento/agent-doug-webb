@@ -137,21 +137,21 @@ export default function page() {
               </h3>
             </div>
           </div>
-          <div className="sm:col-span-12 lg:col-span-6 row-auto overflow-hidden shadow sm:rounded-lg">
-            <div className="relative aspect-video lg:aspect-[1/1.25]">
+          <div className="sm:col-span-6 row-auto overflow-hidden sm:rounded-lg">
+            <div className="relative aspect-[1/1.25] shadow">
               <Image
                 fill
-                src="/media/img/pexels-cameron-michael-smith-328251-922451.jpg"
-                className="object-cover object-center h-auto rounded" // Ensure it maintains aspect ratio
+                src="/media/img/daniel-krakan-lifeofpix-danielkrakan7928-308970.jpg"
+                className="object-center rounded" // Ensure it maintains aspect ratio
                 alt="rough ocean water"
               />
             </div>
           </div>
-          <div className="sm:col-span-12 lg:col-span-6 row-auto overflow-y-scroll aspect-video lg:aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
+          <div className="sm:col-span-6 row-auto overflow-y-scroll aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
             {Array.from({ length: 6 }, (_, index) => (
               <div
                 key={index}
-                className="gap-12 place-content-center aspect-video lg:aspect-[1/1.25] overflow-y-scroll sm:rounded-lg"
+                className="gap-12 place-content-center aspect-[1/1.25] sm:rounded-lg"
               >
                 <div className="px-4 py-5 sm:p-6">
                   <h3 className="font-display max-w-4xl text-balance text-xl font-bold uppercase text-black dark:text-white">
