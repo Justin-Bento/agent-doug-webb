@@ -112,6 +112,36 @@ export default function PropertyListingLayout() {
               left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started laughing, they
               couldn&#39;t stop.
             </p>
+            <div className="border-y-2 mt-6 border-black border-dotted">
+              <div className="overflow-x-auto scroll-p-16 py-4 scroll-snap-x snap-mandatory">
+                <div className="inline-grid grid-flow-col gap-5 snap-x auto-cols-[minmax(20rem,1fr)]">
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    1
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    2
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    3
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    4
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    5
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    6
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    7
+                  </div>
+                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
+                    8
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section className="wrapper flex justify-center col-span-12">
             <Button
