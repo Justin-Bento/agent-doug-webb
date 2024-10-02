@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import React from "react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function PropertyListingLayout() {
   return (
@@ -16,9 +17,9 @@ export default function PropertyListingLayout() {
               <p className="text-xs uppercase tracking-wider">Listings</p>
             </div>
           </section>
-          <section className="wrapper md:col-span-12 flex items-center justify-between gap-12">
-            <div className="w-full aspect-square bg-gray-400">&nbsp;</div>
-            <div className="">
+          <section className="wrapper md:col-span-12 md:flex items-center justify-between gap-12 space-y-6">
+            <div className="w-[60rem] aspect-[16/12] rounded-xl bg-gray-400">&nbsp;</div>
+            <div className="w-full max-w-prose">
               <p className="text-base tracking-wide leading-5 max-w-[100rem]">
                 Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
                 under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
@@ -28,7 +29,66 @@ export default function PropertyListingLayout() {
               </p>
             </div>
           </section>
-          <section className="ring ring-black md:col-span-12">&nbsp;</section>
+          <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
+            <div className="w-[60rem] aspect-[16/12] rounded-xl bg-gray-400">&nbsp;</div>
+            <div className="w-full max-w-prose">
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Features</AccordionTrigger>
+                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/*  */}
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Interior</AccordionTrigger>
+                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/*  */}
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Location</AccordionTrigger>
+                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/*  */}
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Area & Lot</AccordionTrigger>
+                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/*  */}
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Financial</AccordionTrigger>
+                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              {/*  */}
+            </div>
+          </section>
           <section className="ring ring-black md:col-span-12">&nbsp;</section>
         </main>
         <Footer />
