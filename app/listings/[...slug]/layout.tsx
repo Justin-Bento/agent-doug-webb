@@ -7,8 +7,11 @@ export default function PropertyListingLayout() {
     <html>
       <body>
         <Navigation />
-        <main className="">
-          <h1 className="">layout</h1>
+        <main className="grid md:grid-cols-12">
+          <section className="ring ring-black">&nbsp;</section>
+          <section className="ring ring-black">&nbsp;</section>
+          <section className="ring ring-black">&nbsp;</section>
+          <section className="ring ring-black">&nbsp;</section>
         </main>
         <Footer />
       </body>
