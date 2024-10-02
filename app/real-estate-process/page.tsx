@@ -66,7 +66,7 @@ export default function page() {
             </Card>
             {/* End of card */}
             <Card className="bg-transparent dark:bg-[#16151b] dark:border-white/40">
-              <CardHeader className="text-lg font-bold">Deciding To Sell.</CardHeader>
+              <CardHeader className="text-lg font-bold">More Stuff.</CardHeader>
               <CardContent>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa iste, recusandae itaque saepe
                 iusto quae nemo commodi voluptatem quam officia tempore! Neque atque architecto saepe, autem eum ab
