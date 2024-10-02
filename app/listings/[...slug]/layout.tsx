@@ -19,7 +19,7 @@ export default function PropertyListingLayout() {
             </div>
           </section>
           <section className="wrapper md:col-span-12 md:flex items-center justify-between gap-12 space-y-6">
-            <div className="bg-gray-400 aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
+            <div className="bg-gray-400 aspect-video md:aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
             <div className="w-full max-w-prose">
               <p className="text-base tracking-wide leading-5 max-w-[100rem]">
                 Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
@@ -31,7 +31,7 @@ export default function PropertyListingLayout() {
             </div>
           </section>
           <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
-            <div className="bg-gray-400 aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
+            <div className="bg-gray-400 aspect-video md:aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
             <div className="w-full max-w-prose">
               <Accordion
                 type="single"
