@@ -28,6 +28,13 @@ export default function PropertyListingLayout() {
                 jokes left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started
                 laughing, they couldn&#39;t stop.
               </p>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="underline mt-6 border-black/15"
+              >
+                See More
+              </Button>
             </div>
           </section>
           <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
