@@ -142,7 +142,7 @@ export default function PropertyListingLayout() {
               </div>
             </div>
           </section>
-          <section className="wrapper flex justify-center col-span-12">
+          <section className="wrapper flex justify-center col-span-12 pb-20">
             <Button
               variant="outline"
               className="text-sm rounded-full px-5"
