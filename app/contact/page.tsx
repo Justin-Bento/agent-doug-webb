@@ -30,7 +30,7 @@ export default function page() {
             <p className="font-medium text-black/50 dark:text-white">Email: abc123@gmail.com</p>
           </div>
         </section>
-        <section className="bg-gray-400 w-full h-auto md:col-span-8">
+        <section className="w-full h-auto md:col-span-8">
           <ContactForm />
         </section>
       </main>
