@@ -35,27 +35,25 @@ export default function PropertyListingLayout() {
             <div className="w-full max-w-prose">
               {fakeDetails.map((detail, index) => {
                 return (
-                  <>
-                    <Accordion
-                      key={index}
-                      type="single"
-                      collapsible
-                      className="w-full"
-                    >
-                      <AccordionItem value="item-1">
-                        <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                          {detail}
-                        </AccordionTrigger>
-                        <AccordionContent>
-                          Jokester began sneaking into the castle in the middle of the night and leaving jokes all over
-                          the place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was
-                          furious, but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the
-                          kingdom discovered that the jokes left by Jokester were so funny that they couldn&#39;t help
-                          but laugh. And once they started laughing, they couldn&#39;t stop.
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </>
+                  <Accordion
+                    key={index}
+                    type="single"
+                    collapsible
+                    className="w-full"
+                  >
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
+                        {detail}
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        Jokester began sneaking into the castle in the middle of the night and leaving jokes all over
+                        the place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was
+                        furious, but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom
+                        discovered that the jokes left by Jokester were so funny that they couldn&#39;t help but laugh.
+                        And once they started laughing, they couldn&#39;t stop.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
                 );
               })}
             </div>
