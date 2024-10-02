@@ -4,19 +4,19 @@ import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import React from "react";
 
-export default function AdditionalInformation() {
+export default function ExtraInformation() {
   return (
     <>
       <Navigation />
       <main className="wrapper min-h-dvh my-20">
         <section className="">
-          <h1 className="">Additional Information</h1>
+          <h1 className="">Extra Information</h1>
         </section>
         <section className="flex flex-col gap-4 mt-8">
           {steps.map((step, index) => {
             return (
               <>
-                <Link href={`/real-estate-process/additional-information/${step}`}>
+                <Link href={`/real-estate-process/extra-information/${step}`}>
                   <Card
                     key={index}
                     className="bg-transparent px-4 py-5 sm:p-4"
