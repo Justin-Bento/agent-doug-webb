@@ -76,7 +76,7 @@ export default function PropertyListingLayout() {
               left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started laughing, they
               couldn&#39;t stop.
             </p>
-            <div className="border-y-2 mt-6 border-primary border-dotted">
+            <div className="border-y-2 mt-6 border-primary dark:border-accent border-dotted">
               <div className="overflow-x-auto scroll-p-16 py-4 scroll-snap-x snap-mandatory">
                 <div className="inline-grid grid-flow-col gap-5 snap-x auto-cols-[minmax(20rem,1fr)]">
                   {Array.from({ length: 10 }, (_, index) => {
