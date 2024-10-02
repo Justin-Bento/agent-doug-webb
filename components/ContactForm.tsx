@@ -10,7 +10,16 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 
 const FormSchema = z.object({
-  username: z.string().min(2, {
+  full_name: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  phone_number: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  email: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  message: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
 });
@@ -19,7 +28,10 @@ export default function InputForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      username: "",
+      full_name: "",
+      phone_number: "",
+      email: "",
+      message: "",
     },
   });
 
@@ -42,7 +54,7 @@ export default function InputForm() {
       >
         <FormField
           control={form.control}
-          name="full-name"
+          name="full_name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Full Name</FormLabel>
@@ -53,7 +65,7 @@ export default function InputForm() {
                 />
               </FormControl>
               <FormDescription className="text-xs">
-                This is how we verify the person we&#39;re contacting.
+                This is how we verify the person we&#39;re contacting. full-name{" "}
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -78,7 +90,7 @@ export default function InputForm() {
         />{" "}
         <FormField
           control={form.control}
-          name="phone-number"
+          name="phone_number"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
