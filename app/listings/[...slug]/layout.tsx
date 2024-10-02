@@ -2,13 +2,14 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 
 export default function PropertyListingLayout() {
   return (
     <html>
       <body>
         <Navigation />
-        <main className="grid md:grid-cols-12 gap-4 my-12">
+        <main className="grid md:grid-cols-12 gap-4 my-12 lg:gap-12">
           <section className="flex items-center md:col-span-12 min-h-[20dvh]">
             <div className="wrapper flex flex-col-reverse">
               <h1 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
@@ -113,6 +114,14 @@ export default function PropertyListingLayout() {
                 laughing, they couldn&#39;t stop.
               </p>
             </div>
+          </section>
+          <section className="wrapper flex justify-center col-span-12">
+            <Button
+              variant="outline"
+              className="text-sm rounded-full px-5"
+            >
+              View More Listings
+            </Button>
           </section>
         </main>
         <Footer />
