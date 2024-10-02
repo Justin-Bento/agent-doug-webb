@@ -114,30 +114,16 @@ export default function PropertyListingLayout() {
             <div className="border-y-2 mt-6 border-primary border-dotted">
               <div className="overflow-x-auto scroll-p-16 py-4 scroll-snap-x snap-mandatory">
                 <div className="inline-grid grid-flow-col gap-5 snap-x auto-cols-[minmax(20rem,1fr)]">
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    1
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    2
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    3
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    4
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    5
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    6
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    7
-                  </div>
-                  <div className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center">
-                    8
-                  </div>
+                  {Array.from({ length: 10 }, (_, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center"
+                      >
+                        {index + 1}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
