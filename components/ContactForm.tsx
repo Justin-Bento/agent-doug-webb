@@ -42,17 +42,72 @@ export default function InputForm() {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="full-name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Full Name</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Enter your legal full name"
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription className="text-xs">
+                This is how we verify the person we&#39;re contacting.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input
                   placeholder="shadcn"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>This is your public display name.</FormDescription>
+              <FormDescription className="text-xs">We&#39;ll send you a conformation.</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />{" "}
+        <FormField
+          control={form.control}
+          name="phone-number"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Phone Number</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="shadcn"
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription className="text-xs">This is your public display name.</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Message</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="shadcn"
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription className="text-xs">
+                Include any additional information that&nbsp;s difficult to include over the phone.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
