@@ -33,71 +33,31 @@ export default function PropertyListingLayout() {
           <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
             <div className="bg-gray-400 aspect-video md:aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
             <div className="w-full max-w-prose">
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                    Features
-                  </AccordionTrigger>
-                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              {/*  */}
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                    Interior
-                  </AccordionTrigger>
-                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              {/*  */}
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                    Location
-                  </AccordionTrigger>
-                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              {/*  */}
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                    Area & Lot
-                  </AccordionTrigger>
-                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              {/*  */}
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                    Financial
-                  </AccordionTrigger>
-                  <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              {/*  */}
+              {fakeDetails.map((detail, index) => {
+                return (
+                  <>
+                    <Accordion
+                      key={index}
+                      type="single"
+                      collapsible
+                      className="w-full"
+                    >
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
+                          {detail}
+                        </AccordionTrigger>
+                        <AccordionContent>
+                          Jokester began sneaking into the castle in the middle of the night and leaving jokes all over
+                          the place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was
+                          furious, but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the
+                          kingdom discovered that the jokes left by Jokester were so funny that they couldn&#39;t help
+                          but laugh. And once they started laughing, they couldn&#39;t stop.
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  </>
+                );
+              })}
             </div>
           </section>
           <section className="wrapper md:col-span-12">
@@ -142,3 +102,18 @@ export default function PropertyListingLayout() {
     </html>
   );
 }
+
+interface fakeDetailsInter {
+  id: number;
+  title: string;
+  description: string;
+}
+
+const fakeDetails = [
+  "Features",
+  "Interior",
+  "Location",
+  "Area & Lot",
+  "Financial",
+  //
+];
