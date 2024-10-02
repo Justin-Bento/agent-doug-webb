@@ -2,16 +2,12 @@ import React from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { TbSearch } from "react-icons/tb";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Listings - AgentWebb",
@@ -39,10 +35,18 @@ export default function page() {
               <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
             <Card className="border-0 bg-transparent shadow-none flex justify-start md:justify-end">
-              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="dark:bg-[#16151b]"
+              >
                 Sort By
               </Button>
-              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="dark:bg-[#16151b]"
+              >
                 Latest Price
               </Button>
             </Card>
@@ -66,19 +70,19 @@ export default function page() {
                     Whispering Pines Estate
                   </p>
                   <p className="mt-2 text-sm/6 text-black/60 dark:text-white/60 line-clamp-3">
-                    Nestled among tall, serene pines, Whispering Pines Estate
-                    offers a tranquil retreat with modern amenities and
-                    breathtaking forest views. Ideal for nature lovers, this
-                    charming property combines rustic elegance with contemporary
-                    comfort.
+                    Nestled among tall, serene pines, Whispering Pines Estate offers a tranquil retreat with modern
+                    amenities and breathtaking forest views. Ideal for nature lovers, this charming property combines
+                    rustic elegance with contemporary comfort.
                   </p>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex items-center gap-1 mt-4 bg-transparent"
-                  >
-                    View Property<span aria-hidden="true">→</span>
-                  </Button>
+                  <Link href="/listings/whispering-pines-estate">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-1 mt-4 bg-transparent"
+                    >
+                      View Property<span aria-hidden="true">→</span>
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
