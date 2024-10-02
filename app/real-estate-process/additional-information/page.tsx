@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import React from "react";
 
-export default function DecidingToBuy() {
+export default function AdditionalInformation() {
   return (
     <>
       <Navigation />
@@ -16,7 +16,7 @@ export default function DecidingToBuy() {
           {steps.map((step, index) => {
             return (
               <>
-                <Link href={`/real-estate-process/deciding-to-buy/${step}`}>
+                <Link href={`/real-estate-process/additional-information/${step}`}>
                   <Card
                     key={index}
                     className="bg-transparent px-4 py-5 sm:p-4"
