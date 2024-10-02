@@ -32,7 +32,8 @@ export default function page() {
         <section className="wrapper grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Buy</h2>
-            <span className="grid lg:grid-cols-3 gap-8 mt-8">
+            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
                   <Card
@@ -47,11 +48,12 @@ export default function page() {
                   </Card>
                 );
               })}
-            </span>
+            </div>
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Sell</h2>
-            <span className="grid lg:grid-cols-3 gap-8 mt-8">
+            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
                   <Card
@@ -66,11 +68,12 @@ export default function page() {
                   </Card>
                 );
               })}
-            </span>
+            </div>
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">More Stuff</h2>
-            <span className="grid lg:grid-cols-3 gap-8 mt-8">
+            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
                   <Card
@@ -85,11 +88,12 @@ export default function page() {
                   </Card>
                 );
               })}
-            </span>
+            </div>
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Extra Information</h2>
-            <span className="grid lg:grid-cols-3 gap-8 mt-8">
+            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
                   <Card
@@ -104,11 +108,12 @@ export default function page() {
                   </Card>
                 );
               })}
-            </span>
+            </div>
           </div>
           {/* End Of Deciding To Buy */}
           <div className="space-y-5 md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white">Frequently Asked Questions.</h2>
+            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
             {fakeDetails.map((detail, index) => {
               return (
                 <Accordion
