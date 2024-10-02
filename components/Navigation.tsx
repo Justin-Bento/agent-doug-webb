@@ -15,9 +15,9 @@ export default function Navigation() {
           <div className="flex items-center justify-between">
             <Link
               href="/"
-              className="flex-none font-semibold text-xl text-black dark:text-white focus:outline-none focus:opacity-80"
+              className="flex-none font-black text-3xl tracking-[-0.5rem] text-black dark:text-white focus:outline-none focus:opacity-80 hover:text-primary dark:hover:text-accent"
             >
-              Brand
+              AW
             </Link>
             {isOpen ? (
               <Button
