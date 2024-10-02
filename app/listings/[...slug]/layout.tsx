@@ -100,20 +100,18 @@ export default function PropertyListingLayout() {
               {/*  */}
             </div>
           </section>
-          <section className="md:col-span-12">
-            <div className="wrapper">
-              <h3 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
-                Inside The Property
-              </h3>
-              <span className="block w-20 h-[0.1rem] bg-black rounded mt-2 mb-6"></span>
-              <p className="text-base tracking-wide leading-5 max-w-[100ch]">
-                Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
-                under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
-                couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the
-                jokes left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started
-                laughing, they couldn&#39;t stop.
-              </p>
-            </div>
+          <section className="wrapper md:col-span-12">
+            <h3 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
+              Inside The Property
+            </h3>
+            <span className="block w-20 h-[0.1rem] bg-black rounded mt-2 mb-6"></span>
+            <p className="text-base tracking-wide leading-5 max-w-[100ch]">
+              Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
+              under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
+              couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the jokes
+              left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started laughing, they
+              couldn&#39;t stop.
+            </p>
           </section>
           <section className="wrapper flex justify-center col-span-12">
             <Button
