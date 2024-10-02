@@ -1,4 +1,5 @@
 import BackgroundPattern from "@/components/BackgroundPattern";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import React from "react";
@@ -29,7 +30,9 @@ export default function page() {
             <p className="font-medium text-black/50 dark:text-white">Email: abc123@gmail.com</p>
           </div>
         </section>
-        <section className="bg-gray-400 w-full h-auto md:col-span-8">&nbsp;</section>
+        <section className="bg-gray-400 w-full h-auto md:col-span-8">
+          <ContactForm />
+        </section>
       </main>
       <Footer />
     </>
