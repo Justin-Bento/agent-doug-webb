@@ -9,9 +9,9 @@ export default function PropertyListingLayout() {
     <html>
       <body>
         <Navigation />
-        <main className="grid md:grid-cols-12 gap-4 my-12 lg:gap-12">
-          <section className="flex items-center md:col-span-12 min-h-[20dvh]">
-            <div className="wrapper flex flex-col-reverse">
+        <main className="md:grid md:grid-cols-12 space-y-14">
+          <section className="md:col-span-12">
+            <div className="wrapper min-h-[20dvh] flex flex-col-reverse justify-center">
               <h1 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
                 Property Name
               </h1>
@@ -19,7 +19,7 @@ export default function PropertyListingLayout() {
             </div>
           </section>
           <section className="wrapper md:col-span-12 md:flex items-center justify-between gap-12 space-y-6">
-            <div className="w-[60rem] aspect-[16/12] rounded-xl bg-gray-400">&nbsp;</div>
+            <div className="bg-gray-400 aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
             <div className="w-full max-w-prose">
               <p className="text-base tracking-wide leading-5 max-w-[100rem]">
                 Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
@@ -31,7 +31,7 @@ export default function PropertyListingLayout() {
             </div>
           </section>
           <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
-            <div className="w-[60rem] aspect-[16/12] rounded-xl bg-gray-400">&nbsp;</div>
+            <div className="bg-gray-400 aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
             <div className="w-full max-w-prose">
               <Accordion
                 type="single"
