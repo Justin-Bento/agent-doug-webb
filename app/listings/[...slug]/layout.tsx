@@ -104,8 +104,7 @@ export default function PropertyListingLayout() {
             <h3 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
               Inside The Property
             </h3>
-            <span className="block w-20 h-[0.1rem] bg-black rounded mt-2 mb-6"></span>
-            <p className="text-base tracking-wide leading-5 max-w-[100ch]">
+            <p className="text-base tracking-wide leading-5 max-w-[100ch] mt-4">
               Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
               under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
               couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the jokes
