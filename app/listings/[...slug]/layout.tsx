@@ -16,7 +16,18 @@ export default function PropertyListingLayout() {
               <p className="text-xs uppercase tracking-wider">Listings</p>
             </div>
           </section>
-          <section className="ring ring-black md:col-span-12">&nbsp;</section>
+          <section className="wrapper md:col-span-12 flex items-center justify-between gap-12">
+            <div className="w-full aspect-square bg-gray-400">&nbsp;</div>
+            <div className="">
+              <p className="text-base tracking-wide leading-5 max-w-[100rem]">
+                Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
+                under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
+                couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the
+                jokes left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started
+                laughing, they couldn&#39;t stop.
+              </p>
+            </div>
+          </section>
           <section className="ring ring-black md:col-span-12">&nbsp;</section>
           <section className="ring ring-black md:col-span-12">&nbsp;</section>
         </main>
