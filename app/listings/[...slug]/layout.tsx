@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import React from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function PropertyListingLayout() {
   return (
@@ -94,12 +95,14 @@ export default function PropertyListingLayout() {
             </div>
           </section>
           <section className="wrapper flex justify-center col-span-12 pb-20">
-            <Button
-              variant="outline"
-              className="text-sm rounded-full px-5"
-            >
-              View More Listings
-            </Button>
+            <Link href="/listings">
+              <Button
+                variant="outline"
+                className="text-sm rounded-full px-5"
+              >
+                View More Listings
+              </Button>
+            </Link>
           </section>
         </main>
         <Footer />

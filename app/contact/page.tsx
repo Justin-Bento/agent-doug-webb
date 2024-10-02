@@ -18,7 +18,7 @@ export default function page() {
           </div>
         </section>
         <div className="wrapper grid grid-cols-1 md:grid-cols-12 gap-8 my-12">
-          <section className="w-full h-auto md:col-span-4 space-y-4 p-8">
+          <section className="w-full h-auto md:col-span-4 space-y-4 lg:p-8">
             <div className="">
               <p className="font-semibold text-black dark:text-white">Douglas John Webb</p>
               <p className="font-semibold text-black dark:text-white">Real Estate Representative</p>
