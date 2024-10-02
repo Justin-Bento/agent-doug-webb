@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TypographyDemo() {
   return (
     <div>
@@ -11,17 +13,17 @@ export default function TypographyDemo() {
       </h2>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
         The king thought long and hard, and finally came up with{" "}
-        <a
+        <Link
           href="#"
           className="font-medium text-primary underline underline-offset-4"
         >
           a brilliant plan
-        </a>
+        </Link>
         : he would tax the jokes in the kingdom.
       </p>
       <blockquote className="mt-6 border-l-2 pl-6 italic">
-        "After all," he said, "everyone enjoys a good joke, so it&#39;s only fair that they should pay for the
-        privilege."
+        &quot;After all,&quot; he said, &quot;everyone enjoys a good joke, so it&#39;s only fair that they should pay
+        for the privilege.&quot;
       </blockquote>
       <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">The Joke Tax</h3>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
