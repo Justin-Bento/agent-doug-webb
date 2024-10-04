@@ -36,19 +36,21 @@ export default function page() {
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
-                  <Link href="#">
-                    <Card
-                      key={index}
-                      className="bg-transparent border border-black/20 p-6 space-y-1"
-                    >
-                      <h3 className="font-bold text-lg">Title Of Section</h3>
-                      <p className="line-clamp-2">
-                        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
-                        his throne. One day, his advisors came to him with a problem: the kingdom was running out of
-                        money.
-                      </p>
-                    </Card>
-                  </Link>
+                  <>
+                    <Link href="#">
+                      <Card
+                        key={index}
+                        className="bg-transparent border border-black/20 p-6 space-y-1"
+                      >
+                        <h3 className="font-bold text-lg">Title Of Section</h3>
+                        <p className="line-clamp-2">
+                          Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
+                          his throne. One day, his advisors came to him with a problem: the kingdom was running out of
+                          money.
+                        </p>
+                      </Card>
+                    </Link>
+                  </>
                 );
               })}
             </div>
@@ -59,19 +61,21 @@ export default function page() {
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
-                  <Link href="#">
-                    <Card
-                      key={index}
-                      className="bg-transparent border border-black/20 p-6 space-y-1"
-                    >
-                      <h3 className="font-bold text-lg">Title Of Section</h3>
-                      <p className="line-clamp-2">
-                        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
-                        his throne. One day, his advisors came to him with a problem: the kingdom was running out of
-                        money.
-                      </p>
-                    </Card>
-                  </Link>
+                  <>
+                    <Link href="#">
+                      <Card
+                        key={index}
+                        className="bg-transparent border border-black/20 p-6 space-y-1"
+                      >
+                        <h3 className="font-bold text-lg">Title Of Section</h3>
+                        <p className="line-clamp-2">
+                          Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
+                          his throne. One day, his advisors came to him with a problem: the kingdom was running out of
+                          money.
+                        </p>
+                      </Card>
+                    </Link>
+                  </>
                 );
               })}
             </div>
@@ -82,19 +86,21 @@ export default function page() {
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
-                  <Link href="#">
-                    <Card
-                      key={index}
-                      className="bg-transparent border border-black/20 p-6 space-y-1"
-                    >
-                      <h3 className="font-bold text-lg">Title Of Section</h3>
-                      <p className="line-clamp-2">
-                        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
-                        his throne. One day, his advisors came to him with a problem: the kingdom was running out of
-                        money.
-                      </p>
-                    </Card>
-                  </Link>
+                  <>
+                    <Link href="#">
+                      <Card
+                        key={index}
+                        className="bg-transparent border border-black/20 p-6 space-y-1"
+                      >
+                        <h3 className="font-bold text-lg">Title Of Section</h3>
+                        <p className="line-clamp-2">
+                          Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
+                          his throne. One day, his advisors came to him with a problem: the kingdom was running out of
+                          money.
+                        </p>
+                      </Card>
+                    </Link>
+                  </>
                 );
               })}
             </div>
@@ -105,19 +111,21 @@ export default function page() {
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
-                  <Link href="#">
-                    <Card
-                      key={index}
-                      className="bg-transparent border border-black/20 p-6 space-y-1"
-                    >
-                      <h3 className="font-bold text-lg">Title Of Section</h3>
-                      <p className="line-clamp-2">
-                        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
-                        his throne. One day, his advisors came to him with a problem: the kingdom was running out of
-                        money.
-                      </p>
-                    </Card>
-                  </Link>
+                  <>
+                    <Link href="#">
+                      <Card
+                        key={index}
+                        className="bg-transparent border border-black/20 p-6 space-y-1"
+                      >
+                        <h3 className="font-bold text-lg">Title Of Section</h3>
+                        <p className="line-clamp-2">
+                          Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
+                          his throne. One day, his advisors came to him with a problem: the kingdom was running out of
+                          money.
+                        </p>
+                      </Card>
+                    </Link>
+                  </>
                 );
               })}
             </div>
@@ -128,25 +136,27 @@ export default function page() {
             <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
             {fakeDetails.map((detail, index) => {
               return (
-                <Accordion
-                  key={index}
-                  type="single"
-                  collapsible
-                  className="w-full"
-                >
-                  <AccordionItem value="item-1">
-                    <AccordionTrigger className="mt-1 text-lg/3 font-medium text-black dark:text-white">
-                      {detail}
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the
-                      place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious,
-                      but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered
-                      that the jokes left by Jokester were so funny that they couldn&#39;t help but laugh. And once they
-                      started laughing, they couldn&#39;t stop.
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                <>
+                  <Accordion
+                    key={index}
+                    type="single"
+                    collapsible
+                    className="w-full"
+                  >
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger className="mt-1 text-lg/3 font-medium text-black dark:text-white">
+                        {detail}
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        Jokester began sneaking into the castle in the middle of the night and leaving jokes all over
+                        the place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was
+                        furious, but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom
+                        discovered that the jokes left by Jokester were so funny that they couldn&#39;t help but laugh.
+                        And once they started laughing, they couldn&#39;t stop.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </>
               );
             })}
           </div>
