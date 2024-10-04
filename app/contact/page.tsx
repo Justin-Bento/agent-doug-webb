@@ -1,5 +1,6 @@
 import BackgroundPattern from "@/components/BackgroundPattern";
 import ContactForm from "@/components/ContactForm";
+import Divider from "@/components/Divider";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import React from "react";
@@ -24,7 +25,9 @@ export default function page() {
               <p className="font-semibold text-black dark:text-white">Real Estate Representative</p>
               <p className="font-semibold text-black dark:text-white">Right At Home Realty Inc.</p>
             </div>
-            <div className="w-full h-[0.05rem] bg-black"></div>
+            <div className="">
+              <Divider className="md:w-full" />
+            </div>
             <div className="">
               <p className="font-medium text-black/50 dark:text-white">Direct: 416.845.9322</p>
               <p className="font-medium text-black/50 dark:text-white">Office: 905.663.250</p>

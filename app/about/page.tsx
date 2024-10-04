@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { TbCircleCheck } from "react-icons/tb";
+import Divider from "@/components/Divider";
 
 export const metadata: Metadata = {
   title: "About - AgentWebb",
@@ -85,7 +86,7 @@ export default function about() {
                 <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-4xl">
                   Meet Douglas J. Webb
                 </h2>
-                <div className="block w-16 h-0.5 rounded-full bg-black dark:bg-white"></div>
+                <Divider className="" />
                 <p className="">
                   Years ago, while working as sales associates at rival companies, Thomas, Ben, and Natalie were
                   discussing a big client they had all been competing for. Joking about seeing the terms of each
@@ -109,6 +110,9 @@ export default function about() {
               <h2 className="max-w-3xl text-balance text-4xl font-medium text-black dark:text-white sm:text-4xl">
                 Why Should You Choose Me?
               </h2>
+            </div>
+            <div className="col-span-1 sm:col-span-12">
+              <Divider className="" />
             </div>
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">

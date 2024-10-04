@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { createSlug } from "@/lib/utils";
+import Divider from "@/components/Divider";
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
@@ -111,8 +112,7 @@ export default function page() {
               </h2>
 
               {/* Divider */}
-              <div className="w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
-
+              <Divider className="" />
               <p className="max-w-3xl text-lg text-center">
                 Doug began his journey in residential investment real estate in 1986, which eventually led to a
                 full-time career in real estate sales in 1997 with RE/MAX. To offer the level of service that both he
