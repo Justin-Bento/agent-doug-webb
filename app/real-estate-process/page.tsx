@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
 import { Metadata } from "next";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import Separator from "@/components/Separator";
 import BackgroundPattern from "@/components/BackgroundPattern";
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function page() {
         <section className="wrapper grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Buy</h2>
-            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <Separator />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
@@ -57,7 +57,7 @@ export default function page() {
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Sell</h2>
-            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <Separator />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
@@ -82,7 +82,7 @@ export default function page() {
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">More Stuff</h2>
-            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <Separator />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
@@ -107,7 +107,7 @@ export default function page() {
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Extra Information</h2>
-            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <Separator />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               {Array.from({ length: 6 }, (_, index) => {
                 return (
@@ -133,7 +133,7 @@ export default function page() {
           {/* End Of Deciding To Buy */}
           <div className="space-y-5 md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white">Frequently Asked Questions.</h2>
-            <span className="block w-20 h-[0.2rem] bg-black mt-6 rounded-full"></span>
+            <Separator />
             {fakeDetails.map((detail, index) => {
               return (
                 <>
