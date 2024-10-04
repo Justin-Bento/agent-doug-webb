@@ -71,7 +71,7 @@ export default function about() {
           </dl>
         </section>
         <section className="wrapper">
-          <div className="grid items-center grid-cols-1` md:grid-cols-12 gap-10 md:gap-x-10">
+          <div className="grid items-center grid-cols-1 md:grid-cols-12 sm:gap-10 md:gap-x-10">
             <div className="relative aspect-square col-span-12 md:col-span-5">
               <Image
                 fill
