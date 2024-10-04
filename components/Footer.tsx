@@ -23,7 +23,7 @@ export default function Footer({ className }: any) {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-sm leading-5 text-black dark:text-white">
-            &copy; 2017 AgentWebb, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} AgentWebb, Inc. All rights reserved.
           </p>
         </div>
       </div>
