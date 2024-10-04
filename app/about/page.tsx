@@ -56,24 +56,15 @@ export default function about() {
         </section>
         <section className="wrapper">
           <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
-            <div
-              className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-              style={{ opacity: 1, transform: "none" }}
-            >
+            <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Certified Real Estate investor</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">1985</dd>
             </div>
-            <div
-              className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-              style={{ opacity: 1, transform: "none" }}
-            >
+            <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Years of experience</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">25+</dd>
             </div>
-            <div
-              className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
-              style={{ opacity: 1, transform: "none" }}
-            >
+            <div className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Satisfied Clients and Referral</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">70%</dd>
             </div>
