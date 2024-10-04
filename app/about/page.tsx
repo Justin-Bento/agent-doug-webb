@@ -106,14 +106,14 @@ export default function about() {
         <section className="wrapper min-h-[50dvh]">
           <div className="grid grid-cols-1 sm:grid-cols-12 gap-12">
             <div className="overflow-hidden ring-0 bg-transparent shadow-0 sm:rounded-lg sm:col-span-12">
-              <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-4xl">
+              <h2 className="max-w-3xl text-balance text-4xl font-medium text-black dark:text-white sm:text-4xl">
                 Why Should You Choose Me?
               </h2>
             </div>
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Certified Residential Real-Estate Agent
                 </h3>
               </div>
@@ -121,7 +121,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   (MLS) Multiple Listing Service
                 </h3>
               </div>
@@ -129,7 +129,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Member of the Toronto Real Estate Board
                 </h3>
               </div>
@@ -137,7 +137,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Canadian Real Estate Association
                 </h3>
               </div>
@@ -145,7 +145,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Realtor&copy; Sales Award
                 </h3>
               </div>
@@ -153,7 +153,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Real Estate investor since 1985
                 </h3>
               </div>
@@ -161,7 +161,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   Serving: Clients since 1997
                 </h3>
               </div>
@@ -169,7 +169,7 @@ export default function about() {
             <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 font-medium tracking-tight text-black dark:text-white">
+                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
                   70&#37; Repeat Clients and Referral
                 </h3>
               </div>
