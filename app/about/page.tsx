@@ -80,7 +80,7 @@ export default function about() {
                 className="object-cover object-center rounded-lg"
               />
             </div>
-            <div className="overflow-hidden col-span-12 md:col-span-7 grid items-center aspect-square rounded-2xl">
+            <div className="overflow-hidden col-span-12 md:col-span-7 grid items-center rounded-2xl">
               <div className="px-4 py-5 sm:p-6 space-y-8">
                 <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-4xl">
                   Meet Douglas J. Webb
