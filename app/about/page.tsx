@@ -17,7 +17,7 @@ export default function about() {
       <Navigation />
       <main className="min-h-dvh mb-24 space-y-24">
         <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full z-10 max-h-[20dvh] xl:max-h-72 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+          <BackgroundPattern className="w-full h-48 max-h-[20dvh] z-10 bg-gradient-to-b from-accent/60 from-70% dark:from-accent/40" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <h1>
               <span className="mb-3 block font-display text-base font-semibold text-black dark:text-white">
