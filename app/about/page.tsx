@@ -18,7 +18,7 @@ export default function about() {
       <main className="min-h-dvh mb-24 space-y-24">
         <section className="relative overflow-hidden">
           <BackgroundPattern className="w-full h-48 max-h-[20dvh] z-10 bg-gradient-to-b from-accent/60 from-70% dark:from-accent/40" />
-          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center wrapper">
             <h1>
               <span className="mb-3 block font-display text-base font-semibold text-black dark:text-white">
                 About us
@@ -30,7 +30,7 @@ export default function about() {
             </h1>
           </div>
         </section>
-        <section className="container mx-auto">
+        <section className="wrapper">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div style={{ opacity: 1, transform: "none" }}>
               <div className="mt-6 max-w-3xl text-xl dark:text-white">
@@ -54,7 +54,7 @@ export default function about() {
             </div>
           </div>
         </section>
-        <section className="container mx-auto">
+        <section className="wrapper">
           <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
             <div
               className="flex flex-col-reverse pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px"
