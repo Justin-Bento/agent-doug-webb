@@ -31,7 +31,7 @@ export default function page() {
         </section>
         <section className="wrapper min-h-[100dvh]">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4 bg-transparent border-black/40 dark:border-white/50 dark:bg-[#16151b]">
+            <Card className="border max-w-xl flex items-center justify-between gap-2 py-2 px-4 bg-transparent border-black/40 dark:border-white/50">
               <p className="text-sm text-black/50 dark:text-white/50">Search</p>
               <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
