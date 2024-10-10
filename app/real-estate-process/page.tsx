@@ -34,7 +34,7 @@ export default function page() {
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Buy</h2>
             <Divider className="mt-6" />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
-              {deciding_to_buy.map((step, index) => (
+              {reSteps.deciding_to_buy.map((step, index) => (
                 <div
                   key={index}
                   id={`step-${index}`}
@@ -58,7 +58,7 @@ export default function page() {
             <Divider className="mt-6" />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
               <>
-                {deciding_to_sell.map((step, index) => (
+                {reSteps.deciding_to_sell.map((step, index) => (
                   <div
                     key={index}
                     id={`step-${index}`}
