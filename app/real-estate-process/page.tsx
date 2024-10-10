@@ -34,8 +34,31 @@ export default function page() {
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Buy</h2>
             <Divider className="mt-6" />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
+              {deciding_to_buy.map((step, index) => (
+                <div
+                  key={index}
+                  id={`step-${index}`}
+                >
+                  <Link href={`/real-estate-process/deciding-to-buy/${index}`}>
+                    <Card className="bg-transparent border border-black/20 p-6 space-y-1">
+                      <h3 className="font-bold text-lg">{step.title}</h3>
+                      <p className="line-clamp-2">
+                        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
+                        his throne. One day, his advisors came to him with a problem: the kingdom was running out of
+                        money.
+                      </p>
+                    </Card>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="md:col-span-12">
+            <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Sell</h2>
+            <Divider className="mt-6" />
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
               <>
-                {deciding_to_buy.map((step, index) => (
+                {deciding_to_sell.map((step, index) => (
                   <div
                     key={index}
                     id={`step-${index}`}
@@ -53,31 +76,6 @@ export default function page() {
                   </div>
                 ))}
               </>
-            </div>
-          </div>
-          <div className="md:col-span-12">
-            <h2 className="text-4xl font-bold dark:text-white text-gray-950">Deciding To Sell</h2>
-            <Divider className="mt-6" />
-            <div className="grid lg:grid-cols-3 gap-8 mt-8">
-              {Array.from({ length: 6 }, (_, index) => {
-                return (
-                  <>
-                    <Link href="#">
-                      <Card
-                        key={index}
-                        className="bg-transparent border border-black/20 p-6 space-y-1"
-                      >
-                        <h3 className="font-bold text-lg">Title Of Section</h3>
-                        <p className="line-clamp-2">
-                          Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on
-                          his throne. One day, his advisors came to him with a problem: the kingdom was running out of
-                          money.
-                        </p>
-                      </Card>
-                    </Link>
-                  </>
-                );
-              })}
             </div>
           </div>
           <div className="md:col-span-12">
@@ -156,35 +154,6 @@ const fakeDetails = [
   //
 ];
 
-const transactions = {
-  deciding_to_buy: [
-    {
-      id: 1,
-      title: "Deciding To Buy",
-    },
-    {
-      id: 2,
-      title: "Deciding To Buy",
-    },
-    {
-      id: 3,
-      title: "Deciding To Buy",
-    },
-    {
-      id: 4,
-      title: "Deciding To Buy",
-    },
-    {
-      id: 5,
-      title: "Deciding To Buy",
-    },
-    {
-      id: 6,
-      title: "Deciding To Buy",
-    },
-  ],
-};
-
 const deciding_to_buy = [
   {
     id: 1,
@@ -209,5 +178,32 @@ const deciding_to_buy = [
   {
     id: 6,
     title: "Deciding To Buy",
+  },
+];
+
+const deciding_to_sell = [
+  {
+    id: 1,
+    title: "Deciding To Sell",
+  },
+  {
+    id: 2,
+    title: "Deciding To Sell",
+  },
+  {
+    id: 3,
+    title: "Deciding To Sell",
+  },
+  {
+    id: 4,
+    title: "Deciding To Sell",
+  },
+  {
+    id: 5,
+    title: "Deciding To Sell",
+  },
+  {
+    id: 6,
+    title: "Deciding To Sell",
   },
 ];
