@@ -35,7 +35,7 @@ export default function page() {
               <p className="text-sm text-black/50 dark:text-white/50">Search</p>
               <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
-            <Card className="border-0 bg-transparent shadow-none flex justify-start md:justify-end">
+            <Card className="border-0 bg-transparent dark:bg-transparent shadow-none flex gap-4Fixe justify-start md:justify-end">
               <Button
                 variant="ghost"
                 size="sm"
