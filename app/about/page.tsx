@@ -18,17 +18,14 @@ export default function about() {
       <Navigation />
       <main className="min-h-dvh mb-24 space-y-24">
         <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full h-48 max-h-[20dvh] z-10 bg-gradient-to-b from-accent/60 from-70% dark:from-accent/40" />
-          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center wrapper">
-            <h1>
-              <span className="mb-3 block font-display text-base font-semibold text-black dark:text-white">
-                About us
-              </span>
-              <span className="sr-only"> - </span>
-              <span className="mt-6 text-5xl font-bold capitalize font-display dark:text-white">
+          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
+            <span className="flex flex-col-reverse">
+              <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-6xl">
                 Our strength is collaboration.
-              </span>
-            </h1>
+              </h1>
+              <p className=" font-display text-base font-semibold text-black dark:text-white">About Us</p>
+            </span>
           </div>
         </section>
         <section className="wrapper">
