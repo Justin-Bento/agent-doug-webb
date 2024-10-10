@@ -154,56 +154,57 @@ const fakeDetails = [
   //
 ];
 
-const deciding_to_buy = [
-  {
-    id: 1,
-    title: "Deciding To Buy",
-  },
-  {
-    id: 2,
-    title: "Deciding To Buy",
-  },
-  {
-    id: 3,
-    title: "Deciding To Buy",
-  },
-  {
-    id: 4,
-    title: "Deciding To Buy",
-  },
-  {
-    id: 5,
-    title: "Deciding To Buy",
-  },
-  {
-    id: 6,
-    title: "Deciding To Buy",
-  },
-];
-
-const deciding_to_sell = [
-  {
-    id: 1,
-    title: "Deciding To Sell",
-  },
-  {
-    id: 2,
-    title: "Deciding To Sell",
-  },
-  {
-    id: 3,
-    title: "Deciding To Sell",
-  },
-  {
-    id: 4,
-    title: "Deciding To Sell",
-  },
-  {
-    id: 5,
-    title: "Deciding To Sell",
-  },
-  {
-    id: 6,
-    title: "Deciding To Sell",
-  },
-];
+const reSteps = {
+  deciding_to_buy: [
+    {
+      id: 1,
+      title: "Deciding To Buy",
+    },
+    {
+      id: 2,
+      title: "Deciding To Buy",
+    },
+    {
+      id: 3,
+      title: "Deciding To Buy",
+    },
+    {
+      id: 4,
+      title: "Deciding To Buy",
+    },
+    {
+      id: 5,
+      title: "Deciding To Buy",
+    },
+    {
+      id: 6,
+      title: "Deciding To Buy",
+    },
+  ],
+  deciding_to_sell: [
+    {
+      id: 1,
+      title: "Deciding To Sell",
+    },
+    {
+      id: 2,
+      title: "Deciding To Sell",
+    },
+    {
+      id: 3,
+      title: "Deciding To Sell",
+    },
+    {
+      id: 4,
+      title: "Deciding To Sell",
+    },
+    {
+      id: 5,
+      title: "Deciding To Sell",
+    },
+    {
+      id: 6,
+      title: "Deciding To Sell",
+    },
+  ],
+};
