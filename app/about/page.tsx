@@ -33,24 +33,22 @@ export default function about() {
         </section>
         <section className="wrapper">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div style={{ opacity: 1, transform: "none" }}>
-              <div className="mt-6 max-w-3xl text-xl dark:text-white">
+            <div className="mt-6 max-w-3xl text-xl dark:text-white">
+              <p>
+                We believe that our strength lies in our collaborative approach, which puts our clients at the center of
+                everything we do.
+              </p>
+              <div className="mt-10 max-w-2xl space-y-6 text-base">
                 <p>
-                  We believe that our strength lies in our collaborative approach, which puts our clients at the center
-                  of everything we do.
+                  Studio was started by three friends who noticed that developer studios were charging clients double
+                  what an in-house team would cost. Since the beginning, we have been committed to doing things
+                  differently by charging triple instead.
                 </p>
-                <div className="mt-10 max-w-2xl space-y-6 text-base">
-                  <p>
-                    Studio was started by three friends who noticed that developer studios were charging clients double
-                    what an in-house team would cost. Since the beginning, we have been committed to doing things
-                    differently by charging triple instead.
-                  </p>
-                  <p>
-                    At Studio, we&#39; re more than just colleagues — we&#39; re a family. This means we pay very little
-                    and expect people to work late. We want our employees to bring their whole selves to work. In
-                    return, we just ask that they keep themselves there until at least 6:30pm.
-                  </p>
-                </div>
+                <p>
+                  At Studio, we&#39; re more than just colleagues — we&#39; re a family. This means we pay very little
+                  and expect people to work late. We want our employees to bring their whole selves to work. In return,
+                  we just ask that they keep themselves there until at least 6:30pm.
+                </p>
               </div>
             </div>
           </div>
