@@ -120,26 +120,23 @@ export default function page() {
             </h2>
             <Divider className="mt-6" />
             <div className="grid lg:grid-cols-3 gap-8 mt-8">
-              {Array.from({ length: 6 }, (_, index) => {
-                return (
-                  <>
-                    <Link href="#">
-                      <Card
-                        key={index}
-                        className="bg-transparent border border-black/20 p-6 space-y-1"
-                      >
-                        <h3 className="font-bold text-lg">Title Of Section</h3>
-                        <p className="line-clamp-2">
-                          Once upon a time, in a far-off land, there was a very
-                          lazy king who spent all day lounging on his throne.
-                          One day, his advisors came to him with a problem: the
-                          kingdom was running out of money.
-                        </p>
-                      </Card>
-                    </Link>
-                  </>
-                );
-              })}
+              {reSteps.extra_information.map((step, index) => (
+                <div key={index} id={`step-${index}`}>
+                  <Link
+                    href={`/real-estate-process/extra-information/${index}`}
+                  >
+                    <Card className="bg-transparent border border-black/20 p-6 space-y-1">
+                      <h3 className="font-bold text-lg">{step.title}</h3>
+                      <p className="line-clamp-2">
+                        Once upon a time, in a far-off land, there was a very
+                        lazy king who spent all day lounging on his throne. One
+                        day, his advisors came to him with a problem: the
+                        kingdom was running out of money.
+                      </p>
+                    </Card>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
           {/* End Of Deciding To Buy */}
@@ -258,6 +255,32 @@ const reSteps = {
     {
       id: 3,
       title: "More Stuff",
+    },
+  ],
+  extra_information: [
+    {
+      id: 1,
+      title: "Extra Information",
+    },
+    {
+      id: 2,
+      title: "Extra Information",
+    },
+    {
+      id: 3,
+      title: "Extra Information",
+    },
+    {
+      id: 4,
+      title: "Extra Information",
+    },
+    {
+      id: 5,
+      title: "Extra Information",
+    },
+    {
+      id: 6,
+      title: "Extra Information",
     },
   ],
 };
