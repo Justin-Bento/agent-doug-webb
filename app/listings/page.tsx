@@ -2,7 +2,12 @@ import React from "react";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
 import BackgroundPattern from "@/components/BackgroundPattern";
@@ -22,7 +27,7 @@ export default function page() {
       <Navigation />
       <main className="space-y-24">
         <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/40 to-transparent" />
           <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
             <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-gray-950 dark:text-white sm:text-6xl">
               Listings.
@@ -36,18 +41,10 @@ export default function page() {
               <TbSearch className="text-black/50 dark:text-white/50" />
             </Card>
             <Card className="border-0 bg-transparent dark:bg-transparent shadow-none flex gap-4Fixe justify-start md:justify-end">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="dark:bg-[#16151b]"
-              >
+              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
                 Sort By
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="dark:bg-[#16151b]"
-              >
+              <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
                 Latest Price
               </Button>
             </Card>
@@ -72,7 +69,9 @@ export default function page() {
                     <p className="mt-1 text-2xl/8 font-medium capitalize text-gray-950 dark:text-white">
                       {property.title}
                     </p>
-                    <p className="mt-2 text-base/6 text-black/60 dark:text-white/60 line-clamp-3">{property.summary}</p>
+                    <p className="mt-2 text-base/6 text-black/60 dark:text-white/60 line-clamp-3">
+                      {property.summary}
+                    </p>
                     <Link href={`listings/${createSlug(property.title)}`}>
                       <Button
                         variant="outline"
