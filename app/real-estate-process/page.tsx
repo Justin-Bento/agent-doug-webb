@@ -96,7 +96,23 @@ export default function page() {
               More Stuff
             </h2>
             <Divider className="mt-6" />
-            <div className="grid lg:grid-cols-3 gap-8 mt-8"></div>
+            <div className="grid lg:grid-cols-3 gap-8 mt-8">
+              {reSteps.more_stuff.map((step, index) => (
+                <div key={index} id={`step-${index}`}>
+                  <Link href={`/real-estate-process/more-stuff/${index}`}>
+                    <Card className="bg-transparent border border-black/20 p-6 space-y-1">
+                      <h3 className="font-bold text-lg">{step.title}</h3>
+                      <p className="line-clamp-2">
+                        Once upon a time, in a far-off land, there was a very
+                        lazy king who spent all day lounging on his throne. One
+                        day, his advisors came to him with a problem: the
+                        kingdom was running out of money.
+                      </p>
+                    </Card>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="md:col-span-12">
             <h2 className="text-4xl font-bold dark:text-white text-gray-950">
@@ -228,6 +244,20 @@ const reSteps = {
     {
       id: 6,
       title: "Deciding To Sell",
+    },
+  ],
+  more_stuff: [
+    {
+      id: 1,
+      title: "More Stuff",
+    },
+    {
+      id: 2,
+      title: "More Stuff",
+    },
+    {
+      id: 3,
+      title: "More Stuff",
     },
   ],
 };
