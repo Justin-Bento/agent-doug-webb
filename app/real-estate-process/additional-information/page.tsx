@@ -5,6 +5,8 @@ import Navigation from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import React from "react";
+import reProcess from "@/lib/real-estate-transaction-process.json";
+import { createSlug } from "@/lib/utils";
 
 export default function page() {
   return (
@@ -22,11 +24,19 @@ export default function page() {
         <section className="wrapper">
           <h2 className="text-4xl tracking-tight font-bold">Additional Information of The Process</h2>
           <Divider className="rounded-full my-4" />
-          <Link href="/app/real-estate-process/additional-information" className="hover:underline">
-            <Card className="px-4 py-5 sm:p-6">
-              <h3 className="">Buy Before You Sell</h3>
-            </Card>
-          </Link>
+          {reProcess.moreStuff.map((process, index) => {
+            return (
+              <Link
+                key={index}
+                href={`/real-estate-process/deciding-to-buy/${createSlug(process.title)}`}
+                className="hover:underline"
+              >
+                <Card className="px-4 py-5 sm:p-6 bg-transparent mt-6">
+                  <h3 className="">{process.title}</h3>
+                </Card>
+              </Link>
+            );
+          })}
         </section>
         <section className="wrapper">
           <h2 className="text-4xl tracking-tight font-bold">Frequently Asked Questions</h2>
