@@ -28,6 +28,10 @@ export default function page() {
             </Card>
           </Link>
         </section>
+        <section className="wrapper">
+          <h2 className="text-4xl tracking-tight font-bold">Frequently Asked Questions</h2>
+          <Divider className="rounded-full my-4" />
+        </section>
       </main>
       <Footer />
     </>
