@@ -17,28 +17,30 @@ export default function page() {
             </h1>
           </div>
         </section>
-        <ul className="list-disc ml-6 mt-2">
-          <li>
-            <Link href="/real-estate-process/deciding-to-buy/1" className="hover:underline">
-              Deciding To Buy Step #1
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/deciding-to-buy/2" className="hover:underline">
-              Deciding To Buy Step #2
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/deciding-to-buy/3" className="hover:underline">
-              Deciding To Buy Step #3
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/deciding-to-buy/4" className="hover:underline">
-              Deciding To Buy Step #4
-            </Link>
-          </li>
-        </ul>
+        <section className="wrapper">
+          <ul className="list-disc ml-6 mt-2">
+            <li>
+              <Link href="/real-estate-process/deciding-to-buy/1" className="hover:underline">
+                Deciding To Buy Step #1
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/deciding-to-buy/2" className="hover:underline">
+                Deciding To Buy Step #2
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/deciding-to-buy/3" className="hover:underline">
+                Deciding To Buy Step #3
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/deciding-to-buy/4" className="hover:underline">
+                Deciding To Buy Step #4
+              </Link>
+            </li>
+          </ul>
+        </section>
       </main>
       <Footer />
     </>

@@ -17,28 +17,30 @@ export default function page() {
             </h1>
           </div>
         </section>
-        <ul className="list-disc ml-6 mt-2">
-          <li>
-            <Link href="/real-estate-process/additional-information/1" className="hover:underline">
-              Additional Information - Step #1
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/additional-information/2" className="hover:underline">
-              Additional Information - Step #2
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/additional-information/3" className="hover:underline">
-              Additional Information - Step #3
-            </Link>
-          </li>
-          <li>
-            <Link href="/real-estate-process/additional-information/4" className="hover:underline">
-              Additional Information - Step #4
-            </Link>
-          </li>
-        </ul>
+        <section className="wrapper">
+          <ul className="list-disc ml-6 mt-2">
+            <li>
+              <Link href="/real-estate-process/additional-information/1" className="hover:underline">
+                Additional Information - Step #1
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/additional-information/2" className="hover:underline">
+                Additional Information - Step #2
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/additional-information/3" className="hover:underline">
+                Additional Information - Step #3
+              </Link>
+            </li>
+            <li>
+              <Link href="/real-estate-process/additional-information/4" className="hover:underline">
+                Additional Information - Step #4
+              </Link>
+            </li>
+          </ul>
+        </section>
       </main>
       <Footer />
     </>
