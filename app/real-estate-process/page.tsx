@@ -3,6 +3,7 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
 export default function page() {
   return (
@@ -18,28 +19,36 @@ export default function page() {
           </div>
         </section>
         <section className="wrapper min-h-dvh my-24">
-          <ul className="list-disc ml-6 mt-2">
-            <li>
-              <Link href="/real-estate-process/deciding-to-buy" className="hover:underline">
-                Deciding To Buy
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/deciding-to-sell" className="hover:underline">
-                Deciding To Sell
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/more-stuff" className="hover:underline">
-                More Stuff
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/additional-information" className="hover:underline">
-                Additional Information
-              </Link>
-            </li>
-          </ul>
+          <div className="grid grid-cols-2 gap-8">
+            <Link href="/real-estate-process/deciding-to-buy" className="hover:underline">
+              <Card className="bg-transparent hover:ring-black/30 active:ring-primary">
+                <div className="px-4 py-5 sm:p-6">
+                  <p className="">Deciding To Buy</p>
+                </div>
+              </Card>
+            </Link>
+            <Link href="/real-estate-process/deciding-to-sell" className="hover:underline">
+              <Card className="bg-transparent hover:ring-black/30 active:ring-primary">
+                <div className="px-4 py-5 sm:p-6">
+                  <p className="">Deciding To Sell</p>
+                </div>
+              </Card>
+            </Link>
+            <Link href="/real-estate-process/more-stuff" className="hover:underline">
+              <Card className="bg-transparent hover:ring-black/30 active:ring-primary">
+                <div className="px-4 py-5 sm:p-6">
+                  <p className="">More Stuff</p>
+                </div>
+              </Card>
+            </Link>
+            <Link href="/real-estate-process/additional-information" className="hover:underline">
+              <Card className="bg-transparent hover:ring-black/30 active:ring-primary">
+                <div className="px-4 py-5 sm:p-6">
+                  <p className="">Additional Information</p>
+                </div>
+              </Card>
+            </Link>
+          </div>
         </section>
       </main>
       <Footer />
