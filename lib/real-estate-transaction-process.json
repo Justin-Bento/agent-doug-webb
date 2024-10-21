@@ -32,5 +32,65 @@
       "id": 8,
       "title": "Packing and Moving"
     }
+  ],
+  "selling": [
+    {
+      "id": 1,
+      "title": "Researching Value"
+    },
+    {
+      "id": 2,
+      "title": "Preparing Property"
+    },
+    {
+      "id": 3,
+      "title": "Selecting a Selling Agent"
+    },
+    {
+      "id": 4,
+      "title": "The Listing Contract"
+    },
+    {
+      "id": 5,
+      "title": "Repairs and Renos"
+    },
+    {
+      "id": 6,
+      "title": "Staging"
+    },
+    {
+      "id": 7,
+      "title": "Negotiating"
+    },
+    {
+      "id": 8,
+      "title": "Removing Conditions"
+    },
+    {
+      "id": 8,
+      "title": "Lawyers and Closing Selling"
+    },
+    {
+      "id": 8,
+      "title": "Packing and Moving"
+    }
+  ],
+  "moreStuff": [
+    {
+      "id": 1,
+      "title": "Researching Value"
+    },
+    {
+      "id": 2,
+      "title": "Preparing Property"
+    },
+    {
+      "id": 3,
+      "title": "Selecting a Selling Agent"
+    },
+    {
+      "id": 4,
+      "title": "The Listing Contract"
+    }
   ]
 }
