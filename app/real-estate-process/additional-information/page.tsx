@@ -1,6 +1,8 @@
 import BackgroundPattern from "@/components/BackgroundPattern";
+import Divider from "@/components/Divider";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import React from "react";
 
@@ -18,28 +20,17 @@ export default function page() {
           </div>
         </section>
         <section className="wrapper">
-          <ul className="list-disc ml-6 mt-2">
-            <li>
-              <Link href="/real-estate-process/additional-information/1" className="hover:underline">
-                Additional Information - Step #1
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/additional-information/2" className="hover:underline">
-                Additional Information - Step #2
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/additional-information/3" className="hover:underline">
-                Additional Information - Step #3
-              </Link>
-            </li>
-            <li>
-              <Link href="/real-estate-process/additional-information/4" className="hover:underline">
-                Additional Information - Step #4
-              </Link>
-            </li>
-          </ul>
+          <h2 className="text-4xl tracking-tight font-bold">Additional Information of The Process</h2>
+          <Divider className="rounded-full my-4" />
+          <Link href="/real-estate-process/deciding-to-buy/1" className="hover:underline">
+            <Card className="px-4 py-5 sm:p-6">
+              <h3 className="">Buy Before You Sell</h3>
+            </Card>
+          </Link>
+        </section>
+        <section className="wrapper">
+          <h2 className="text-4xl tracking-tight font-bold">Frequently Asked Questions</h2>
+          <Divider className="rounded-full my-4" />
         </section>
       </main>
       <Footer />
