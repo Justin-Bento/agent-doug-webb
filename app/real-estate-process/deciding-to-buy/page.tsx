@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { createSlug } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
+import reProcess from "@/lib/real-estate-transaction-process.json";
 
 export default function page() {
   return (
@@ -23,19 +24,17 @@ export default function page() {
         <section className="wrapper">
           <h2 className="text-4xl tracking-tight font-bold">Sages Of The Buying Process</h2>
           <Divider className="rounded-full my-4" />
-          {buying_process.map((process, index) => {
+          {reProcess.buying.map((process, index) => {
             return (
-              <>
-                <Link
-                  key={index}
-                  href={`/real-estate-process/deciding-to-buy/${createSlug(process.title)}`}
-                  className="hover:underline"
-                >
-                  <Card className="px-4 py-5 sm:p-6">
-                    <h3 className="">{process.title}</h3>
-                  </Card>
-                </Link>
-              </>
+              <Link
+                key={index}
+                href={`/real-estate-process/deciding-to-buy/${createSlug(process.title)}`}
+                className="hover:underline"
+              >
+                <Card className="px-4 py-5 sm:p-6 bg-transparent mt-6">
+                  <h3 className="">{process.title}</h3>
+                </Card>
+              </Link>
             );
           })}
         </section>
@@ -48,38 +47,3 @@ export default function page() {
     </>
   );
 }
-
-const buying_process = [
-  {
-    id: 1,
-    title: "Sell Before You Buy",
-  },
-  {
-    id: 2,
-    title: "How Much can you afford",
-  },
-  {
-    id: 3,
-    title: "Selecting an B. Agent",
-  },
-  {
-    id: 4,
-    title: "Visiting Properties",
-  },
-  {
-    id: 5,
-    title: "Making An Offer",
-  },
-  {
-    id: 6,
-    title: "Making The Offer Firm",
-  },
-  {
-    id: 7,
-    title: "Layers & Closing Buying",
-  },
-  {
-    id: 8,
-    title: "Packing and Moving",
-  },
-];
