@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Divider from "@/components/Divider";
 
 export default function page() {
   return (
@@ -20,6 +21,10 @@ export default function page() {
           </div>
         </section>
         <section className="wrapper">
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            A Comprehensive Overview of the Real Estate Process: What You Need to Know
+          </h2>
+          <Divider className=" my-8" />
           <div className="grid grid-cols-2 gap-8">
             <Link href="/real-estate-process/deciding-to-buy" className="last:hover:underline">
               <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all  ">
