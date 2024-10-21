@@ -92,5 +92,23 @@
       "id": 4,
       "title": "The Listing Contract"
     }
+  ],
+  "additionalInformation": [
+    {
+      "id": 1,
+      "title": "Researching Value"
+    },
+    {
+      "id": 2,
+      "title": "Preparing Property"
+    },
+    {
+      "id": 3,
+      "title": "Selecting a Selling Agent"
+    },
+    {
+      "id": 4,
+      "title": "The Listing Contract"
+    }
   ]
 }
