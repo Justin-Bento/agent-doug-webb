@@ -8,7 +8,7 @@ export default function page({ params }: any) {
     <>
       <Navigation />
       <main className="wrapper min-h-dvh my-24">
-        <h1 className="text-xl font-bold"> Hello, Deciding To Buy - {revertSlug(params.stages)}!</h1>
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-normal lg:text-5xl">{revertSlug(params.stages)}!</h1>
       </main>
       <Footer />
     </>
