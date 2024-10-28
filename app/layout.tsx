@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import { SanityLive } from "@/sanity/lib/live";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <html
-        lang="en"
-        suppressHydrationWarning
-      >
+      <html lang="en" suppressHydrationWarning>
         <head />
         <body>
           <ThemeProvider
@@ -30,6 +28,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <SanityLive />
           </ThemeProvider>
         </body>
       </html>
