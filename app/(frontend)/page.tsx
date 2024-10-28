@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "../../components/Navigation";
+import Footer from "../../components/Footer";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,9 +79,11 @@ export default function page() {
                 Your Guide to the Real Estate Transaction Process
               </h1>
               <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black dark:text-white">
-                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
-                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
-                coming at you and ready for any red flags along the way.
+                Be one step ahead of real-estate transactions with our un-biased
+                guide. As we give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags along the
+                way.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/listings">
@@ -102,7 +104,9 @@ export default function page() {
         {/* End of Landing Area */}
         <section className="relative min-h-[100dvh]">
           {/* SVG Background */}
-          <div className="absolute inset-0 z-0">{/* <MySvgComponent className="rotate-45" /> */}</div>
+          <div className="absolute inset-0 z-0">
+            {/* <MySvgComponent className="rotate-45" /> */}
+          </div>
 
           {/* Title Section */}
           <div className="relative z-20 flex items-center justify-center min-h-[100dvh] wrapper">
@@ -114,9 +118,11 @@ export default function page() {
               {/* Divider */}
               <Divider className="" />
               <p className="max-w-3xl text-lg text-center">
-                Doug began his journey in residential investment real estate in 1986, which eventually led to a
-                full-time career in real estate sales in 1997 with RE/MAX. To offer the level of service that both he
-                and his clients valued, Doug transitioned to Right At Home Realty.
+                Doug began his journey in residential investment real estate in
+                1986, which eventually led to a full-time career in real estate
+                sales in 1997 with RE/MAX. To offer the level of service that
+                both he and his clients valued, Doug transitioned to Right At
+                Home Realty.
               </p>
             </div>
           </div>
@@ -152,11 +158,14 @@ export default function page() {
                     Meet Your Trusted Realtor: John Webb
                   </h3>
                   <p className="text-sm text-balance mt-2 leading-5">
-                    With over 10 years of experience in the real estate industry, John possesses an in-depth
-                    understanding of the local market trends, neighborhoods, and property values.
+                    With over 10 years of experience in the real estate
+                    industry, John possesses an in-depth understanding of the
+                    local market trends, neighborhoods, and property values.
                   </p>
                   <div className="flex items-center gap-2">
-                    <p className="font-mono text-xs uppercase tracking-wide">{index + 1}</p>{" "}
+                    <p className="font-mono text-xs uppercase tracking-wide">
+                      {index + 1}
+                    </p>{" "}
                     {/* Updated to use index + 1 */}
                     <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black dark:ring-white"></span>
                   </div>
@@ -193,7 +202,9 @@ export default function page() {
                       />
                     </div>
                     <div className="mt-4">
-                      <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">{house.title}</p>
+                      <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">
+                        {house.title}
+                      </p>
                     </div>
                   </Link>
                 </li>
@@ -232,16 +243,14 @@ export default function page() {
                 Right at Home Agents Make it Easy
               </h1>
               <p className="mt-4 max-w-5xl text-md leading-7 font-semibold text-black dark:text-white">
-                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
-                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
-                coming at you and ready for any red flags.
+                Be one step ahead of real-estate transactions with our un-biased
+                guide. As we give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">
-                  <Button
-                    variant="outline"
-                    className="rounded-full px-5"
-                  >
+                  <Button variant="outline" className="rounded-full px-5">
                     Contact Us
                   </Button>
                 </Link>
