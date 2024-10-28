@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { client } from "@/sanity/lib/client";
+import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card } from "@/components/ui/card";
@@ -10,7 +10,7 @@ import Divider from "@/components/Divider";
 const options = { next: { revalidate: 60 } };
 
 export default async function Page() {
-  const posts = await client.fetch(RE_PROCESS_POSTS_QUERY, {}, options);
+  const { data: posts } = await sanityFetch(RE_PROCESS_POSTS_QUERY);
   return (
     <>
       <Navigation />
