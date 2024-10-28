@@ -1,16 +1,18 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import Link from "next/link";
-import { sanityFetch } from "@/sanity/lib/live";
-import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
+// Custom Components
+import Navigation from "@/components/Navigation";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card } from "@/components/ui/card";
 import Divider from "@/components/Divider";
+import Footer from "@/components/Footer";
+// Sanity Imports
+import { sanityFetch } from "@/sanity/lib/live";
+import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 
 const options = { next: { revalidate: 60 } };
 
 export default async function Page() {
-  const { data: posts } = await sanityFetch(RE_PROCESS_POSTS_QUERY);
+  const { data: posts } = await sanityFetch({ query: RE_PROCESS_POSTS_QUERY });
   return (
     <>
       <Navigation />
