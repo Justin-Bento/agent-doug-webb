@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "CabinetGrotesk Variable";
+    src: url("/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
+  html {
+    font-family: "CabinetGrotesk Variable", system-ui, sans-serif;
+  }
+  .wrapper {
+    @apply mx-auto container px-4 sm:px-6 lg:px-8;
+  }
+}
