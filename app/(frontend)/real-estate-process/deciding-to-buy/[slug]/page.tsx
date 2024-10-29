@@ -5,7 +5,6 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Divider from "@/components/Divider";
-import TypographyDemo from "@/components/TypographyDemo";
 
 type PostIndexProps = { params: { slug: string; title: string } };
 
