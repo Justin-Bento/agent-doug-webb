@@ -1,5 +1,5 @@
 import { sanityFetch } from "@/sanity/lib/live";
-import { RE_PROCESS_POST_QUERY } from "@/sanity/lib/queries";
+import { RE_PROCESS_ARTICLE_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
@@ -10,7 +10,7 @@ type PostIndexProps = { params: { slug: string; title: string } };
 
 export default async function Page({ params }: PostIndexProps) {
   const { data: post } = await sanityFetch({
-    query: RE_PROCESS_POST_QUERY,
+    query: RE_PROCESS_ARTICLE_QUERY,
     params: { slug: params.slug },
   });
   if (!post) {
