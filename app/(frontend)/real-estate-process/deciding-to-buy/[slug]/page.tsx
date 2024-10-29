@@ -28,15 +28,15 @@ export default async function Page({ params }: PostIndexProps) {
       <main className="wrapper mb-24 grid-cols-1 gap-6 space-y-8 p-12 min-h-dvh max-w-[100ch]">
         <section className="space-y-4">
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl capitalize">
-            {post.title || "News title is not available."}
+            {post?.title || "News title is not available."}
           </h1>
           <p className="leading-7 [&:not(:first-child)]:mt-6 max-w-prose">
-            {post.description || "Description not available."}
+            {post?.description || "Description not available."}
           </p>
           <Divider />
         </section>
         <article className="prose max-w-[100ch]">
-          <PortableText value={post.body} />
+          <PortableText value={post?.body} />
         </article>
         <section>
           <hr className="pb-4" />

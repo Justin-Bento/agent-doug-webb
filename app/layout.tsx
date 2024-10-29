@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
-import "./globals.css";
 import { SanityLive } from "@/sanity/lib/live";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Agent Webb",

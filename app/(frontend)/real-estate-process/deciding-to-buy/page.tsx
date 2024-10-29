@@ -9,8 +9,6 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 
-const options = { next: { revalidate: 60 } };
-
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: RE_PROCESS_POSTS_QUERY });
   return (
@@ -32,7 +30,7 @@ export default async function Page() {
           <Divider className=" my-8" />{" "}
           <ul className="grid grid-cols-1 gap-4">
             {posts.map((post) => (
-              <li key={post._id}>
+              <li key={post?._id}>
                 <Link
                   href={`/real-estate-process/deciding-to-buy/${post?.slug?.current}`}
                 >
