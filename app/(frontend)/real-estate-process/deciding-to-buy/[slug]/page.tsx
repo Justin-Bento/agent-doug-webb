@@ -9,40 +9,36 @@ import { PortableText } from "next-sanity";
 
 type PostIndexProps = { params: { slug: string; title: string } };
 
-const options = { next: { revalidate: 60 } };
+// Set ISR revalidation at the route level
+export const revalidate = 60;
 
 export default async function Page({ params }: PostIndexProps) {
   const { data: post } = await sanityFetch({
     query: RE_PROCESS_ARTICLE_QUERY,
     params: { slug: params.slug },
-    options,
   });
+
   if (!post) {
     notFound();
   }
+
   return (
     <>
       <Navigation />
       <main className="wrapper mb-24 grid-cols-1 gap-6 space-y-8 p-12 min-h-dvh max-w-[100ch]">
-        {post ? (
-          <section className="space-y-4">
-            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl capitalize">
-              {post.title || "News title is not available."}
-            </h1>
-            <p className="leading-7 [&:not(:first-child)]:mt-6 max-w-prose">
-              {post.description || "Description not available."}
-            </p>
-            <Divider />
-          </section>
-        ) : (
-          <p>Loading...</p>
-        )}
-        {post ? (
-          <article className="prose max-w-[100ch]">
-            <PortableText value={post.body} />
-          </article>
-        ) : null}
-        <section className="">
+        <section className="space-y-4">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl capitalize">
+            {post.title || "News title is not available."}
+          </h1>
+          <p className="leading-7 [&:not(:first-child)]:mt-6 max-w-prose">
+            {post.description || "Description not available."}
+          </p>
+          <Divider />
+        </section>
+        <article className="prose max-w-[100ch]">
+          <PortableText value={post.body} />
+        </article>
+        <section>
           <hr className="pb-4" />
           <Link href="/real-estate-process/deciding-to-buy">
             &larr; Return to Deciding To Buy Process
