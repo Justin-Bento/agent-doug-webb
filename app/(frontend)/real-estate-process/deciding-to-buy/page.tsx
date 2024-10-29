@@ -9,6 +9,9 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 
+// Set ISR revalidation at the route level
+export const revalidate = 60;
+
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: RE_PROCESS_POSTS_QUERY });
   return (
