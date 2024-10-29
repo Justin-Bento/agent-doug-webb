@@ -5,13 +5,17 @@ import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Divider from "@/components/Divider";
+import { PortableText } from "next-sanity";
 
 type PostIndexProps = { params: { slug: string; title: string } };
+
+const options = { next: { revalidate: 60 } };
 
 export default async function Page({ params }: PostIndexProps) {
   const { data: post } = await sanityFetch({
     query: RE_PROCESS_ARTICLE_QUERY,
     params: { slug: params.slug },
+    options,
   });
   if (!post) {
     notFound();
@@ -33,7 +37,11 @@ export default async function Page({ params }: PostIndexProps) {
         ) : (
           <p>Loading...</p>
         )}
-        <article className=""></article>
+        {post ? (
+          <article className="prose max-w-[100ch]">
+            <PortableText value={post.body} />
+          </article>
+        ) : null}
         <section className="">
           <hr className="pb-4" />
           <Link href="/posts">&larr; Return to index</Link>
