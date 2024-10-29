@@ -1,10 +1,10 @@
-import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
 import Image from "next/image";
 import { Metadata } from "next";
-import BackgroundPattern from "@/components/BackgroundPattern";
 import { TbCircleCheck } from "react-icons/tb";
 import Divider from "@/components/Divider";
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
+import BackgroundPattern from "@/components/BackgroundPattern";
 
 export const metadata: Metadata = {
   title: "About - AgentWebb",
