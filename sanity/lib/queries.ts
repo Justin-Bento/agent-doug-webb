@@ -8,5 +8,5 @@ export const RE_PROCESS_POSTS_QUERY = defineQuery(
 
 export const RE_PROCESS_POST_QUERY =
   defineQuery(`*[_type == "realEstateProcess" && slug.current == $slug][0]{
-  title, body, mainImage
+  _id, title, body, mainImage
 }`);
