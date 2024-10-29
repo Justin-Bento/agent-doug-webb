@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
