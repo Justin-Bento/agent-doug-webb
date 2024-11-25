@@ -26,6 +26,17 @@ export const RE_PROCESS_POSTS_QUERY_MORESTUFF = defineQuery(
 }}`
 );
 
+export const RE_PROCESS_POSTS_QUERY_ADDITONALINFORMATION = defineQuery(
+  `*[_type == "realEstateProcess" && "additional-information" in categories[]->slug.current]{
+  _id,
+  title,
+  slug,
+  categories[] -> {
+    title,
+    slug
+}}`
+);
+
 export const RE_PROCESS_ARTICLE_QUERY = defineQuery(`*[_type == "realEstateProcess" && slug.current == $slug][0]{
   _id, title, body, mainImage
 }`);
