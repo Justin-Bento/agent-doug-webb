@@ -7,13 +7,13 @@ import Divider from "@/components/Divider";
 import Footer from "@/components/Footer";
 // Sanity Imports
 import { sanityFetch } from "@/sanity/lib/live";
-import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
+import { RE_PROCESS_POSTS_QUERY_SELLING } from "@/sanity/lib/queries";
 
 // Set ISR revalidation at the route level
 export const revalidate = 60;
 
 export default async function Page() {
-  const { data: posts } = await sanityFetch({ query: RE_PROCESS_POSTS_QUERY });
+  const { data: posts } = await sanityFetch({ query: RE_PROCESS_POSTS_QUERY_SELLING });
   return (
     <>
       <Navigation />
@@ -30,11 +30,11 @@ export default async function Page() {
           <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
             Deciding To Sell
           </h2>
-          <Divider className=" my-8" />{" "}
+          <Divider className=" my-8" />
           <ul className="grid grid-cols-1 gap-4">
             {posts.map((post) => (
               <li key={post?._id}>
-                <Link href={`/real-estate-process/deciding-to-buy/${post?.slug?.current}`}>
+                <Link href={`/real-estate-process/deciding-to-sell/${post?.slug?.current}`}>
                   <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all">
                     <div className="px-4 py-5 sm:p-6 space-y-2">
                       <h2 className="text-xl font-semibold">{post?.title}</h2>

@@ -40,9 +40,7 @@ export default async function Page({ params }: PostIndexProps) {
         </article>
         <section>
           <hr className="pb-4" />
-          <Link href="/real-estate-process/deciding-to-buy">
-            &larr; Return to Deciding To Buy Process
-          </Link>
+          <Link href="/real-estate-process/deciding-to-sell">&larr; Return to Deciding To Selling Process</Link>
         </section>
       </main>
       <Footer />
