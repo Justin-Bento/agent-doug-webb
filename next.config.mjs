@@ -1,28 +1,19 @@
-import createMDX from "@next/mdx";
-
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Configure `pageExtensions`` to include MDX files
-  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
-  transpilePackages: ["next-mdx-remote"],
-  // Optionally, add any other Next.js config below
+const config = {
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
+      { hostname: "cdn.sanity.io" },
+      { hostname: "source.unsplash.com" },
     ],
+  },
+  typescript: {
+    // Set this to false if you want production builds to abort if there's type errors
+    ignoreBuildErrors: process.env.VERCEL_ENV === "production",
+  },
+  eslint: {
+    /// Set this to false if you want production builds to abort if there's lint errors
+    ignoreDuringBuilds: process.env.VERCEL_ENV === "production",
   },
 };
 
-const withMDX = createMDX({
-  // Add markdown plugins here, as desired
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
-});
-
-// Merge MDX config with Next.js config
-export default withMDX(nextConfig);
+export default config;
