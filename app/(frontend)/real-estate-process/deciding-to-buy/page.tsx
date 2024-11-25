@@ -27,25 +27,19 @@ export default async function Page() {
           </div>
         </section>
         <section className="wrapper max-w-[100ch]">
-          <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
-            Deciding To Buy
-          </h2>
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">Deciding To Buy</h2>
           <Divider className=" my-8" />{" "}
           <ul className="grid grid-cols-1 gap-4">
             {posts.map((post) => (
               <li key={post?._id}>
-                <Link
-                  href={`/real-estate-process/deciding-to-buy/${post?.slug?.current}`}
-                >
+                <Link href={`/real-estate-process/deciding-to-buy/${post?.slug?.current}`}>
                   <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all">
                     <div className="px-4 py-5 sm:p-6 space-y-2">
                       <h2 className="text-xl font-semibold">{post?.title}</h2>
                       <p className="line-clamp-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Inventore molestias voluptatem sint, expedita
-                        facilis enim. Velit rem officia fugiat libero eveniet
-                        animi nemo minus perspiciatis maxime nihil beatae, atque
-                        esse.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
+                        expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis
+                        maxime nihil beatae, atque esse.
                       </p>
                     </div>
                   </Card>

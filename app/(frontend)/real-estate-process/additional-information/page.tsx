@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 // Sanity Imports
 import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_POSTS_QUERY_ADDITONALINFORMATION } from "@/sanity/lib/queries";
-
+import { Post } from "@/sanity/types";
 // Set ISR revalidation at the route level
 export const revalidate = 60;
 
@@ -32,7 +32,7 @@ export default async function Page() {
           </h2>
           <Divider className=" my-8" />
           <ul className="grid grid-cols-1 gap-4">
-            {posts.map((post) => (
+            {posts.map((post: Post) => (
               <li key={post?._id}>
                 <Link href={`/real-estate-process/deciding-to-sell/${post?.slug?.current}`}>
                   <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all">
