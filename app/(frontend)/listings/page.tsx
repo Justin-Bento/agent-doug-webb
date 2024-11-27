@@ -7,8 +7,6 @@
 
 import Link from "next/link";
 import property from "@/lib/property.json";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { TbSearch } from "react-icons/tb";
@@ -18,7 +16,6 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <Navigation />
       <main className="space-y-24">
         <section className="relative overflow-hidden">
           <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/40 to-transparent" />
@@ -75,7 +72,6 @@ export default function Page() {
           </ul>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
