@@ -4,8 +4,10 @@ import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Divider from "@/components/Divider";
+import { createSlug } from "@/lib/utils";
 
 export default function page() {
+  const realEstateProcess: string[] = ["deciding to buy", "deciding to sell", "More Stuff", "Additional Information"];
   return (
     <>
       <main className="space-y-24 mb-24 min-h-dvh">
@@ -22,68 +24,29 @@ export default function page() {
             A Comprehensive Overview of the Real Estate Process: What You Need to Know
           </h2>
           <Divider className=" my-8" />
-          <div className="grid grid-cols-2 gap-8">
-            <Link href="/dummy/deciding-to-buy" className="last:hover:underline">
-              <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all  ">
-                <div className="px-4 py-5 sm:p-6 space-y-2">
-                  <p className="text-xl font-semibold">Deciding To Buy</p>
-                  <p className="line-clamp-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
-                    expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis maxime
-                    nihil beatae, atque esse.
-                  </p>
-                  <Button variant="link" className="m-0 p-0">
-                    See More
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-            <Link href="/dummy/deciding-to-sell" className="last:hover:underline">
-              <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all  ">
-                <div className="px-4 py-5 sm:p-6 space-y-2">
-                  <p className="text-xl font-semibold">Deciding To Sell</p>
-                  <p className="line-clamp-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
-                    expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis maxime
-                    nihil beatae, atque esse.
-                  </p>
-                  <Button variant="link" className="m-0 p-0">
-                    See More
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-            <Link href="/dummy/more-stuff" className="last:hover:underline">
-              <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all  ">
-                <div className="px-4 py-5 sm:p-6 space-y-2">
-                  <p className="text-xl font-semibold">More Stuff</p>
-                  <p className="line-clamp-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
-                    expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis maxime
-                    nihil beatae, atque esse.
-                  </p>
-                  <Button variant="link" className="m-0 p-0">
-                    See More
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-            <Link href="/dummy/additional-information" className="last:hover:underline">
-              <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all  ">
-                <div className="px-4 py-5 sm:p-6 space-y-2">
-                  <p className="text-xl font-semibold">Additional Information</p>
-                  <p className="line-clamp-2">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
-                    expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis maxime
-                    nihil beatae, atque esse.
-                  </p>
-                  <Button variant="link" className="m-0 p-0">
-                    See More
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-          </div>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {realEstateProcess.map((process, index) => {
+              return (
+                <li key={index} className="group">
+                  <Link href={`dummy/${createSlug(process)}`}>
+                    <Card className="bg-transparent  active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all  ">
+                      <div className="px-4 py-5 sm:p-6 space-y-2">
+                        <p className="text-xl font-semibold capitalize">{process}</p>
+                        <p className="line-clamp-2">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
+                          expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis
+                          maxime nihil beatae, atque esse.
+                        </p>
+                        <Button variant="link" className="m-0 p-0 group-hover:underline">
+                          See More
+                        </Button>
+                      </div>
+                    </Card>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </section>
         <section className="wrapper">
           <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
