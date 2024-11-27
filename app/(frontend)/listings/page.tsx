@@ -1,4 +1,3 @@
-<<<<<<< HEAD:app/listings/page.tsx
 // [x] Create a Route for listings page inside Next.js.
 // [x] Creating a UI for the listing page segment.
 // [x] Create an unordered list on the listing page has a list item of properties from 1 - 10.
@@ -6,17 +5,6 @@
 // [x] Dynamically render these properties with an array.
 // [] If the url display anything other than an item 1 through 10  render the not found component.
 
-=======
-import React from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Metadata } from "next";
-import Image from "next/image";
-import BackgroundPattern from "@/components/BackgroundPattern";
-import { TbSearch } from "react-icons/tb";
->>>>>>> bd92058cc93acb3074561e3f05be23f3b5d6b460:app/(frontend)/listings/page.tsx
 import Link from "next/link";
 import property from "@/lib/property.json";
 import Navigation from "@/components/Navigation";
