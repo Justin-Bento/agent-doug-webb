@@ -29,7 +29,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
       return (
         <>
           <h1>Category not recognized</h1>
-          <p>The category "{params.slug[0]}" does not exist or has no posts.</p>
+          <p>The category &quot;{params.slug[0]}&quot; does not exist or has no posts.</p>
         </>
       );
     }
@@ -47,7 +47,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
                       <h2 className="text-xl font-semibold">{post?.title}</h2>
                       <p className="line-clamp-2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestias voluptatem sint,
-                        expedita facilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis
+                        expedita cfacilis enim. Velit rem officia fugiat libero eveniet animi nemo minus perspiciatis
                         maxime nihil beatae, atque esse.
                       </p>
                     </div>
