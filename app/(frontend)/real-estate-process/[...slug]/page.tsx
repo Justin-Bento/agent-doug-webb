@@ -15,11 +15,7 @@ export const revalidate = 60;
 export default async function Page({ params }: { params: { slug?: string[] } }) {
   // Validate params.slug
   if (!params.slug || !Array.isArray(params.slug)) {
-    return (
-      <div className="">
-        <h1>Invalid parameters provided</h1>
-      </div>
-    );
+    return <h1>Invalid parameters provided</h1>;
   }
 
   if (params.slug.length === 1) {
@@ -31,15 +27,15 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
 
     if (!posts || posts.length === 0) {
       return (
-        <div className="">
+        <>
           <h1>Category not recognized</h1>
           <p>The category "{params.slug[0]}" does not exist or has no posts.</p>
-        </div>
+        </>
       );
     }
 
     return (
-      <main className="wrapper min-h-dvh grid justify-center py-20 space-y-8">
+      <>
         <h1 className="text-4xl font-semibold capitalize">{revertSlug(params.slug[0])}</h1>
         <ul className="grid grid-cols-1 gap-4">
           {posts.length > 0 ? (
@@ -67,7 +63,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
           <Divider className="block" />
           <GoBack />
         </section>
-      </main>
+      </>
     );
   }
 
@@ -79,16 +75,14 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
     });
     return (
       <>
-        <main className="wrapper min-h-dvh grid justify-cente py-20 space-y-12">
-          <h1 className="text-4xl font-semibold capitalize">{post?.title} </h1>
-          <article className="prose max-w-[100ch] text-balance">
-            <PortableText value={post?.body} />
-          </article>
-          <section className="space-y-8">
-            <Divider className="block" />
-            <GoBack />
-          </section>
-        </main>
+        <h1 className="text-4xl font-semibold capitalize">{post?.title} </h1>
+        <article className="prose max-w-[100ch] text-balance">
+          <PortableText value={post?.body} />
+        </article>
+        <section className="space-y-8">
+          <Divider className="block" />
+          <GoBack />
+        </section>
       </>
     );
   }
