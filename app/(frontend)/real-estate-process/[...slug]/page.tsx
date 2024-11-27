@@ -36,14 +36,13 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
           </>
         );
       }
-
       return (
         <>
           <h1 className="text-4xl font-semibold capitalize">{revertSlug(params.slug[0])}</h1>
           <ul className="grid grid-cols-1 gap-4">
             {posts.map((post: Post) => (
               <li key={post?._id}>
-                <Link href={`/real-estate-process/${params.slug[0]}/${post?.slug?.current}`}>
+                <Link href={`/real-estate-process/${(params.slug as string[])[0]}/${post?.slug?.current}`}>
                   <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all">
                     <div className="px-4 py-5 sm:p-6 space-y-2">
                       <h2 className="text-xl font-semibold">{post?.title}</h2>
