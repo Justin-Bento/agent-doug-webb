@@ -79,7 +79,6 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
       <>
         <main className="wrapper space-y-6 min-h-dvh py-24">
           <h1 className="text-4xl font-semibold capitalize">{post?.title} </h1>
-          <Divider className="my-3 block" />
           <article className="prose max-w-[100ch] text-balance">
             <PortableText value={post?.body} />
           </article>
