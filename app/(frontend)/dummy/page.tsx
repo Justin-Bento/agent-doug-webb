@@ -1,7 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
