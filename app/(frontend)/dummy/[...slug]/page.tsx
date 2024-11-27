@@ -9,13 +9,10 @@ import { PortableText } from "next-sanity";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GoBack from "@/components/GoBack";
+import { notFound } from "next/navigation";
+import { revertSlug } from "@/lib/utils";
 // Set ISR revalidation at the route level
 export const revalidate = 60;
-
-function formatToSentence(slug: string): string {
-  if (!slug || typeof slug !== "string") return "";
-  return slug.toLowerCase().replace(/-/g, " ");
-}
 
 export default async function Page({ params }: { params: { slug?: string[] } }) {
   // Validate params.slug
@@ -45,7 +42,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
 
     return (
       <div>
-        <h1 className="text-4xl font-semibold capitalize">{formatToSentence(params.slug[0])}</h1>
+        <h1 className="text-4xl font-semibold capitalize">{revertSlug(params.slug[0])}</h1>
         <Divider className="my-3 block" />
         <ul className="grid grid-cols-1 gap-4">
           {posts.length > 0 ? (
@@ -99,10 +96,5 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
   }
 
   // Fallback case
-  return (
-    <div>
-      <h1>Page not found</h1>
-      <p>The content you're looking for doesn't exist.</p>
-    </div>
-  );
+  return notFound();
 }
