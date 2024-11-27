@@ -3,9 +3,12 @@ import Divider from "@/components/Divider";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { sanityFetch } from "@/sanity/lib/live";
-import { RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
+import { RE_PROCESS_ARTICLE_QUERY, RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 import { Post } from "@/sanity/types";
-
+import { PortableText } from "next-sanity";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import GoBack from "@/components/GoBack";
 // Set ISR revalidation at the route level
 export const revalidate = 60;
 
@@ -71,13 +74,27 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
   }
 
   if (params.slug.length === 2) {
-    const [category, title] = params.slug;
+    // const [category, title] = params.slug;
+    const { data: post } = await sanityFetch({
+      query: RE_PROCESS_ARTICLE_QUERY,
+      params: { slug: params.slug[1] },
+    });
     return (
-      <div>
-        <h1 className="text-4xl font-semibold capitalize">Viewing docs for real estate process: {category}</h1>
-        <Divider className="my-3 block" />
-        <p>Document title: {title}</p>
-      </div>
+      <>
+        <Navigation />
+        <main className="wrapper space-y-6 min-h-dvh py-24">
+          <h1 className="text-4xl font-semibold capitalize">{post?.title} </h1>
+          <Divider className="my-3 block" />
+          <article className="prose max-w-[100ch] text-balance">
+            <PortableText value={post?.body} />
+          </article>
+          <Divider className="my-3 block" />
+          <section className="">
+            <GoBack />
+          </section>
+        </main>
+        <Footer />
+      </>
     );
   }
 
