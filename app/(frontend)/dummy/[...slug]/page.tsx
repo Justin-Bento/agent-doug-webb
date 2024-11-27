@@ -6,8 +6,6 @@ import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_ARTICLE_QUERY, RE_PROCESS_POSTS_QUERY } from "@/sanity/lib/queries";
 import { Post } from "@/sanity/types";
 import { PortableText } from "next-sanity";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import GoBack from "@/components/GoBack";
 import { notFound } from "next/navigation";
 import { revertSlug } from "@/lib/utils";
@@ -18,7 +16,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
   // Validate params.slug
   if (!params.slug || !Array.isArray(params.slug)) {
     return (
-      <div>
+      <div className="wrapper space-y-6 min-h-dvh py-24">
         <h1>Invalid parameters provided</h1>
       </div>
     );
@@ -33,7 +31,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
 
     if (!posts || posts.length === 0) {
       return (
-        <div>
+        <div className="wrapper space-y-6 min-h-dvh py-24">
           <h1>Category not recognized</h1>
           <p>The category "{params.slug[0]}" does not exist or has no posts.</p>
         </div>
@@ -41,7 +39,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
     }
 
     return (
-      <div>
+      <div className="wrapper space-y-6 min-h-dvh py-24">
         <h1 className="text-4xl font-semibold capitalize">{revertSlug(params.slug[0])}</h1>
         <Divider className="my-3 block" />
         <ul className="grid grid-cols-1 gap-4">
@@ -66,6 +64,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
             <p>No posts found for this category.</p>
           )}
         </ul>
+        <GoBack />
       </div>
     );
   }
@@ -78,7 +77,6 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
     });
     return (
       <>
-        <Navigation />
         <main className="wrapper space-y-6 min-h-dvh py-24">
           <h1 className="text-4xl font-semibold capitalize">{post?.title} </h1>
           <Divider className="my-3 block" />
@@ -90,7 +88,6 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
             <GoBack />
           </section>
         </main>
-        <Footer />
       </>
     );
   }
