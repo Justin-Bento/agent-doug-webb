@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
           {posts.length > 0 ? (
             posts.map((post: Post) => (
               <li key={post?._id}>
-                <Link href={`/dummy/${params.slug[0]}/${post?.slug?.current}`}>
+                <Link href={`/real-estate-process/${params.slug[0]}/${post?.slug?.current}`}>
                   <Card className="bg-transparent hover:border-gray-400 active:ring-primary hover:bg-white/70 transition-all">
                     <div className="px-4 py-5 sm:p-6 space-y-2">
                       <h2 className="text-xl font-semibold">{post?.title}</h2>

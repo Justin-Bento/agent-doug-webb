@@ -28,7 +28,7 @@ export default function page() {
             {realEstateProcess.map((process, index) => {
               return (
                 <li key={index} className="group">
-                  <Link href={`dummy/${createSlug(process)}`}>
+                  <Link href={`real-estate-process/${createSlug(process)}`}>
                     <Card className="bg-transparent  active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all  ">
                       <div className="px-4 py-5 sm:p-6 space-y-2">
                         <p className="text-xl font-semibold capitalize">{process}</p>
