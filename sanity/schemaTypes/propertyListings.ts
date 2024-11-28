@@ -12,6 +12,10 @@ export const propertyListings = defineType({
       type: "string",
     }),
     defineField({
+      name: "Statement",
+      type: "string",
+    }),
+    defineField({
       name: "slug",
       type: "slug",
       options: {
