@@ -8,6 +8,10 @@ export const propertyListings = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
+      name: "Price",
+      type: "number",
+    }),
+    defineField({
       name: "title",
       type: "string",
     }),
