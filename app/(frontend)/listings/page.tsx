@@ -1,4 +1,7 @@
 import React from "react";
+import { TbSearch } from "react-icons/tb";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
 
 export default function page() {
@@ -13,7 +16,20 @@ export default function page() {
         </div>
       </section>
       <section className="grid grid-cols-1 lg:grid-cols-3 wrapper  gap-6 lg:mt-24">
-        <div className="col-span-1 lg:col-span-3 w-full h-40 border border-gray-700 rounded"></div>
+        <div className="col-span-1 lg:col-span-3 w-full flex items-center justify-between">
+          <Card className="border max-w-sm w-full flex items-center justify-between gap-2 py-2 px-4 bg-transparent border-black/40 dark:border-white/50">
+            <p className="text-sm text-black/50 dark:text-white/50">Search</p>
+            <TbSearch className="text-black/50 dark:text-white/50" />
+          </Card>
+          <Card className="border-0 bg-transparent dark:bg-transparent shadow-none flex gap-4Fixe justify-start md:justify-end">
+            <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
+              Sort By
+            </Button>
+            <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
+              Latest Price
+            </Button>
+          </Card>
+        </div>
         <ul className="contents">
           <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
           <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
