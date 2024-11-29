@@ -2,6 +2,18 @@
 
 import { defineQuery } from "next-sanity";
 
+export const PROPERTY_LISTINGS_QUERY = defineQuery(
+  `  *[_type == "propertyListings"] {
+  _id,
+  title,
+  slug,
+  price,
+  statement,
+  publishedAt
+}
+`
+);
+
 export const RE_PROCESS_POSTS_QUERY = defineQuery(
   `  *[_type == "realEstateProcess" && $keyword in categories[]->slug.current]{
   _id,
