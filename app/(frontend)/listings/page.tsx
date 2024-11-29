@@ -12,6 +12,14 @@ export default function page() {
           </h1>
         </div>
       </section>
+      <section className="grid grid-cols-1 lg:grid-cols-3 wrapper  gap-6 lg:mt-24">
+        <div className="col-span-1 lg:col-span-3 w-full h-40 border border-gray-700 rounded"></div>
+        <ul className="contents">
+          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
+          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
+          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
+        </ul>
+      </section>
     </main>
   );
 }
