@@ -8,13 +8,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 const options = { next: { revalidate: 60 } };
 
 type PostArticle = {
   _id: string;
   title: string;
-  slug: string;
+  slug: { current: string };
   Price: number;
   Statement: string;
   publishedAt: string;
@@ -45,20 +52,23 @@ export default async function Page() {
             <p className="text-sm text-black/50 dark:text-white/50">Search</p>
             <TbSearch className="text-black/50 dark:text-white/50" />
           </Card>
-          <Card className="border-0 bg-transparent dark:bg-transparent shadow-none flex gap-4Fixe justify-start md:justify-end">
-            <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
-              Sort By
-            </Button>
-            <Button variant="ghost" size="sm" className="dark:bg-[#16151b]">
-              Latest Price
-            </Button>
-          </Card>
+          <Menubar className="bg-transparent">
+            <MenubarMenu>
+              <MenubarTrigger>Sort By</MenubarTrigger>
+              <MenubarContent>
+                <MenubarItem>Buying</MenubarItem>
+                <MenubarItem>Selling</MenubarItem>
+                <MenubarSeparator />
+                <MenubarItem>Renting</MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
+          </Menubar>
         </div>
         <ul className="contents">
           {posts.map((post: PostArticle) => {
             return (
-              <li className="col-span-1 w-full">
-                <Card key={post._id} className="bg-transparent">
+              <li key={post._id} className="col-span-1 w-full">
+                <Card className="bg-transparent">
                   <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
                     <Image
                       fill
