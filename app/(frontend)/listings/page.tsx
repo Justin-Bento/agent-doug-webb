@@ -1,10 +1,3 @@
-// [x] Create a Route for listings page inside Next.js.
-// [x] Creating a UI for the listing page segment.
-// [x] Create an unordered list on the listing page has a list item of properties from 1 - 10.
-// [x] Link the properties from 1 - 10 inside the listing route.
-// [x] Dynamically render these properties with an array.
-// [] If the url display anything other than an item 1 through 10  render the not found component.
-
 import Link from "next/link";
 import property from "@/lib/property.json";
 import BackgroundPattern from "@/components/BackgroundPattern";
