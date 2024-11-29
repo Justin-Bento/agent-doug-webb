@@ -1,10 +1,34 @@
 import React from "react";
 import { TbSearch } from "react-icons/tb";
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
+import { PROPERTY_LISTINGS_QUERY } from "@/sanity/lib/queries";
+import { client } from "@/sanity/lib/client";
+import Image from "next/image";
+import Link from "next/link";
+import { urlFor } from "@/sanity/lib/image";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-export default function page() {
+const options = { next: { revalidate: 60 } };
+
+type PostArticle = {
+  _id: string;
+  title: string;
+  slug: string;
+  Price: number;
+  Statement: string;
+  publishedAt: string;
+  mainImage: string;
+};
+
+export default async function Page() {
+  let posts = [];
+  try {
+    posts = await client.fetch(PROPERTY_LISTINGS_QUERY, {}, options);
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+  }
+  console.log(posts);
   return (
     <main className="min-h-dvh">
       <section className="relative overflow-hidden">
@@ -31,9 +55,34 @@ export default function page() {
           </Card>
         </div>
         <ul className="contents">
-          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
-          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
-          <li className="col-span-1 lg:col-span-1 w-full h-40 border border-gray-700 rounded"></li>
+          {posts.map((post: PostArticle) => {
+            return (
+              <li className="col-span-1 w-full">
+                <Card key={post._id} className="bg-transparent">
+                  <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
+                    <Image
+                      fill
+                      src={urlFor(post.mainImage).url() || ""}
+                      alt={post.title || "Property"}
+                      className="object-cover object-center rounded-t-xl"
+                    />
+                  </CardHeader>
+                  <CardContent className="mt-4">
+                    <p className="text-sm/6">
+                      {new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(post.Price)}
+                    </p>
+                    <h2 className="text-2xl font-semibold dark:text-white">{post.title}</h2>
+                    <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">{post.Statement}</p>
+                    <Link href={`listings/${post.slug.current}`}>
+                      <Button variant="outline" size="sm" className="flex items-center gap-1 mt-4 bg-transparent">
+                        View Property<span aria-hidden="true">→</span>
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </main>
