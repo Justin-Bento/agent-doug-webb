@@ -6,10 +6,18 @@ export const PROPERTY_LISTINGS_QUERY = defineQuery(
   `  *[_type == "propertyListings"] {
   _id,
   title,
-  slug,
-  price,
-  statement,
-  publishedAt
+  slug {
+    current
+  },
+  Price,
+  Statement,
+  publishedAt,
+  mainImage{
+    asset->{
+      _id,
+      url
+    }
+  }
 }
 `
 );
