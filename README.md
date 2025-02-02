@@ -32,3 +32,30 @@ This repository contains the code for a real-estate website I built for a client
 - TailwindCSS
 - Google Analytics
 - Sanity CMS
+
+## Run Locally  
+  
+Clone the project  
+  
+```bash  
+git clone git@github.com:Justin-Bento/agent-doug-webb.git
+```  
+  
+Go to the project directory  
+  
+```bash  
+cd /path/to/project/agent-doug-webb  
+```  
+  
+Install dependencies  
+  
+```bash  
+npm install  
+```  
+  
+Start the server  
+  
+```bash  
+npm run dev  
+```  
+  
