@@ -13,8 +13,22 @@ This repository contains the code for a real-estate website I built for a client
 - **Client Testimonials**: Highlighting positive feedback from previous clients to demonstrate credibility.
 - **Responsive Design**: Mobile-friendly design to ensure accessibility on all devices.
 - **Contact Form**: An easy way for potential clients to reach out and inquire about properties or services.
-- Light / Dark Mode with tailwindCSS
+- Light / Dark Mode with 
+
+## Technologies  
+
+- HTML
+- CSS, 
+- JavaScript,
+- typescript
+- prettier
+- eslint
+- React.js / Next.js
+  - radix-ui/react-labelt 
+  - formspree/react
+  - shadcn/ui
+  - react-icons
+  - next/sanity
+- TailwindCSS
 - Google Analytics
 - Sanity CMS
-
-
