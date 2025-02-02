@@ -65,3 +65,7 @@ To run this project, you will need to add the following environment variables to
 
 - ``NEXT_PUBLIC_PROJECT_ID`` - find inside sanity/manage.
 - ``NEXT_PUBLIC_DATASET`` - should be the default or your custom dataset.
+
+## Lessons Learned  
+  
+I learned the hard way not to promise too much on a web development project. I got excited and made big promises about features and timelines, thinking that additional help would be available. However, when I ended up handling everything myself, I became overwhelmed and stressed. This created challenges for both me and the client, as it led to unrealistic expectations on both sides. I realized I couldn’t meet the promises I made and was only able to set up the project and make certain UI tweaks. Now, I’ve learned to set realistic goals, communicate better with clients, and ensure everyone delivers on their commitments through contracts, while also setting achievable standards for what I know I can actually complete.
