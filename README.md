@@ -57,5 +57,11 @@ Start the server
   
 ```bash  
 npm run dev  
-```  
+```
+
+## Environment Variables  
   
+To run this project, you will need to add the following environment variables to your .env.local file
+
+- ``NEXT_PUBLIC_PROJECT_ID`` - find inside sanity/manage.
+- ``NEXT_PUBLIC_DATASET`` - should be the default or your custom dataset.
