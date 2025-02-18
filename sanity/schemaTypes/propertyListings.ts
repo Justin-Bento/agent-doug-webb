@@ -9,15 +9,7 @@ export const propertyListings = defineType({
   icon: DocumentTextIcon,
   fields: [
     defineField({
-      name: "Price",
-      type: "number",
-    }),
-    defineField({
       name: "title",
-      type: "string",
-    }),
-    defineField({
-      name: "Statement",
       type: "string",
     }),
     defineField({
@@ -26,11 +18,6 @@ export const propertyListings = defineType({
       options: {
         source: "title",
       },
-    }),
-    defineField({
-      name: "author",
-      type: "reference",
-      to: { type: "author" },
     }),
     defineField({
       name: "mainImage",
@@ -47,9 +34,12 @@ export const propertyListings = defineType({
       ],
     }),
     defineField({
-      name: "categories",
-      type: "array",
-      of: [defineArrayMember({ type: "reference", to: { type: "category" } })],
+      name: "Statement",
+      type: "string",
+    }),
+    defineField({
+      name: "Price",
+      type: "number",
     }),
     defineField({
       name: "publishedAt",
@@ -70,7 +60,25 @@ export const propertyListings = defineType({
         {
           name: "location",
           title: "Location",
-          type: "string",
+          type: "object",
+          fields: [
+            {
+              name: "address",
+              type: "string",
+            },
+            {
+              name: "city",
+              type: "string",
+            },
+            {
+              name: "country",
+              type: "string",
+            },
+            {
+              name: "zipcode",
+              type: "string",
+            },
+          ],
         },
         {
           name: "areaAndLot",
