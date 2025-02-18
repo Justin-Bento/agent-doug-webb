@@ -24,7 +24,7 @@ export const PROPERTY_LISTINGS_QUERY = defineQuery(
 
 export const PROPERTY_LISTINGS_POST_QUERY =
   defineQuery(`*[_type == "propertyListings"][0]{
-  title, Statement, mainImage
+  title, Statement, mainImage, listingInformation
  }`);
 
 export const RE_PROCESS_POSTS_QUERY = defineQuery(
