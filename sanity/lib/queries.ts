@@ -22,6 +22,11 @@ export const PROPERTY_LISTINGS_QUERY = defineQuery(
 `
 );
 
+export const PROPERTY_LISTINGS_POST_QUERY =
+  defineQuery(`*[_type == "propertyListings"][0]{
+  title, body, mainImage
+ }`);
+
 export const RE_PROCESS_POSTS_QUERY = defineQuery(
   `  *[_type == "realEstateProcess" && $keyword in categories[]->slug.current]{
   _id,
@@ -68,6 +73,7 @@ export const RE_PROCESS_POSTS_QUERY_ADDITONALINFORMATION = defineQuery(
 }}`
 );
 
-export const RE_PROCESS_ARTICLE_QUERY = defineQuery(`*[_type == "realEstateProcess" && slug.current == $slug][0]{
+export const RE_PROCESS_ARTICLE_QUERY =
+  defineQuery(`*[_type == "realEstateProcess" && slug.current == $slug][0]{
   _id, title, body, mainImage
 }`);
