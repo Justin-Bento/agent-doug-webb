@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
 
 interface PropertyDemoProps {
   image: string;
@@ -77,6 +79,20 @@ export default async function Page({
           <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
             Interior
           </h3>
+          <ul className="overflow-hidden flex flex-col md:flex-row md:space-evenely gap-12">
+            <li className="flex-1">
+              <Card className="bg-transparent px-4 py-5 sm:p-6">
+                <TbBoxModel className="size-10" />
+                <p className="text-xl font-medium">Indoors</p>
+              </Card>
+            </li>
+            <li className="flex-1">
+              <Card className="bg-trasparent px-4 py-5 sm:p-6">
+                <TbBoxModel2 className="size-10" />
+                <p className="text-xl font-medium">Outdoors</p>
+              </Card>
+            </li>
+          </ul>
         </div>
       </section>
       <section className="">
