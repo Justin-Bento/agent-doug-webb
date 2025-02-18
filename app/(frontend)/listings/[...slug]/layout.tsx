@@ -93,7 +93,7 @@ export default async function Page({
           <h4 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
             Location
           </h4>
-          <ul className="list-disc ml-8">
+          <ul className="list-disc ml-8 space-y-4 mt-4">
             <li className="">
               Address: {post.listingInformation.location.address}
             </li>
