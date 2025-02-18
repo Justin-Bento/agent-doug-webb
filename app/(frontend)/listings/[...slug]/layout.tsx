@@ -48,7 +48,6 @@ export default async function Page({
   if (!post) {
     notFound();
   }
-
   return (
     <main className="container mx-auto grid grid-cols-1 gap-6 p-12 space-y-32">
       <section className="w-full min-h-[50dvh] flex items-center justify-center">
@@ -64,6 +63,13 @@ export default async function Page({
           <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
             Features
           </h2>
+          <ul className="list-disc ml-8">
+            {post.listingInformation.features.map(
+              (feature: "string", index: number) => {
+                return <li key={index}>{feature}</li>;
+              }
+            )}
+          </ul>
         </div>
       </section>
       <section className="">
