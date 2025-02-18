@@ -1,7 +1,6 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { PROPERTY_LISTINGS_POST_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "@/components/ui/button";
@@ -51,7 +50,7 @@ export default async function Page({
   }
 
   return (
-    <main className="container mx-auto grid grid-cols-1 gap-6 p-12">
+    <main className="container mx-auto grid grid-cols-1 gap-6 p-12 space-y-32">
       <section className="w-full min-h-[50dvh] flex items-center justify-center">
         <h1 className="text-4xl font-bold text-balance">{post?.title}</h1>
       </section>
@@ -61,8 +60,46 @@ export default async function Page({
         statement={post.Statement}
       />
       <section className="">
-        <hr />
-        <Link href="/posts">&larr; Return to index</Link>
+        <div className="space-y-2">
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Features
+          </h2>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
+            Interior
+          </h3>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h4 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Location
+          </h4>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Area & Lot
+          </h5>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Financial
+          </h5>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Property Images
+          </h5>
+        </div>
       </section>
     </main>
   );
