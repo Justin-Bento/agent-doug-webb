@@ -83,7 +83,19 @@ export const propertyListings = defineType({
         {
           name: "areaAndLot",
           title: "Area & Lot",
-          type: "string",
+          type: "object",
+          fields: [
+            {
+              name: "indoors",
+              title: "Floor Area",
+              type: "string",
+            },
+            {
+              name: "outdoors",
+              title: "Land Size",
+              type: "string",
+            },
+          ],
         },
         {
           name: "financial",
