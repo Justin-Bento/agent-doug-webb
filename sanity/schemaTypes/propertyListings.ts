@@ -1,5 +1,6 @@
 import { DocumentTextIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
+import { string } from "zod";
 
 export const propertyListings = defineType({
   name: "propertyListings",
@@ -55,8 +56,55 @@ export const propertyListings = defineType({
       type: "datetime",
     }),
     defineField({
-      name: "body",
-      type: "blockContent",
+      name: "listingInformation",
+      title: "Listing Infromation",
+      type: "document",
+      fields: [
+        {
+          name: "features",
+          title: "Features",
+          type: "array",
+          of: [{ type: "string" }],
+          description: "List of additional features of the property.",
+        },
+        {
+          name: "location",
+          title: "Location",
+          type: "string",
+        },
+        {
+          name: "areaAndLot",
+          title: "Area & Lot",
+          type: "string",
+        },
+        {
+          name: "financial",
+          title: "Financial Infromation",
+          type: "string",
+        },
+        {
+          name: "additionalImages",
+          title: "Additional Images",
+          type: "object",
+          fields: [
+            {
+              name: "image",
+              title: "Image",
+              type: "image",
+              options: {
+                hotspot: true, // Allows cropping and focusing on images
+              },
+            },
+            {
+              name: "alt",
+              title: "Alternative text",
+              type: "string",
+              description:
+                "Description for the image for accessibility purposes.",
+            },
+          ],
+        },
+      ],
     }),
   ],
   preview: {
