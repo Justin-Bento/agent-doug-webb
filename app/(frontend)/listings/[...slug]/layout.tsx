@@ -65,10 +65,17 @@ export default async function Page({
           <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
             Features
           </h2>
-          <ul className="list-disc ml-8">
+          <ul role="list" className="divide-y divide-gray-100">
             {post.listingInformation.features.map(
               (feature: "string", index: number) => {
-                return <li key={index}>{feature}</li>;
+                return (
+                  <li key={index} className="text-md/6 text-gray-900">
+                    <div className="flex items-center gap-4">
+                      <div className="py-4">{index++}.</div>
+                      <div className="py-4">{feature}</div>
+                    </div>
+                  </li>
+                );
               }
             )}
           </ul>
