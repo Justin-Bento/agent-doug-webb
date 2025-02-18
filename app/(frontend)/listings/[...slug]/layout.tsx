@@ -130,6 +130,9 @@ export default async function Page({
           <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
             Financial
           </h5>
+          <p className="max-w-[100ch] text-balace">
+            {post.listingInformation.financial}
+          </p>
         </div>
       </section>
       <section className="">
