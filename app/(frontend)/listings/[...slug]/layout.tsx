@@ -1,9 +1,9 @@
-import { sanityFetch } from "@/sanity/lib/live";
-import { PROPERTY_LISTINGS_BY_SLUG_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
-import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
+import { Card } from "@/components/ui/card";
 import PropertyDemo from "@/components/ui/PropertyDemo";
+import { PROPERTY_LISTINGS_BY_SLUG_QUERY } from "@/sanity/lib/queries";
+import { sanityFetch } from "@/sanity/lib/live";
 
 export default async function Page({
   params,
