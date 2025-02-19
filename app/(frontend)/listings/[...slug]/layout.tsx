@@ -1,41 +1,9 @@
 import { sanityFetch } from "@/sanity/lib/live";
 import { PROPERTY_LISTINGS_BY_SLUG_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
-import Image from "next/image";
-import { urlFor } from "@/sanity/lib/image";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
-
-interface PropertyDemoProps {
-  image: string;
-  altTitle: string;
-  statement: string;
-}
-const PropertyDemo: React.FC<PropertyDemoProps> = ({
-  image,
-  altTitle,
-  statement,
-}) => {
-  return (
-    <div className="overflow-hidden  grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
-        <Image
-          fill
-          src={urlFor(image)?.url() || ""}
-          alt={altTitle || "Property"}
-          className="object-cover object-center rounded-xl"
-        />
-      </div>
-      <div className="flex flex-col items-start justify-center">
-        <p className="">{statement}</p>
-        <Button variant="link" className="underline">
-          Read More
-        </Button>
-      </div>
-    </div>
-  );
-};
+import PropertyDemo from "@/components/ui/PropertyDemo";
 
 export default async function Page({
   params,
