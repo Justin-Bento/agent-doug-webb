@@ -1,5 +1,5 @@
 import { sanityFetch } from "@/sanity/lib/live";
-import { PROPERTY_LISTINGS_POST_QUERY } from "@/sanity/lib/queries";
+import { PROPERTY_LISTINGS_BY_SLUG_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
@@ -43,7 +43,7 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { data: post } = await sanityFetch({
-    query: PROPERTY_LISTINGS_POST_QUERY,
+    query: PROPERTY_LISTINGS_BY_SLUG_QUERY,
     params: await params,
   });
 

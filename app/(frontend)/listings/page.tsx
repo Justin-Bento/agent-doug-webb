@@ -2,7 +2,7 @@ import React from "react";
 import { TbSearch } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
-import { PROPERTY_LISTINGS_QUERY } from "@/sanity/lib/queries";
+import { PROPERTY_LISTINGS_ALL_QUERY } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +31,7 @@ type PostArticle = {
 export default async function Page() {
   let posts = [];
   try {
-    posts = await client.fetch(PROPERTY_LISTINGS_QUERY, {}, options);
+    posts = await client.fetch(PROPERTY_LISTINGS_ALL_QUERY, {}, options);
   } catch (error) {
     console.error("Error fetching posts:", error);
   }
@@ -79,13 +79,24 @@ export default async function Page() {
                   <CardContent className="mt-4">
                     <p className="text-sm/6">
                       {post.Price
-                        ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(post.Price)
+                        ? new Intl.NumberFormat("en-US", {
+                            style: "currency",
+                            currency: "USD",
+                          }).format(post.Price)
                         : "Price not available"}
                     </p>
-                    <h2 className="text-2xl font-semibold dark:text-white">{post.title}</h2>
-                    <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">{post.Statement}</p>
+                    <h2 className="text-2xl font-semibold dark:text-white">
+                      {post.title}
+                    </h2>
+                    <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">
+                      {post.Statement}
+                    </p>
                     <Link href={`listings/${post.slug?.current}`}>
-                      <Button variant="outline" size="sm" className="flex items-center gap-1 mt-4 bg-transparent">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex items-center gap-1 mt-4 bg-transparent"
+                      >
                         View Property<span aria-hidden="true">→</span>
                       </Button>
                     </Link>
