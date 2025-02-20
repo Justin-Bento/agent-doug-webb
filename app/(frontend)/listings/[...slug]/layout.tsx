@@ -1,131 +1,122 @@
-import React from "react";
-import Link from "next/link";
-import property from "@/lib/property.json";
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import NotFound from "@/components/NotFound";
-// [x] Grab the page id from the slug url.
-// [] If the url display anything other than an item 1 through 10  render the not found component.
+import { notFound } from "next/navigation";
+import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
+import { Card } from "@/components/ui/card";
+import PropertyDemo from "@/components/ui/PropertyDemo";
+import { PROPERTY_LISTINGS_BY_SLUG_QUERY } from "@/sanity/lib/queries";
+import { sanityFetch } from "@/sanity/lib/live";
 
-interface fakeDetailsInter {
-  id: number;
-  title: string;
-  description: string;
-}
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { data: post } = await sanityFetch({
+    query: PROPERTY_LISTINGS_BY_SLUG_QUERY,
+    params: await params,
+  });
 
-const fakeDetails = [
-  "Features",
-  "Interior",
-  "Location",
-  "Area & Lot",
-  "Financial",
-  //
-];
-
-export default function page({ params }: any) {
-  // Ensure params.slug is a number
-  const pageId = parseInt(params.slug, 10);
-  // Check if the pageId is within the valid range (1-10)
-  if (isNaN(pageId) || pageId < 1 || pageId > 10) {
-    return <NotFound />;
+  if (!post) {
+    notFound();
   }
-  // Check if the pageId exists in the property JSON
-  const propertyItem = property.find((item) => item.id === pageId);
-  if (!propertyItem) {
-    return <NotFound />;
-  }
-
   return (
-    <html>
-      <body>
-        <Navigation />
-        <main className="md:grid md:grid-cols-12 space-y-14">
-          <section className="md:col-span-12">
-            <div className="wrapper min-h-[20dvh] flex flex-col-reverse justify-center">
-              <h1 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
-                Property
-              </h1>
-              <p className="text-xs uppercase tracking-wider">Listings</p>
-            </div>
-          </section>
-          <section className="wrapper md:col-span-12 md:flex items-center justify-between gap-12 space-y-6">
-            <div className="bg-gray-400 aspect-video md:aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
-            <div className="w-full max-w-prose">
-              <p className="text-base tracking-wide leading-5 max-w-[100rem]">
-                Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
-                under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
-                couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the
-                jokes left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started
-                laughing, they couldn&#39;t stop.
-              </p>
-              <Button size="sm" variant="ghost" className="underline mt-6 border-black/15">
-                See More
-              </Button>
-            </div>
-          </section>
-          <section className="wrapper md:col-span-12 md:flex md:flex-row-reverse items-center justify-between gap-12 space-y-6">
-            <div className="bg-gray-400 aspect-video md:aspect-[16/12] rounded-xl md:w-[60rem]">&nbsp;</div>
-            <div className="w-full max-w-prose">
-              {fakeDetails.map((detail, index) => {
+    <main className="container mx-auto grid grid-cols-1 gap-6 p-12 space-y-32">
+      <section className="w-full min-h-[50dvh] flex items-center justify-center">
+        <h1 className="text-4xl font-bold text-balance">{post?.title}</h1>
+      </section>
+      <PropertyDemo
+        image={post?.mainImage}
+        altTitle={post.title}
+        statement={post.Statement}
+      />
+      <section className="">
+        <div className="space-y-2">
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Features
+          </h2>
+          <ul role="list" className="divide-y divide-gray-100">
+            {post.listingInformation.features.map(
+              (feature: "string", index: number) => {
                 return (
-                  <Accordion key={index} type="single" collapsible className="w-full">
-                    <AccordionItem value="item-1">
-                      <AccordionTrigger className="mt-1 text-2xl/8 font-medium text-black dark:text-white">
-                        {detail}
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        Jokester began sneaking into the castle in the middle of the night and leaving jokes all over
-                        the place: under the king&#39;s pillow, in his soup, even in the royal toilet. The king was
-                        furious, but he couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom
-                        discovered that the jokes left by Jokester were so funny that they couldn&#39;t help but laugh.
-                        And once they started laughing, they couldn&#39;t stop.
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
+                  <li key={index} className="text-md/6 text-gray-900">
+                    <div className="flex items-center gap-4">
+                      <div className="py-4">{index++}.</div>
+                      <div className="py-4">{feature}</div>
+                    </div>
+                  </li>
                 );
-              })}
-            </div>
-          </section>
-          <section className="wrapper md:col-span-12">
-            <h3 className="max-w-3xl text-balance text-4xl font-medium tracking-normal text-black dark:text-white">
-              Inside The Property
-            </h3>
-            <p className="text-base tracking-wide leading-5 max-w-[100ch] mt-4">
-              Jokester began sneaking into the castle in the middle of the night and leaving jokes all over the place:
-              under the king&#39;s pillow, in his soup, even in the royal toilet. The king was furious, but he
-              couldn&#39;t seem to stop Jokester. And then, one day, the people of the kingdom discovered that the jokes
-              left by Jokester were so funny that they couldn&#39;t help but laugh. And once they started laughing, they
-              couldn&#39;t stop.
-            </p>
-            <div className="border-y-2 mt-6 border-primary dark:border-accent border-dotted">
-              <div className="overflow-x-auto scroll-p-16 py-4 scroll-snap-x snap-mandatory">
-                <div className="inline-grid grid-flow-col gap-5 snap-x auto-cols-[minmax(20rem,1fr)]">
-                  {Array.from({ length: 10 }, (_, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="w-full aspect-square bg-gray-400 rounded-xl snap-center flex items-center justify-center"
-                      >
-                        {index + 1}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="wrapper flex justify-center col-span-12 pb-20">
-            <Link href="/listings">
-              <Button variant="outline" className="text-sm rounded-full px-5">
-                View More Listings
-              </Button>
-            </Link>
-          </section>
-        </main>
-        <Footer />
-      </body>
-    </html>
+              }
+            )}
+          </ul>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
+            Interior
+          </h3>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h4 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Location
+          </h4>
+          <ul className="list-disc ml-8 space-y-4 mt-4">
+            <li className="">
+              Address: {post.listingInformation.location.address}
+            </li>
+            <li className="">
+              Country: {post.listingInformation.location.country}
+            </li>
+            <li className="">
+              ZipCode: {post.listingInformation.location.zipcode}
+            </li>
+            <li className="">City: {post.listingInformation.location.city}</li>
+          </ul>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Area & Lot
+          </h5>
+          <ul className="overflow-hidden flex flex-col md:flex-row md:space-evenely gap-12">
+            <li className="flex-1">
+              <Card className="bg-transparent px-4 py-5 sm:p-6 space-y-1">
+                <TbBoxModel className="size-10" />
+                <p className="text-xl font-medium">Indoors</p>
+                <p className="">{post.listingInformation.areaAndLot.indoors}</p>
+              </Card>
+            </li>
+            <li className="flex-1">
+              <Card className="bg-trasparent px-4 py-5 sm:p-6 space-y-1">
+                <TbBoxModel2 className="size-10" />
+                <p className="text-xl font-medium">Outdoors</p>
+                <p className="">
+                  {post.listingInformation.areaAndLot.outdoors}
+                </p>
+              </Card>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Financial
+          </h5>
+          <p className="max-w-[100ch] text-balace">
+            {post.listingInformation.financial}
+          </p>
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Property Images
+          </h5>
+        </div>
+      </section>
+    </main>
   );
 }
