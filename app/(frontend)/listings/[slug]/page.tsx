@@ -42,6 +42,7 @@ export default async function Page({
       <PropertyFinancialInfo
         FinancialInformation={post.listingInformation.financial}
       />
+      <PropertyImage />
     </main>
   );
 }
@@ -164,6 +165,18 @@ function PropertyFinancialInfo({ FinancialInformation }: type) {
           Financial
         </h5>
         <p className="max-w-[100ch] text-balace">{FinancialInformation}</p>
+      </div>
+    </section>
+  );
+}
+
+function PropertyImage(params: type) {
+  return (
+    <section className="">
+      <div className="space-y-2">
+        <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+          Property Images
+        </h5>
       </div>
     </section>
   );
