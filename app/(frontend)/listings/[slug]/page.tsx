@@ -170,7 +170,7 @@ function PropertyFinancialInfo({ FinancialInformation }: any) {
   );
 }
 
-function PropertyImage(params: type) {
+function PropertyImage() {
   return (
     <section className="">
       <div className="space-y-2">
