@@ -21,9 +21,9 @@ export default async function Page({
   }
 
   return (
-    <main className="container mx-auto grid grid-cols-1 p-12">
-      <section className="min-h-[25dvh] flex flex-col items-center justify-center">
-        <div className="text-center text-balance space-y-4">
+    <main className="container mx-auto grid grid-cols-1 p-12 space-y-24">
+      <section className="">
+        <div className="min-h-[25dvh] flex flex-col items-center justify-center text-center text-balance space-y-4">
           <p className="text-sm">
             {post.Price
               ? new Intl.NumberFormat("en-US", {
@@ -35,8 +35,6 @@ export default async function Page({
           <h1 className="text-4xl font-bold">{post?.title}</h1>
           <p className="text-md">{post?.Statement}</p>
         </div>
-      </section>
-      <section className="">
         <div className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
           <Image
             fill
@@ -44,6 +42,27 @@ export default async function Page({
             alt={`Property of ${post.title}`}
             className="object-cover object-center rounded-xl"
           />
+        </div>
+      </section>
+      <section className="">
+        <div className="space-y-2">
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
+            Features
+          </h2>
+          <ul role="list" className="divide-y divide-gray-100">
+            {post.listingInformation.features.map(
+              (feature: "string", index: number) => {
+                return (
+                  <li key={index} className="text-md/6 text-gray-900">
+                    <div className="flex items-center gap-4">
+                      <div className="py-4">{index++}.</div>
+                      <div className="py-4">{feature}</div>
+                    </div>
+                  </li>
+                );
+              }
+            )}
+          </ul>
         </div>
       </section>
     </main>
