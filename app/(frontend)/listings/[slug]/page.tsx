@@ -26,6 +26,7 @@ export default async function Page({
         Media={post.mainImage}
       />
       <Features Objects={post.listingInformation.features} />
+      <PropertyInterior />
     </main>
   );
 }
@@ -78,6 +79,18 @@ function Features({ Objects }: any) {
             );
           })}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function PropertyInterior() {
+  return (
+    <section className="">
+      <div className="space-y-2">
+        <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
+          Interior
+        </h3>
       </div>
     </section>
   );
