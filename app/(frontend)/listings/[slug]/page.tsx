@@ -157,7 +157,7 @@ function PropertyArea({ Indoor, Outdoor }: any) {
   );
 }
 
-function PropertyFinancialInfo({ FinancialInformation }: type) {
+function PropertyFinancialInfo({ FinancialInformation }: any) {
   return (
     <section className="">
       <div className="space-y-2">
