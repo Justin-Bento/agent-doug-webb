@@ -35,7 +35,7 @@ export default async function Page({
         ZipCode={post.listingInformation.location.zipcode}
         City={post.listingInformation.location.city}
       />
-      <PropertyArea
+      <PropertySquareFeet
         Indoor={post.listingInformation.areaAndLot.indoors}
         Outdoor={post.listingInformation.areaAndLot.outdoors}
       />
@@ -129,7 +129,7 @@ function PropertyLocation({ Address, Country, ZipCode, City }: any) {
   );
 }
 
-function PropertyArea({ Indoor, Outdoor }: any) {
+function PropertySquareFeet({ Indoor, Outdoor }: any) {
   return (
     <section className="">
       <div className="space-y-2">
