@@ -27,6 +27,12 @@ export default async function Page({
       />
       <Features Objects={post.listingInformation.features} />
       <PropertyInterior />
+      <PropertyLocation
+        Address={post.listingInformation.location.address}
+        Country={post.listingInformation.location.country}
+        ZipCode={post.listingInformation.location.zipcode}
+        City={post.listingInformation.location.city}
+      />
     </main>
   );
 }
@@ -91,6 +97,23 @@ function PropertyInterior() {
         <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
           Interior
         </h3>
+      </div>
+    </section>
+  );
+}
+function PropertyLocation({ Address, Country, ZipCode, City }: any) {
+  return (
+    <section className="">
+      <div className="space-y-2">
+        <h4 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+          Location
+        </h4>
+        <ul className="list-disc ml-8 space-y-4 mt-4">
+          <li className="">Address: {Address}</li>
+          <li className="">Country: {Country}</li>
+          <li className="">Zip Code: {ZipCode}</li>
+          <li className="">City: {City}</li>
+        </ul>
       </div>
     </section>
   );
