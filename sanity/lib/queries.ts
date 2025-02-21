@@ -8,33 +8,41 @@ import { defineQuery } from "next-sanity";
 
 // General property listings query
 export const PROPERTY_LISTINGS_ALL_QUERY = defineQuery(
-  `  *[_type == "propertyListings"] {
-  _id,
-  title,
-  slug {
-    current
-  },
-  Price,
-  Statement,
-  publishedAt,
-  mainImage{
-    asset->{
+  `*[_type == "propertyListings"] {
       _id,
-      url
-    }
-  }
-}`
+      title,
+      slug {
+        current
+      },
+      Price,
+      Statement,
+      publishedAt,
+      mainImage{
+        asset->{
+          _id,
+          url
+        }
+      }
+  }`
 );
 
 // Single property listing by slug
-export const PROPERTY_LISTINGS_BY_SLUG_QUERY =
-  defineQuery(`*[_type == "propertyListings" && slug.current][0] {
-  _id,
-  title, 
-  Statement,  
-  mainImage,
-  listingInformation
-}`);
+export const PROPERTY_LISTINGS_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "propertyListings" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    Statement,
+    Price,
+    listingInformation,
+    mainImage {
+      asset -> {
+        _id,
+        url
+      }
+    }
+  }
+`);
 
 /*
     ## REAL ESTATE PROCESS
