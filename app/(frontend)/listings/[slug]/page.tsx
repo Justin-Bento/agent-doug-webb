@@ -65,6 +65,13 @@ export default async function Page({
           </ul>
         </div>
       </section>
+      <section className="">
+        <div className="space-y-2">
+          <h3 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-whites">
+            Interior
+          </h3>
+        </div>
+      </section>
     </main>
   );
 }
