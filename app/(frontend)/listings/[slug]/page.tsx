@@ -24,6 +24,14 @@ export default async function Page({
     <main className="container mx-auto grid grid-cols-1 p-12">
       <section className="min-h-[25dvh] flex flex-col items-center justify-center">
         <div className="text-center text-balance space-y-4">
+          <p className="text-sm">
+            {post.Price
+              ? new Intl.NumberFormat("en-US", {
+                  style: "currency",
+                  currency: "CAD",
+                }).format(post.Price)
+              : "Price not available"}
+          </p>
           <h1 className="text-4xl font-bold">{post?.title}</h1>
           <p className="text-md">{post?.Statement}</p>
         </div>
