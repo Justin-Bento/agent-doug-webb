@@ -25,6 +25,7 @@ export default async function Page({
         Description={post.Statement}
         Media={post.mainImage}
       />
+      <Features Objects={post.listingInformation.features} />
     </main>
   );
 }
@@ -53,6 +54,30 @@ function PropertyIntroduction({ Price, Title, Description, Media }: any) {
           alt={`This is a image of ${Title}`}
           className="object-cover object-center rounded-xl"
         />
+      </div>
+    </section>
+  );
+}
+
+function Features({ Objects }: any) {
+  return (
+    <section className="">
+      <div className="space-y-2">
+        <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+          Features
+        </h2>
+        <ul role="list" className="divide-y divide-gray-100">
+          {Objects.map((feature: "string", index: number) => {
+            return (
+              <li key={index} className="text-md/6 text-gray-900">
+                <div className="flex items-center gap-4">
+                  <div className="py-4">{index++}.</div>
+                  <div className="py-4">{feature}</div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
