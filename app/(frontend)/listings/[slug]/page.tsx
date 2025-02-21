@@ -91,6 +91,31 @@ export default async function Page({
           </ul>
         </div>
       </section>
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+            Area & Lot
+          </h5>
+          <ul className="overflow-hidden flex flex-col md:flex-row md:space-evenely gap-12">
+            <li className="flex-1">
+              <Card className="bg-transparent px-4 py-5 sm:p-6 space-y-1">
+                <TbBoxModel className="size-10" />
+                <p className="text-xl font-medium">Indoors</p>
+                <p className="">{post.listingInformation.areaAndLot.indoors}</p>
+              </Card>
+            </li>
+            <li className="flex-1">
+              <Card className="bg-trasparent px-4 py-5 sm:p-6 space-y-1">
+                <TbBoxModel2 className="size-10" />
+                <p className="text-xl font-medium">Outdoors</p>
+                <p className="">
+                  {post.listingInformation.areaAndLot.outdoors}
+                </p>
+              </Card>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }
