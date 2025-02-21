@@ -29,13 +29,15 @@ export const PROPERTY_LISTINGS_ALL_QUERY = defineQuery(
 
 // Single property listing by slug
 export const PROPERTY_LISTINGS_BY_SLUG_QUERY =
-  defineQuery(`*[_type == "propertyListings" && slug.current] {
-  _id,
-  title, 
-  Statement,  
-  mainImage,
-  listingInformation
-}`);
+  defineQuery(`*[_type == "propertyListings" && slug.current == $slug][0] {
+    _id,
+    title, 
+    Price,
+    Statement,
+    mainImage,
+    listingInformation
+  }
+`);
 
 /*
     ## REAL ESTATE PROCESS
