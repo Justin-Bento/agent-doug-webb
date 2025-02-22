@@ -5,6 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
+import { number } from "zod";
 
 export default async function Page({
   params,
@@ -46,8 +47,18 @@ export default async function Page({
     </main>
   );
 }
-
-function PropertyIntroduction({ Price, Title, Description, Media }: any) {
+interface PropertyIntroductionProps {
+  Price?: number;
+  Title?: string;
+  Description?: string;
+  Media?: PropertyListings["mainImage"];
+}
+function PropertyIntroduction({
+  Price,
+  Title,
+  Description,
+  Media,
+}: PropertyIntroductionProps) {
   return (
     <section className="w-full  gap-2">
       <div className="min-h-[30dvh] flex flex-col items-center justify-center">
@@ -76,7 +87,11 @@ function PropertyIntroduction({ Price, Title, Description, Media }: any) {
   );
 }
 
-function Features({ Objects }: any) {
+interface FeaturesProps {
+  Objects?: string[];
+}
+
+function Features({ Objects }: FeaturesProps) {
   return (
     <section className="">
       <div className="space-y-2">
@@ -84,16 +99,14 @@ function Features({ Objects }: any) {
           Features
         </h2>
         <ul role="list" className="divide-y divide-gray-100">
-          {Objects.map((feature: "string", index: number) => {
-            return (
-              <li key={index} className="text-md/6 text-gray-900">
-                <div className="flex items-center gap-4">
-                  <div className="py-4">{index + 1}.</div>
-                  <div className="py-4">{feature}</div>
-                </div>
-              </li>
-            );
-          })}
+          {Objects?.map((feature, index) => (
+            <li key={index} className="text-md/6 text-gray-900">
+              <div className="flex items-center gap-4">
+                <div className="py-4">{index + 1}.</div>
+                <div className="py-4">{feature}</div>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </section>
@@ -111,7 +124,20 @@ function PropertyInterior() {
     </section>
   );
 }
-function PropertyLocation({ Address, Country, ZipCode, City }: any) {
+
+interface PropertyLocationProps {
+  Address?: string;
+  Country?: string;
+  ZipCode?: string;
+  City?: string;
+}
+
+function PropertyLocation({
+  Address,
+  Country,
+  ZipCode,
+  City,
+}: PropertyLocationProps) {
   return (
     <section className="">
       <div className="space-y-2">
@@ -129,7 +155,12 @@ function PropertyLocation({ Address, Country, ZipCode, City }: any) {
   );
 }
 
-function PropertySquareFeet({ Indoor, Outdoor }: any) {
+interface PropertySquareFeetProps {
+  Indoor?: string;
+  Outdoor?: string;
+}
+
+function PropertySquareFeet({ Indoor, Outdoor }: PropertySquareFeetProps) {
   return (
     <section className="">
       <div className="space-y-2">
@@ -157,7 +188,13 @@ function PropertySquareFeet({ Indoor, Outdoor }: any) {
   );
 }
 
-function PropertyFinancialInfo({ FinancialInformation }: any) {
+interface PropertyFinancialInfoProps {
+  FinancialInformation?: string;
+}
+
+function PropertyFinancialInfo({
+  FinancialInformation,
+}: PropertyFinancialInfoProps) {
   return (
     <section className="">
       <div className="space-y-2">
