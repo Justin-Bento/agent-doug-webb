@@ -5,7 +5,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
-import { PropertyListings } from "@/sanity/lib/types"; // Import the generated type
+import { PropertyListings } from "@/sanity/types"; // Import the generated type
 
 export default async function Page({
   params,
