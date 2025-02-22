@@ -88,7 +88,7 @@ function Features({ Objects }: any) {
             return (
               <li key={index} className="text-md/6 text-gray-900">
                 <div className="flex items-center gap-4">
-                  <div className="py-4">{index++}.</div>
+                  <div className="py-4">{index + 1}.</div>
                   <div className="py-4">{feature}</div>
                 </div>
               </li>
