@@ -9,11 +9,11 @@ import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string }; // Fix: Remove `Promise`
 }) {
   const { data: post } = await sanityFetch({
     query: PROPERTY_LISTINGS_BY_SLUG_QUERY,
-    params: await params,
+    params: { slug: params.slug }, // Fix: Pass the slug directly
   });
 
   if (!post) {
