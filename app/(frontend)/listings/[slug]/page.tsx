@@ -5,54 +5,58 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
-import { number } from "zod";
+import { PropertyListings } from "@/sanity/lib/types"; // Import the generated type
 
 export default async function Page({
   params,
 }: {
-  params: { slug: string }; // Fix: Remove `Promise`
+  params: { slug: string }; // Fixed: Removed `Promise`
 }) {
-  const { data: post } = await sanityFetch({
+  const { data: post } = await sanityFetch<PropertyListings>({
     query: PROPERTY_LISTINGS_BY_SLUG_QUERY,
-    params: { slug: params.slug }, // Fix: Pass the slug directly
+    params: { slug: params.slug }, // Fixed: Pass the slug directly
   });
 
   if (!post) {
     notFound();
   }
+
   return (
     <main className="container mx-auto grid grid-cols-1 gap-6 p-12 space-y-32">
       <PropertyIntroduction
-        Price={post.price}
+        Price={post.Price}
         Title={post.title}
         Description={post.Statement}
         Media={post.mainImage}
       />
-      <Features Objects={post.listingInformation.features} />
+      <Features Objects={post.listingInformation?.features} />
       <PropertyInterior />
       <PropertyLocation
-        Address={post.listingInformation.location.address}
-        Country={post.listingInformation.location.country}
-        ZipCode={post.listingInformation.location.zipcode}
-        City={post.listingInformation.location.city}
+        Address={post.listingInformation?.location?.address}
+        Country={post.listingInformation?.location?.country}
+        ZipCode={post.listingInformation?.location?.zipcode}
+        City={post.listingInformation?.location?.city}
       />
       <PropertySquareFeet
-        Indoor={post.listingInformation.areaAndLot.indoors}
-        Outdoor={post.listingInformation.areaAndLot.outdoors}
+        Indoor={post.listingInformation?.areaAndLot?.indoors}
+        Outdoor={post.listingInformation?.areaAndLot?.outdoors}
       />
       <PropertyFinancialInfo
-        FinancialInformation={post.listingInformation.financial}
+        FinancialInformation={post.listingInformation?.financial}
       />
       <PropertyImage />
     </main>
   );
 }
+
+// Define prop types for each component
 interface PropertyIntroductionProps {
   Price?: number;
   Title?: string;
   Description?: string;
   Media?: PropertyListings["mainImage"];
 }
+
 function PropertyIntroduction({
   Price,
   Title,
@@ -60,7 +64,7 @@ function PropertyIntroduction({
   Media,
 }: PropertyIntroductionProps) {
   return (
-    <section className="w-full  gap-2">
+    <section className="w-full gap-2">
       <div className="min-h-[30dvh] flex flex-col items-center justify-center">
         <p className="text-sm/6 font-mono">
           {Price
@@ -78,8 +82,8 @@ function PropertyIntroduction({
       <div className="relative w-full aspect-[16/10] overflow-hidden">
         <Image
           fill
-          src={urlFor(Media)?.url() || ""}
-          alt={`This is a image of ${Title}`}
+          src={urlFor(Media)?.url() || "/default-image.jpg"}
+          alt={`This is an image of ${Title}`}
           className="object-cover object-center rounded-xl"
         />
       </div>
@@ -95,7 +99,7 @@ function Features({ Objects }: FeaturesProps) {
   return (
     <section className="">
       <div className="space-y-2">
-        <h2 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+        <h2 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Features
         </h2>
         <ul role="list" className="divide-y divide-gray-100">
@@ -117,7 +121,7 @@ function PropertyInterior() {
   return (
     <section className="">
       <div className="space-y-2">
-        <h3 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-whites">
+        <h3 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Interior
         </h3>
       </div>
@@ -141,7 +145,7 @@ function PropertyLocation({
   return (
     <section className="">
       <div className="space-y-2">
-        <h4 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+        <h4 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Location
         </h4>
         <ul className="list-disc ml-8 space-y-4 mt-4">
@@ -164,10 +168,10 @@ function PropertySquareFeet({ Indoor, Outdoor }: PropertySquareFeetProps) {
   return (
     <section className="">
       <div className="space-y-2">
-        <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+        <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Area & Lot
         </h5>
-        <ul className="overflow-hidden flex flex-col md:flex-row md:space-evenely gap-12">
+        <ul className="overflow-hidden flex flex-col md:flex-row md:space-evenly gap-12">
           <li className="flex-1">
             <Card className="bg-transparent px-4 py-5 sm:p-6 space-y-1">
               <TbBoxModel className="size-10" />
@@ -176,7 +180,7 @@ function PropertySquareFeet({ Indoor, Outdoor }: PropertySquareFeetProps) {
             </Card>
           </li>
           <li className="flex-1">
-            <Card className="bg-trasparent px-4 py-5 sm:p-6 space-y-1">
+            <Card className="bg-transparent px-4 py-5 sm:p-6 space-y-1">
               <TbBoxModel2 className="size-10" />
               <p className="text-xl font-medium">Outdoors</p>
               <p className="">{Outdoor}</p>
@@ -198,10 +202,10 @@ function PropertyFinancialInfo({
   return (
     <section className="">
       <div className="space-y-2">
-        <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+        <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Financial
         </h5>
-        <p className="max-w-[100ch] text-balace">{FinancialInformation}</p>
+        <p className="max-w-[100ch] text-balance">{FinancialInformation}</p>
       </div>
     </section>
   );
@@ -211,7 +215,7 @@ function PropertyImage() {
   return (
     <section className="">
       <div className="space-y-2">
-        <h5 className="max-w-3xl text-pretty text-4xl font-medium  text-gray-950 dark:text-white">
+        <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
           Property Images
         </h5>
       </div>
