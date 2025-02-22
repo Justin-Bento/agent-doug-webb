@@ -63,6 +63,18 @@ function PropertyIntroduction({
   Description,
   Media,
 }: PropertyIntroductionProps) {
+  // Define a default image object to use if Media is undefined
+  const defaultImage = {
+    _type: "image",
+    asset: {
+      _ref: "default-image-ref", // Replace with a valid reference or use a fallback URL
+      _type: "reference",
+    },
+  };
+
+  // Use Media if defined, otherwise use the defaultImage
+  const imageSource = Media || defaultImage;
+
   return (
     <section className="w-full gap-2">
       <div className="min-h-[30dvh] flex flex-col items-center justify-center">
@@ -82,7 +94,7 @@ function PropertyIntroduction({
       <div className="relative w-full aspect-[16/10] overflow-hidden">
         <Image
           fill
-          src={urlFor(Media)?.url() || "/default-image.jpg"}
+          src={urlFor(imageSource).url()} // Use the fallback imageSource
           alt={`This is an image of ${Title}`}
           className="object-cover object-center rounded-xl"
         />
