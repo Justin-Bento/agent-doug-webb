@@ -60,11 +60,7 @@ export default async function Page() {
                 <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
                   <Image
                     fill
-                    src={
-                      post?.mainImage
-                        ? urlFor(post.mainImage).url()
-                        : "/fallback-image.jpg"
-                    }
+                    src={urlFor(post.mainImage).url()}
                     alt={post.title || "Property"}
                     className="object-cover object-center rounded-t-xl"
                   />
