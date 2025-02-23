@@ -5,6 +5,7 @@ import Link from "next/link";
 // Imports for Sanity Content Management System.
 import { urlFor } from "@/sanity/lib/image";
 import { client } from "@/sanity/lib/client";
+import { sanityFetch } from "@/sanity/lib/live";
 import { PROPERTY_LISTINGS_ALL_QUERY } from "@/sanity/lib/queries";
 // Imports related to components and ui features.
 import { Button } from "@/components/ui/button";
@@ -20,8 +21,6 @@ import {
 } from "@/components/ui/menubar";
 import { TbSearch } from "react-icons/tb";
 
-const options = { next: { revalidate: 60 } };
-
 type PostArticle = {
   _id: string;
   title: string;
@@ -33,12 +32,9 @@ type PostArticle = {
 };
 
 export default async function Page() {
-  let posts = [];
-  try {
-    posts = await client.fetch(PROPERTY_LISTINGS_ALL_QUERY, {}, options);
-  } catch (error) {
-    console.error("Error fetching posts:", error);
-  }
+  const { data: posts } = await sanityFetch({
+    query: PROPERTY_LISTINGS_ALL_QUERY,
+  });
   return (
     <main className="min-h-dvh space-y-24 mb-24">
       <section className="relative overflow-hidden">
