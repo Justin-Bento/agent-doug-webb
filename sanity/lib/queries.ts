@@ -34,7 +34,12 @@ export const PROPERTY_LISTINGS_BY_SLUG_QUERY =
     title, 
     Price,
     Statement,
-    mainImage,
+    mainImage {
+      asset -> {
+        _id, 
+        url
+      }
+    },
     listingInformation
   }
 `);
