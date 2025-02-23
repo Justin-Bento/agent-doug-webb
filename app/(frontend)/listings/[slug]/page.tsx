@@ -78,7 +78,13 @@ export default async function Page({
             * An unordered list of features within the properties indoor, outdoor and location facinity.
             * Custom list to seperate the information in a legible, yet appealing manner.
       */}
-      <PropertyInterior />
+      <section className="">
+        <div className="space-y-2">
+          <h3 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
+            Interior
+          </h3>
+        </div>
+      </section>
       <PropertyLocation
         Address={post.listingInformation?.location?.address}
         Country={post.listingInformation?.location?.country}
@@ -94,18 +100,6 @@ export default async function Page({
       />
       <PropertyImage />
     </main>
-  );
-}
-
-function PropertyInterior() {
-  return (
-    <section className="">
-      <div className="space-y-2">
-        <h3 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
-          Interior
-        </h3>
-      </div>
-    </section>
   );
 }
 
