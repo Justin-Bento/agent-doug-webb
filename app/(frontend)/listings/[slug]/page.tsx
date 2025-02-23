@@ -5,16 +5,15 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { TbBoxModel, TbBoxModel2 } from "react-icons/tb";
-import { PropertyListings } from "@/sanity/types"; // Import the generated type
 
 export default async function Page({
   params,
 }: {
-  params: { slug: string }; // Fixed: Removed `Promise`
+  params: Promise<{ slug: string }>; // Fixed: Removed `Promise`
 }) {
-  const { data: post } = await sanityFetch<PropertyListings>({
+  const { data: post } = await sanityFetch({
     query: PROPERTY_LISTINGS_BY_SLUG_QUERY,
-    params: { slug: params.slug }, // Fixed: Pass the slug directly
+    params: await params, // Fixed: Pass the slug directly
   });
 
   if (!post) {
@@ -23,12 +22,37 @@ export default async function Page({
 
   return (
     <main className="container mx-auto grid grid-cols-1 gap-6 p-12 space-y-32">
-      <PropertyIntroduction
-        Price={post.Price}
-        Title={post.title}
-        Description={post.Statement}
-        Media={post.mainImage}
-      />
+      <section className="w-full gap-2">
+        <div className="min-h-[30dvh] flex flex-col items-center justify-center">
+          <p className="text-sm/6 font-mono">
+            {post.Price
+              ? new Intl.NumberFormat("en-US", {
+                  style: "currency",
+                  currency: "CAD",
+                }).format(post.Price)
+              : "Price not available"}
+          </p>
+          <h1 className="text-4xl font-bold text-balance">{post.title}</h1>
+          <p className="text-lg max-w-[80ch] text-balance text-center">
+            {post.Statement}
+          </p>
+        </div>
+        <div className="relative w-full aspect-[16/10] overflow-hidden">
+          <Image
+            fill
+            src={urlFor(post.mainImage).url()} // Use the fallback imageSource
+            alt={`This is an image of ${post.title}`}
+            className="object-cover object-center rounded-xl"
+          />
+        </div>
+      </section>
+      {/* 
+        - End of the Hero Section
+          - This section includes:
+            * A formatted price display (in CAD currency) with a fallback for missing prices.
+            * The property title and a descriptive statement/description.
+            * A responsive image container with a 16:10 aspect ratio, ensuring the image covers the space and is visually appealing.
+      */}
       <Features Objects={post.listingInformation?.features} />
       <PropertyInterior />
       <PropertyLocation
@@ -46,60 +70,6 @@ export default async function Page({
       />
       <PropertyImage />
     </main>
-  );
-}
-
-// Define prop types for each component
-interface PropertyIntroductionProps {
-  Price?: number;
-  Title?: string;
-  Description?: string;
-  Media?: PropertyListings["mainImage"];
-}
-
-function PropertyIntroduction({
-  Price,
-  Title,
-  Description,
-  Media,
-}: PropertyIntroductionProps) {
-  // Define a default image object to use if Media is undefined
-  const defaultImage = {
-    _type: "image",
-    asset: {
-      _ref: "default-image-ref", // Replace with a valid reference or use a fallback URL
-      _type: "reference",
-    },
-  };
-
-  // Use Media if defined, otherwise use the defaultImage
-  const imageSource = Media || defaultImage;
-
-  return (
-    <section className="w-full gap-2">
-      <div className="min-h-[30dvh] flex flex-col items-center justify-center">
-        <p className="text-sm/6 font-mono">
-          {Price
-            ? new Intl.NumberFormat("en-US", {
-                style: "currency",
-                currency: "CAD",
-              }).format(Price)
-            : "Price not available"}
-        </p>
-        <h1 className="text-4xl font-bold text-balance">{Title}</h1>
-        <p className="text-lg max-w-[80ch] text-balance text-center">
-          {Description}
-        </p>
-      </div>
-      <div className="relative w-full aspect-[16/10] overflow-hidden">
-        <Image
-          fill
-          src={urlFor(imageSource).url()} // Use the fallback imageSource
-          alt={`This is an image of ${Title}`}
-          className="object-cover object-center rounded-xl"
-        />
-      </div>
-    </section>
   );
 }
 
