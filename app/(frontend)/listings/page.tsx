@@ -1,12 +1,14 @@
 import React from "react";
-import { TbSearch } from "react-icons/tb";
-import { Button } from "@/components/ui/button";
-import BackgroundPattern from "@/components/BackgroundPattern";
-import { PROPERTY_LISTINGS_ALL_QUERY } from "@/sanity/lib/queries";
-import { client } from "@/sanity/lib/client";
+// Next.js imports go below
 import Image from "next/image";
 import Link from "next/link";
+// Imports for Sanity Content Management System.
 import { urlFor } from "@/sanity/lib/image";
+import { client } from "@/sanity/lib/client";
+import { PROPERTY_LISTINGS_ALL_QUERY } from "@/sanity/lib/queries";
+// Imports related to components and ui features.
+import { Button } from "@/components/ui/button";
+import BackgroundPattern from "@/components/BackgroundPattern";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Menubar,
@@ -16,6 +18,8 @@ import {
   MenubarSeparator,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import { TbSearch } from "react-icons/tb";
+
 const options = { next: { revalidate: 60 } };
 
 type PostArticle = {
