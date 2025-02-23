@@ -90,12 +90,27 @@ export default async function Page({
           - This section includes:
             * Noting at the moment but will change it later down the line.
       */}
-      <PropertyLocation
-        Address={post.listingInformation?.location?.address}
-        Country={post.listingInformation?.location?.country}
-        ZipCode={post.listingInformation?.location?.zipcode}
-        City={post.listingInformation?.location?.city}
-      />
+      <section className="">
+        <div className="space-y-2">
+          <h4 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
+            Location
+          </h4>
+          <ul className="list-disc ml-8 space-y-4 mt-4">
+            <li className="">
+              Address: {post.listingInformation?.location?.address}
+            </li>
+            <li className="">
+              Country: {post.listingInformation?.location?.country}
+            </li>
+            <li className="">
+              Zip Code: {post.listingInformation?.location?.zipcode}
+            </li>
+            <li className="">
+              City: {post.listingInformation?.location?.city}
+            </li>
+          </ul>
+        </div>
+      </section>
       <PropertySquareFeet
         Indoor={post.listingInformation?.areaAndLot?.indoors}
         Outdoor={post.listingInformation?.areaAndLot?.outdoors}
@@ -105,36 +120,6 @@ export default async function Page({
       />
       <PropertyImage />
     </main>
-  );
-}
-
-interface PropertyLocationProps {
-  Address?: string;
-  Country?: string;
-  ZipCode?: string;
-  City?: string;
-}
-
-function PropertyLocation({
-  Address,
-  Country,
-  ZipCode,
-  City,
-}: PropertyLocationProps) {
-  return (
-    <section className="">
-      <div className="space-y-2">
-        <h4 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
-          Location
-        </h4>
-        <ul className="list-disc ml-8 space-y-4 mt-4">
-          <li className="">Address: {Address}</li>
-          <li className="">Country: {Country}</li>
-          <li className="">Zip Code: {ZipCode}</li>
-          <li className="">City: {City}</li>
-        </ul>
-      </div>
-    </section>
   );
 }
 
