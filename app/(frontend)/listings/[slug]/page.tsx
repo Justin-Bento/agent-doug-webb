@@ -170,6 +170,11 @@ export default async function Page({
           </h5>
         </div>
       </section>
+      {/* 
+        - End of the Property Images Section
+          - This section includes:
+            * A scrollable list of images of the property to give the user an idea of the properties vibe.
+      */}
     </main>
   );
 }
