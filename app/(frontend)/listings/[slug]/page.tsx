@@ -143,6 +143,11 @@ export default async function Page({
           </ul>
         </div>
       </section>
+      {/* 
+        - End of the Property Size Section
+          - This section includes:
+            * Faked diamaters of the property land and home.
+      */}
       <PropertyFinancialInfo
         FinancialInformation={post.listingInformation?.financial}
       />
