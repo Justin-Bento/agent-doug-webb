@@ -418,23 +418,17 @@ export type PROPERTY_LISTINGS_ALL_QUERYResult = Array<{
   } | null;
 }>;
 // Variable: PROPERTY_LISTINGS_BY_SLUG_QUERY
-// Query: *[_type == "propertyListings" && slug.current == $slug][0] {    _id,    title,     Price,    Statement,    mainImage,    listingInformation  }
+// Query: *[_type == "propertyListings" && slug.current == $slug][0] {    _id,    title,     Price,    Statement,    mainImage {      asset -> {        _id,         url      }    },    listingInformation  }
 export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
   _id: string;
   title: string | null;
   Price: number | null;
   Statement: string | null;
   mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
+    asset: {
+      _id: string;
+      url: string | null;
+    } | null;
   } | null;
   listingInformation: {
     features?: Array<string>;
@@ -563,7 +557,7 @@ import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
     "  *[_type == \"propertyListings\"] {\n  _id,\n  title,\n  slug {\n    current\n  },\n  Price,\n  Statement,\n  publishedAt,\n  mainImage{\n    asset->{\n      _id,\n      url\n    }\n  }\n}\n": PROPERTY_LISTINGS_ALL_QUERYResult;
-    "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage,\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
+    "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage {\n      asset -> {\n        _id, \n        url\n      }\n    },\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
     "\n  *[_type == \"realEstateProcess\" && $keyword in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERYResult;
     "\n  *[_type == \"realEstateProcess\" && \"selling\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_SELLING_POSTS_QUERYResult;
     "\n  *[_type == \"realEstateProcess\" && \"more-stuff\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERYResult;
