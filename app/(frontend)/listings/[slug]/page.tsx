@@ -85,6 +85,11 @@ export default async function Page({
           </h3>
         </div>
       </section>
+      {/* 
+        - End of the Interior Section
+          - This section includes:
+            * Noting at the moment but will change it later down the line.
+      */}
       <PropertyLocation
         Address={post.listingInformation?.location?.address}
         Country={post.listingInformation?.location?.country}
