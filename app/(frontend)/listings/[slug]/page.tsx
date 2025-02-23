@@ -163,19 +163,13 @@ export default async function Page({
           - This section includes:
             * Faked diamaters of the property land and home.
       */}
-      <PropertyImage />
+      <section className="">
+        <div className="space-y-2">
+          <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
+            Property Images
+          </h5>
+        </div>
+      </section>
     </main>
-  );
-}
-
-function PropertyImage() {
-  return (
-    <section className="">
-      <div className="space-y-2">
-        <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
-          Property Images
-        </h5>
-      </div>
-    </section>
   );
 }
