@@ -156,25 +156,6 @@ export default async function Page({
   );
 }
 
-interface PropertyFinancialInfoProps {
-  FinancialInformation?: string;
-}
-
-function PropertyFinancialInfo({
-  FinancialInformation,
-}: PropertyFinancialInfoProps) {
-  return (
-    <section className="">
-      <div className="space-y-2">
-        <h5 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
-          Financial
-        </h5>
-        <p className="max-w-[100ch] text-balance">{FinancialInformation}</p>
-      </div>
-    </section>
-  );
-}
-
 function PropertyImage() {
   return (
     <section className="">
