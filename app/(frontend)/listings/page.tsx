@@ -54,47 +54,49 @@ export default async function Page() {
           </Menubar>
         </div>
         <ul className="contents">
-          {posts.map((post) => {
-            return (
-              <li key={post?._id} className="col-span-1 w-full">
-                <Card className="bg-transparent">
-                  <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
-                    <Image
-                      fill
-                      src={urlFor(post.mainImage)?.url() || ""}
-                      alt={post.title || "Property"}
-                      className="object-cover object-center rounded-t-xl"
-                    />
-                  </CardHeader>
-                  <CardContent className="mt-4">
-                    <p className="text-sm/6">
-                      {post.Price
-                        ? new Intl.NumberFormat("en-US", {
-                            style: "currency",
-                            currency: "USD",
-                          }).format(post.Price)
-                        : "Price not available"}
-                    </p>
-                    <h2 className="text-2xl font-semibold dark:text-white">
-                      {post.title}
-                    </h2>
-                    <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">
-                      {post.Statement}
-                    </p>
-                    <Link href={`listings/${post.slug?.current}`}>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex items-center gap-1 mt-4 bg-transparent"
-                      >
-                        View Property<span aria-hidden="true">→</span>
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
-              </li>
-            );
-          })}
+          {posts.map((post) => (
+            <li key={post?._id} className="col-span-1 w-full">
+              <Card className="bg-transparent">
+                <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
+                  <Image
+                    fill
+                    src={
+                      post?.mainImage
+                        ? urlFor(post.mainImage).url()
+                        : "/fallback-image.jpg"
+                    }
+                    alt={post.title || "Property"}
+                    className="object-cover object-center rounded-t-xl"
+                  />
+                </CardHeader>
+                <CardContent className="mt-4">
+                  <p className="text-sm/6">
+                    {post.Price
+                      ? new Intl.NumberFormat("en-US", {
+                          style: "currency",
+                          currency: "USD",
+                        }).format(post.Price)
+                      : "Price not available"}
+                  </p>
+                  <h2 className="text-2xl font-semibold dark:text-white">
+                    {post.title}
+                  </h2>
+                  <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">
+                    {post.Statement}
+                  </p>
+                  <Link href={`listings/${post.slug?.current}`}>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex items-center gap-1 mt-4 bg-transparent"
+                    >
+                      View Property<span aria-hidden="true">→</span>
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            </li>
+          ))}
         </ul>
       </section>
     </main>
