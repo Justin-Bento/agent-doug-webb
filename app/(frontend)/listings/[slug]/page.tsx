@@ -111,6 +111,11 @@ export default async function Page({
           </ul>
         </div>
       </section>
+      {/* 
+        - End of the Location Section
+          - This section includes:
+            * Fake locations of the dummy places to showcase how the location is shown on the property.
+      */}
       <PropertySquareFeet
         Indoor={post.listingInformation?.areaAndLot?.indoors}
         Outdoor={post.listingInformation?.areaAndLot?.outdoors}
