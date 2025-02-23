@@ -53,7 +53,25 @@ export default async function Page({
             * The property title and a descriptive statement/description.
             * A responsive image container with a 16:10 aspect ratio, ensuring the image covers the space and is visually appealing.
       */}
-      <Features Objects={post.listingInformation?.features} />
+      <section className="">
+        <div className="space-y-2">
+          <h2 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
+            Features
+          </h2>
+          <ul role="list" className="divide-y divide-gray-100">
+            {post.listingInformation?.features?.map(
+              (feature: string, index: number) => (
+                <li key={index} className="text-md/6 text-gray-900">
+                  <div className="flex items-center gap-4">
+                    <div className="py-4">{index + 1}.</div>
+                    <div className="py-4">{feature}</div>
+                  </div>
+                </li>
+              )
+            )}
+          </ul>
+        </div>
+      </section>
       <PropertyInterior />
       <PropertyLocation
         Address={post.listingInformation?.location?.address}
@@ -70,32 +88,6 @@ export default async function Page({
       />
       <PropertyImage />
     </main>
-  );
-}
-
-interface FeaturesProps {
-  Objects?: string[];
-}
-
-function Features({ Objects }: FeaturesProps) {
-  return (
-    <section className="">
-      <div className="space-y-2">
-        <h2 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white">
-          Features
-        </h2>
-        <ul role="list" className="divide-y divide-gray-100">
-          {Objects?.map((feature, index) => (
-            <li key={index} className="text-md/6 text-gray-900">
-              <div className="flex items-center gap-4">
-                <div className="py-4">{index + 1}.</div>
-                <div className="py-4">{feature}</div>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
   );
 }
 
