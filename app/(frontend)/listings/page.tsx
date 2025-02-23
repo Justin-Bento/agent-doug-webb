@@ -21,16 +21,6 @@ import {
 } from "@/components/ui/menubar";
 import { TbSearch } from "react-icons/tb";
 
-type PostArticle = {
-  _id: string;
-  title: string;
-  slug: { current: string };
-  Price: number;
-  Statement: string;
-  publishedAt: string;
-  mainImage: string;
-};
-
 export default async function Page() {
   const { data: posts } = await sanityFetch({
     query: PROPERTY_LISTINGS_ALL_QUERY,
@@ -64,7 +54,7 @@ export default async function Page() {
           </Menubar>
         </div>
         <ul className="contents">
-          {posts.map((post: PostArticle) => {
+          {posts.map((post) => {
             return (
               <li key={post?._id} className="col-span-1 w-full">
                 <Card className="bg-transparent">
