@@ -158,6 +158,11 @@ export default async function Page({
           </p>
         </div>
       </section>
+      {/* 
+        - End of the Finacial Infromation Section
+          - This section includes:
+            * Faked diamaters of the property land and home.
+      */}
       <PropertyImage />
     </main>
   );
