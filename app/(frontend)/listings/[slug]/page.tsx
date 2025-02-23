@@ -72,6 +72,12 @@ export default async function Page({
           </ul>
         </div>
       </section>
+      {/* 
+        - End of the Features Section
+          - This section includes:
+            * An unordered list of features within the properties indoor, outdoor and location facinity.
+            * Custom list to seperate the information in a legible, yet appealing manner.
+      */}
       <PropertyInterior />
       <PropertyLocation
         Address={post.listingInformation?.location?.address}
