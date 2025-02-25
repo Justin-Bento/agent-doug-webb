@@ -127,62 +127,31 @@ export type RealEstateProcess = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  title?: string;
-  slug?: Slug;
-  author?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "author";
-  };
-  mainImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  };
-  categories?: Array<{
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    _key: string;
-    [internalGroqTypeReferenceTo]?: "category";
-  }>;
-  publishedAt?: string;
-  body?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
+  processCategoryTitle?: string;
+  processCategorySlug?: Slug;
+  processCategoryDescription?: string;
+  processSteps?: Array<{
+    stepTitle?: string;
+    stepSlug?: Slug;
+    stepContent?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
       _key: string;
     }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
+    _type: "processStep";
     _key: string;
   }>;
 };
@@ -459,98 +428,6 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
     };
   } | null;
 } | null;
-// Variable: REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERY
-// Query: *[_type == "realEstateProcess" && $keyword in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_SELLING_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "selling" in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_SELLING_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "more-stuff" in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "additional-information" in categories[]->slug.current] {    _id,    title,    slug,    categories[]-> {      title,      slug    }  }
-export type REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERY
-// Query: *[_type == "realEstateProcess" && slug.current == $slug][0] {    _id,    title,    body,    mainImage  }
-export type REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERYResult = {
-  _id: string;
-  title: string | null;
-  body: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
-      _key: string;
-    }>;
-    style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "normal";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-    _key: string;
-  }> | null;
-  mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
-} | null;
 
 // Query TypeMap
 import "@sanity/client";
@@ -558,10 +435,5 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "  *[_type == \"propertyListings\"] {\n  _id,\n  title,\n  slug {\n    current\n  },\n  Price,\n  Statement,\n  publishedAt,\n  mainImage{\n    asset->{\n      _id,\n      url\n    }\n  }\n}\n": PROPERTY_LISTINGS_ALL_QUERYResult;
     "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage {\n      asset -> {\n        _id, \n        url\n      }\n    },\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && $keyword in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"selling\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_SELLING_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"more-stuff\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"additional-information\" in categories[]->slug.current] {\n    _id,\n    title,\n    slug,\n    categories[]-> {\n      title,\n      slug\n    }\n  }\n": REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && slug.current == $slug][0] {\n    _id,\n    title,\n    body,\n    mainImage\n  }\n": REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERYResult;
   }
 }
