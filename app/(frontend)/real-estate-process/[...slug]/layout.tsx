@@ -1,3 +1,5 @@
+import { SanityLive } from "@/sanity/lib/live";
+
 export default function RealEstateProcessLayout({
   children,
 }: {
@@ -6,6 +8,7 @@ export default function RealEstateProcessLayout({
   return (
     <main className={`wrapper min-h-dvh grid items-center py-20 space-y-8`}>
       {children}
+      <SanityLive />
     </main>
   );
 }
