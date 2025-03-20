@@ -28,7 +28,7 @@ export default async function Page() {
   return (
     <main className="min-h-dvh space-y-24 mb-24">
       <section className="relative overflow-hidden">
-        <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+        <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
         <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
           <h1 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white sm:text-6xl">
             Available Properties.
@@ -57,7 +57,7 @@ export default async function Page() {
           {posts.map((post) => (
             <li key={post?._id} className="col-span-1 w-full">
               <Card className="bg-transparent">
-                <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
+                <CardHeader className="relative aspect-16/10 p-0 pb-6 overflow-hidden">
                   <Image
                     fill
                     src={urlFor(post.mainImage).url()}
@@ -77,7 +77,7 @@ export default async function Page() {
                   <h2 className="text-2xl font-semibold dark:text-white">
                     {post.title}
                   </h2>
-                  <p className="leading-7 [&:not(:first-child)]:mt-2 text-gray-700 line-clamp-3">
+                  <p className="leading-7 not-first:mt-2 text-gray-700 line-clamp-3">
                     {post.Statement}
                   </p>
                   <Link href={`listings/${post.slug?.current}`}>

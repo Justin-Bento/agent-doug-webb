@@ -37,7 +37,7 @@ export default async function Page({
             {post.Statement}
           </p>
         </div>
-        <div className="relative w-full aspect-[16/10] overflow-hidden">
+        <div className="relative w-full aspect-16/10 overflow-hidden">
           <Image
             fill
             src={urlFor(post.mainImage).url()} // Use the fallback imageSource
