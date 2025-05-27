@@ -10,8 +10,10 @@ export default async function RealEstateProcessSlug({
   const { slug } = await params;
   if (slug?.length === 2) {
     return (
-      <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
-        <h1 className="text-3xl font-bold">{revertSlug(slug[1])}</h1>
+      <main className="wrapper min-h-dvh my-24">
+        <h1 className="max-w-4xl text-4xl font-bold capitalize text-pretty lg:text-5xl lg:leading-[1.25] mb-6">
+          Start here for a quick overview of everything you need to know.
+        </h1>
         <TypographyDemo />
       </main>
     );
@@ -20,7 +22,7 @@ export default async function RealEstateProcessSlug({
       <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
         <section className="">
           <div className="flex flex-col-reverse">
-            <h1 className="text-3xl font-bold capitalize">
+            <h1 className="max-w-4xl text-4xl font-bold capitalize text-pretty lg:text-5xl lg:leading-[1.25] mb-6">
               {revertSlug(slug[0])}
             </h1>
 
