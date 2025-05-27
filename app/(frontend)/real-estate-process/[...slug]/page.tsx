@@ -94,10 +94,8 @@ export default async function page({ params }: { params: { slug: string[] } }) {
               Nested Page
             </p>
           </div>
-          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 max-w-3xl text-balance">
-            As a result, people stopped telling jokes, and the kingdom fell into
-            a gloom. But there was one person who refused to let the king&#39;s
-            foolishness get him down: a court jester named Jokester.
+          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 max-w-4xl text-balance">
+            {post.processCategoryDescription}
           </p>
           <Divider />
         </section>
