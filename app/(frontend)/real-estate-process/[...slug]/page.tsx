@@ -103,7 +103,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
           <Divider />
           <ul className="list-disc">
             <li className="">
-              <Link href="#">
+              <Link href={`/article`}>
                 Hello, This is a list item that links to another article.
               </Link>
             </li>
