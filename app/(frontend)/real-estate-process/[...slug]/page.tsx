@@ -7,6 +7,7 @@ import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
 import TypographyDemo from "@/components/TypographyDemo";
 import { PortableText } from "next-sanity";
+import { revertSlug } from "@/lib/utils";
 
 export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
@@ -151,28 +152,35 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     const step = stepData.processSteps;
 
     return (
-      <main className="wrapper min-h-dvh my-24">
-        <section className="max-w-[100ch] text-balance mx-auto">
-          <div className="page-header">
-            <div className="flex flex-col-reverse">
-              <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
-                {step.stepTitle}
-              </h1>
-              <Link
-                href="/real-estate-process"
-                className="p-0 m-0 text-sm tracking-wider leading-[2] text-primary font-medium"
-              >
-                {stepData.processCategoryTitle}
-              </Link>
-            </div>
-            <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 mb-6 max-w-4xl text-balance">
+      <main className="max-w-[100ch] text-balance mx-auto min-h-dvh my-24">
+        <section className="page-header">
+          <div className="flex flex-col-reverse">
+            <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
               {step.stepTitle}
-            </p>
+            </h1>
+            <Link
+              href="/real-estate-process"
+              className="p-0 m-0 text-sm tracking-wider leading-[2] text-primary font-medium"
+            >
+              {stepData.processCategoryTitle}
+            </Link>
           </div>
-          <Divider />
-          <article className="prose-lg [&:not(:first-child)]:mt-6 max-w-[100ch] text-balance mx-auto">
-            <PortableText value={step.stepContent} />
-          </article>
+          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 mb-6 max-w-4xl text-balance">
+            {step.stepTitle}
+          </p>
+        </section>
+        <Divider />
+        <article className="prose-lg [&:not(:first-child)]:mt-6 max-w-[100ch] text-balance mx-auto">
+          <PortableText value={step.stepContent} />
+        </article>
+        <section className="relative isolate border-t-2 border-indigo-600">
+          <Link
+            href="#"
+            className="block text-sm/[2] text-gray-500 pt-5 hover:underline"
+          >
+            <span className="w-full h-full absolute inset-0"></span>
+            &larr; Back To {revertSlug(params.slug[0])}
+          </Link>
         </section>
       </main>
     );
