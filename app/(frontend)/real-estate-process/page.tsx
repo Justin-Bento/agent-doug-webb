@@ -9,11 +9,7 @@ import Divider from "@/components/Divider";
 import TypographyDemo from "@/components/TypographyDemo";
 import { revertSlug } from "@/lib/utils";
 
-export default async function RealEstateProcessPage({
-  params,
-}: {
-  params: { slug?: string[] };
-}) {
+export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
   if (!params.slug) {
     const { data: posts } = await sanityFetch({
@@ -87,7 +83,7 @@ export default async function RealEstateProcessPage({
             {Array.from({ length: 10 }).map((_, index) => (
               <li key={index}>
                 <Link
-                  href={`/real-estate-process/${params.slug[0]}/stage-${index + 1}`}
+                  href={`/real-estate-process/${params?.slug[0]}/stage-${index + 1}`}
                   className="hover:underline hover:underline-offset-2"
                 >
                   Stage #{index + 1} level of puns: {index * 5} gold coins
