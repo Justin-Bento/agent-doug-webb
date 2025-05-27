@@ -10,7 +10,7 @@ export default async function RealEstateProcessSlug({
   if (slug?.length === 2) {
     return (
       <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
-        <h1 className="text-3xl font-bold">{slug[0]}</h1>
+        <h1 className="text-3xl font-bold">{slug[1]}</h1>
       </main>
     );
   } else if (slug?.length === 1) {
