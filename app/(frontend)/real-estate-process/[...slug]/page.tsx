@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
 import TypographyDemo from "@/components/TypographyDemo";
+import { PortableText } from "next-sanity";
 
 export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
@@ -151,7 +152,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
 
     return (
       <main className="wrapper min-h-dvh my-24">
-        <section className="prose-lg max-w-[100ch]">
+        <section className="">
           <div className="flex flex-col-reverse">
             <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
               {step.stepTitle}
@@ -161,12 +162,9 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             </p>
           </div>
           <Divider />
-
-          {/* You'll need PortableText component here */}
-          <div className="step-content">
-            {/* This is where step.stepContent should be rendered with PortableText */}
-            <p>Step content will go here...</p>
-          </div>
+          <article className="prose-lg [&:not(:first-child)]:mt-6 max-w-[100ch] text-balance mx-auto">
+            <PortableText value={step.stepContent} />
+          </article>
         </section>
       </main>
     );
