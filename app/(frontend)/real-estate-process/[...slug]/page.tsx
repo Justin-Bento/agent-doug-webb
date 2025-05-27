@@ -90,9 +90,12 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
               {post.processCategoryTitle}
             </h1>
-            <p className="p-0 m-0 text-sm tracking-wide leading-[2]">
-              Nested Page
-            </p>
+            <Link
+              href="/real-estate-process"
+              className="p-0 m-0 text-sm tracking-wider leading-[2] text-primary font-medium"
+            >
+              Real-Estate Process
+            </Link>
           </div>
           <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 max-w-4xl text-balance">
             {post.processCategoryDescription}
