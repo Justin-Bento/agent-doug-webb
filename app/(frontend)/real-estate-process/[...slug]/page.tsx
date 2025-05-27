@@ -32,7 +32,7 @@ export default async function RealEstateProcessSlug({
             {new Array(10).fill(null).map((_, index) => (
               <li key={index}>
                 <Link
-                  href="#"
+                  href={`/real-estate-process/${slug[0]}/stage-${index + 1}`}
                   className="hover:underline hover:underline-offset-2"
                 >
                   Stage #{index + 1} level of puns: {index * 5} gold coins
