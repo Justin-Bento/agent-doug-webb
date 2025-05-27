@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { createSlug } from "@/lib/utils";
 import Divider from "@/components/Divider";
+import { listings } from "@/lib/data";
+
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
@@ -12,44 +14,6 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  const listings = [
-    {
-      id: 1,
-      title: "Maple Ridge Estates",
-      alt: "filter description for an image",
-      media: "/media/img/b746b508b0c9405df110ebabbf09c983-cc_ft_960.jpg",
-    },
-    {
-      id: 2,
-      title: "Rocky Summit Retreat",
-      alt: "filter description for an image",
-      media: "/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg",
-    },
-    {
-      id: 3,
-      title: "Cedarbrook Haven",
-      alt: "filter description for an image",
-      media: "/media/img/Investment_Opportunities.jpg",
-    },
-    {
-      id: 4,
-      title: "Aurora Shores Villas",
-      alt: "filter description for an image",
-      media: "/media/img/pexels-curtis-adams-1694007-4258275.jpg",
-    },
-    {
-      id: 5,
-      title: "Mapleleaf Manor",
-      alt: "filter description for an image",
-      media: "/media/img/dillon-kydd-3Ignkeds3w8-unsplash.jpg",
-    },
-    {
-      id: 6,
-      title: "Osprey Lake Cottages",
-      alt: "filter description for an image",
-      media: "/media/img/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg",
-    },
-  ];
   return (
     <>
       <main className="min-h-dvh space-y-32">
@@ -69,23 +33,27 @@ export default function page() {
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
-                Get the help you need
-              </p>
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
-                Your Guide to the Real Estate Transaction Process
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[1.1] capitalize">
+                AgentWebb is Your Guide through the Real Estate Transaction
+                Process.
               </h1>
-              <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black dark:text-white">
-                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
-                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
-                coming at you and ready for any red flags along the way.
+              <p className="mt-4 max-w-4xl text-balance text-lg leading-8 text-black dark:text-white">
+                Douglas John Webb is a real estate agent with platform that is
+                here to help you during the real estate transaction process. His
+                goal is to give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags along the
+                way.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/listings">
                   <Button className="rounded-full px-5">View Listings</Button>
                 </Link>
                 <Link href="/real-estate-process">
-                  <Button variant="outline" className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]">
+                  <Button
+                    variant="outline"
+                    className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]"
+                  >
                     Real-Estate Process
                   </Button>
                 </Link>
@@ -96,7 +64,9 @@ export default function page() {
         {/* End of Landing Area */}
         <section className="relative min-h-[100dvh]">
           {/* SVG Background */}
-          <div className="absolute inset-0 z-0">{/* <MySvgComponent className="rotate-45" /> */}</div>
+          <div className="absolute inset-0 z-0">
+            {/* <MySvgComponent className="rotate-45" /> */}
+          </div>
 
           {/* Title Section */}
           <div className="relative z-20 flex items-center justify-center min-h-[100dvh] wrapper">
@@ -108,9 +78,11 @@ export default function page() {
               {/* Divider */}
               <Divider className="" />
               <p className="max-w-3xl text-lg text-center">
-                Doug began his journey in residential investment real estate in 1986, which eventually led to a
-                full-time career in real estate sales in 1997 with RE/MAX. To offer the level of service that both he
-                and his clients valued, Doug transitioned to Right At Home Realty.
+                Doug began his journey in residential investment real estate in
+                1986, which eventually led to a full-time career in real estate
+                sales in 1997 with RE/MAX. To offer the level of service that
+                both he and his clients valued, Doug transitioned to Right At
+                Home Realty.
               </p>
             </div>
           </div>
@@ -137,17 +109,23 @@ export default function page() {
           </div>
           <div className="sm:col-span-6 row-auto overflow-y-scroll aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
             {Array.from({ length: 6 }, (_, index) => (
-              <div key={index} className="gap-12 place-content-center aspect-[1/1.25] sm:rounded-lg">
+              <div
+                key={index}
+                className="gap-12 place-content-center aspect-[1/1.25] sm:rounded-lg"
+              >
                 <div className="px-4 py-5 sm:p-6">
                   <h3 className="font-display max-w-4xl text-balance text-xl font-bold uppercase text-black dark:text-white">
                     Meet Your Trusted Realtor: John Webb
                   </h3>
                   <p className="text-sm text-balance mt-2 leading-5">
-                    With over 10 years of experience in the real estate industry, John possesses an in-depth
-                    understanding of the local market trends, neighborhoods, and property values.
+                    With over 10 years of experience in the real estate
+                    industry, John possesses an in-depth understanding of the
+                    local market trends, neighborhoods, and property values.
                   </p>
                   <div className="flex items-center gap-2">
-                    <p className="font-mono text-xs uppercase tracking-wide">{index + 1}</p>{" "}
+                    <p className="font-mono text-xs uppercase tracking-wide">
+                      {index + 1}
+                    </p>{" "}
                     {/* Updated to use index + 1 */}
                     <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black dark:ring-white"></span>
                   </div>
@@ -176,10 +154,17 @@ export default function page() {
                     className="overflow-hidden sm:rounded-lg hover:underline hover:animate-pulse hover:opacity-80 hover:cursor-pointer"
                   >
                     <div className="relative aspect-video sm:aspect-square sm:rounded-lg">
-                      <Image fill src={house.media} alt={house.alt} className="object-cover object-center rounded-lg" />
+                      <Image
+                        fill
+                        src={house.media}
+                        alt={house.alt}
+                        className="object-cover object-center rounded-lg"
+                      />
                     </div>
                     <div className="mt-4">
-                      <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">{house.title}</p>
+                      <p className="text-lg/8 font-medium tracking-normal text-black dark:text-white">
+                        {house.title}
+                      </p>
                     </div>
                   </Link>
                 </li>
@@ -218,9 +203,10 @@ export default function page() {
                 Right at Home Agents Make it Easy
               </h1>
               <p className="mt-4 max-w-5xl text-md leading-7 font-semibold text-black dark:text-white">
-                Be one step ahead of real-estate transactions with our un-biased guide. As we give you an unfiltered
-                guide about the Real-Estate Transaction without any favoritism so you can be educated on the procedures
-                coming at you and ready for any red flags.
+                Be one step ahead of real-estate transactions with our un-biased
+                guide. As we give you an unfiltered guide about the Real-Estate
+                Transaction without any favoritism so you can be educated on the
+                procedures coming at you and ready for any red flags.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">

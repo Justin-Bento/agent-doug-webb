@@ -13,61 +13,6 @@
  */
 
 // Source: schema.json
-export type SanityImagePaletteSwatch = {
-  _type: "sanity.imagePaletteSwatch";
-  background?: string;
-  foreground?: string;
-  population?: number;
-  title?: string;
-};
-
-export type SanityImagePalette = {
-  _type: "sanity.imagePalette";
-  darkMuted?: SanityImagePaletteSwatch;
-  lightVibrant?: SanityImagePaletteSwatch;
-  darkVibrant?: SanityImagePaletteSwatch;
-  vibrant?: SanityImagePaletteSwatch;
-  dominant?: SanityImagePaletteSwatch;
-  lightMuted?: SanityImagePaletteSwatch;
-  muted?: SanityImagePaletteSwatch;
-};
-
-export type SanityImageDimensions = {
-  _type: "sanity.imageDimensions";
-  height?: number;
-  width?: number;
-  aspectRatio?: number;
-};
-
-export type SanityFileAsset = {
-  _id: string;
-  _type: "sanity.fileAsset";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  originalFilename?: string;
-  label?: string;
-  title?: string;
-  description?: string;
-  altText?: string;
-  sha1hash?: string;
-  extension?: string;
-  mimeType?: string;
-  size?: number;
-  assetId?: string;
-  uploadId?: string;
-  path?: string;
-  url?: string;
-  source?: SanityAssetSourceData;
-};
-
-export type Geopoint = {
-  _type: "geopoint";
-  lat?: number;
-  lng?: number;
-  alt?: number;
-};
-
 export type PropertyListings = {
   _id: string;
   _type: "propertyListings";
@@ -83,6 +28,7 @@ export type PropertyListings = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -112,6 +58,7 @@ export type PropertyListings = {
           _weak?: boolean;
           [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -127,62 +74,31 @@ export type RealEstateProcess = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
-  title?: string;
-  slug?: Slug;
-  author?: {
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    [internalGroqTypeReferenceTo]?: "author";
-  };
-  mainImage?: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  };
-  categories?: Array<{
-    _ref: string;
-    _type: "reference";
-    _weak?: boolean;
-    _key: string;
-    [internalGroqTypeReferenceTo]?: "category";
-  }>;
-  publishedAt?: string;
-  body?: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
+  processCategoryTitle?: string;
+  processCategorySlug?: Slug;
+  processCategoryDescription?: string;
+  processSteps?: Array<{
+    stepTitle?: string;
+    stepSlug?: Slug;
+    stepContent?: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
       _key: string;
     }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
+    _type: "processStep";
     _key: string;
   }>;
 };
@@ -208,6 +124,7 @@ export type Post = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -245,6 +162,7 @@ export type Post = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -268,6 +186,7 @@ export type Author = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
@@ -302,12 +221,6 @@ export type Category = {
   slug?: Slug;
 };
 
-export type Slug = {
-  _type: "slug";
-  current?: string;
-  source?: string;
-};
-
 export type BlockContent = Array<{
   children?: Array<{
     marks?: Array<string>;
@@ -332,12 +245,47 @@ export type BlockContent = Array<{
     _weak?: boolean;
     [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
   };
+  media?: unknown;
   hotspot?: SanityImageHotspot;
   crop?: SanityImageCrop;
   alt?: string;
   _type: "image";
   _key: string;
 }>;
+
+export type SanityImagePaletteSwatch = {
+  _type: "sanity.imagePaletteSwatch";
+  background?: string;
+  foreground?: string;
+  population?: number;
+  title?: string;
+};
+
+export type SanityImagePalette = {
+  _type: "sanity.imagePalette";
+  darkMuted?: SanityImagePaletteSwatch;
+  lightVibrant?: SanityImagePaletteSwatch;
+  darkVibrant?: SanityImagePaletteSwatch;
+  vibrant?: SanityImagePaletteSwatch;
+  dominant?: SanityImagePaletteSwatch;
+  lightMuted?: SanityImagePaletteSwatch;
+  muted?: SanityImagePaletteSwatch;
+};
+
+export type SanityImageDimensions = {
+  _type: "sanity.imageDimensions";
+  height?: number;
+  width?: number;
+  aspectRatio?: number;
+};
+
+export type SanityImageHotspot = {
+  _type: "sanity.imageHotspot";
+  x?: number;
+  y?: number;
+  height?: number;
+  width?: number;
+};
 
 export type SanityImageCrop = {
   _type: "sanity.imageCrop";
@@ -347,12 +295,26 @@ export type SanityImageCrop = {
   right?: number;
 };
 
-export type SanityImageHotspot = {
-  _type: "sanity.imageHotspot";
-  x?: number;
-  y?: number;
-  height?: number;
-  width?: number;
+export type SanityFileAsset = {
+  _id: string;
+  _type: "sanity.fileAsset";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  originalFilename?: string;
+  label?: string;
+  title?: string;
+  description?: string;
+  altText?: string;
+  sha1hash?: string;
+  extension?: string;
+  mimeType?: string;
+  size?: number;
+  assetId?: string;
+  uploadId?: string;
+  path?: string;
+  url?: string;
+  source?: SanityAssetSourceData;
 };
 
 export type SanityImageAsset = {
@@ -378,13 +340,6 @@ export type SanityImageAsset = {
   source?: SanityAssetSourceData;
 };
 
-export type SanityAssetSourceData = {
-  _type: "sanity.assetSourceData";
-  name?: string;
-  id?: string;
-  url?: string;
-};
-
 export type SanityImageMetadata = {
   _type: "sanity.imageMetadata";
   location?: Geopoint;
@@ -396,7 +351,27 @@ export type SanityImageMetadata = {
   isOpaque?: boolean;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityFileAsset | Geopoint | PropertyListings | RealEstateProcess | Post | Author | Category | Slug | BlockContent | SanityImageCrop | SanityImageHotspot | SanityImageAsset | SanityAssetSourceData | SanityImageMetadata;
+export type Geopoint = {
+  _type: "geopoint";
+  lat?: number;
+  lng?: number;
+  alt?: number;
+};
+
+export type Slug = {
+  _type: "slug";
+  current?: string;
+  source?: string;
+};
+
+export type SanityAssetSourceData = {
+  _type: "sanity.assetSourceData";
+  name?: string;
+  id?: string;
+  url?: string;
+};
+
+export type AllSanitySchemaTypes = PropertyListings | RealEstateProcess | Post | Author | Category | BlockContent | SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | Slug | SanityAssetSourceData;
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: sanity/lib/queries.ts
 // Variable: PROPERTY_LISTINGS_ALL_QUERY
@@ -451,6 +426,7 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
           _weak?: boolean;
           [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -459,98 +435,36 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
     };
   } | null;
 } | null;
-// Variable: REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERY
-// Query: *[_type == "realEstateProcess" && $keyword in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERYResult = Array<{
+// Variable: RE_PROCESS_QUERY
+// Query: *[_type == "realEstateProcess" ] {  _id,  processCategoryTitle,  processCategoryDescription,  processCategorySlug,  processSteps[] {    stepTitle,    stepSlug,    stepContent  }}
+export type RE_PROCESS_QUERYResult = Array<{
   _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_SELLING_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "selling" in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_SELLING_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "more-stuff" in categories[]->slug.current] {  _id,  title,  slug,  categories[]-> {  title,  slug  }  }
-export type REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERY
-// Query: *[_type == "realEstateProcess" && "additional-information" in categories[]->slug.current] {    _id,    title,    slug,    categories[]-> {      title,      slug    }  }
-export type REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERYResult = Array<{
-  _id: string;
-  title: string | null;
-  slug: Slug | null;
-  categories: Array<{
-    title: string | null;
-    slug: Slug | null;
-  }> | null;
-}>;
-// Variable: REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERY
-// Query: *[_type == "realEstateProcess" && slug.current == $slug][0] {    _id,    title,    body,    mainImage  }
-export type REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERYResult = {
-  _id: string;
-  title: string | null;
-  body: Array<{
-    children?: Array<{
-      marks?: Array<string>;
-      text?: string;
-      _type: "span";
+  processCategoryTitle: string | null;
+  processCategoryDescription: string | null;
+  processCategorySlug: Slug | null;
+  processSteps: Array<{
+    stepTitle: string | null;
+    stepSlug: Slug | null;
+    stepContent: Array<{
+      children?: Array<{
+        marks?: Array<string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+      }>;
+      style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "normal";
+      listItem?: "bullet" | "number";
+      markDefs?: Array<{
+        href?: string;
+        _type: "link";
+        _key: string;
+      }>;
+      level?: number;
+      _type: "block";
       _key: string;
-    }>;
-    style?: "blockquote" | "h1" | "h2" | "h3" | "h4" | "normal";
-    listItem?: "bullet";
-    markDefs?: Array<{
-      href?: string;
-      _type: "link";
-      _key: string;
-    }>;
-    level?: number;
-    _type: "block";
-    _key: string;
-  } | {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-    _key: string;
+    }> | null;
   }> | null;
-  mainImage: {
-    asset?: {
-      _ref: string;
-      _type: "reference";
-      _weak?: boolean;
-      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-    };
-    hotspot?: SanityImageHotspot;
-    crop?: SanityImageCrop;
-    alt?: string;
-    _type: "image";
-  } | null;
-} | null;
+}>;
 
 // Query TypeMap
 import "@sanity/client";
@@ -558,10 +472,6 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "  *[_type == \"propertyListings\"] {\n  _id,\n  title,\n  slug {\n    current\n  },\n  Price,\n  Statement,\n  publishedAt,\n  mainImage{\n    asset->{\n      _id,\n      url\n    }\n  }\n}\n": PROPERTY_LISTINGS_ALL_QUERYResult;
     "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage {\n      asset -> {\n        _id, \n        url\n      }\n    },\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && $keyword in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_POSTS_BY_CATEGORY_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"selling\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_SELLING_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"more-stuff\" in categories[]->slug.current] {\n  _id,\n  title,\n  slug,\n  categories[]-> {\n  title,\n  slug\n  }\n  }\n ": REAL_ESTATE_PROCESS_MORE_STUFF_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && \"additional-information\" in categories[]->slug.current] {\n    _id,\n    title,\n    slug,\n    categories[]-> {\n      title,\n      slug\n    }\n  }\n": REAL_ESTATE_PROCESS_ADDITIONAL_INFO_POSTS_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" && slug.current == $slug][0] {\n    _id,\n    title,\n    body,\n    mainImage\n  }\n": REAL_ESTATE_PROCESS_ARTICLE_BY_SLUG_QUERYResult;
+    "\n*[_type == \"realEstateProcess\" ] {\n  _id,\n  processCategoryTitle,\n  processCategoryDescription,\n  processCategorySlug,\n  processSteps[] {\n    stepTitle,\n    stepSlug,\n    stepContent\n  }\n}\n": RE_PROCESS_QUERYResult;
   }
 }
