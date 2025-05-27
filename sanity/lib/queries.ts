@@ -52,9 +52,9 @@ export const PROPERTY_LISTINGS_BY_SLUG_QUERY =
 export const RE_PROCESS_QUERY = defineQuery(`
   *[_type == "realEstateProcess" ] {
     _id,
-    processCategoryTitle,
-    processCategorySlug,
-    processCategoryDescription,
+  categoryTitle,
+  categoryDescription,
+  categorySlug,
     processSteps[] {
       _id,
       stepTitle,
