@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 // Imports for Sanity Content Management System.
 import { urlFor } from "@/sanity/lib/image";
-import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/live";
 import { PROPERTY_LISTINGS_ALL_QUERY } from "@/sanity/lib/queries";
 // Imports related to components and ui features.
