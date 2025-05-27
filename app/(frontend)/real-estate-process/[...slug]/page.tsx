@@ -18,16 +18,17 @@ export default async function RealEstateProcessSlug({
   } else if (slug?.length === 1) {
     return (
       <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
-        <section className="flex flex-col-reverse">
-          <h1 className="text-3xl font-bold capitalize">
-            {revertSlug(slug[0])}
-          </h1>
+        <section className="">
+          <div className="flex flex-col-reverse">
+            <h1 className="text-3xl font-bold capitalize">
+              {revertSlug(slug[0])}
+            </h1>
 
-          <Link href="/real-estate-process" className="text-sm/6">
-            Real Estate Process
-          </Link>
+            <Link href="/real-estate-process" className="text-sm/6">
+              Real Estate Process
+            </Link>
+          </div>
         </section>
-        <section className=""></section>
       </main>
     );
   }
