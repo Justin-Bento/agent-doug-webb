@@ -19,7 +19,7 @@ export default async function RealEstateProcessSlug({
     );
   } else if (slug?.length === 1) {
     return (
-      <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
+      <main className="wrapper min-h-dvh my-24">
         <section className="">
           <div className="flex flex-col-reverse">
             <h1 className="max-w-4xl text-4xl font-bold capitalize text-pretty lg:text-5xl lg:leading-[1.25] mb-6">
