@@ -36,9 +36,9 @@ export default async function Page() {
               >
                 <Card className="bg-transparent  active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all  ">
                   <div className="px-4 py-5 sm:p-6 space-y-2">
-                    <p className="text-xl font-semibold capitalize">
+                    <h3 className="text-xl font-semibold capitalize">
                       {post.processCategoryTitle}
-                    </p>
+                    </h3>
 
                     <p className="line-clamp-2">
                       {post.processCategoryDescription}
