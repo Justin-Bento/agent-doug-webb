@@ -50,16 +50,15 @@ export const PROPERTY_LISTINGS_BY_SLUG_QUERY =
 
 // Real estate process query for posts by category
 export const RE_PROCESS_QUERY = defineQuery(`
-  *[_type == "realEstateProcess" ] {
-    _id,
-  categoryTitle,
-  categoryDescription,
-  categorySlug,
-  blogPosts[]  {
-    processTitle,
-    processCategoryDescription,
-    processCategorySlug,
-    processContent,
+*[_type == "realEstateProcess" ] {
+  _id,
+  processCategoryTitle,
+  processCategoryDescription,
+  processCategorySlug,
+  processSteps[] {
+    stepTitle,
+    stepSlug,
+    stepContent
   }
-  }
+}
 `);

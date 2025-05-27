@@ -436,14 +436,12 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
   } | null;
 } | null;
 // Variable: RE_PROCESS_QUERY
-// Query: *[_type == "realEstateProcess" ] {    _id,  categoryTitle,  categoryDescription,  categorySlug,    processSteps[] {      _id,      stepTitle,      stepSlug,      stepContent    }  }
+// Query: *[_type == "realEstateProcess" ] {  _id,  processCategoryTitle,  processCategoryDescription,  processSteps[] {    stepTitle,    stepSlug,    stepContent  }}
 export type RE_PROCESS_QUERYResult = Array<{
   _id: string;
-  categoryTitle: null;
-  categoryDescription: null;
-  categorySlug: null;
+  processCategoryTitle: string | null;
+  processCategoryDescription: string | null;
   processSteps: Array<{
-    _id: null;
     stepTitle: string | null;
     stepSlug: Slug | null;
     stepContent: Array<{
@@ -473,6 +471,6 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "  *[_type == \"propertyListings\"] {\n  _id,\n  title,\n  slug {\n    current\n  },\n  Price,\n  Statement,\n  publishedAt,\n  mainImage{\n    asset->{\n      _id,\n      url\n    }\n  }\n}\n": PROPERTY_LISTINGS_ALL_QUERYResult;
     "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage {\n      asset -> {\n        _id, \n        url\n      }\n    },\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" ] {\n    _id,\n  categoryTitle,\n  categoryDescription,\n  categorySlug,\n    processSteps[] {\n      _id,\n      stepTitle,\n      stepSlug,\n      stepContent\n    }\n  }\n": RE_PROCESS_QUERYResult;
+    "\n*[_type == \"realEstateProcess\" ] {\n  _id,\n  processCategoryTitle,\n  processCategoryDescription,\n  processSteps[] {\n    stepTitle,\n    stepSlug,\n    stepContent\n  }\n}\n": RE_PROCESS_QUERYResult;
   }
 }

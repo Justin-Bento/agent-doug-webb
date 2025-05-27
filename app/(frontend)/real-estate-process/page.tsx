@@ -31,14 +31,18 @@ export default async function Page() {
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {posts.map((post: any) => (
             <li key={post._id} className="group">
-              <Link href={`real-estate-process/${post.categorySlug.current}`}>
+              <Link
+                href={`real-estate-process/${post.processCategorySlug.current}`}
+              >
                 <Card className="bg-transparent  active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all  ">
                   <div className="px-4 py-5 sm:p-6 space-y-2">
                     <p className="text-xl font-semibold capitalize">
-                      {post.categoryTitle}
+                      {post.processCategoryTitle}
                     </p>
 
-                    <p className="line-clamp-2">{post.categoryDescription}</p>
+                    <p className="line-clamp-2">
+                      {post.processCategoryDescription}
+                    </p>
 
                     <Button
                       variant="link"
