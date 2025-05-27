@@ -83,6 +83,7 @@ export type PropertyListings = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -112,6 +113,7 @@ export type PropertyListings = {
           _weak?: boolean;
           [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -177,6 +179,7 @@ export type Post = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -214,6 +217,7 @@ export type Post = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     alt?: string;
@@ -237,6 +241,7 @@ export type Author = {
       _weak?: boolean;
       [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
     };
+    media?: unknown;
     hotspot?: SanityImageHotspot;
     crop?: SanityImageCrop;
     _type: "image";
@@ -301,6 +306,7 @@ export type BlockContent = Array<{
     _weak?: boolean;
     [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
   };
+  media?: unknown;
   hotspot?: SanityImageHotspot;
   crop?: SanityImageCrop;
   alt?: string;
@@ -420,6 +426,7 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
           _weak?: boolean;
           [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -429,12 +436,12 @@ export type PROPERTY_LISTINGS_BY_SLUG_QUERYResult = {
   } | null;
 } | null;
 // Variable: RE_PROCESS_QUERY
-// Query: *[_type == "realEstateProcess" ] {    _id,    processCategoryTitle,    processCategorySlug,    processCategoryDescription,    processSteps[] {      _id,      stepTitle,      stepSlug,      stepContent    }  }
+// Query: *[_type == "realEstateProcess" ] {    _id,  categoryTitle,  categoryDescription,  categorySlug,    processSteps[] {      _id,      stepTitle,      stepSlug,      stepContent    }  }
 export type RE_PROCESS_QUERYResult = Array<{
   _id: string;
-  processCategoryTitle: string | null;
-  processCategorySlug: Slug | null;
-  processCategoryDescription: string | null;
+  categoryTitle: null;
+  categoryDescription: null;
+  categorySlug: null;
   processSteps: Array<{
     _id: null;
     stepTitle: string | null;
@@ -466,6 +473,6 @@ declare module "@sanity/client" {
   interface SanityQueries {
     "  *[_type == \"propertyListings\"] {\n  _id,\n  title,\n  slug {\n    current\n  },\n  Price,\n  Statement,\n  publishedAt,\n  mainImage{\n    asset->{\n      _id,\n      url\n    }\n  }\n}\n": PROPERTY_LISTINGS_ALL_QUERYResult;
     "*[_type == \"propertyListings\" && slug.current == $slug][0] {\n    _id,\n    title, \n    Price,\n    Statement,\n    mainImage {\n      asset -> {\n        _id, \n        url\n      }\n    },\n    listingInformation\n  }\n": PROPERTY_LISTINGS_BY_SLUG_QUERYResult;
-    "\n  *[_type == \"realEstateProcess\" ] {\n    _id,\n    processCategoryTitle,\n    processCategorySlug,\n    processCategoryDescription,\n    processSteps[] {\n      _id,\n      stepTitle,\n      stepSlug,\n      stepContent\n    }\n  }\n": RE_PROCESS_QUERYResult;
+    "\n  *[_type == \"realEstateProcess\" ] {\n    _id,\n  categoryTitle,\n  categoryDescription,\n  categorySlug,\n    processSteps[] {\n      _id,\n      stepTitle,\n      stepSlug,\n      stepContent\n    }\n  }\n": RE_PROCESS_QUERYResult;
   }
 }
