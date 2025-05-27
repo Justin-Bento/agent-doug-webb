@@ -2,7 +2,14 @@ import React from "react";
 import { sanityFetch } from "@/sanity/lib/live";
 import { RE_PROCESS_QUERY } from "@/sanity/lib/queries";
 import Link from "next/link";
-import { Card } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
@@ -34,22 +41,17 @@ export default async function Page() {
               <Link
                 href={`real-estate-process/${post.processCategorySlug.current}`}
               >
-                <Card className="bg-transparent  active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all  ">
-                  <div className="px-4 py-5 sm:p-6 space-y-2">
-                    <h3 className="text-xl font-semibold capitalize">
+                <Card className="group overflow-hidden rounded-lg bg-accent/10 hover:bg-accent/30 transition-all shadow-none border hover:border-accent">
+                  <div className="px-4 py-5 sm:p-8">
+                    <CardTitle className="text-black tracking-wide leading-[1.125] capitalize group-hover:underline decoration-dotted">
                       {post.processCategoryTitle}
-                    </h3>
-
-                    <p className="line-clamp-2">
-                      {post.processCategoryDescription}
-                    </p>
-
-                    <Button
-                      variant="link"
-                      className="m-0 p-0 group-hover:underline after:content-['↗']"
-                    >
-                      See More&nbsp;
-                    </Button>
+                    </CardTitle>
+                    <div className="space-y-4 [&>*]:text-sm/[1.5] [&>*]:tracking-wide [&>*]:text-black">
+                      <CardDescription className="mt-2 line-clamp-2 ">
+                        {post.processCategoryDescription}.
+                      </CardDescription>
+                      <p className="opacity-70">See More&nbsp;&rarr;</p>
+                    </div>
                   </div>
                 </Card>
               </Link>
