@@ -38,11 +38,11 @@ export default function page() {
                 Process.
               </h1>
               <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black dark:text-white">
-                Be one step ahead of real-estate transactions with our un-biased
-                guide. As we give you an unfiltered guide about the Real-Estate
-                Transaction without any favoritism so you can be educated on the
-                procedures coming at you and ready for any red flags along the
-                way.
+                Douglas John Webb is a platform that is here to help you during
+                the real estate transaction process. His goal is to give you an
+                unfiltered guide about the Real-Estate Transaction without any
+                favoritism so you can be educated on the procedures coming at
+                you and ready for any red flags along the way.
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/listings">
