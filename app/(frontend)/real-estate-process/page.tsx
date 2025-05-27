@@ -10,6 +10,14 @@ import { sanityFetch } from "@/sanity/lib/live";
 import Link from "next/link";
 import React from "react";
 
+interface RealEstateModulesInterface {
+  _id: string;
+  processCategoryTitle: string;
+  processCategoryDescription: string;
+  processCategorySlug: {
+    current: string;
+  };
+}
 export default async function page() {
   const { data: posts } = await sanityFetch({
     query: `*[_type == "realEstateProcess" ] {
@@ -45,7 +53,7 @@ export default async function page() {
         <Divider className="mt-6 mb-10" />
       </section>
       <ul className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {posts.map((post) => {
+        {posts.map((post: RealEstateModulesInterface) => {
           return (
             <li key={posts._id} className="group relative isolate">
               <Link
