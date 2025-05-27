@@ -1,3 +1,4 @@
+import { revertSlug } from "@/lib/utils";
 import Link from "next/link";
 
 export default async function RealEstateProcessSlug({
@@ -17,7 +18,7 @@ export default async function RealEstateProcessSlug({
       <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
         <section className="flex flex-col-reverse">
           <h1 className="text-3xl font-bold capitalize">
-            {slug[0].replace(/-/g, " ")}
+            {revertSlug(slug[0])}
           </h1>
 
           <Link href="/real-estate-process" className="text-sm/6">
