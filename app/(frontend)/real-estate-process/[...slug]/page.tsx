@@ -101,6 +101,13 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             {post.processCategoryDescription}
           </p>
           <Divider />
+          <ul className="list-disc">
+            <li className="">
+              <Link href="#">
+                Hello, This is a list item that links to another article.
+              </Link>
+            </li>
+          </ul>
         </section>
       </main>
     );
