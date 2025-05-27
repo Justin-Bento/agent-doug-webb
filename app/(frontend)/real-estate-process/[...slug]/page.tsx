@@ -66,8 +66,18 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     );
   }
 
-  // If slug has 1 part (category page)
   if (params.slug.length === 1) {
+    // Fetch blog posts for this category
+    const { data: blogPosts } = await sanityFetch({
+      query: `*[_type == "yourPostType" && processCategorySlug.current == $slug] {
+      processTitle,
+      processCategoryDescription,
+      processCategorySlug,
+      processContent,
+    }`,
+      params: { slug: params.slug[0] },
+    });
+
     return (
       <main className="wrapper min-h-dvh my-24">
         <section>
@@ -79,18 +89,30 @@ export default async function page({ params }: { params: { slug: string[] } }) {
               Real Estate Process
             </Link>
           </div>
-          <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            {Array.from({ length: 10 }).map((_, index) => (
-              <li key={index}>
-                <Link
-                  href={`/real-estate-process/${params?.slug[0]}/stage-${index + 1}`}
-                  className="hover:underline hover:underline-offset-2"
-                >
-                  Stage #{index + 1} level of puns: {index * 5} gold coins
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+          {blogPosts.length > 0 ? (
+            <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+              {blogPosts.map(({ post, index }: any) => (
+                <li key={post._id || index}>
+                  <Link
+                    href={`/real-estate-process/${params.slug[0]}/${post.processCategorySlug.current}`}
+                    className="hover:underline hover:underline-offset-2"
+                  >
+                    {post.processTitle}
+                  </Link>
+                  {post.processCategoryDescription && (
+                    <p className="text-sm text-gray-600 mt-1">
+                      {post.processCategoryDescription}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-gray-500 mt-6">
+              No posts found for this category
+            </p>
+          )}
         </section>
       </main>
     );
