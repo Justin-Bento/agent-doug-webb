@@ -8,6 +8,7 @@ import Divider from "@/components/Divider";
 import TypographyDemo from "@/components/TypographyDemo";
 import { PortableText } from "next-sanity";
 import { revertSlug } from "@/lib/utils";
+import ServerBackButton from "@/components/BackButton";
 
 export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
@@ -174,13 +175,10 @@ export default async function page({ params }: { params: { slug: string[] } }) {
           <PortableText value={step.stepContent} />
         </article>
         <section className="relative isolate border-t-2 border-indigo-600">
-          <Link
-            href="#"
-            className="block text-sm/[2] text-gray-500 pt-5 hover:underline"
-          >
-            <span className="w-full h-full absolute inset-0"></span>
-            &larr; Back To {revertSlug(params.slug[0])}
-          </Link>
+          <ServerBackButton
+            fallbackHref="/real-estate-process"
+            label={`Back To ${revertSlug(params.slug[0])}`}
+          />
         </section>
       </main>
     );
