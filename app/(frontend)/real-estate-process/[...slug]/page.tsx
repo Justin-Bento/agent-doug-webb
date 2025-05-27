@@ -5,7 +5,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
-import TypographyDemo from "@/components/TypographyDemo";
 import { PortableText } from "next-sanity";
 import { revertSlug } from "@/lib/utils";
 import ServerBackButton from "@/components/BackButton";
