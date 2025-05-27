@@ -1,13 +1,11 @@
 import React from "react";
 import { sanityFetch } from "@/sanity/lib/live";
-import { RE_PROCESS_QUERY } from "@/sanity/lib/queries";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
 import TypographyDemo from "@/components/TypographyDemo";
-import { revertSlug } from "@/lib/utils";
 
 export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
