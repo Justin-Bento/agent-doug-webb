@@ -33,11 +33,9 @@ export default function page() {
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
-              <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
-                Get the help you need
-              </p>
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[0.8] capitalize">
-                Your Guide to the Real Estate Transaction Process
+              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[1.1] capitalize">
+                AgentWebb is Your Guide through the Real Estate Transaction
+                Process.
               </h1>
               <p className="mt-4 max-w-3xl text-balance text-lg leading-8 text-black dark:text-white">
                 Be one step ahead of real-estate transactions with our un-biased
