@@ -27,6 +27,7 @@ export default async function RealEstateProcessSlug({
             Real Estate Process
           </Link>
         </section>
+        <section className=""></section>
       </main>
     );
   }
