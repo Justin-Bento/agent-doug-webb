@@ -67,52 +67,23 @@ export default async function page({ params }: { params: { slug: string[] } }) {
   }
 
   if (params.slug.length === 1) {
-    // Fetch blog posts for this category
-    const { data: blogPosts } = await sanityFetch({
-      query: `*[_type == "yourPostType" && processCategorySlug.current == $slug] {
-      processTitle,
-      processCategoryDescription,
-      processCategorySlug,
-      processContent,
-    }`,
-      params: { slug: params.slug[0] },
-    });
-
     return (
       <main className="wrapper min-h-dvh my-24">
-        <section>
+        <section className="prose-lg max-w-[100ch]">
           <div className="flex flex-col-reverse">
-            <h1 className="max-w-4xl text-4xl font-bold capitalize text-pretty lg:text-5xl lg:leading-[1.25] mb-6">
+            <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
               {revertSlug(params.slug[0])}
             </h1>
-            <Link href="/real-estate-process" className="text-sm/6">
-              Real Estate Process
-            </Link>
-          </div>
-
-          {blogPosts.length > 0 ? (
-            <ul className="my-6 ml-6 list-disc [&>li]:text-base/[2]">
-              {blogPosts.map(({ post, index }: any) => (
-                <li key={post._id || index}>
-                  <Link
-                    href={`/real-estate-process/${params.slug[0]}/${post.processCategorySlug.current}`}
-                    className="hover:underline hover:underline-offset-2"
-                  >
-                    {post.processTitle}
-                  </Link>
-                  {post.processCategoryDescription && (
-                    <p className="text-sm text-gray-600 mt-1">
-                      {post.processCategoryDescription}
-                    </p>
-                  )}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-gray-500 mt-6">
-              No posts found for this category
+            <p className="p-0 m-0 text-sm tracking-wide leading-[2]">
+              Nested Page
             </p>
-          )}
+          </div>
+          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 max-w-3xl text-balance">
+            As a result, people stopped telling jokes, and the kingdom fell into
+            a gloom. But there was one person who refused to let the king&#39;s
+            foolishness get him down: a court jester named Jokester.
+          </p>
+          <Divider />
         </section>
       </main>
     );
