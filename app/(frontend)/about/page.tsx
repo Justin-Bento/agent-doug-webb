@@ -15,7 +15,7 @@ export default function about() {
     <>
       <main className="min-h-dvh mb-24 space-y-24">
         <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/40 to-transparent" />
+          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/40 to-transparent" />
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
             <span className="flex flex-col-reverse">
               <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-6xl">
@@ -106,7 +106,7 @@ export default function about() {
             <div className="col-span-1 sm:col-span-12">
               <Divider className="" />
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -114,7 +114,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -122,7 +122,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -130,7 +130,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -138,7 +138,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -146,7 +146,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -154,7 +154,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -162,7 +162,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-sm rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">

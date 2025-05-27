@@ -10,12 +10,12 @@ export default function Navigation() {
   const toggle = () => setIsOpen((isOpen) => !isOpen);
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white dark:bg-[#16151b] shadow shadow-dark dark:bg-dark py-4">
+      <header className="sticky top-0 z-50 bg-white dark:bg-[#16151b] shadow-sm shadow-dark dark:bg-dark py-4">
         <section className="grid grid-cols-1 lg:grid-cols-2 wrapper">
           <div className="flex items-center justify-between">
             <Link
               href="/"
-              className="flex-none font-black text-3xl tracking-[-0.5rem] text-black dark:text-white focus:outline-none focus:opacity-80 hover:text-primary dark:hover:text-accent"
+              className="flex-none font-black text-3xl tracking-[-0.5rem] text-black dark:text-white focus:outline-hidden focus:opacity-80 hover:text-primary dark:hover:text-accent"
             >
               AW
             </Link>

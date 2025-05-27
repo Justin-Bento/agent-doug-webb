@@ -17,7 +17,7 @@ export default function PropertyDemo({
 }: PropertyDemoProps) {
   return (
     <div className="overflow-hidden  grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
+      <div className="relative aspect-16/10 p-0 pb-6 overflow-hidden">
         <Image
           fill
           src={urlFor(image)?.url() || ""}

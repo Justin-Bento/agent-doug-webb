@@ -18,7 +18,7 @@ export default function page() {
     <>
       <main className="min-h-dvh space-y-32">
         <section className="relative">
-          <div className="absolute z-10 w-full min-h-[100dvh] overflow-hidden bg-gradient-to-b from-secondary/80">
+          <div className="absolute z-10 w-full min-h-[100dvh] overflow-hidden bg-linear-to-b from-secondary/80">
             <Image
               fill
               src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
@@ -29,7 +29,7 @@ export default function page() {
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/70"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-full bg-gradient-to-b from-secondary/80"></div>
+          <div className="absolute z-30 bottom-0 w-full h-full bg-linear-to-b from-secondary/80"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="text-start">
@@ -98,11 +98,11 @@ export default function page() {
             </div>
           </div>
           <div className="sm:col-span-6 row-auto overflow-hidden sm:rounded-lg">
-            <div className="relative aspect-[1/1.25] shadow">
+            <div className="relative aspect-[1/1.25] shadow-sm">
               <Image
                 fill
                 src="/media/img/daniel-krakan-lifeofpix-danielkrakan7928-308970.jpg"
-                className="object-center rounded" // Ensure it maintains aspect ratio
+                className="object-center rounded-sm" // Ensure it maintains aspect ratio
                 alt="rough ocean water"
               />
             </div>
@@ -192,7 +192,7 @@ export default function page() {
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/60"></div>
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full bg-gradient-to-b from-secondary/80 dark:from-[#16151b] to-transparent"></div>
+          <div className="absolute z-30 bottom-0 w-full bg-linear-to-b from-secondary/80 dark:from-[#16151b] to-transparent"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
