@@ -72,12 +72,26 @@ export default async function page({ params }: { params: { slug: string[] } }) {
   }
 
   if (params.slug.length === 1) {
+    const { data: post } = await sanityFetch({
+      query: `*[_type == "realEstateProcess" && processCategorySlug.current == $slug][0] {
+        processCategoryTitle,  
+        processCategoryDescription,
+        processCategorySlug,
+        processSteps[] {
+          stepTitle,
+          stepSlug,
+          stepContent
+        }
+      }`,
+      params: { slug: params.slug[0] },
+    });
+    console.log("Current URL:", post.processCategoryTitle);
     return (
       <main className="wrapper min-h-dvh my-24">
         <section className="prose-lg max-w-[100ch]">
           <div className="flex flex-col-reverse">
             <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
-              {revertSlug(params.slug[0])}
+              {post.processCategoryTitle}
             </h1>
             <p className="p-0 m-0 text-sm tracking-wide leading-[2]">
               Nested Page
