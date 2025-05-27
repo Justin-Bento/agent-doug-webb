@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { createSlug } from "@/lib/utils";
 import Divider from "@/components/Divider";
 import { listings } from "@/lib/data";
+
 export const metadata: Metadata = {
   title: "AgentWebb",
   description:
