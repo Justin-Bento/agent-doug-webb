@@ -29,30 +29,7 @@ export default async function RealEstateProcessSlug({
             </Link>
           </div>
           <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            <li>
-              <Link
-                href="#"
-                className="hover:underline hover:underline-offset-2"
-              >
-                1st level of puns: 5 gold coins
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="hover:underline hover:underline-offset-2"
-              >
-                2nd level of jokes: 10 gold coins
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="hover:underline hover:underline-offset-2"
-              >
-                3rd level of one-liners : 20 gold coin
-              </Link>
-            </li>
+           {new Array(10).fill(null).map((_, index) => ())}
           </ul>
         </section>
       </main>
