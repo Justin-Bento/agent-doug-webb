@@ -1,3 +1,4 @@
+import TypographyDemo from "@/components/TypographyDemo";
 import { revertSlug } from "@/lib/utils";
 import Link from "next/link";
 
@@ -11,6 +12,7 @@ export default async function RealEstateProcessSlug({
     return (
       <main className="wrapper space-y-24 lg:mt-24 min-h-dvh">
         <h1 className="text-3xl font-bold">{revertSlug(slug[1])}</h1>
+        <TypographyDemo />
       </main>
     );
   } else if (slug?.length === 1) {
