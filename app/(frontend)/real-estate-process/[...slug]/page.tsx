@@ -85,7 +85,6 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       }`,
       params: { slug: params.slug[0] },
     });
-    console.log("Current URL:", post.processCategoryTitle);
     return (
       <main className="wrapper min-h-dvh my-24">
         <section className="prose-lg max-w-[100ch]">
