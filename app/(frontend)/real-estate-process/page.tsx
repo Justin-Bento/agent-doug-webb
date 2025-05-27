@@ -46,9 +46,9 @@ export default async function Page() {
 
                     <Button
                       variant="link"
-                      className="m-0 p-0 group-hover:underline"
+                      className="m-0 p-0 group-hover:underline after:content-['↗']"
                     >
-                      See More
+                      See More&nbsp;
                     </Button>
                   </div>
                 </Card>
