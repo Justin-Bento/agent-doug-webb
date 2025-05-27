@@ -35,7 +35,7 @@ export default async function RealEstateProcessSlug({
                   href="#"
                   className="hover:underline hover:underline-offset-2"
                 >
-                  Stage #{index + 1} level of puns: 5 gold coins
+                  Stage #{index + 1} level of puns: {index * 5} gold coins
                 </Link>
               </li>
             ))}
