@@ -45,7 +45,7 @@ export default async function page() {
           <p>What You Need to Know!</p>
         </div>
         <p className="text-xl max-w-5xl text-pretty tracking-wide">
-          As an Ontario Real Estate Expert with 20+ Years Experience. I've
+          As an Ontario Real Estate Expert with 20+ Years Experience. I&apos;ve
           distilled two decades of property buying/selling experience into 4
           simple modules - complete with guides and tools to help you acquire
           your perfect property.
@@ -85,7 +85,7 @@ export default async function page() {
           <p>Frequently Asked Questions!</p>
         </div>
         <p className="text-xl max-w-5xl text-pretty tracking-wide">
-          As an Ontario Real Estate Expert with 20+ Years Experience. I've
+          As an Ontario Real Estate Expert with 20+ Years Experience. I&apos;ve
           distilled two decades of property buying/selling experience into 4
           simple modules - here are some things I expect you to know before we
           get started.
