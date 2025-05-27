@@ -37,14 +37,20 @@ export default async function Page({
             {post.Statement}
           </p>
         </div>
-        <div className="relative w-full aspect-[16/10] overflow-hidden">
-          <Image
-            fill
-            src={urlFor(post.mainImage).url()} // Use the fallback imageSource
-            alt={`This is an image of ${post.title}`}
-            className="object-cover object-center rounded-xl"
-          />
-        </div>
+        {post.mainImage ? (
+          <div className="relative w-full aspect-[16/10] overflow-hidden">
+            <Image
+              fill
+              src={urlFor(post.mainImage).url()} // Use the fallback imageSource
+              alt={`This is an image of ${post.title}`}
+              className="object-cover object-center rounded-xl"
+            />
+          </div>
+        ) : (
+          <div className="w-full h-full bg-gray-200 rounded-t-xl flex items-center justify-center">
+            <span className="text-gray-500">No image available</span>
+          </div>
+        )}
       </section>
       {/* 
         - End of the Hero Section
