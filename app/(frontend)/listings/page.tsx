@@ -58,12 +58,19 @@ export default async function Page() {
             <li key={post?._id} className="col-span-1 w-full">
               <Card className="bg-transparent">
                 <CardHeader className="relative aspect-[16/10] p-0 pb-6 overflow-hidden">
-                  <Image
-                    fill
-                    src={urlFor(post.mainImage).url()}
-                    alt={post.title || "Property"}
-                    className="object-cover object-center rounded-t-xl"
-                  />
+                  {post.mainImage ? (
+                    <Image
+                      fill
+                      src={urlFor(post.mainImage).url()}
+                      alt={post.title || "Property"}
+                      className="object-cover object-center rounded-t-xl"
+                      unoptimized // Recommended if using external image URLs
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gray-200 rounded-t-xl flex items-center justify-center">
+                      <span className="text-gray-500">No image available</span>
+                    </div>
+                  )}
                 </CardHeader>
                 <CardContent className="mt-4">
                   <p className="text-sm/6">
