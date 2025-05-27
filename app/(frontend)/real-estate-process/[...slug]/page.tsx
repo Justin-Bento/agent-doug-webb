@@ -24,13 +24,13 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     return (
       <main className="space-y-24 mb-24 min-h-dvh">
         <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-gradient-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
+          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
           <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
             <h1 className="text-6xl dark:text-white">Real-Estate Process.</h1>
           </div>
         </section>
         <section className="wrapper">
-          <h2 className="max-w-3xl text-balance text-4xl/[1.25] font-medium text-gray-950 dark:text-white">
+          <h2 className="max-w-3xl text-balance text-4xl/tight font-medium text-gray-950 dark:text-white">
             A Comprehensive Overview of the Real Estate Process: What You Need
             to Know
           </h2>
@@ -63,7 +63,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
           </ul>
         </section>
         <section className="wrapper">
-          <h2 className="max-w-3xl text-pretty text-4xl/[1.25] font-medium text-gray-950 dark:text-white">
+          <h2 className="max-w-3xl text-pretty text-4xl/tight font-medium text-gray-950 dark:text-white">
             Frequently Asked Questions
           </h2>
         </section>
@@ -89,22 +89,22 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       <main className="wrapper min-h-dvh my-24">
         <section className="prose-lg max-w-[100ch]">
           <div className="flex flex-col-reverse">
-            <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
+            <h1 className="text-4xl/loose m-0 font-bold tracking-normal lg:text-5xl/tight">
               {post.processCategoryTitle}
             </h1>
             <Link
               href="/real-estate-process"
-              className="p-0 m-0 text-sm tracking-wider leading-[2] text-primary font-medium"
+              className="p-0 m-0 text-sm tracking-wider leading-loose text-primary font-medium"
             >
               Real-Estate Process
             </Link>
           </div>
-          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 max-w-4xl text-balance">
+          <p className="tracking-wide leading-loose not-first:mt-2 max-w-4xl text-balance">
             {post.processCategoryDescription}
           </p>
           <Divider />
           {/* List of steps linking to double slug pages */}
-          <ul className="grid grid-cols-1 gap-8 m-0 p-0 [&:not(:first-child)]:mt-6">
+          <ul className="grid grid-cols-1 gap-8 m-0 p-0 not-first:mt-6">
             {post.processSteps?.map((step: any, index: number) => (
               <li
                 key={step.stepSlug?.current || index}
@@ -155,22 +155,22 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       <main className="max-w-[100ch] text-balance mx-auto min-h-dvh my-24">
         <section className="page-header">
           <div className="flex flex-col-reverse">
-            <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
+            <h1 className="text-4xl/loose m-0 font-bold tracking-normal lg:text-5xl/tight">
               {step.stepTitle}
             </h1>
             <Link
               href="/real-estate-process"
-              className="p-0 m-0 text-sm tracking-wider leading-[2] text-primary font-medium"
+              className="p-0 m-0 text-sm tracking-wider leading-loose text-primary font-medium"
             >
               {stepData.processCategoryTitle}
             </Link>
           </div>
-          <p className="tracking-wide leading-[2] [&:not(:first-child)]:mt-2 mb-6 max-w-4xl text-balance">
+          <p className="tracking-wide leading-loose not-first:mt-2 mb-6 max-w-4xl text-balance">
             {step.stepTitle}
           </p>
         </section>
         <Divider />
-        <article className="prose-lg [&:not(:first-child)]:mt-6 max-w-[100ch] text-balance mx-auto">
+        <article className="prose-lg not-first:mt-6 max-w-[100ch] text-balance mx-auto">
           <PortableText value={step.stepContent} />
         </article>
         <section className="relative isolate border-t-2 border-indigo-600">

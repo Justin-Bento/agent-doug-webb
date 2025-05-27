@@ -16,7 +16,7 @@ export default function page() {
         </section>
         <section className="wrapper mt-16">
           <div className="flex flex-col-reverse">
-            <h2 className="text-4xl/[2] font-bold tracking-wide first:mt-0">
+            <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
               Hello, Property Listings Page.
             </h2>
             <p>Lorem, ipsum dolor!</p>
