@@ -115,12 +115,47 @@ export default async function page({ params }: { params: { slug: string[] } }) {
 
   // If slug has 2 parts (stage page)
   if (params.slug.length === 2) {
+    const { data: stepData } = await sanityFetch({
+      query: `*[_type == "realEstateProcess" && processCategorySlug.current == $categorySlug][0] {
+      processCategoryTitle,
+      processSteps[stepSlug.current == $stepSlug][0] {
+        stepTitle,
+        stepSlug,
+        stepContent
+      }
+    }`,
+      params: {
+        categorySlug: params.slug[0],
+        stepSlug: params.slug[1],
+      },
+    });
+
+    // Add error handling
+    if (!stepData || !stepData.processSteps) {
+      return <h1>Step not found</h1>;
+    }
+
+    const step = stepData.processSteps;
+
     return (
       <main className="wrapper min-h-dvh my-24">
-        <h1 className="max-w-4xl text-4xl font-bold capitalize text-pretty lg:text-5xl lg:leading-[1.25] mb-6">
-          Start here for a quick overview of everything you need to know.
-        </h1>
-        <TypographyDemo />
+        <section className="prose-lg max-w-[100ch]">
+          <div className="flex flex-col-reverse">
+            <h1 className="text-4xl/[2] m-0 font-bold tracking-normal lg:text-5xl/[1.25]">
+              {step.stepTitle}
+            </h1>
+            <p className="p-0 m-0 text-sm tracking-wide leading-[2]">
+              {stepData.processCategoryTitle}
+            </p>
+          </div>
+          <Divider />
+
+          {/* You'll need PortableText component here */}
+          <div className="step-content">
+            {/* This is where step.stepContent should be rendered with PortableText */}
+            <p>Step content will go here...</p>
+          </div>
+        </section>
       </main>
     );
   }
