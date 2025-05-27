@@ -39,7 +39,7 @@ export default async function page() {
       </section>
       <section className="wrapper mt-16">
         <div className="flex flex-col-reverse">
-          <h2 className="text-4xl/[2] font-bold tracking-wide first:mt-0">
+          <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
             A Comprehensive Overview of the Real Estate Process.
           </h2>
           <p>What You Need to Know!</p>
@@ -64,10 +64,10 @@ export default async function page() {
                     <CardTitle className="text-2xl font-semibold tracking-wide group-hover:underline group-hover:decoration-dotted">
                       {post.processCategoryTitle}
                     </CardTitle>
-                    <CardDescription className="tracking-wide text-base/[2] text-black">
+                    <CardDescription className="tracking-wide text-base/loose text-black">
                       {post.processCategoryDescription}
                     </CardDescription>
-                    <CardDescription className="tracking-wide text-sm/[2] text-black">
+                    <CardDescription className="tracking-wide text-sm/loose text-black">
                       Choose Path &rarr;
                     </CardDescription>
                   </CardHeader>
@@ -79,7 +79,7 @@ export default async function page() {
       </ul>
       <section className="wrapper mt-16">
         <div className="flex flex-col-reverse">
-          <h2 className="text-4xl/[2] font-bold tracking-wide first:mt-0">
+          <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
             Things You Should Know Before Getting Started.
           </h2>
           <p>Frequently Asked Questions!</p>

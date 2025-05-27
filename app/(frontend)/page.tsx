@@ -18,12 +18,12 @@ export default function page() {
     <>
       <main className="min-h-dvh space-y-32">
         <section className="relative">
-          <div className="absolute z-10 w-full min-h-[100dvh] overflow-hidden bg-linear-to-b from-secondary/80">
+          <div className="absolute z-10 w-full min-h-dvh overflow-hidden bg-linear-to-b from-secondary/80">
             <Image
               fill
               src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
               alt=""
-              className="object-cover object-right-bottom lg:object-fit lg:object-right"
+              className="object-cover object-bottom-right lg:object-fit lg:object-right"
             />
           </div>
           {/* Dark Overlay */}
@@ -62,14 +62,14 @@ export default function page() {
           </div>
         </section>
         {/* End of Landing Area */}
-        <section className="relative min-h-[100dvh]">
+        <section className="relative min-h-dvh">
           {/* SVG Background */}
           <div className="absolute inset-0 z-0">
             {/* <MySvgComponent className="rotate-45" /> */}
           </div>
 
           {/* Title Section */}
-          <div className="relative z-20 flex items-center justify-center min-h-[100dvh] wrapper">
+          <div className="relative z-20 flex items-center justify-center min-h-dvh wrapper">
             <div className="sm:col-span-12 flex flex-col items-center justify-center gap-6">
               <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
                 Quick Introduction
@@ -89,7 +89,7 @@ export default function page() {
         </section>
 
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="wrapper min-h-[100dvh] grid grid-cols-1 sm:grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
+        <section className="wrapper min-h-dvh grid grid-cols-1 sm:grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
           <div className="sm:col-span-12 row-auto overflow-hidden sm:rounded-lg">
             <div className="max-w-5xl mx-auto text-center">
               <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black dark:text-white sm:text-5xl">
@@ -135,7 +135,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
-        <section className="wrapper min-h-[100dvh] grid grid-cols-12 gap-4">
+        <section className="wrapper min-h-dvh grid grid-cols-12 gap-4">
           {/* <!-- Title Section --> */}
           <div className="col-span-12 w-full">
             <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
@@ -143,7 +143,7 @@ export default function page() {
             </h1>
           </div>
           {/* <!-- Divider --> */}
-          <div className="col-span-12  mb-6 mt-3 w-full max-w-[6rem] ring-1 ring-black dark:ring-white"></div>
+          <div className="col-span-12  mb-6 mt-3 w-full max-w-24 ring-1 ring-black dark:ring-white"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {listings.map((house) => {
@@ -179,7 +179,7 @@ export default function page() {
           </div>
         </section>
         {/* End of Content Area  */}
-        <section className="relative w-full min-h-[100dvh]">
+        <section className="relative w-full min-h-dvh">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
