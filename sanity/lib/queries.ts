@@ -55,11 +55,11 @@ export const RE_PROCESS_QUERY = defineQuery(`
   categoryTitle,
   categoryDescription,
   categorySlug,
-    processSteps[] {
-      _id,
-      stepTitle,
-      stepSlug,
-      stepContent
-    }
+  blogPosts[]  {
+    processTitle,
+    processCategoryDescription,
+    processCategorySlug,
+    processContent,
+  }
   }
 `);
