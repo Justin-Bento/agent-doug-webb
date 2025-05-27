@@ -101,12 +101,24 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             {post.processCategoryDescription}
           </p>
           <Divider />
-          <ul className="list-disc">
-            <li className="">
-              <Link href={`/article`}>
-                Hello, This is a list item that links to another article.
-              </Link>
-            </li>
+          {/* List of steps linking to double slug pages */}
+          <ul className="grid grid-cols-1 gap-8 m-0 p-0 [&:not(:first-child)]:mt-6">
+            {post.processSteps?.map((step: any, index: number) => (
+              <li
+                key={step.stepSlug?.current || index}
+                className="group relative isolate overflow-hidden rounded-lg hover:ring-1 ring-black bg-gray-200 transition-all"
+              >
+                <Link
+                  className="block relative px-4 py-5 sm:p-6"
+                  href={`/real-estate-process/${params.slug[0]}/${step.stepSlug?.current}`}
+                >
+                  <span className="w-full h-full absolute inset-0"></span>
+                  <span className="relative z-10 text-lg font-medium group-hover:underline decoration-dotted  group-hover:text-black m-0 p-0">
+                    {step.stepTitle}
+                  </span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
       </main>
