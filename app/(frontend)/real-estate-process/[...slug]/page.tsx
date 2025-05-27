@@ -13,9 +13,14 @@ export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
   if (!params.slug) {
     const { data: posts } = await sanityFetch({
-      query: RE_PROCESS_QUERY,
+      query: `
+        *[_type == "realEstateProcess" ] {
+          _id,
+          processCategoryTitle,
+          processCategoryDescription,
+          processCategorySlug,
+        }`,
     });
-
     return (
       <main className="space-y-24 mb-24 min-h-dvh">
         <section className="relative overflow-hidden">
