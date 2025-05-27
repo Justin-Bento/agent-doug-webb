@@ -91,7 +91,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
           </div>
 
           {blogPosts.length > 0 ? (
-            <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+            <ul className="my-6 ml-6 list-disc [&>li]:text-base/[2]">
               {blogPosts.map(({ post, index }: any) => (
                 <li key={post._id || index}>
                   <Link
