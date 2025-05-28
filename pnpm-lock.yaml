@@ -17,9 +17,6 @@ importers:
       '@mdx-js/react':
         specifier: ^3.1.0
         version: 3.1.0(@types/react@18.3.23)(react@18.3.1)
-      '@next/mdx':
-        specifier: ^14.2.29
-        version: 14.2.29(@mdx-js/loader@3.1.0(acorn@8.14.1))(@mdx-js/react@3.1.0(@types/react@18.3.23)(react@18.3.1))
       '@radix-ui/react-accordion':
         specifier: ^1.2.11
         version: 1.2.11(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1217,17 +1214,6 @@ packages:
 
   '@next/eslint-plugin-next@14.2.5':
     resolution: {integrity: sha512-LY3btOpPh+OTIpviNojDpUdIbHW9j0JBYBjsIp8IxtDFfYFyORvw3yNq6N231FVqQA7n7lwaf7xHbVJlA1ED7g==}
-
-  '@next/mdx@14.2.29':
-    resolution: {integrity: sha512-pXJzTP7N8sJQGjNb8lYFr+vlDLpGu9HS0Z3m5n9fYRMdr4H3H70ONd0Bi5+wYgPUnc2PPt6oila0gBdOLMI0rg==}
-    peerDependencies:
-      '@mdx-js/loader': '>=0.15.0'
-      '@mdx-js/react': '>=0.15.0'
-    peerDependenciesMeta:
-      '@mdx-js/loader':
-        optional: true
-      '@mdx-js/react':
-        optional: true
 
   '@next/swc-darwin-arm64@14.2.29':
     resolution: {integrity: sha512-wWtrAaxCVMejxPHFb1SK/PVV1WDIrXGs9ki0C/kUM8ubKHQm+3hU9MouUywCw8Wbhj3pewfHT2wjunLEr/TaLA==}
@@ -7694,13 +7680,6 @@ snapshots:
   '@next/eslint-plugin-next@14.2.5':
     dependencies:
       glob: 10.3.10
-
-  '@next/mdx@14.2.29(@mdx-js/loader@3.1.0(acorn@8.14.1))(@mdx-js/react@3.1.0(@types/react@18.3.23)(react@18.3.1))':
-    dependencies:
-      source-map: 0.7.4
-    optionalDependencies:
-      '@mdx-js/loader': 3.1.0(acorn@8.14.1)
-      '@mdx-js/react': 3.1.0(@types/react@18.3.23)(react@18.3.1)
 
   '@next/swc-darwin-arm64@14.2.29':
     optional: true
