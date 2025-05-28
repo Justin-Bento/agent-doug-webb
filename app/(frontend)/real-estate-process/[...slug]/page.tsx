@@ -155,7 +155,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       <main className="prose max-w-6/10 mx-auto my-24 text-pretty">
         <section>
           <h1 className="m-0 p-0 leading-[1]">{step.stepTitle}</h1>
-          <p className="m-0 p-0 leading-[2] tracking-wide">
+          <p className="m-0 p-0 text-lg text-gray-500 font-medium leading-[1.5] tracking-wide">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
             vitae. Odit vel natus similique itaque harum, maiores, molestias
             magnam obcaecati magni distinctio animi, nam eum laudantium impedit!
