@@ -152,33 +152,20 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     const step = stepData.processSteps;
 
     return (
-      <main className="max-w-[100ch] text-balance mx-auto min-h-dvh my-24">
-        <section className="page-header">
-          <div className="flex flex-col-reverse">
-            <h1 className="text-4xl/loose m-0 font-bold tracking-normal lg:text-5xl/tight">
-              {step.stepTitle}
-            </h1>
-            <Link
-              href="/real-estate-process"
-              className="p-0 m-0 text-sm tracking-wider leading-loose text-primary font-medium"
-            >
-              {stepData.processCategoryTitle}
-            </Link>
-          </div>
-          <p className="tracking-wide leading-loose not-first:mt-2 mb-6 max-w-4xl text-balance">
-            {step.stepTitle}
+      <main className="prose max-w-6/10 mx-auto my-24 text-pretty">
+        <section>
+          <h1 className="m-0 p-0 leading-[1]">{step.stepTitle}</h1>
+          <p className="m-0 p-0 text-lg text-gray-500 font-medium leading-[1.5] tracking-wide">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
+            vitae. Odit vel natus similique itaque harum, maiores, molestias
+            magnam obcaecati magni distinctio animi, nam eum laudantium impedit!
+            Animi, architecto optio?
           </p>
+          <Divider />
         </section>
-        <Divider />
-        <article className="prose-lg not-first:mt-6 max-w-[100ch] text-balance mx-auto">
+        <article className="leading-[2] tracking-wide">
           <PortableText value={step.stepContent} />
         </article>
-        <section className="relative isolate border-t-2 border-indigo-600">
-          <ServerBackButton
-            fallbackHref="/real-estate-process"
-            label={`Back To ${revertSlug(params.slug[0])}`}
-          />
-        </section>
       </main>
     );
   }

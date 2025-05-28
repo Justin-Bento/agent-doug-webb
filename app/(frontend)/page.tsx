@@ -21,7 +21,7 @@ export default function page() {
           <div className="absolute z-10 w-full min-h-dvh overflow-hidden bg-linear-to-b from-secondary/80">
             <Image
               fill
-              src="/media/img/leeroy-lifeofpix-leeroy8118-305043.jpg"
+              src="/media/img/landing/image-01.jpg"
               alt=""
               className="object-cover object-bottom-right lg:object-fit lg:object-right"
             />
@@ -101,7 +101,7 @@ export default function page() {
             <div className="relative aspect-[1/1.25] shadow-sm">
               <Image
                 fill
-                src="/media/img/daniel-krakan-lifeofpix-danielkrakan7928-308970.jpg"
+                src="/media/img/landing/image-02.jpg"
                 className="object-center rounded-sm" // Ensure it maintains aspect ratio
                 alt="rough ocean water"
               />
@@ -184,7 +184,7 @@ export default function page() {
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
               fill
-              src="/media/img/tumblr_nsoart1B4L1qfirfao1_1280.jpg"
+              src="/media/img/landing/image-03.jpg"
               alt=""
               className="object-cover object-bottom"
             />
