@@ -26,14 +26,10 @@ export default function page() {
               className="object-cover object-bottom-right lg:object-fit lg:object-right"
             />
           </div>
-          {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-secondary-dark/70" />
-          {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-full bg-linear-to-b from-secondary/80" />
-          {/* Centered Hero Content */}
+          <div className="absolute z-20 w-full h-full bg-secondary/70" />
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
-            <div className="space-y-6 [&>p]:text-base/7 [&>p]">
-              <h1 className="text-5xl/13 lg:text-5xl text-pretty font-bold">
+            <div className="space-y-6 [&>p]:text-lg/7 [&>p]:font-medium [&>p]:tracking-wide max-w-[80ch] *:text-balance">
+              <h1 className="text-5xl/13 lg:text-6xl/18 text-pretty font-bold capitalize">
                 Learn The Anatomy of the Real Estate Transaction.
               </h1>
               <p>
@@ -43,7 +39,7 @@ export default function page() {
                 on the procedures coming at you and ready for any red flags
                 along the way.
               </p>
-              <span className="flex flex-col gap-6">
+              <span className="flex flex-col md:flex-row gap-6">
                 <Link href="/listings" className="*:w-full *:lg:w-fit">
                   <Button>View Listings</Button>
                 </Link>
@@ -168,9 +164,7 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/60"></div>
-          {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full bg-linear-to-b from-secondary/80 dark:from-[#16151b] to-transparent"></div>
+          <div className="absolute z-20 w-full h-full bg-secondary/70" />
           {/* Centered Hero Content */}
           <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
             <div className="text-start">
