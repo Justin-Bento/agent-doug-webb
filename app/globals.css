@@ -105,6 +105,7 @@
 
   html {
     font-family: "CabinetGrotesk Variable", system-ui, sans-serif;
+    vertical-align: baseline;
   }
   .wrapper {
     @apply mx-auto container px-4 sm:px-6 lg:px-8;
