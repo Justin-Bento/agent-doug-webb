@@ -11,6 +11,7 @@
   --color-black: #0a090c;
   --color-primary: #3a1a60;
   --color-secondary: #c2abb2;
+  --color-secondary-dark: #16151b;
   --color-accent: #b19993;
 
   --color-red-50: #fef2f2;
@@ -118,6 +119,6 @@
     @apply mx-auto container px-4 sm:px-6 lg:px-8;
   }
   .card-container {
-    @apply border border-gray-300 bg-gray-100 rounded
+    @apply border border-gray-300 bg-gray-100 rounded;
   }
 }
