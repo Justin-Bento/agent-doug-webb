@@ -21,7 +21,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     });
     return (
       <main className="space-y-24 mb-24 min-h-dvh">
-       <PageHeader title="Real-Estate Process" />
+        <PageHeader title="Real-Estate Process" />
         <section className="wrapper">
           <h2 className="max-w-3xl text-balance text-4xl/tight font-medium text-gray-950 dark:text-white">
             A Comprehensive Overview of the Real Estate Process: What You Need
@@ -79,23 +79,9 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       params: { slug: params.slug[0] },
     });
     return (
-      <main className="wrapper min-h-dvh my-24">
-        <section className="prose-lg max-w-[100ch]">
-          <div className="flex flex-col-reverse">
-            <h1 className="text-4xl/loose m-0 font-bold tracking-normal lg:text-5xl/tight">
-              {post.processCategoryTitle}
-            </h1>
-            <Link
-              href="/real-estate-process"
-              className="p-0 m-0 text-sm tracking-wider leading-loose text-primary font-medium"
-            >
-              Real-Estate Process
-            </Link>
-          </div>
-          <p className="tracking-wide leading-loose not-first:mt-2 max-w-4xl text-balance">
-            {post.processCategoryDescription}
-          </p>
-          <Divider />
+      <main className="min-h-dvh space-y-24">
+        <PageHeader title={`${post.processCategoryTitle}`} />
+        <section className="wrapper">
           {/* List of steps linking to double slug pages */}
           <ul className="grid grid-cols-1 gap-8 m-0 p-0 not-first:mt-6">
             {post.processSteps?.map((step: any, index: number) => (
