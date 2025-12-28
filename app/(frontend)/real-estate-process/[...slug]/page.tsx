@@ -8,6 +8,7 @@ import Divider from "@/components/Divider";
 import { PortableText } from "next-sanity";
 import { revertSlug } from "@/lib/utils";
 import ServerBackButton from "@/components/BackButton";
+import PageHeader from "@/components/PageHeader";
 
 export default async function page({ params }: { params: { slug: string[] } }) {
   // If no slug, show the main page with posts
@@ -23,12 +24,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     });
     return (
       <main className="space-y-24 mb-24 min-h-dvh">
-        <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
-          <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
-            <h1 className="text-6xl dark:text-white">Real-Estate Process.</h1>
-          </div>
-        </section>
+       <PageHeader title="Real-Estate Process" />
         <section className="wrapper">
           <h2 className="max-w-3xl text-balance text-4xl/tight font-medium text-gray-950 dark:text-white">
             A Comprehensive Overview of the Real Estate Process: What You Need

@@ -1,5 +1,5 @@
-import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
+import PageHeader from "@/components/PageHeader";
 import {
   Card,
   CardDescription,
@@ -29,14 +29,7 @@ export default async function page() {
   });
   return (
     <main className="min-h-dvh mb-24">
-      <section className="relative overflow-hidden">
-        <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/60 from-10% dark:from-accent/40 to-transparent" />
-        <div className="wrapper absolute inset-0 z-20 flex flex-col items-start justify-center">
-          <h1 className="max-w-3xl text-pretty text-4xl font-medium text-gray-950 dark:text-white sm:text-6xl">
-            Real Estate Process.
-          </h1>
-        </div>
-      </section>
+      <PageHeader title="Real Estate Process" />
       <section className="wrapper mt-16">
         <div className="flex flex-col-reverse">
           <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">

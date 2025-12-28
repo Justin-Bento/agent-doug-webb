@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { TbCircleCheck } from "react-icons/tb";
 import Divider from "@/components/Divider";
-import BackgroundPattern from "@/components/BackgroundPattern";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "About - AgentWebb",
@@ -14,17 +14,7 @@ export default function about() {
   return (
     <>
       <main className="min-h-dvh mb-24 space-y-24">
-        <section className="relative overflow-hidden">
-          <BackgroundPattern className="w-full max-h-[20dvh] xl:max-h-72 z-10 bg-linear-to-b from-accent/40 to-transparent" />
-          <div className="absolute inset-0 z-20 flex flex-col items-start justify-center container mx-auto">
-            <span className="flex flex-col-reverse">
-              <h1 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-6xl">
-                Our strength is collaboration.
-              </h1>
-              <p className=" font-display text-base font-semibold text-black dark:text-white">About Us</p>
-            </span>
-          </div>
-        </section>
+       <PageHeader title="Our strength is collaboration" />
         <section className="wrapper">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="max-w-3xl *:text-xl/loose space-y-6 dark:text-white">
