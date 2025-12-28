@@ -47,13 +47,10 @@ export default function page() {
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/listings">
-                  <Button className="rounded-full px-5">View Listings</Button>
+                  <Button>View Listings</Button>
                 </Link>
                 <Link href="/real-estate-process">
-                  <Button
-                    variant="outline"
-                    className="rounded-full px-5 dark:bg-[#16151b] dark:border-[#16151b]"
-                  >
+                  <Button variant="outline">
                     Real-Estate Process
                   </Button>
                 </Link>
@@ -158,7 +155,7 @@ export default function page() {
           {/* <!-- Loader --> */}
           <div className="col-span-12 mt-8">
             <Link href="/listings">
-              <Button className="rounded-full px-5">View More</Button>
+              <Button>View More</Button>
             </Link>
           </div>
         </section>
@@ -194,7 +191,7 @@ export default function page() {
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">
-                  <Button variant="outline" className="rounded-full px-5">
+                  <Button variant="outline">
                     Contact Us
                   </Button>
                 </Link>
