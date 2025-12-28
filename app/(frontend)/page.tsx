@@ -27,29 +27,30 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-[#16151b]/70"></div>
+          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-secondary-dark/70"></div>
           {/* Gradient Fade at the Bottom */}
           <div className="absolute z-30 bottom-0 w-full h-full bg-linear-to-b from-secondary/80"></div>
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
-            <div className="text-start">
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-8xl/[1.1] capitalize">
-                AgentWebb is Your Guide through the Real Estate Transaction
-                Process.
+            <div className="space-y-6 [&>p]:text-base/7 [&>p]">
+              <h1 className="text-5xl/13 lg:text-5xl text-pretty font-bold">
+                Learn The Anatomy of the Real Estate Transaction.
               </h1>
-              <p className="mt-4 max-w-4xl text-balance text-lg leading-8 text-black dark:text-white">
-                Douglas John Webb is a real estate agent with platform that is
-                here to help you during the real estate transaction process. His
-                goal is to give you an unfiltered guide about the Real-Estate
-                Transaction without any favoritism so you can be educated on the
-                procedures coming at you and ready for any red flags along the
-                way.
+              <p>
+                This website is a collection of real estate transaction in
+                Canada. As this process is intimidating he is here to give
+                unfiltered guide without any favoritism so you can be educated
+                on the procedures coming at you and ready for any red flags
+                along the way.
               </p>
-              <span className="block mt-8 space-x-4">
-                <Link href="/listings">
+              <span className="flex flex-col gap-6">
+                <Link href="/listings" className="*:w-full *:lg:w-fit">
                   <Button>View Listings</Button>
                 </Link>
-                <Link href="/real-estate-process">
+                <Link
+                  href="/real-estate-process"
+                  className="*:w-full *:lg:w-fit"
+                >
                   <Button variant="outline">Real-Estate Process</Button>
                 </Link>
               </span>
