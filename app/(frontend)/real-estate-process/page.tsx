@@ -2,6 +2,7 @@ import Divider from "@/components/Divider";
 import PageHeader from "@/components/PageHeader";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -30,46 +31,45 @@ export default async function page() {
   return (
     <main className="min-h-dvh mb-24">
       <PageHeader title="Real Estate Process" />
-      <section className="wrapper mt-16">
-        <div className="flex flex-col-reverse">
+      <section className="wrapper grid grid-cols-2 gap-8">
+        <div className="col-span-2 [&>p]:text-lg [&>p]:max-w-[80ch] [&>p]:mb-3">
           <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
             A Comprehensive Overview of the Real Estate Process.
           </h2>
-          <p>What You Need to Know!</p>
+          <p className="text-xl max-w-5xl text-pretty tracking-wide">
+            As an Ontario Real Estate Expert with 20+ Years Experience.
+            I&apos;ve distilled two decades of property buying/selling
+            experience into 4 simple modules - complete with guides and tools to
+            help you acquire your perfect property.
+          </p>
+          <p>
+            Each module goes into a lot of detail about the process so take your
+            time reading this information!
+          </p>
         </div>
-        <p className="text-xl max-w-5xl text-pretty tracking-wide">
-          As an Ontario Real Estate Expert with 20+ Years Experience. I&apos;ve
-          distilled two decades of property buying/selling experience into 4
-          simple modules - complete with guides and tools to help you acquire
-          your perfect property.
-        </p>
-        <Divider className="mt-6 mb-10" />
-      </section>
-      <ul className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {posts.map((post: RealEstateModulesInterface) => {
-          return (
-            <li key={posts._id} className="group relative isolate">
+
+        <ul className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {posts.map((post: RealEstateModulesInterface) => (
+            <li key={post._id} className="group relative isolate">
               <Link
                 href={`/real-estate-process/${post.processCategorySlug.current}`}
               >
                 <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
-                  <CardHeader className="p-6">
+                  <CardContent>
                     <CardTitle className="text-2xl font-semibold tracking-wide group-hover:underline group-hover:decoration-dotted">
                       {post.processCategoryTitle}
                     </CardTitle>
-                    <CardDescription className="tracking-wide text-base/loose text-black">
+                    <CardDescription className="mt-2 tracking-wide text-base/relaxed text-black">
                       {post.processCategoryDescription}
                     </CardDescription>
-                    <CardDescription className="tracking-wide text-sm/loose text-black">
-                      Choose Path &rarr;
-                    </CardDescription>
-                  </CardHeader>
+             
+                  </CardContent>
                 </Card>
               </Link>
             </li>
-          );
-        })}
-      </ul>
+          ))}
+        </ul>
+      </section>
       <section className="wrapper mt-16">
         <div className="flex flex-col-reverse">
           <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
