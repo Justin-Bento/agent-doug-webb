@@ -107,6 +107,13 @@
     font-family: "CabinetGrotesk Variable", system-ui, sans-serif;
     vertical-align: baseline;
   }
+  header,
+  body {
+    @apply bg-gray-50 dark:bg-gray-950;
+  }
+  footer {
+    @apply bg-gray-950 dark:bg-gray-700;
+  }
   .wrapper {
     @apply mx-auto container px-4 sm:px-6 lg:px-8;
   }
