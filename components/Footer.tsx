@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import Link from "next/link"; // use the Link component from 'next/link'
 import {
   AiFillFacebook,
@@ -34,7 +33,7 @@ export default function Footer({ className }: any) {
           <ul className="text-sm">
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -44,7 +43,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -54,7 +53,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -64,7 +63,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -81,7 +80,7 @@ export default function Footer({ className }: any) {
           <ul className="text-sm">
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -91,7 +90,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -101,7 +100,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -111,7 +110,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -128,7 +127,7 @@ export default function Footer({ className }: any) {
           <ul className="text-sm">
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -138,7 +137,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -148,7 +147,7 @@ export default function Footer({ className }: any) {
             </li>
             <li className="pt-3">
               <Link
-                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                className="navigation-links text-gray-200"
                 href="#"
                 rel="noopener noreferrer"
                 target="_blank"

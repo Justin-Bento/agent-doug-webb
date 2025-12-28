@@ -72,11 +72,14 @@ export default function Navigation() {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex items-start flex-col lg:items-center lg:flex-row *:hover:underline *:hover:cursor-pointer">
+            <ul className="flex items-start gap-4 flex-col lg:items-center lg:flex-row">
               {NavLinks.map((link) => {
                 return (
                   <li key={link.href}>
-                    <Link href={link.href} className="navigation-links">
+                    <Link
+                      href={link.href}
+                      className="navigation-links text-gray-950"
+                    >
                       {link.title}
                     </Link>
                   </li>

@@ -122,6 +122,6 @@
     @apply border border-gray-300 bg-gray-100 rounded;
   }
   .navigation-links {
-    @apply capitalize block whitespace-nowrap px-2 py-2 text-base/7 text-gray-950 no-underline transition hover:underline hover:cursor-pointer;
+    @apply capitalize text-base leading-7 hover:underline hover:cursor-pointer transition-all underline-offset-4;
   }
 }
