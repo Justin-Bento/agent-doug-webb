@@ -27,9 +27,9 @@ export default function page() {
             />
           </div>
           {/* Dark Overlay */}
-          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-secondary-dark/70"></div>
+          <div className="absolute z-20 w-full h-full bg-secondary/80 dark:bg-secondary-dark/70" />
           {/* Gradient Fade at the Bottom */}
-          <div className="absolute z-30 bottom-0 w-full h-full bg-linear-to-b from-secondary/80"></div>
+          <div className="absolute z-30 bottom-0 w-full h-full bg-linear-to-b from-secondary/80" />
           {/* Centered Hero Content */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="space-y-6 [&>p]:text-base/7 [&>p]">
