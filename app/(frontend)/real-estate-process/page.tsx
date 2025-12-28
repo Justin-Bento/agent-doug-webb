@@ -59,7 +59,7 @@ export default async function page() {
               <Link
                 href={`/real-estate-process/${post.processCategorySlug.current}`}
               >
-                <Card className="ring-1 ring-transparent group-hover:ring-black/50 shadow-none transition-all">
+                <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
                   <CardHeader className="p-6">
                     <CardTitle className="text-2xl font-semibold tracking-wide group-hover:underline group-hover:decoration-dotted">
                       {post.processCategoryTitle}

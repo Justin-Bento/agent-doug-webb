@@ -41,7 +41,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
                 <Link
                   href={`real-estate-process/${post.processCategorySlug.current}`}
                 >
-                  <Card className="bg-transparent active:ring-primary hover:bg-white/70 hover:border-gray-400 transition-all">
+                  <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
                     <div className="px-4 py-5 sm:p-6 space-y-2">
                       <p className="text-xl font-semibold capitalize">
                         {post.processCategoryTitle}

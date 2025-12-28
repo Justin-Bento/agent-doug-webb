@@ -117,4 +117,7 @@
   .wrapper {
     @apply mx-auto container px-4 sm:px-6 lg:px-8;
   }
+  .card-container {
+    @apply border border-gray-300 bg-gray-100 rounded
+  }
 }

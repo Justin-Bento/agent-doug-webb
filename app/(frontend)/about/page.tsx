@@ -27,12 +27,11 @@ export default function about() {
         </section>
         <section className="wrapper">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="mt-6 max-w-3xl text-xl dark:text-white">
+            <div className="max-w-3xl *:text-xl/loose space-y-6 dark:text-white">
               <p>
                 We believe that our strength lies in our collaborative approach, which puts our clients at the center of
                 everything we do.
               </p>
-              <div className="mt-10 max-w-2xl space-y-6 text-base">
                 <p>
                   Studio was started by three friends who noticed that developer studios were charging clients double
                   what an in-house team would cost. Since the beginning, we have been committed to doing things
@@ -44,20 +43,19 @@ export default function about() {
                   we just ask that they keep themselves there until at least 6:30pm.
                 </p>
               </div>
-            </div>
           </div>
         </section>
         <section className="wrapper">
-          <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
-            <div className="flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+          <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none items-center">
+            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Certified Real Estate investor</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">1985</dd>
             </div>
-            <div className="flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Years of experience</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">25+</dd>
             </div>
-            <div className="flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">Satisfied Clients and Referral</dt>
               <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">70%</dd>
             </div>
@@ -106,7 +104,7 @@ export default function about() {
             <div className="col-span-1 sm:col-span-12">
               <Divider className="" />
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -114,7 +112,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -122,7 +120,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -130,7 +128,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -138,7 +136,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -146,7 +144,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -154,7 +152,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
@@ -162,7 +160,7 @@ export default function about() {
                 </h3>
               </div>
             </div>
-            <div className="overflow-hidden ring-1 ring-black/10 dark:ring-white/20 bg-transparent shadow-xs rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
+            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
               <div className="px-4 py-5 sm:p-6">
                 <TbCircleCheck className="size-7 stroke-1.5" />
                 <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">

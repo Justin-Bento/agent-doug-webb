@@ -89,50 +89,34 @@ export default function page() {
         </section>
 
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="wrapper min-h-dvh grid grid-cols-1 sm:grid-cols-12 gap-12 lg:gap-0 lg:gap-y-20 lg:gap-x-10">
-          <div className="sm:col-span-12 row-auto overflow-hidden sm:rounded-lg">
-            <div className="max-w-5xl mx-auto text-center">
-              <h3 className="font-display text-balance text-4xl font-medium capitalize tracking-tight text-black dark:text-white sm:text-5xl">
-                Everything you need for the Real-Estate Transaction Process.
-              </h3>
-            </div>
-          </div>
-          <div className="sm:col-span-6 row-auto overflow-hidden sm:rounded-lg">
-            <div className="relative aspect-[1/1.25] shadow-sm">
-              <Image
-                fill
-                src="/media/img/landing/image-02.jpg"
-                className="object-center rounded-sm" // Ensure it maintains aspect ratio
-                alt="rough ocean water"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-6 row-auto overflow-y-scroll aspect-[1/1.25] ring-1 ring-gray-300 sm:rounded-lg">
-            {Array.from({ length: 6 }, (_, index) => (
+        <section className="wrapper grid grid-cols-3 gap-8">
+          <h3 className="pb-6 col-span-3 max-w-[30ch] font-display text-5xl/snug font-bold text-balance capitalize">
+            Everything you need for the Real-Estate Transaction Process.
+          </h3>
+              {Array.from({ length: 6 }, (_, index) => (
               <div
                 key={index}
-                className="gap-12 place-content-center aspect-[1/1.25] sm:rounded-lg"
+                className="card-container place-content-center *:text-base *:text-pretty *:tracking-wide"
               >
                 <div className="px-4 py-5 sm:p-6">
-                  <h3 className="font-display max-w-4xl text-balance text-xl font-bold uppercase text-black dark:text-white">
-                    Meet Your Trusted Realtor: John Webb
-                  </h3>
-                  <p className="text-sm text-balance mt-2 leading-5">
-                    With over 10 years of experience in the real estate
-                    industry, John possesses an in-depth understanding of the
-                    local market trends, neighborhoods, and property values.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <p className="font-mono text-xs uppercase tracking-wide">
+                  <div className="flex items-center gap-2 ">
+                    <p className="font-mono">
                       {index + 1}
                     </p>{" "}
+                    <span className="my-6 block w-4 rounded-full ring-1 ring-black dark:ring-white"></span>
                     {/* Updated to use index + 1 */}
-                    <span className="my-6 block w-8 rounded-full max-w-16 ring-1 ring-black dark:ring-white"></span>
                   </div>
+                  <h3 className="font-display font-bold text-lg capitalize">
+                    Your Trusted Realtor
+                  </h3>
+                  <p className="">
+                    With over 10 years of experience in the real estate
+                    industry, John possesses an in-depth understanding of the
+                    local market trends, neighborhoods, and property.
+                  </p>
                 </div>
               </div>
             ))}
-          </div>
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
         <section className="wrapper min-h-dvh grid grid-cols-12 gap-4">
