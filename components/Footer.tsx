@@ -1,30 +1,162 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link"; // use the Link component from 'next/link'
-import { AiFillFacebook, AiFillYoutube, AiFillGithub, AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
+import {
+  AiFillFacebook,
+  AiFillYoutube,
+  AiFillGithub,
+  AiFillInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 export default function Footer({ className }: any) {
   return (
-    <footer className={cn("overflow-hidden", className)}>
-      <div className="wrapper py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-gray-50"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon
-                aria-hidden="true"
-                className="h-6 w-6"
-              />
-            </Link>
-          ))}
+    <footer className="bg-gray-950 *:text-gray-50 dark:bg-black">
+      <div className="wrapper grid grid-cols-1 lg:grid-cols-4 py-20 gap-12">
+        <div className="flex w-full flex-col  space-y-4 md:w-2/5">
+          <div className="w-full text-lg space-x-1 font-extrabold md:w-fit">
+            <span>Agent</span>
+            <span>Webb</span>
+          </div>
+          <p className="text-sm">&copy; {new Date().getFullYear()}.</p>
+          <div className="flex items-center gap-4">
+            {navigation.map((item) => (
+              <Link key={item.name} href={item.href} className="text-gray-50">
+                <span className="sr-only">{item.name}</span>
+                <item.icon aria-hidden="true" className="h-6 w-6" />
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm leading-5 text-gray-50">
-            &copy; {new Date().getFullYear()} AgentWebb, Inc. All rights reserved.
-          </p>
+        <div className="w-full *:text-gray-50">
+          <div className="text-sm font-semibold border-b leading-9 leading-9">
+            Company
+          </div>
+          <ul className="text-sm">
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                About
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Terms of Service
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Cookie Policy
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="w-full *:text-gray-50">
+          <div className="text-sm font-semibold border-b leading-9">
+            Solutions
+          </div>
+          <ul className="text-sm">
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Business Line of Credit
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SBA Loan
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Revenue Based Financing
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Invoice Factoring
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="w-full *:text-gray-50">
+          <div className="text-sm font-semibold border-b leading-9">
+            Partnership
+          </div>
+          <ul className="text-sm">
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Loan Partner
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Affiliate
+              </Link>
+            </li>
+            <li className="pt-3">
+              <Link
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-gray-700"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Brand Guideline
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
