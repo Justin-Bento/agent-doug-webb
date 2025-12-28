@@ -5,6 +5,35 @@ import { Button } from "./ui/button";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+type NavLink = {
+  title: string;
+  href: string;
+};
+
+const NavLinks: NavLink[] = [
+  {
+    title: "home",
+    href: "/",
+  },
+  {
+    title: "about",
+    href: "/about",
+  },
+  {
+    title: "real-estate process",
+    href: "/real-estate-process",
+  },
+    {
+    title: "listings",
+    href: "/listings",
+  },
+    {
+    title: "contact",
+    href: "/contact",
+  },
+
+];
+
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((isOpen) => !isOpen);
@@ -39,58 +68,24 @@ export default function Navigation() {
               </Button>
             )}
           </div>
-          <nav className={`lg:flex lg:items-center lg:justify-end ${isOpen ? "block" : "hidden"}`}>
-            <ul className="lg:flex space-y-6 my-5 lg:my-0 lg:space-x-1 lg:space-y-0">
-              <li>
-                <Link href="/">
-                  <Button
-                    variant="link"
-                    className="text-black"
-                  >
-                    Home
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <Button
-                    variant="link"
-                    className="text-black"
-                  >
-                    About
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/real-estate-process">
-                  <Button
-                    variant="link"
-                    className="text-black"
-                  >
-                    Real-Estate Process
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/listings">
-                  <Button
-                    variant="link"
-                    className="text-black"
-                  >
-                    Listings
-                  </Button>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact ">
-                  <Button
-                    variant="link"
-                    className="text-black"
-                  >
-                    Contact
-                  </Button>
-                </Link>
-              </li>
+          <nav
+            className={`lg:flex lg:items-center lg:justify-end ${
+              isOpen ? "block" : "hidden"
+            }`}
+          >
+            <ul className="flex items-center *:hover:underline *:hover:cursor-pointer">
+              {NavLinks.map((link) => {
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="capitalize block whitespace-nowrap px-2 py-2 text-sm text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </section>
