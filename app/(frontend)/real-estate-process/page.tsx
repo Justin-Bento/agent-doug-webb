@@ -29,7 +29,7 @@ export default async function page() {
     }`,
   });
   return (
-    <main className="min-h-dvh mb-24">
+    <main className="min-h-dvh mb-24 space-y-12">
       <PageHeader title="Real Estate Process" />
       <section className="wrapper grid grid-cols-2 gap-8">
         <div className="col-span-2 [&>p]:text-lg [&>p]:max-w-[80ch] [&>p]:mb-3">
@@ -47,7 +47,7 @@ export default async function page() {
             time reading this information!
           </p>
         </div>
-
+        <Divider />
         <ul className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
           {posts.map((post: RealEstateModulesInterface) => (
             <li key={post._id} className="group relative isolate">
