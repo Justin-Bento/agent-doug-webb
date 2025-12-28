@@ -46,7 +46,7 @@ export default function Navigation() {
         >
           <ul className="flex flex-col lg:flex-row gap-4 lg:gap-6">
             {navLinks.map((link) => (
-              <li key={link.href} className="hover:underline">
+              <li key={link.href}>
                 <Link
                   href={link.href}
                   className="navigation-links text-gray-950"
