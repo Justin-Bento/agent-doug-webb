@@ -1,5 +1,3 @@
-import BackgroundPattern from "./BackgroundPattern";
-
 type PageHeaderProps = {
   title: string;
 };
