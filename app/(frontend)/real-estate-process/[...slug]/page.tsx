@@ -3,11 +3,8 @@ import { sanityFetch } from "@/sanity/lib/live";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import BackgroundPattern from "@/components/BackgroundPattern";
 import Divider from "@/components/Divider";
 import { PortableText } from "next-sanity";
-import { revertSlug } from "@/lib/utils";
-import ServerBackButton from "@/components/BackButton";
 import PageHeader from "@/components/PageHeader";
 
 export default async function page({ params }: { params: { slug: string[] } }) {

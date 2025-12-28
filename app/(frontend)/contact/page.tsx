@@ -1,4 +1,3 @@
-import BackgroundPattern from "@/components/BackgroundPattern";
 import ContactForm from "@/components/ContactForm";
 import Divider from "@/components/Divider";
 import PageHeader from "@/components/PageHeader";
