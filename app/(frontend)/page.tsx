@@ -50,9 +50,7 @@ export default function page() {
                   <Button>View Listings</Button>
                 </Link>
                 <Link href="/real-estate-process">
-                  <Button variant="outline">
-                    Real-Estate Process
-                  </Button>
+                  <Button variant="outline">Real-Estate Process</Button>
                 </Link>
               </span>
             </div>
@@ -86,45 +84,43 @@ export default function page() {
         </section>
 
         {/* End of Sub-Hero Area - Quick Section */}
-        <section className="wrapper grid grid-cols-3 gap-8">
-          <h3 className="pb-6 col-span-3 max-w-[30ch] font-display text-5xl/snug font-bold text-balance capitalize">
+        <section className="wrapper grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h3 className="pb-6 col-span-1 md:col-span-3 max-w-[30ch] font-display text-5xl/snug font-bold text-balance capitalize">
             Everything you need for the Real-Estate Transaction Process.
           </h3>
-              {Array.from({ length: 6 }, (_, index) => (
-              <div
-                key={index}
-                className="card-container place-content-center *:text-base *:text-pretty *:tracking-wide"
-              >
-                <div className="px-4 py-5 sm:p-6">
-                  <div className="flex items-center gap-2 ">
-                    <p className="font-mono">
-                      {index + 1}
-                    </p>{" "}
-                    <span className="my-6 block w-4 rounded-full ring-1 ring-black dark:ring-white"></span>
-                    {/* Updated to use index + 1 */}
-                  </div>
-                  <h3 className="font-display font-bold text-lg capitalize">
-                    Your Trusted Realtor
-                  </h3>
-                  <p className="">
-                    With over 10 years of experience in the real estate
-                    industry, John possesses an in-depth understanding of the
-                    local market trends, neighborhoods, and property.
-                  </p>
+          {Array.from({ length: 6 }, (_, index) => (
+            <div
+              key={index}
+              className="card-container place-content-center *:text-base *:text-pretty *:tracking-wide"
+            >
+              <div className="px-4 py-5 sm:p-6">
+                <div className="flex items-center gap-2 ">
+                  <p className="font-mono">{index + 1}</p>{" "}
+                  <span className="my-6 block w-4 rounded-full ring-1 ring-black dark:ring-white"></span>
+                  {/* Updated to use index + 1 */}
                 </div>
+                <h3 className="font-display font-bold text-lg capitalize">
+                  Your Trusted Realtor
+                </h3>
+                <p className="">
+                  With over 10 years of experience in the real estate industry,
+                  John possesses an in-depth understanding of the local market
+                  trends, neighborhoods, and property.
+                </p>
               </div>
-            ))}
+            </div>
+          ))}
         </section>
         {/* End of Sub-Hero Area - Real Estate Transaction Process */}
-        <section className="wrapper min-h-dvh grid grid-cols-12 gap-4">
+        <section className="wrapper min-h-dvh grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* <!-- Title Section --> */}
-          <div className="col-span-12 w-full">
+          <div className="col-span-1 md:col-span-3 space-y-6 mb-6">
             <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
               View Listings
             </h1>
+            <Divider />
           </div>
           {/* <!-- Divider --> */}
-          <div className="col-span-12  mb-6 mt-3 w-full max-w-24 ring-1 ring-black dark:ring-white"></div>
           {/* <!-- 3x3 Grid Section --> */}
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {listings.map((house) => {
@@ -191,9 +187,7 @@ export default function page() {
               </p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">
-                  <Button variant="outline">
-                    Contact Us
-                  </Button>
+                  <Button variant="outline">Contact Us</Button>
                 </Link>
               </span>
             </div>
