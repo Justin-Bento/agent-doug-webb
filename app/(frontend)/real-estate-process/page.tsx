@@ -34,7 +34,7 @@ export default async function page() {
       <section className="wrapper grid grid-cols-2 gap-8">
         <div className="col-span-2 [&>p]:text-lg [&>p]:max-w-[80ch] [&>p]:mb-3">
           <h2 className="text-4xl/loose font-bold tracking-wide first:mt-0">
-            A Comprehensive Overview of the Real Estate Process.
+            A Comprehensive Overview.
           </h2>
           <p className="text-xl max-w-5xl text-pretty tracking-wide">
             As an Ontario Real Estate Expert with 20+ Years Experience.
