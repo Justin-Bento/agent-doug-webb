@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { TbCircleCheck } from "react-icons/tb";
 import Divider from "@/components/Divider";
 import PageHeader from "@/components/PageHeader";
+import KnowledgeCheckbox from "@/components/KnowledgeCheckbox";
 
 export const metadata: Metadata = {
   title: "About - AgentWebb",
@@ -17,7 +18,7 @@ export default function about() {
         <PageHeader title="Our strength is collaboration" />
         <section className="wrapper">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="max-w-3xl *:text-xl/loose space-y-6 dark:text-white">
+            <div className="max-w-3xl [&>p]:text-xl/loose space-y-6 dark:text-white">
               <p>
                 We believe that our strength lies in our collaborative approach,
                 which puts our clients at the center of everything we do.
@@ -68,21 +69,21 @@ export default function about() {
         </section>
         <section className="wrapper">
           <div className="grid items-center grid-cols-1 md:grid-cols-12 sm:gap-10 md:gap-x-10">
-            <div className="relative aspect-square col-span-12 md:col-span-5">
+            <div className="relative w-full h-full col-span-12 md:col-span-5">
               <Image
                 fill
-                src="/media/img/douglas-job-web.jpg"
+                src="/media/img/stock-photos/douglas-job-web.jpg"
                 alt="Image of Douglas John Webb"
                 className="object-cover object-center rounded-lg"
               />
             </div>
             <div className="overflow-hidden col-span-12 md:col-span-7 grid items-center rounded-2xl">
-              <div className="px-4 py-5 sm:p-6 space-y-8">
+              <div className="px-4 py-5 sm:p-6 space-y-8 [&>p]:text-xl/loose [&>p]:tracking-wide">
                 <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-4xl">
                   Meet Douglas J. Webb
                 </h2>
-                <Divider className="" />
-                <p className="">
+                <Divider />
+                <p>
                   Years ago, while working as sales associates at rival
                   companies, Thomas, Ben, and Natalie were discussing a big
                   client they had all been competing for. Joking about seeing
@@ -92,7 +93,7 @@ export default function about() {
                   incredible success, and that idea became the kernel for
                   Radiant.
                 </p>
-                <p className="">
+                <p>
                   Today, Radiant transforms revenue organizations by harnessing
                   illegally acquired customer and competitor data, using it to
                   provide extraordinary leverage. More than 30,000 companies
@@ -104,79 +105,21 @@ export default function about() {
           </div>
         </section>
         <section className="wrapper min-h-[50dvh]">
-          <div className="grid grid-cols-1 sm:grid-cols-12 gap-12">
-            <div className="overflow-hidden ring-0 bg-transparent shadow-0 sm:rounded-lg sm:col-span-12">
-              <h2 className="max-w-3xl text-balance text-4xl font-medium text-black dark:text-white sm:text-4xl">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div className="lg:col-span-4 space-y-6">
+              <h2 className="text-5xl font-semibold text-gray-950">
                 Why Should You Choose Me?
               </h2>
-            </div>
-            <div className="col-span-1 sm:col-span-12">
               <Divider className="" />
             </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Certified Residential Real-Estate Agent
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  (MLS) Multiple Listing Service
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Member of the Toronto Real Estate Board
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Canadian Real Estate Association
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Realtor&copy; Sales Award
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Real Estate investor since 1985
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  Serving: Clients since 1997
-                </h3>
-              </div>
-            </div>
-            <div className="overflow-hidden card-container rounded-lg sm:col-span-12 md:col-span-6 lg:col-span-3">
-              <div className="px-4 py-5 sm:p-6">
-                <TbCircleCheck className="size-7 stroke-1.5" />
-                <h3 className="mt-1 text-xl/8 text-balance font-medium text-black dark:text-white">
-                  70&#37; Repeat Clients and Referral
-                </h3>
-              </div>
-            </div>
+            <KnowledgeCheckbox title="Certified Residential Real-Estate Agent" />
+            <KnowledgeCheckbox title="(MLS) Multiple Listing Service" />
+            <KnowledgeCheckbox title="Member of the Toronto Real Estate Board" />
+            <KnowledgeCheckbox title="Canadian Real Estate Association" />
+            <KnowledgeCheckbox title="Realtor&copy; Sales Award" />
+            <KnowledgeCheckbox title="Serving: Clients since 1997" />
+            <KnowledgeCheckbox title="70&#37; Repeat Clients and Referral" />
+            <KnowledgeCheckbox title="70&#37; Repeat Clients and Referral" />
           </div>
         </section>
       </main>
