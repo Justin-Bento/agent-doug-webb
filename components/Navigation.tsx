@@ -23,15 +23,14 @@ const NavLinks: NavLink[] = [
     title: "real-estate process",
     href: "/real-estate-process",
   },
-    {
+  {
     title: "listings",
     href: "/listings",
   },
-    {
+  {
     title: "contact",
     href: "/contact",
   },
-
 ];
 
 export default function Navigation() {
@@ -73,14 +72,11 @@ export default function Navigation() {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <ul className="flex items-center *:hover:underline *:hover:cursor-pointer">
+            <ul className="flex items-start flex-col lg:items-center lg:flex-row *:hover:underline *:hover:cursor-pointer">
               {NavLinks.map((link) => {
                 return (
                   <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="capitalize block whitespace-nowrap px-2 py-2 text-sm text-slate-400 no-underline transition hover:text-slate-900 dark:hover:text-slate-50"
-                    >
+                    <Link href={link.href} className="navigation-links">
                       {link.title}
                     </Link>
                   </li>
