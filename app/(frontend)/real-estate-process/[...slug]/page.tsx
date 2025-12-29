@@ -131,19 +131,124 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     const step = stepData.processSteps;
 
     return (
-      <main className="prose max-w-6/10 mx-auto my-24 text-pretty">
-        <section>
-          <h1 className="m-0 p-0 leading-[1]">{step.stepTitle}</h1>
-          <p className="m-0 p-0 text-lg text-gray-500 font-medium leading-[1.5] tracking-wide">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore,
-            vitae. Odit vel natus similique itaque harum, maiores, molestias
-            magnam obcaecati magni distinctio animi, nam eum laudantium impedit!
-            Animi, architecto optio?
+      <main className="max-w-[80ch] mx-auto text-pretty my-24">
+        <section className="space-y-3 mb-6">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-wide text-balance">
+            Taxing Laughter: The Joke Tax Chronicles
+          </h1>
+          <p className="text-gray-700 text-xl leading-7 [&amp;:not(:first-child)]:mt-6">
+            Once upon a time, in a far-off land, there was a very lazy king who
+            spent all day lounging on his throne. One day, his advisors came to
+            him with a problem: the kingdom was running out of money.
           </p>
-          <Divider />
         </section>
         <article className="leading-[2] tracking-wide">
-          <PortableText value={step.stepContent} />
+          {/* <PortableText value={step.stepContent} /> */}
+          <h2 className="mb-5 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-wide transition-colors first:mt-0">
+            The King&#39;s Plan
+          </h2>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            The king thought long and hard, and finally came up with{" "}
+            <a
+              href="#"
+              className="text-primary font-medium underline underline-offset-4"
+            >
+              a brilliant plan
+            </a>
+            : he would tax the jokes in the kingdom.
+          </p>
+          <blockquote className="mt-6 border-l-2 pl-6 italic">
+            &#34;After all,&#34; he said, &#34;everyone enjoys a good joke, so
+            it&#39;s only fair that they should pay for the privilege.&#34;
+          </blockquote>
+          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-wide">
+            The Joke Tax
+          </h3>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            The king&#39;s subjects were not amused. They grumbled and
+            complained, but the king was firm:
+          </p>
+          <ul className="my-6 ml-6 list-disc [&amp;&gt;li]:mt-2">
+            <li>1st level of puns: 5 gold coins</li>
+            <li>2nd level of jokes: 10 gold coins</li>
+            <li>3rd level of one-liners : 20 gold coins</li>
+          </ul>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            As a result, people stopped telling jokes, and the kingdom fell into
+            a gloom. But there was one person who refused to let the king&#39;s
+            foolishness get him down: a court jester named Jokester.
+          </p>
+          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-wide">
+            Jokester&#39;s Revolt
+          </h3>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            Jokester began sneaking into the castle in the middle of the night
+            and leaving jokes all over the place: under the king&#39;s pillow,
+            in his soup, even in the royal toilet. The king was furious, but he
+            couldn&#39;t seem to stop Jokester.
+          </p>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            And then, one day, the people of the kingdom discovered that the
+            jokes left by Jokester were so funny that they couldn&#39;t help but
+            laugh. And once they started laughing, they couldn&#39;t stop.
+          </p>
+          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-wide">
+            The People&#39;s Rebellion
+          </h3>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            The people of the kingdom, feeling uplifted by the laughter, started
+            to tell jokes and puns again, and soon the entire kingdom was in on
+            the joke.
+          </p>
+          <div className="my-6 w-full overflow-y-auto">
+            <table className="w-full">
+              <thead>
+                <tr className="even:bg-muted m-0 border-t p-0">
+                  <th className="border px-4 py-2 text-left font-bold [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    King&#39;s Treasury
+                  </th>
+                  <th className="border px-4 py-2 text-left font-bold [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    People&#39;s happiness
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="even:bg-muted m-0 border-t p-0">
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Empty
+                  </td>
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Overflowing
+                  </td>
+                </tr>
+                <tr className="even:bg-muted m-0 border-t p-0">
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Modest
+                  </td>
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Satisfied
+                  </td>
+                </tr>
+                <tr className="even:bg-muted m-0 border-t p-0">
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Full
+                  </td>
+                  <td className="border px-4 py-2 text-left [&amp;[align=center]]:text-center [&amp;[align=right]]:text-right">
+                    Ecstatic
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            The king, seeing how much happier his subjects were, realized the
+            error of his ways and repealed the joke tax. Jokester was declared a
+            hero, and the kingdom lived happily ever after.
+          </p>
+          <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
+            The moral of the story is: never underestimate the power of a good
+            laugh and always be careful of bad ideas.
+          </p>
         </article>
       </main>
     );
