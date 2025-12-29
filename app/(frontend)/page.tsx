@@ -33,9 +33,9 @@ export default function page() {
             <div className="absolute z-30 w-full h-full grid items-center">
               {/* Content Is Inside Here */}
               <div className="wrapper">
-                <h1 className="display-3 font-sans max-w-[30ch]">
+                <h2 className="display-3 font-sans max-w-[30ch]">
                   Learn The Anatomy of the Real Estate Transaction.
-                </h1>
+                </h2>
                 <p className="mt-3 mb-12 body-lead max-w-[80ch] text-balance">
                   This website is a collection of real estate transaction in
                   Canada. As this process is intimidating he is here to give
@@ -117,9 +117,9 @@ export default function page() {
         <section className="wrapper min-h-dvh grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* <!-- Title Section --> */}
           <div className="col-span-1 md:col-span-3 space-y-6 mb-6">
-            <h1 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
+            <h2 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
               View Listings
-            </h1>
+            </h2>
             <Divider />
           </div>
           {/* <!-- Divider --> */}
@@ -176,9 +176,9 @@ export default function page() {
               <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
                 Get the help you need
               </p>
-              <h1 className="mt-2 font-sans display-3">
+              <h2 className="mt-2 font-sans display-3">
                 Right at Home Agents Make it Easy
-              </h1>
+              </h2>
               <p className="mt-4 max-w-5xl body-lead font-semibold">
                 Be one step ahead of real-estate transactions with our un-biased
                 guide. As we give you an unfiltered guide about the Real-Estate
