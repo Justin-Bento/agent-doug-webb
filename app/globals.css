@@ -93,6 +93,7 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+    vertical-align: baseline;
   }
 }
 
@@ -106,7 +107,6 @@
 
   html {
     font-family: "CabinetGrotesk Variable", system-ui, sans-serif;
-    vertical-align: baseline;
   }
   header,
   body {
@@ -123,5 +123,17 @@
   }
   .navigation-links {
     @apply capitalize text-base leading-7 hover:underline hover:cursor-pointer transition-all underline-offset-4;
+  }
+  .display3 {
+    @apply scroll-m-20 text-5xl leading-0 font-extrabold text-balance;
+  }
+  .h1 {
+    @apply scroll-m-20 text-4xl font-extrabold text-balance;
+  }
+  .h2 {
+    @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold transition-colors first:mt-0;
+  }
+  .h3 {
+    @apply mt-8 scroll-m-20 text-2xl font-semibold;
   }
 }
