@@ -125,15 +125,27 @@
     @apply capitalize text-base leading-7 hover:underline hover:cursor-pointer transition-all underline-offset-4;
   }
   .display3 {
-    @apply scroll-m-20 text-5xl leading-0 font-extrabold text-balance;
+    @apply scroll-m-20 text-5xl leading-0 font-extrabold text-balance text-gray-950 dark:text-gray-50;
   }
   .h1 {
-    @apply scroll-m-20 text-4xl font-extrabold text-balance;
+    @apply scroll-m-20 text-4xl font-extrabold text-balance text-gray-950 dark:text-gray-50;
   }
   .h2 {
-    @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold transition-colors first:mt-0;
+    @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold transition-colors first:mt-0 text-gray-950 dark:text-gray-50;
   }
   .h3 {
-    @apply mt-8 scroll-m-20 text-2xl font-semibold;
+    @apply mt-8 scroll-m-20 text-2xl font-semibold text-gray-950 dark:text-gray-50;
+  }
+  .body-extra-large {
+    @apply text-xl font-normal text-gray-950 dark:text-gray-50;
+  }
+  .body-large {
+    @apply text-lg font-semibold text-gray-950 dark:text-gray-50;
+  }
+  .body-medium {
+    @apply text-base leading-7 font-semibold text-gray-950 dark:text-gray-50;
+  }
+  .body-small {
+    @apply text-sm leading-none font-medium text-gray-950 dark:text-gray-50;
   }
 }
