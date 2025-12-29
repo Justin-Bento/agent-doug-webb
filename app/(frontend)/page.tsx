@@ -30,7 +30,7 @@ export default function page() {
             <div className="absolute z-20 w-full h-full bg-secondary/70 dark:bg-secondary-dark/70" />
             <div className="absolute z-30 w-full h-full grid items-center">
               {/* Content Is Inside Here */}
-              <div className="wrapper *:dark:text-black">
+              <div className="wrapper">
                 <h2 className="display-3 font-sans max-w-[30ch]">
                   Learn The Anatomy of the Real Estate Transaction.
                 </h2>
@@ -147,16 +147,16 @@ export default function page() {
           {/* End of Image Overlay */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="space-y-4">
-              <h2 className="mt-2 font-sans display-3 dark:text-black">
+              <h2 className="mt-2 font-sans display-3">
                 Right at Home Agents Make it Easy
               </h2>
-              <p className="body-lead max-w-prose dark:text-black">
+              <p className="body-lead max-w-prose">
                 Be one step ahead of real-estate transactions with our un-biased
                 guide. As we give you an unfiltered guide about the Real-Estate
                 Transaction without any favoritism so you can be educated on the
                 procedures coming at you and ready for any red flags.
               </p>
-              <p className="body-lead dark:text-black">Get the help you need</p>
+              <p className="body-lead">Get the help you need</p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">
                   <Button variant="outline">Contact Us</Button>
