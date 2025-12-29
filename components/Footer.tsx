@@ -10,7 +10,7 @@ import Logo from "@/components/Logo";
 
 export default function Footer({ className }: any) {
   return (
-    <footer className="bg-black *:text-white">
+    <footer className="*:text-white">
       <div className="wrapper grid grid-cols-1 lg:grid-cols-4 py-20 gap-12">
         <div className="flex w-full flex-col  space-y-4 md:w-2/5">
           <Logo className="text-white" />

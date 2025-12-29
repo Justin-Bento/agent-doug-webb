@@ -1,10 +1,8 @@
-import Divider from "@/components/Divider";
 import PageHeader from "@/components/PageHeader";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { sanityFetch } from "@/sanity/lib/live";
@@ -38,7 +36,7 @@ export default async function page() {
               <Link
                 href={`/real-estate-process/${post.processCategorySlug.current}`}
               >
-                <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
+                <Card className="ring ring-gray-300 bg-gray-100 transition-all dark:bg-gray-900 dark:hover:bg-gray-700 dark:hover:ring-gray-500 rounded hover:ring-gray-700">
                   <CardContent>
                     <CardTitle className="text-2xl font-semibold tracking-wide group-hover:underline group-hover:decoration-dotted">
                       {post.processCategoryTitle}

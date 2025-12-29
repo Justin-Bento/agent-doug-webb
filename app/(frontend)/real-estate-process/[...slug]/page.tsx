@@ -87,14 +87,14 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             {post.processSteps?.map((step: any, index: number) => (
               <li
                 key={step.stepSlug?.current || index}
-                className="group relative isolate overflow-hidden rounded-lg hover:ring-1 ring-black bg-gray-200 transition-all"
+                className="group relative isolate overflow-hidden card-container"
               >
                 <Link
                   className="block relative px-4 py-5 sm:p-6"
                   href={`/real-estate-process/${params.slug[0]}/${step.stepSlug?.current}`}
                 >
                   <span className="w-full h-full absolute inset-0"></span>
-                  <span className="relative z-10 text-lg font-medium group-hover:underline decoration-dotted  group-hover:text-black m-0 p-0">
+                  <span className="relative z-10 text-lg font-medium group-hover:underline decoration-dotted m-0 p-0">
                     {step.stepTitle}
                   </span>
                 </Link>
@@ -131,12 +131,12 @@ export default async function page({ params }: { params: { slug: string[] } }) {
     const step = stepData.processSteps;
 
     return (
-      <main className="max-w-[80ch] mx-auto text-pretty my-24">
+      <main className="max-w-[80ch] mx-auto text-pretty my-24 *:dark:text-white">
         <section className="space-y-3 mb-6">
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-wide text-balance">
             Taxing Laughter: The Joke Tax Chronicles
           </h1>
-          <p className="text-gray-700 text-xl leading-7 [&amp;:not(:first-child)]:mt-6">
+          <p className="text-xl leading-7 [&amp;:not(:first-child)]:mt-6">
             Once upon a time, in a far-off land, there was a very lazy king who
             spent all day lounging on his throne. One day, his advisors came to
             him with a problem: the kingdom was running out of money.
@@ -151,7 +151,7 @@ export default async function page({ params }: { params: { slug: string[] } }) {
             The king thought long and hard, and finally came up with{" "}
             <a
               href="#"
-              className="text-primary font-medium underline underline-offset-4"
+              className="text-secondary font-medium underline underline-offset-4"
             >
               a brilliant plan
             </a>
