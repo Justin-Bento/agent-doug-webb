@@ -5,7 +5,15 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 
@@ -39,7 +47,7 @@ export default function InputForm() {
     toast({
       title: "You submitted the following values:",
       description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+        <pre className="mt-2 w-[340px] rounded-md bg-black p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
         </pre>
       ),
@@ -48,10 +56,7 @@ export default function InputForm() {
 
   return (
     <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-6"
-      >
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
           name="full_name"
@@ -59,10 +64,7 @@ export default function InputForm() {
             <FormItem>
               <FormLabel>Full Name</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="Enter your legal full name"
-                  {...field}
-                />
+                <Input placeholder="Enter your legal full name" {...field} />
               </FormControl>
               <FormDescription className="text-xs">
                 This is how we verify the person we&#39;re contacting. full-name{" "}
@@ -78,12 +80,11 @@ export default function InputForm() {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="shadcn"
-                  {...field}
-                />
+                <Input placeholder="shadcn" {...field} />
               </FormControl>
-              <FormDescription className="text-xs">We&#39;ll send you a conformation.</FormDescription>
+              <FormDescription className="text-xs">
+                We&#39;ll send you a conformation.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -95,12 +96,11 @@ export default function InputForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="shadcn"
-                  {...field}
-                />
+                <Input placeholder="shadcn" {...field} />
               </FormControl>
-              <FormDescription className="text-xs">This is your public display name.</FormDescription>
+              <FormDescription className="text-xs">
+                This is your public display name.
+              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -112,13 +112,11 @@ export default function InputForm() {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Input
-                  placeholder="shadcn"
-                  {...field}
-                />
+                <Input placeholder="shadcn" {...field} />
               </FormControl>
               <FormDescription className="text-xs">
-                Include any additional information that&nbsp;s difficult to include over the phone.
+                Include any additional information that&nbsp;s difficult to
+                include over the phone.
               </FormDescription>
               <FormMessage />
             </FormItem>
