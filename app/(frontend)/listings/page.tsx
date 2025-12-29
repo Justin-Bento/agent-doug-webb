@@ -1,4 +1,3 @@
-import Divider from "@/components/Divider";
 import PageHeader from "@/components/PageHeader";
 import React from "react";
 
