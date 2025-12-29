@@ -17,39 +17,44 @@ export default function page() {
   return (
     <>
       <main className="min-h-dvh space-y-32">
-        <section className="relative">
-          <div className="absolute z-10 w-full min-h-dvh overflow-hidden bg-linear-to-b from-secondary/80">
-            <Image
-              fill
-              src="/media/img/landing/image-01.jpg"
-              alt=""
-              className="object-cover object-bottom-right lg:object-fit lg:object-right"
-            />
-          </div>
-          <div className="absolute z-20 w-full h-full bg-secondary/70" />
-          <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
-            <div className="space-y-6 [&>p]:text-lg/7 [&>p]:font-medium [&>p]:tracking-wide max-w-[80ch] *:text-balance">
-              <h1 className="text-5xl/13 lg:text-6xl/18 text-pretty font-bold capitalize">
-                Learn The Anatomy of the Real Estate Transaction.
-              </h1>
-              <p>
-                This website is a collection of real estate transaction in
-                Canada. As this process is intimidating he is here to give
-                unfiltered guide without any favoritism so you can be educated
-                on the procedures coming at you and ready for any red flags
-                along the way.
-              </p>
-              <span className="flex flex-col md:flex-row gap-6">
-                <Link href="/listings" className="*:w-full *:lg:w-fit">
-                  <Button>View Listings</Button>
-                </Link>
-                <Link
-                  href="/real-estate-process"
-                  className="*:w-full *:lg:w-fit"
-                >
-                  <Button variant="outline">Real-Estate Process</Button>
-                </Link>
-              </span>
+        <section className="">
+          <div className="relative isolate overflow-hidden min-h-dvh">
+            <div className="absolute z-10 w-full h-full">
+              <Image
+                fill
+                src="/media/img/landing/image-01.jpg"
+                alt=""
+                className="object-cover object-bottom-right lg:object-fit lg:object-right"
+              />
+            </div>
+            <div className="absolute z-20 w-full h-full bg-secondary/70">
+              {/* This is an overlay with no semantic meaning. */}
+            </div>
+            <div className="absolute z-30 w-full h-full grid items-center">
+              {/* Content Is Inside Here */}
+              <div className="wrapper">
+                <h1 className="display-3 font-sans max-w-[30ch]">
+                  Learn The Anatomy of the Real Estate Transaction.
+                </h1>
+                <p className="mt-3 mb-12 body-lead max-w-[80ch] text-balance">
+                  This website is a collection of real estate transaction in
+                  Canada. As this process is intimidating he is here to give
+                  unfiltered guide without any favoritism so you can be educated
+                  on the procedures coming at you and ready for any red flags
+                  along the way.
+                </p>
+                <span className="flex flex-col md:flex-row gap-6">
+                  <Link href="/listings" className="*:w-full *:lg:w-fit">
+                    <Button>View Listings</Button>
+                  </Link>
+                  <Link
+                    href="/real-estate-process"
+                    className="*:w-full *:lg:w-fit"
+                  >
+                    <Button variant="outline">Real-Estate Process</Button>
+                  </Link>
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -171,10 +176,10 @@ export default function page() {
               <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
                 Get the help you need
               </p>
-              <h1 className="mt-2 font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-black dark:text-white sm:text-6xl/[0.8] md:text-7xl/[0.8] capitalize">
+              <h1 className="mt-2 font-sans display-3">
                 Right at Home Agents Make it Easy
               </h1>
-              <p className="mt-4 max-w-5xl text-md leading-7 font-semibold text-black dark:text-white">
+              <p className="mt-4 max-w-5xl body-lead font-semibold">
                 Be one step ahead of real-estate transactions with our un-biased
                 guide. As we give you an unfiltered guide about the Real-Estate
                 Transaction without any favoritism so you can be educated on the
