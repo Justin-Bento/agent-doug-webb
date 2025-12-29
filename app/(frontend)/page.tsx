@@ -27,7 +27,7 @@ export default function page() {
                 className="object-cover object-bottom-right lg:object-fit lg:object-right"
               />
             </div>
-            <div className="absolute z-20 w-full h-full bg-secondary/70" />
+            <div className="absolute z-20 w-full h-full bg-secondary/70 dark:bg-secondary-dark/70" />
             <div className="absolute z-30 w-full h-full grid items-center">
               {/* Content Is Inside Here */}
               <div className="wrapper *:dark:text-black">
@@ -143,7 +143,7 @@ export default function page() {
             />
           </div>
           {/* Background Image */}
-          <div className="absolute z-20 w-full h-full bg-secondary/70" />
+          <div className="absolute z-20 w-full h-full bg-secondary/70 dark:bg-secondary-dark/70" />
           {/* End of Image Overlay */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="space-y-4">
