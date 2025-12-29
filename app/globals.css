@@ -124,8 +124,8 @@
   .navigation-links {
     @apply capitalize text-base leading-7 hover:underline hover:cursor-pointer transition-all underline-offset-4;
   }
-  .display3 {
-    @apply scroll-m-20 text-5xl leading-0 font-extrabold text-balance text-gray-950 dark:text-gray-50;
+  .display-3 {
+    @apply scroll-m-20 capitalize text-5xl leading-[1.25] font-extrabold text-balance text-gray-950 dark:text-gray-50;
   }
   .h1 {
     @apply scroll-m-20 text-4xl font-extrabold text-balance text-gray-950 dark:text-gray-50;
@@ -136,7 +136,7 @@
   .h3 {
     @apply mt-8 scroll-m-20 text-2xl font-semibold text-gray-950 dark:text-gray-50;
   }
-  .body-extra-large {
+  .body-lead {
     @apply text-xl font-normal text-gray-950 dark:text-gray-50;
   }
   .body-large {
