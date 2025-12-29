@@ -1,12 +1,7 @@
 import Link from "next/link"; // use the Link component from 'next/link'
-import {
-  AiFillFacebook,
-  AiFillYoutube,
-  AiFillGithub,
-  AiFillInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+
 import Logo from "@/components/Logo";
+import { navigation } from "@/lib/data";
 
 export default function Footer({ className }: any) {
   return (
@@ -159,31 +154,3 @@ export default function Footer({ className }: any) {
     </footer>
   );
 }
-
-const navigation = [
-  {
-    name: "Facebook",
-    href: "#",
-    icon: (props: any) => <AiFillFacebook {...props} />,
-  },
-  {
-    name: "Instagram",
-    href: "#",
-    icon: (props: any) => <AiFillInstagram {...props} />,
-  },
-  {
-    name: "GitHub",
-    href: "#",
-    icon: (props: any) => <AiFillGithub {...props} />,
-  },
-  {
-    name: "YouTube",
-    href: "#",
-    icon: (props: any) => <AiFillYoutube {...props} />,
-  },
-  {
-    name: "X",
-    href: "#",
-    icon: (props: any) => <AiOutlineTwitter {...props} />,
-  },
-];

@@ -1,3 +1,11 @@
+import {
+  AiFillFacebook,
+  AiFillYoutube,
+  AiFillGithub,
+  AiFillInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+
 export const listings = [
   {
     id: 1,
@@ -37,4 +45,45 @@ export const listings = [
     media:
       "/media/img/properties/The-Neighbourhoods-of-Mount-Pleasant-Towns.jpg",
   },
+];
+
+export const navigation = [
+  {
+    name: "Facebook",
+    href: "#",
+    icon: (props: any) => <AiFillFacebook {...props} />,
+  },
+  {
+    name: "Instagram",
+    href: "#",
+    icon: (props: any) => <AiFillInstagram {...props} />,
+  },
+  {
+    name: "GitHub",
+    href: "#",
+    icon: (props: any) => <AiFillGithub {...props} />,
+  },
+  {
+    name: "YouTube",
+    href: "#",
+    icon: (props: any) => <AiFillYoutube {...props} />,
+  },
+  {
+    name: "X",
+    href: "#",
+    icon: (props: any) => <AiOutlineTwitter {...props} />,
+  },
+];
+
+type NavLink = {
+  title: string;
+  href: string;
+};
+
+export const navLinks: NavLink[] = [
+  { title: "home", href: "/" },
+  { title: "about", href: "/about" },
+  { title: "real-estate process", href: "/real-estate-process" },
+  { title: "listings", href: "/listings" },
+  { title: "contact", href: "/contact" },
 ];

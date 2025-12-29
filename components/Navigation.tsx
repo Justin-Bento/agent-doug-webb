@@ -1,26 +1,12 @@
 "use client";
-
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "@/components/Logo";
-
-type NavLink = {
-  title: string;
-  href: string;
-};
-
-const navLinks: NavLink[] = [
-  { title: "home", href: "/" },
-  { title: "about", href: "/about" },
-  { title: "real-estate process", href: "/real-estate-process" },
-  { title: "listings", href: "/listings" },
-  { title: "contact", href: "/contact" },
-];
+import { navLinks } from "@/lib/data";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen((prev) => !prev);
-
   return (
     <header className="sticky top-0 z-90">
       <section className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-3 py-6">
