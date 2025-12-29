@@ -58,7 +58,6 @@ export default function page() {
             </div>
           </div>
         </section>
-        {/* End of Landing Area */}
         <section className="relative min-h-dvh">
           {/* SVG Background */}
           <div className="absolute inset-0 z-0">
@@ -84,8 +83,6 @@ export default function page() {
             </div>
           </div>
         </section>
-
-        {/* End of Sub-Hero Area - Quick Section */}
         <section className="wrapper grid grid-cols-1 md:grid-cols-3 gap-8">
           <h3 className="pb-6 col-span-1 md:col-span-3 max-w-[30ch] font-display text-5xl/snug font-bold text-balance capitalize">
             Everything you need for the Real-Estate Transaction Process.
@@ -113,7 +110,6 @@ export default function page() {
             </div>
           ))}
         </section>
-        {/* End of Sub-Hero Area - Real Estate Transaction Process */}
         <section className="wrapper min-h-dvh grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* <!-- Title Section --> */}
           <div className="col-span-1 md:col-span-3 space-y-6 mb-6">
@@ -157,7 +153,6 @@ export default function page() {
             </Link>
           </div>
         </section>
-        {/* End of Content Area  */}
         <section className="relative w-full min-h-dvh">
           {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
@@ -193,7 +188,6 @@ export default function page() {
             </div>
           </div>
         </section>
-        {/* End of Listings Area  */}
       </main>
     </>
   );
