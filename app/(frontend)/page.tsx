@@ -1,11 +1,11 @@
 import React from "react";
-import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { createSlug } from "@/lib/utils";
+import { Metadata } from "next";
 import Divider from "@/components/Divider";
+import { Button } from "@/components/ui/button";
 import { listings } from "@/lib/data";
+import { createSlug } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "AgentWebb",
