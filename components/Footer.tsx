@@ -6,16 +6,14 @@ import {
   AiFillInstagram,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import Logo from "@/components/Logo";
 
 export default function Footer({ className }: any) {
   return (
     <footer className="bg-gray-950 *:text-gray-50 dark:bg-black">
       <div className="wrapper grid grid-cols-1 lg:grid-cols-4 py-20 gap-12">
         <div className="flex w-full flex-col  space-y-4 md:w-2/5">
-          <div className="w-full text-lg space-x-1 font-extrabold md:w-fit">
-            <span>Agent</span>
-            <span>Webb</span>
-          </div>
+          <Logo className="text-gray-50" />
           <p className="text-sm">&copy; {new Date().getFullYear()}.</p>
           <div className="flex items-center gap-4">
             {navigation.map((item) => (

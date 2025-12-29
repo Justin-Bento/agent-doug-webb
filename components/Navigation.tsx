@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 type NavLink = {
   title: string;
@@ -25,10 +26,7 @@ export default function Navigation() {
       <section className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-3 p-6">
         {/* Logo + Mobile Menu Button */}
         <div className="flex items-center justify-between">
-          <Link href="/" className="font-bold text-xl space-x-1">
-            <span>Agent</span>
-            <span>Webb</span>
-          </Link>
+          <Logo className="text-gray-950 dark:text-gray-50" />
           <button
             onClick={toggle}
             className="lg:hidden text-3xl"
@@ -49,7 +47,7 @@ export default function Navigation() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="hover:underline rounded capitalize px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-auto disabled:opacity-50"
+                  className="hover:underline rounded- capitalize px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 focus:z-10 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-auto disabled:opacity-50"
                 >
                   {link.title}
                 </Link>
