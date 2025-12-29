@@ -58,35 +58,23 @@ export default function page() {
             </div>
           </div>
         </section>
-        <section className="relative min-h-dvh">
-          {/* SVG Background */}
-          <div className="absolute inset-0 z-0">
-            {/* <MySvgComponent className="rotate-45" /> */}
-          </div>
-
-          {/* Title Section */}
-          <div className="relative z-20 flex items-center justify-center min-h-dvh wrapper">
-            <div className="sm:col-span-12 flex flex-col items-center justify-center gap-6">
-              <h2 className="max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl">
-                Quick Introduction
-              </h2>
-
-              {/* Divider */}
-              <Divider className="" />
-              <p className="max-w-3xl text-lg text-center">
-                Doug began his journey in residential investment real estate in
-                1986, which eventually led to a full-time career in real estate
-                sales in 1997 with RE/MAX. To offer the level of service that
-                both he and his clients valued, Doug transitioned to Right At
-                Home Realty.
-              </p>
-            </div>
+        <section className="wrapper min-h-dvh max-w-[80ch] grid place-content-center">
+          <div className="flex flex-col items-center justify-center gap-6 *:text-center">
+            <h2 className="h1">Quick Introduction</h2>
+            <Divider />
+            <p className="body-lead">
+              Doug began his journey in residential investment real estate in
+              1986, which eventually led to a full-time career in real estate
+              sales in 1997 with RE/MAX. To offer the level of service that both
+              he and his clients valued, Doug transitioned to Right At Home
+              Realty.
+            </p>
           </div>
         </section>
         <section className="wrapper grid grid-cols-1 md:grid-cols-3 gap-8">
-          <h3 className="pb-6 col-span-1 md:col-span-3 max-w-[30ch] font-display text-5xl/snug font-bold text-balance capitalize">
+          <h2 className="display-3 col-span-3 max-w-[30ch] capitalize">
             Everything you need for the Real-Estate Transaction Process.
-          </h3>
+          </h2>
           {Array.from({ length: 6 }, (_, index) => (
             <div
               key={index}
@@ -111,15 +99,7 @@ export default function page() {
           ))}
         </section>
         <section className="wrapper min-h-dvh grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* <!-- Title Section --> */}
-          <div className="col-span-1 md:col-span-3 space-y-6 mb-6">
-            <h2 className=" max-w-3xl font-display text-pretty text-4xl font-medium tracking-tight text-black dark:text-white sm:text-6xl sm">
-              View Listings
-            </h2>
-            <Divider />
-          </div>
-          {/* <!-- Divider --> */}
-          {/* <!-- 3x3 Grid Section --> */}
+          <h2 className="display-3 col-span-3 capitalize">View Listings</h2>
           <ul className="col-span-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
             {listings.map((house) => {
               return (
@@ -166,20 +146,18 @@ export default function page() {
           {/* Dark Overlay */}
           <div className="absolute z-20 w-full h-full bg-secondary/70" />
           {/* Centered Hero Content */}
-          <div className="relative z-40 mx-auto container px-4 sm:px-6 lg:px-8 flex items-center justify-start min-h-dvh">
-            <div className="text-start">
-              <p className="font-semibold leading-7 text-black dark:text-white uppercase text-sm tracking-wide">
-                Get the help you need
-              </p>
+          <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
+            <div className="space-y-4">
               <h2 className="mt-2 font-sans display-3">
                 Right at Home Agents Make it Easy
               </h2>
-              <p className="mt-4 max-w-5xl body-lead font-semibold">
+              <p className="body-lead max-w-prose">
                 Be one step ahead of real-estate transactions with our un-biased
                 guide. As we give you an unfiltered guide about the Real-Estate
                 Transaction without any favoritism so you can be educated on the
                 procedures coming at you and ready for any red flags.
               </p>
+              <p className="body-lead">Get the help you need</p>
               <span className="block mt-8 space-x-4">
                 <Link href="/contact">
                   <Button variant="outline">Contact Us</Button>
