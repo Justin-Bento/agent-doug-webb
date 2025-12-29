@@ -8,7 +8,7 @@ import { createSlug } from "@/lib/utils";
 export default function page() {
   return (
     <>
-      <main className="min-h-dvh mb-24">
+      <main className="min-h-dvh mb-24 space-y-12">
         <PageHeader title="Property Listings" />
         <ul className="wrapper grid grid-cols-1 md:grid-cols-3 md:col-span-3 gap-6 lg:gap-12">
           {listings.map((house: any) => {
