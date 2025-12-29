@@ -23,7 +23,7 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 z-90">
-      <section className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-3 p-6">
+      <section className="wrapper grid grid-cols-1 lg:grid-cols-2 gap-3 py-6">
         {/* Logo + Mobile Menu Button */}
         <div className="flex items-center justify-between">
           <Logo className="text-gray-950 dark:text-gray-50" />
