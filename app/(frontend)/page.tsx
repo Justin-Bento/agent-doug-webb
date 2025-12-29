@@ -27,9 +27,7 @@ export default function page() {
                 className="object-cover object-bottom-right lg:object-fit lg:object-right"
               />
             </div>
-            <div className="absolute z-20 w-full h-full bg-secondary/70">
-              {/* This is an overlay with no semantic meaning. */}
-            </div>
+            <div className="absolute z-20 w-full h-full bg-secondary/70" />
             <div className="absolute z-30 w-full h-full grid items-center">
               {/* Content Is Inside Here */}
               <div className="wrapper">
@@ -134,7 +132,6 @@ export default function page() {
           </div>
         </section>
         <section className="relative w-full min-h-dvh">
-          {/* Background Image */}
           <div className="absolute z-10 w-full h-full overflow-hidden">
             <Image
               fill
@@ -143,9 +140,9 @@ export default function page() {
               className="object-cover object-bottom"
             />
           </div>
-          {/* Dark Overlay */}
+          {/* Background Image */}
           <div className="absolute z-20 w-full h-full bg-secondary/70" />
-          {/* Centered Hero Content */}
+          {/* End of Image Overlay */}
           <div className="relative z-40 wrapper flex items-center justify-start min-h-dvh">
             <div className="space-y-4">
               <h2 className="mt-2 font-sans display-3">
