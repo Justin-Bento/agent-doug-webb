@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 export default function about() {
   return (
     <>
-      <main className="min-h-dvh mb-24 space-y-24">
-        <PageHeader title="Our strength is collaboration" />
-        <section className="wrapper">
+      <PageHeader title="Our strength is collaboration" />
+      <main className="wrapper min-h-dvh py-32 space-y-32">
+        <section className="">
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="max-w-3xl [&>p]:text-xl/loose space-y-6 dark:text-white">
               <p>
@@ -39,7 +39,7 @@ export default function about() {
             </div>
           </div>
         </section>
-        <section className="wrapper">
+        <section className="">
           <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none items-center">
             <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">
@@ -67,7 +67,7 @@ export default function about() {
             </div>
           </dl>
         </section>
-        <section className="wrapper">
+        <section className="">
           <div className="grid items-center grid-cols-1 md:grid-cols-12 sm:gap-10 md:gap-x-10">
             <div className="relative w-full h-full col-span-12 md:col-span-5">
               <Image
@@ -104,7 +104,7 @@ export default function about() {
             </div>
           </div>
         </section>
-        <section className="wrapper min-h-[50dvh]">
+        <section className="">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <div className="lg:col-span-4 space-y-6">
               <h2 className="text-5xl font-semibold text-gray-950">

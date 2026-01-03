@@ -20,47 +20,49 @@ export default async function page({ params }: { params: { slug: string[] } }) {
         }`,
     });
     return (
-      <main className="space-y-24 mb-24 min-h-dvh">
+      <>
         <PageHeader title="Real-Estate Process" />
-        <section className="wrapper">
-          <h2 className="max-w-3xl text-balance text-4xl/tight font-medium text-gray-950 dark:text-white">
-            A Comprehensive Overview of the Real Estate Process: What You Need
-            to Know
-          </h2>
-          <Divider className="my-8" />
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {posts.map((post: any) => (
-              <li key={post._id} className="group">
-                <Link
-                  href={`real-estate-process/${post.processCategorySlug.current}`}
-                >
-                  <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
-                    <div className="px-4 py-5 sm:p-6 space-y-2">
-                      <p className="text-xl font-semibold capitalize">
-                        {post.processCategoryTitle}
-                      </p>
-                      <p className="line-clamp-2">
-                        {post.processCategoryDescription}
-                      </p>
-                      <Button
-                        variant="link"
-                        className="m-0 p-0 group-hover:underline"
-                      >
-                        See More
-                      </Button>
-                    </div>
-                  </Card>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-        <section className="wrapper">
-          <h2 className="max-w-3xl text-pretty text-4xl/tight font-medium text-gray-950 dark:text-white">
-            Frequently Asked Questions
-          </h2>
-        </section>
-      </main>
+        <main className="space-y-24 my-24 min-h-dvh">
+          <section className="wrapper">
+            <h2 className="max-w-3xl text-balance text-4xl/tight font-medium text-gray-950 dark:text-white">
+              A Comprehensive Overview of the Real Estate Process: What You Need
+              to Know
+            </h2>
+            <Divider className="my-8" />
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {posts.map((post: any) => (
+                <li key={post._id} className="group">
+                  <Link
+                    href={`real-estate-process/${post.processCategorySlug.current}`}
+                  >
+                    <Card className="ring ring-gray-300 bg-gray-100 rounded hover:ring-gray-700">
+                      <div className="px-4 py-5 sm:p-6 space-y-2">
+                        <p className="text-xl font-semibold capitalize">
+                          {post.processCategoryTitle}
+                        </p>
+                        <p className="line-clamp-2">
+                          {post.processCategoryDescription}
+                        </p>
+                        <Button
+                          variant="link"
+                          className="m-0 p-0 group-hover:underline"
+                        >
+                          See More
+                        </Button>
+                      </div>
+                    </Card>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className="wrapper">
+            <h2 className="max-w-3xl text-pretty text-4xl/tight font-medium text-gray-950 dark:text-white">
+              Frequently Asked Questions
+            </h2>
+          </section>
+        </main>
+      </>
     );
   }
 
@@ -79,30 +81,32 @@ export default async function page({ params }: { params: { slug: string[] } }) {
       params: { slug: params.slug[0] },
     });
     return (
-      <main className="min-h-dvh space-y-24">
+      <>
         <PageHeader title={`${post.processCategoryTitle}`} />
-        <section className="wrapper">
-          {/* List of steps linking to double slug pages */}
-          <ul className="grid grid-cols-1 gap-8 m-0 p-0 not-first:mt-6">
-            {post.processSteps?.map((step: any, index: number) => (
-              <li
-                key={step.stepSlug?.current || index}
-                className="group relative isolate overflow-hidden card-container"
-              >
-                <Link
-                  className="block relative px-4 py-5 sm:p-6"
-                  href={`/real-estate-process/${params.slug[0]}/${step.stepSlug?.current}`}
+        <main className="min-h-dvh space-y-24">
+          <section className="wrapper">
+            {/* List of steps linking to double slug pages */}
+            <ul className="grid grid-cols-1 gap-8 m-0 p-0 not-first:mt-6">
+              {post.processSteps?.map((step: any, index: number) => (
+                <li
+                  key={step.stepSlug?.current || index}
+                  className="group relative isolate overflow-hidden card-container"
                 >
-                  <span className="w-full h-full absolute inset-0"></span>
-                  <span className="relative z-10 text-lg font-medium group-hover:underline decoration-dotted m-0 p-0">
-                    {step.stepTitle}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </main>
+                  <Link
+                    className="block relative px-4 py-5 sm:p-6"
+                    href={`/real-estate-process/${params.slug[0]}/${step.stepSlug?.current}`}
+                  >
+                    <span className="w-full h-full absolute inset-0"></span>
+                    <span className="relative z-10 text-lg font-medium group-hover:underline decoration-dotted m-0 p-0">
+                      {step.stepTitle}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </main>
+      </>
     );
   }
 
