@@ -15,9 +15,9 @@ export default function about() {
   return (
     <>
       <PageHeader title="Our strength is collaboration" />
-      <main className="wrapper min-h-dvh py-32 space-y-32">
+      <main className="py-32 space-y-32 wrapper min-h-dvh">
         <section className="">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="max-w-2xl mx-auto lg:max-w-none">
             <div className="max-w-3xl [&>p]:text-xl/loose space-y-6 dark:text-white">
               <p>
                 We believe that our strength lies in our collaborative approach,
@@ -40,28 +40,28 @@ export default function about() {
           </div>
         </section>
         <section className="">
-          <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none items-center">
-            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+          <dl className="grid items-center grid-cols-1 gap-10 sm:grid-cols-2 lg:auto-cols-fr lg:grid-flow-col lg:grid-cols-none">
+            <div className="relative flex flex-col-reverse p-6 card-container md:pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">
                 Certified Real Estate investor
               </dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+              <dd className="text-3xl font-semibold text-black font-display sm:text-4xl dark:text-white">
                 1985
               </dd>
             </div>
-            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+            <div className="relative flex flex-col-reverse p-6 card-container md:pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">
                 Years of experience
               </dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+              <dd className="text-3xl font-semibold text-black font-display sm:text-4xl dark:text-white">
                 25+
               </dd>
             </div>
-            <div className="card-container p-6 flex flex-col-reverse md:pl-8 relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
+            <div className="relative flex flex-col-reverse p-6 card-container md:pl-8 before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-6 before:w-px after:bottom-0 after:left-0 after:top-8 after:w-px">
               <dt className="mt-2 text-base dark:text-white/70">
                 Satisfied Clients and Referral
               </dt>
-              <dd className="font-display text-3xl font-semibold text-black sm:text-4xl dark:text-white">
+              <dd className="text-3xl font-semibold text-black font-display sm:text-4xl dark:text-white">
                 70%
               </dd>
             </div>
@@ -77,9 +77,9 @@ export default function about() {
                 className="object-cover object-center rounded-lg"
               />
             </div>
-            <div className="overflow-hidden col-span-12 md:col-span-7 grid items-center rounded-2xl">
+            <div className="grid items-center col-span-12 overflow-hidden md:col-span-7 rounded-2xl">
               <div className="px-4 py-5 sm:p-6 space-y-8 [&>p]:text-xl/loose [&>p]:tracking-wide">
-                <h2 className="max-w-3xl text-pretty text-4xl font-medium tracking-tighter text-black dark:text-white sm:text-4xl">
+                <h2 className="max-w-3xl text-4xl font-medium tracking-tighter text-black text-pretty dark:text-white sm:text-4xl">
                   Meet Douglas J. Webb
                 </h2>
                 <Divider />
@@ -105,8 +105,8 @@ export default function about() {
           </div>
         </section>
         <section className="">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            <div className="lg:col-span-4 space-y-6">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
+            <div className="space-y-6 lg:col-span-4">
               <h2 className="text-5xl font-semibold text-gray-950">
                 Why Should You Choose Me?
               </h2>
