@@ -55,7 +55,7 @@
     @apply bg-black dark:bg-gray-800;
   }
   .wrapper {
-    @apply max-w-7xl mx-auto;
+    @apply w-11/12 max-w-7xl mx-auto;
   }
   .card-container {
     @apply rounded border dark:text-gray-50 bg-gray-100 dark:bg-gray-700/30 dark:hover:bg-gray-700 transition dark:border-gray-700/50 dark:hover:border-gray-700  hover:underline;
