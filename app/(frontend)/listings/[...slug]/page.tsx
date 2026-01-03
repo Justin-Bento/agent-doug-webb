@@ -14,13 +14,11 @@ export default function ListingsPage({ params }: any) {
   // app/shop/[[...slug]]/page.tsx
   return (
     <>
+      <PageHeader title={title} />
       <main className="wrapper min-h-dvh my-24 grid grid-cols-2 gap-16">
         {/* Row 1: Two columns */}
         <section className="col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-16">
           <div className="flex flex-col justify-center items-start gap-6">
-            <h1 className="scroll-m-20 text-4xl font-extrabold text-balance">
-              {title}
-            </h1>
             <p className="body-lead tracking-wide leading-7 font-medium mt-4">
               Welcome to 11 Yorkville Avenue, where sophistication, culture, and
               convenience come together in one of Toronto&apos;s most
