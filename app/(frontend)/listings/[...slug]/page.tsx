@@ -36,17 +36,25 @@ export default function ListingsPage({ params }: any) {
               <li className="">Country: Toronto, Ontario, Canada</li>
               <li className="">Postal Code: M4W0B7</li>
             </ul>
+            <section className="w-full bg-gray-300 p-6 rounded-xl">
+              <p className="">Contact Agent Webb for More Information</p>
+            </section>
             {/* Content */}
           </div>
           <div className="w-full aspect-square bg-black rounded-2xl">
             {/* Media */}
           </div>
         </section>
-
         <section className="col-span-2 [&>p]:text-lg [&>p]:leading-7 [&>p:not(:first-child)]:mt-6">
           <h2 className="mt-10 scroll-m-20 border-b border-black pb-2 text-3xl font-semibold transition-colors first:mt-0">
             Property Information
           </h2>
+          <ul className=" my-6 grid grid-cols-2 gap-8 *:border *:border-black *:p-6">
+            <li className="">2 Bedrooms</li>
+            <li className="">2 Bathrooms</li>
+            <li className="">800-899 square feet</li>
+            <li className="">80 days</li>
+          </ul>
           <p>
             Every detail speaks to comfort and quality, from the open-concept
             layout to the natural light that fills the suite. Step outside and
@@ -73,18 +81,22 @@ export default function ListingsPage({ params }: any) {
             detail embodies prestige, convenience, and elevated living. **
             Parking available at $350.00 per month.
           </p>
-          <ul className="flex gap-6 *:text-center  *:border divide-x-2">
-            <li className="">2 Bedrooms</li>
-            <li className="">2 Bathrooms</li>
-            <li className="">800-899 square feet</li>
-            <li className="">80 days</li>
-          </ul>
         </section>
-
-        <section className="col-span-2">
+        <section className="col-span-2 [&>p]:text-lg [&>p]:leading-7 [&>p:not(:first-child)]:mt-6">
           <h2 className="mt-10 scroll-m-20 border-b border-black pb-2 text-3xl font-semibold transition-colors first:mt-0">
-            Additional Information
+            Extra info:
           </h2>
+          <p className="body-large">
+            Appliances: Cooktop, Built-in Oven, Built-in Microwave, Diswasher,
+            Built-in Fridge. Washer and Dryer. All Electrical Light Fixtures.
+            Parking available at $350.00 per month.
+          </p>
+        </section>
+        <section className="col-span-2 [&>p]:text-lg [&>p]:leading-7 [&>p:not(:first-child)]:mt-6">
+          <h2 className="mt-10 scroll-m-20 border-b border-black pb-2 text-3xl font-semibold transition-colors first:mt-0">
+            House features:
+          </h2>
+          <p className="body-large">Library, Park.</p>
         </section>
       </main>
     </>
