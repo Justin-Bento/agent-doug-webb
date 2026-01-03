@@ -23,13 +23,13 @@ export default function ListingsPage({ params }: any) {
             </h1>
             <p className="body-lead tracking-wide leading-7 font-medium mt-4">
               Welcome to 11 Yorkville Avenue, where sophistication, culture, and
-              convenience come together in one of Toronto's most prestigious
-              neighbourhoods. This beautifully designed and furnished
-              2-bedroom+den, 2-bath residence offers the perfect blend of modern
-              elegance and urban energy, surrounded by the very best the city
-              has to offer. Inside, sleek Miele appliances, floor-to-ceiling
-              windows, and high-end finishes create a space that feels
-              effortlessly refined.
+              convenience come together in one of Toronto&apos;s most
+              prestigious neighbourhoods. This beautifully designed and
+              furnished 2-bedroom+den, 2-bath residence offers the perfect blend
+              of modern elegance and urban energy, surrounded by the very best
+              the city has to offer. Inside, sleek Miele appliances,
+              floor-to-ceiling windows, and high-end finishes create a space
+              that feels effortlessly refined.
             </p>
             <ul className="body-lead font-medium tracking-wide space-y-3 list-disc list-inside ml-8">
               <li className="">Address: 1205 - 11 Yorkville Avenue</li>
@@ -50,9 +50,9 @@ export default function ListingsPage({ params }: any) {
           <p>
             Every detail speaks to comfort and quality, from the open-concept
             layout to the natural light that fills the suite. Step outside and
-            you're in the heart of Yorkville home to designer boutiques along
-            the Mink Mile, five-star dining, and vibrant cafés that define
-            Toronto's luxury lifestyle.
+            you&apos;re in the heart of Yorkville home to designer boutiques
+            along the Mink Mile, five-star dining, and vibrant caf&eacute;s that
+            define Toronto&apos;s luxury lifestyle.
           </p>
           <p>
             Spend weekends exploring the Royal Ontario Museum, catching a
@@ -63,15 +63,15 @@ export default function ListingsPage({ params }: any) {
             and accessibility.
           </p>
           <p>
-            Life at 11 Yorkville means more than just a beautiful suite, it's a
-            complete lifestyle. Residents enjoy resort-inspired amenities,
-            including a rooftop pool and spa, state-of-the-art fitness centre,
-            piano lounge, private dining rooms, and more. Whether you're
-            entertaining, relaxing, or recharging, this building offers the best
-            of everything right at home. Experience Torontos most sophisticated
-            address 11 Yorkville Avenue, where every detail embodies prestige,
-            convenience, and elevated living. ** Parking available at $350.00
-            per month.
+            Life at 11 Yorkville means more than just a beautiful suite,
+            it&apos;s a complete lifestyle. Residents enjoy resort-inspired
+            amenities, including a rooftop pool and spa, state-of-the-art
+            fitness centre, piano lounge, private dining rooms, and more.
+            Whether you&apos;re entertaining, relaxing, or recharging, this
+            building offers the best of everything right at home. Experience
+            Torontos most sophisticated address 11 Yorkville Avenue, where every
+            detail embodies prestige, convenience, and elevated living. **
+            Parking available at $350.00 per month.
           </p>
           <ul className="flex gap-6 *:text-center  *:border divide-x-2">
             <li className="">2 Bedrooms</li>
